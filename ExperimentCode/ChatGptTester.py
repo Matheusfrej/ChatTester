@@ -8,29 +8,30 @@ import os
 import re
 import json
 import time
-import tiktoken
 from tqdm import tqdm
 import traceback
 import glob
 from transformers import GenerationConfig, LlamaForCausalLM, LlamaTokenizer
-from transformers import AutoTokenizer, AutoModelForCausalLM, LlamaForCausalLM
+# ADICIONADO: BitsAndBytesConfig para gerenciar memória em 8GB
+from transformers import AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig
+
+# Importações locais (mantenha seus arquivos originais Deal.py e ProcesFinalResult.py na mesma pasta)
 from Deal import Compile_Test_INFO
 from Deal import FeedbackPrompt
-from ProcesFinalResult import  ProceFinalResult
+from ProcesFinalResult import ProceFinalResult
 
-# TODO modify this path
-java_home = "/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home"
+# --- CONFIGURAÇÃO 1: JAVA PATH CORRIGIDO PARA LINUX ---
+java_home = "/usr/lib/jvm/jdk1.8.0_131"
 os.environ["JAVA_HOME"] = java_home
 env = os.environ.copy()
 env['JAVA_TOOL_OPTIONS'] = '-Duser.language=en -Duser.country=US'
 current_dir = os.path.dirname(os.path.abspath(__file__))
 chatTesterDir = os.path.dirname(current_dir)
 
-
 testedRepo_PATH = os.path.join(chatTesterDir, "Repos")
 
-
-model_path =  "gpt-3.5-turbo"
+# --- CONFIGURAÇÃO 2: MODELO DEEPSEEK ---
+model_path = "deepseek-ai/deepseek-coder-6.7b-instruct"
 
 class ChatGptTester:
     def __init__(self, repo_name):
@@ -39,16 +40,21 @@ class ChatGptTester:
         self.Result_PATH = os.path.join(chatTesterDir, "RepoData") # Data pair path
         self.testedRepo_PATH = os.path.join(chatTesterDir, "Repos") # repo path
         self.repo_name  = repo_name
-        # Path in contain_intention. The result in the folder is from the InitialPhrase_Experiment.py
-        if "CodeLlama-34b-Instruct" in model_path:
-            self.sub_save_dir = 'CodeLlama'  # CodeLlama; WizardCoder
-        elif "CodeFuse-CodeLlama" in model_path:
+        
+        # --- LÓGICA DE DIRETÓRIOS ATUALIZADA ---
+        if "CodeLlama" in model_path:
+            self.sub_save_dir = 'CodeLlama'
+        elif "CodeFuse" in model_path:
             self.sub_save_dir = "CodeFuse"
+        elif "deepseek" in model_path:
+            self.sub_save_dir = "DeepSeek" # Pasta dedicada para o DeepSeek
         elif "gpt-3.5" in model_path:
             self.sub_save_dir = os.path.basename(Json_file_Path).replace(".json","")
             openai.api_base = "https://openkey.cloud/v1"
             # TODO SET API_KEY
             openai.api_key = "openAPI_key"
+        else:
+            self.sub_save_dir = "OtherModel"
             
         self.C_GeneratedTest_Path = os.path.join(current_dir,'Contain_intention',self.sub_save_dir, 'GeneratedTest')
         self.C_LogINFO_Path = os.path.join(current_dir,'Contain_intention',self.sub_save_dir, 'LogINFO')
@@ -84,108 +90,186 @@ class ChatGptTester:
         else:
             shutil.rmtree(file_path)
             os.makedirs(file_path)
+            
+    # --- HELPER: FUNÇÃO PARA CORRIGIR CAMINHOS ---
+    def fix_path(self, raw_path_str):
+        """Converte caminhos do Mac/Outros PCs para o caminho local do Linux"""
+        if "###" in raw_path_str:
+            clean_path = raw_path_str.split("###")[0]
+        else:
+            clean_path = raw_path_str
+            
+        # Procura por 'src' para ancorar o caminho relativo
+        if "src" in clean_path:
+            relative_part = clean_path[clean_path.find("src"):]
+        elif self.repo_name in clean_path:
+            # Tenta cortar pelo nome do projeto se não achar src
+            parts = clean_path.split(self.repo_name)
+            if len(parts) > 1:
+                relative_part = parts[1]
+                if relative_part.startswith(os.sep): relative_part = relative_part[1:]
+            else:
+                return clean_path # Falhou em achar padrão, retorna original (vai dar erro, mas ok)
+        else:
+            return clean_path
+
+        # Reconstrói: .../Repos/NomeProjeto/src/...
+        return os.path.join(self.testedRepo_PATH, self.repo_name, relative_part)
+
     def LoadFile(self):
         self.count = 0
+        # Verifica se o arquivo existe antes de tentar ler
+        if not os.path.exists(self.pred_1):
+            print(f"Warning: {self.pred_1} not found. Make sure InitialPhrase ran correctly.")
+            return
+
         with open(self.pred_1,'r', encoding='utf-8') as f:
             for line in f:
-                con = json.loads(line.strip())
-                findClassInfo = ""  # store collected class Info
-
-                ori_test_Path = con['original_path']
-                generated_path_old = con['generated_path']
-                FocalMethodInfo = os.path.basename(generated_path_old)
-                shutil.copy2(generated_path_old, self.GeneratedTest_PATH)
-                generated_path = os.path.join(self.GeneratedTest_PATH, os.path.basename(generated_path_old))
-                Compile_result = con['Compile']
-                Test_result = con['Test']
-
-                # 如果 在 initial phrase 已经正确，则不用 修复
-                if Compile_result == 1 and Test_result == 1:
-                    finalCont = {"original_path": ori_test_Path,"generated_path": generated_path,"IterateTimes": 0,"Compile_result": Compile_result,"Test_result": Test_result}
-                    with open(self.Final_result, "a", encoding="utf-8") as f:
-                        json.dump(finalCont, f)
-                        f.write("\n")
-                    continue
-
-
-                project_name = os.path.basename(Json_file_Path).replace(".json","")
-
                 try:
-                    excute_path = os.path.join(self.testedRepo_PATH, project_name)
-                    os.chdir(excute_path)
-                    os.system('git add .')
-                    os.system('git commit -m "Initial commit for safety"')
-                    os.chdir(current_dir)
+                    con = json.loads(line.strip())
+                    findClassInfo = ""  # store collected class Info
 
-                    # 从 source json file 当中检索信息
-                    self.DriveTest_Info(FocalMethodInfo)
+                    # --- FIX: Corrigir caminho original aqui ---
+                    raw_ori_path = con['original_path']
+                    ori_test_Path = self.fix_path(raw_ori_path)
+                    # -------------------------------------------
 
-                    GenJava = os.path.basename(generated_path)
-                    with open(generated_path,'r', encoding='utf-8') as f:
-                        FixGencont = f.read()  # first repair code
+                    generated_path_old = con['generated_path']
+                    FocalMethodInfo = os.path.basename(generated_path_old)
+                    
+                    # Copia apenas se o arquivo existir
+                    if os.path.exists(generated_path_old):
+                        shutil.copy2(generated_path_old, self.GeneratedTest_PATH)
+                    else:
+                        print(f"Skipping: Generated file not found {generated_path_old}")
+                        continue
 
-                    compile_logInfo_path = [file for file in glob.glob(self.C_LogINFO_Path + '/*') if os.path.basename(file) == GenJava][0]
-                    Surefire_reports_dst_file = [file for file in glob.glob(self.C_Surefire_reports_Path + '/*') if GenJava.replace(".java",'.xml') in os.path.basename(file)]
-                    if len(Surefire_reports_dst_file)  == 0: Surefire_reports_dst_file=['None']
+                    generated_path = os.path.join(self.GeneratedTest_PATH, os.path.basename(generated_path_old))
+                    Compile_result = con['Compile']
+                    Test_result = con['Test']
 
-                    if Compile_result == 0: repairTag = "compileRepair"
-                    elif Compile_result == 1 and Test_result == 0:repairTag = "testRepair"
-
-                    # File ID
-                    self.count = self.count + 1
-
-                    print(f"Deal: {self.count}; repairTag: {repairTag}; ", ori_test_Path)
-
-                    Composit_prompt, proc_compile_list_INFO, proc_test_list_INFO, findClassInfo = self.Collect_Info(Compile_result,
-                                                                                                     Test_result,
-                                                                                                     compile_logInfo_path,
-                                                                                                     Surefire_reports_dst_file[0],
-                                                                                                     generated_path,
-                                                                                                     ori_test_Path, False, findClassInfo)
-
-                    if (len(proc_compile_list_INFO) == 0 and len(proc_test_list_INFO) == 0) or len(Composit_prompt) == 0:
-                        finalCont = {"original_path": ori_test_Path,
-                                     "generated_path": generated_path,
-                                     "IterateTimes": 0,
-                                     "Compile_result": Compile_result,
-                                     "Test_result": Test_result}
+                    # Se já estiver correto, pula
+                    if Compile_result == 1 and Test_result == 1:
+                        finalCont = {"original_path": ori_test_Path,"generated_path": generated_path,"IterateTimes": 0,"Compile_result": Compile_result,"Test_result": Test_result}
                         with open(self.Final_result, "a", encoding="utf-8") as f:
                             json.dump(finalCont, f)
                             f.write("\n")
                         continue
 
 
-                    self.IteratePred(repairTag, generated_path, FixGencont, Composit_prompt, ori_test_Path,os.path.basename(generated_path).replace(".java",""), findClassInfo)
+                    project_name = os.path.basename(Json_file_Path).replace(".json","")
 
-                except Exception as e:
+                    try:
+                        excute_path = os.path.join(self.testedRepo_PATH, project_name)
+                        if not os.path.exists(excute_path):
+                            print(f"Repo path not found: {excute_path}")
+                            continue
+
+                        os.chdir(excute_path)
+                        os.system('git add .')
+                        os.system('git commit -m "Initial commit for safety" > /dev/null 2>&1') # Silenciar output
+                        os.chdir(current_dir)
+
+                        # Passa o nome do metodo para buscar info
+                        self.DriveTest_Info(FocalMethodInfo)
+
+                        GenJava = os.path.basename(generated_path)
+                        with open(generated_path,'r', encoding='utf-8') as f:
+                            FixGencont = f.read()  # first repair code
+
+                        compile_logInfo_path = [file for file in glob.glob(self.C_LogINFO_Path + '/*') if os.path.basename(file) == GenJava][0]
+                        Surefire_reports_dst_file = [file for file in glob.glob(self.C_Surefire_reports_Path + '/*') if GenJava.replace(".java",'.xml') in os.path.basename(file)]
+                        if len(Surefire_reports_dst_file)  == 0: Surefire_reports_dst_file=['None']
+
+                        if Compile_result == 0: repairTag = "compileRepair"
+                        elif Compile_result == 1 and Test_result == 0:repairTag = "testRepair"
+
+                        # File ID
+                        self.count = self.count + 1
+                        print(f"Deal: {self.count}; repairTag: {repairTag}; ", ori_test_Path)
+
+                        Composit_prompt, proc_compile_list_INFO, proc_test_list_INFO, findClassInfo = self.Collect_Info(Compile_result,
+                                                                                                                        Test_result,
+                                                                                                                        compile_logInfo_path,
+                                                                                                                        Surefire_reports_dst_file[0],
+                                                                                                                        generated_path,
+                                                                                                                        ori_test_Path, False, findClassInfo)
+
+                        if (len(proc_compile_list_INFO) == 0 and len(proc_test_list_INFO) == 0) or len(Composit_prompt) == 0:
+                            finalCont = {"original_path": ori_test_Path,
+                                         "generated_path": generated_path,
+                                         "IterateTimes": 0,
+                                         "Compile_result": Compile_result,
+                                         "Test_result": Test_result}
+                            with open(self.Final_result, "a", encoding="utf-8") as f:
+                                json.dump(finalCont, f)
+                                f.write("\n")
+                            continue
+
+                        self.IteratePred(repairTag, generated_path, FixGencont, Composit_prompt, ori_test_Path, os.path.basename(generated_path).replace(".java",""), findClassInfo)
+
+                    except Exception as e:
+                        traceback.print_exc()
+                    finally:
+                        # reset repo status
+                        excute_path = os.path.join(self.testedRepo_PATH, project_name)
+                        if os.path.exists(excute_path):
+                            os.chdir(excute_path)
+                            os.system('git restore .')
+                            os.system('git clean -fd')
+                            # print("Reset Success!")
+                            os.chdir(current_dir)
+                except Exception as line_e:
+                    print(f"Error processing line in pred_1: {line_e}")
                     traceback.print_exc()
-                finally:
-                    # reset repo status
-                    excute_path = os.path.join(self.testedRepo_PATH, project_name)
-                    os.chdir(excute_path)
-                    os.system('git restore .')
-                    os.system('git clean -fd')
-                    print("Reset Success!")
-                    os.chdir(current_dir)
 
 
-
-    def DriveTest_Info(self,FocalMethodInfo):
+    def DriveTest_Info(self, FocalMethodInfo):
         with open(Json_file_Path, 'r', encoding='utf-8') as f:
             data_pair = json.load(f)
-        ori_test_Path = [data["Test_method"]["TestInfo"] for data in data_pair if len(data['Under_test_method']) and data["Under_test_method"]["Method_statement"] == FocalMethodInfo.split("#")[-1].replace(".java","") and FocalMethodInfo.split("#")[0] in data['Test_method']['TestInfo']][0]
+        
+        # Lógica original para encontrar o par correto no JSON
+        # O FocalMethodInfo vem do nome do arquivo gerado (ex: Class#Method.java)
+        target_method_name = FocalMethodInfo.split("#")[-1].replace(".java","")
+        target_class_file = FocalMethodInfo.split("#")[0] # Isso pode não ser exato dependendo do seu formato, mas mantendo a logica original:
+        
+        # Encontrar a entrada correspondente
+        found_data = None
+        for data in data_pair:
+            if not len(data['Under_test_method']): continue
+            ut_stmt = data["Under_test_method"]["Method_statement"]
+            test_info = data['Test_method']['TestInfo']
+            
+            # Tenta dar match no metodo
+            if ut_stmt == target_method_name:
+                # Verifica se o arquivo 'pai' está contido no TestInfo (lógica original)
+                # Note: target_class_file aqui pode ser só o nome do arquivo de teste base
+                if target_class_file in test_info or target_class_file.replace(".java","") in test_info:
+                    found_data = data
+                    break
+        
+        if not found_data:
+            raise Exception(f"Could not find data pair for {FocalMethodInfo}")
+
+        # --- PATH FIX AQUI TAMBÉM ---
+        raw_test_info = found_data["Test_method"]["TestInfo"]
+        ori_test_Path = self.fix_path(raw_test_info)
+        # ----------------------------
 
         TestScaffoldPath = ori_test_Path.split("###")[0].replace(".java", "_scaffolding.java")
-        ScaffoldingCode = [data['Test_method']['scaffoldingCode'] for data in data_pair if data["Test_method"]["TestInfo"] == ori_test_Path][0]
-        self.boolean(os.path.dirname(TestScaffoldPath))
+        ScaffoldingCode = found_data['Test_method']['scaffoldingCode']
+        
+        # Criar diretório se não existir
+        scaffold_dir = os.path.dirname(TestScaffoldPath)
+        if not os.path.exists(scaffold_dir):
+            os.makedirs(scaffold_dir)
+            
         with open(TestScaffoldPath, 'w', encoding='utf-8') as f:
             f.write(ScaffoldingCode)
-        self.testCodeShell = [data['Test_method']['TestCodeShell'] for data in data_pair if data["Test_method"]["TestInfo"] == ori_test_Path][0]
-
-
-        self.Under_test_method_INFO = [data["Under_test_method"] for data in data_pair if data["Test_method"]["TestInfo"] == ori_test_Path][0]
+            
+        self.testCodeShell = found_data['Test_method']['TestCodeShell']
+        self.Under_test_method_INFO = found_data["Under_test_method"]
         self.Junit_version = self.Under_test_method_INFO['Junit_version']
-
 
         Focal_class = self.Under_test_method_INFO['Class_declaration']
         Filed = self.unit_instance.commentDelete(self.Under_test_method_INFO['Filed']) + "\n"
@@ -194,11 +278,11 @@ class ChatGptTester:
         PL_Focal_Method = Focal_class + '\n' + Filed + constructors + '\n' + '# Focal method\n' + self.Focal_Method_Info + "\n}"
         self.PL_Focal_Method = '\n'.join(filter(lambda x: x.strip(), PL_Focal_Method.split('\n')))
         self.focal_method_name = self.Under_test_method_INFO['Method_statement']
-        self.TestMethodExample = [data['Test_method']['TestMethodBody'] for data in data_pair if data["Test_method"]["TestInfo"] == ori_test_Path][0]
+        self.TestMethodExample = found_data['Test_method']['TestMethodBody']
 
     def IteratePred(self,repairTag, generated_path, FixGencont, Composit_prompt, ori_test_Path, fixedClassName, findClassInfo):
         re_generate_Tag = False
-        project_name = os.path.basename(Json_file_Path).replace(".json","")
+        project_name = self.repo_name
         TAG = "TEST"
         error_numbers = []
         TotalIter = 0  # 总的迭代次数
@@ -505,24 +589,37 @@ class ChatGptTester:
 
 class Unit:
     def __init__(self, model_path) -> None:
-        if "CodeLlama-34b-Instruct" in model_path:
-            B_INST, E_INST = "[INST]", "[/INST]"
-            B_SYS, E_SYS = "<<SYS>>\n", "\n<</SYS>>\n\n"
+        if "deepseek" in model_path:
+            print(f"Loading Model: {model_path} with 4-bit Double Quantization...")
 
-            system_prompt = '''
-            You are a helpful, respectful and honest assistant with a deep knowledge of code and software design. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature.
-            If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don't know the answer to a question, please don't share false information.
-            '''
-            system_prompt = f"{B_SYS}{system_prompt}{E_SYS}"
-            self.problem_prompt = (system_prompt + "[INST] {instruction} [/INST]")
-            self.tokenizer = AutoTokenizer.from_pretrained(model_path, use_fast=False)
-            self.model = AutoModelForCausalLM.from_pretrained(model_path, low_cpu_mem_usage=True,
-                                                              torch_dtype=torch.float16).cuda()
-
-        elif "CodeFuse-CodeLlama" in model_path:
-            HUMAN_ROLE_START_TAG = "<|role_start|>human<|role_end|>"
-            BOT_ROLE_START_TAG = "<|role_start|>bot<|role_end|>"
-            self.problem_prompt = (HUMAN_ROLE_START_TAG + "{instruction}" + BOT_ROLE_START_TAG)
+            # Configuração para economizar VRAM (4-bit + Double Quant)
+            bnb_config = BitsAndBytesConfig(
+                load_in_4bit=True,
+                bnb_4bit_quant_type="nf4",
+                bnb_4bit_compute_dtype=torch.float16,
+                bnb_4bit_use_double_quant=True,
+                llm_int8_enable_fp32_cpu_offload=True 
+            )
+            
+            self.problem_prompt = "### Instruction:\n{instruction}\n### Response:\n"
+            
+            self.tokenizer = AutoTokenizer.from_pretrained(
+                model_path, 
+                use_fast=False, 
+                trust_remote_code=True
+            )
+            
+            # Carrega o modelo com Limite de Memória (7.2GB na GPU, resto na RAM)
+            self.model = AutoModelForCausalLM.from_pretrained(
+                model_path,
+                quantization_config=bnb_config, 
+                device_map="auto",              
+                trust_remote_code=True,
+                offload_folder="offload_iterate", # Pasta diferente para evitar conflito
+                max_memory={0: "7200MB", "cpu": "64GB"}
+            )
+        else:
+            # Fallback para outros modelos (CodeLlama, etc) se mudar a variavel model_path
             self.tokenizer = AutoTokenizer.from_pretrained(model_path, use_fast=False)
             self.model = AutoModelForCausalLM.from_pretrained(model_path, low_cpu_mem_usage=True,
                                                               torch_dtype=torch.float16).cuda()

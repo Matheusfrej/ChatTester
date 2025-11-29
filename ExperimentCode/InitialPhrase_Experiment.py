@@ -9,14 +9,14 @@ import os
 import re
 import json
 import time
-import tiktoken
 from tqdm import tqdm
 import traceback
 from transformers import GenerationConfig, LlamaForCausalLM, LlamaTokenizer
-from transformers import AutoTokenizer, AutoModelForCausalLM, LlamaForCausalLM
+# ADICIONADO: BitsAndBytesConfig para rodar em 8GB VRAM
+from transformers import AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig
 
 # TODO modify this path
-java_home = "/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home"
+java_home = "/usr/lib/jvm/jdk1.8.0_131"
 os.environ["JAVA_HOME"] = java_home
 env = os.environ.copy()
 env['JAVA_TOOL_OPTIONS'] = '-Duser.language=en -Duser.country=US'
@@ -26,21 +26,26 @@ chatTesterDir = os.path.dirname(current_dir)
 
 testedRepo_PATH = os.path.join(chatTesterDir, "Repos")  # 存放 repo的 path
 
-model_path =  "gpt-3.5-turbo"
+# ALTERAÇÃO 1: Usando o DeepSeek Coder 6.7B (Instruct) que cabe na sua GPU
+model_path = "deepseek-ai/deepseek-coder-6.7b-instruct"
 
 class ChatGptTester_inital:
     def __init__(self, Intention_TAG):
         self.Intention_TAG = Intention_TAG
 
-        if "CodeLlama-34b-Instruct" in model_path:
+        # Lógica de nomes de pastas
+        if "CodeLlama" in model_path:
             sub_save_dir = "CodeLlama"
-        elif "CodeFuse-CodeLlama" in model_path:
+        elif "CodeFuse" in model_path:
             sub_save_dir = "CodeFuse"
+        elif "deepseek" in model_path:
+            sub_save_dir = "DeepSeek"
         elif "gpt-3.5" in model_path:
             sub_save_dir = os.path.basename(Json_file_Path).replace(".json","")
             openai.api_base = "https://openkey.cloud/v1"
-            # TODO set api_key
             openai.api_key = "SET_API_KEY"
+        else:
+            sub_save_dir = "OtherModel"
 
 
         self.original_java_PATH = os.path.join(current_dir, self.Intention_TAG, sub_save_dir, 'original_java')
@@ -76,23 +81,50 @@ class ChatGptTester_inital:
             Under_test_method = cont['Under_test_method']
             Test_method = cont['Test_method']
             if len(Under_test_method) == 0: continue
+            
             Focal_class = Under_test_method['Class_declaration']
             Filed = self.unit_instance.commentDelete(Under_test_method['Filed']) + "\n"
             constructors = self.unit_instance.commentDelete(Under_test_method['constructors']) + "\n"
             Focal_Method_Info = self.unit_instance.commentDelete(Under_test_method["Method_body"])
+            
             PL_Focal_Method = Focal_class + '\n' + Filed + constructors + '\n\n' + '# Focal method\n' + Focal_Method_Info + "\n}"
             PL_Focal_Method = '\n'.join(filter(lambda x: x.strip(), PL_Focal_Method.split('\n')))
+            
             Test_Import_info = Test_method['Test_import']
             focal_method_name = Under_test_method['Method_statement']
             Class_name = Under_test_method['Class_name']
             contextMethod = Under_test_method['contextMethod']
             self.MethodContext  = Under_test_method['Class_declaration'] + Under_test_method['all_method_signature'] + "\n}"
 
-
             Test_method = cont['Test_method']
             TestFileName = os.path.basename(Test_method['TestInfo'].split("###")[0])
-            TestDir = os.path.dirname(Under_test_method['project_path'].split("###")[0].replace("/main/","/test/"))
-            TestFilePath = os.path.join(TestDir,TestFileName)
+
+            # --- CORREÇÃO DO CAMINHO (FIX PATH) ---
+            # 1. Pega o caminho original que está no JSON (pode ser /Users/..., C:/..., etc)
+            raw_path_from_json = Under_test_method['project_path'].split("###")[0]
+            
+            # 2. Encontra a parte relativa (a partir de 'src') para ignorar o prefixo do outro PC
+            if "src" in raw_path_from_json:
+                # Pega tudo do 'src' para frente (ex: src/main/java/com/...)
+                relative_path = raw_path_from_json[raw_path_from_json.find("src"):]
+            else:
+                # Fallback: Tenta pegar tudo depois do nome do projeto se não achar 'src'
+                if project_name in raw_path_from_json:
+                    relative_path = raw_path_from_json.split(project_name)[1]
+                    if relative_path.startswith(os.sep): relative_path = relative_path[1:]
+                else:
+                    print(f"Skipping: Caminho irreconhecível: {raw_path_from_json}")
+                    continue
+
+            # 3. Monta o caminho REAL na sua máquina Linux
+            # /home/mathe/.../Repos/NomeDoProjeto/src/main/java/...
+            local_real_path = os.path.join(testedRepo_PATH, project_name, relative_path)
+
+            # 4. Ajusta para a pasta de teste e define o TestDir correto
+            TestFilePath = local_real_path.replace("/main/", "/test/")
+            TestDir = os.path.dirname(TestFilePath)
+            # --------------------------------------
+
             TestScaffoldPath = os.path.join(TestDir,TestFileName.replace(".java","_scaffolding.java"))
             ScaffoldingCode = Test_method["scaffoldingCode"]
             TestCodeShell = Test_method['TestCodeShell']
@@ -105,7 +137,8 @@ class ChatGptTester_inital:
                 os.system('git commit -m "Initial commit for safety"')
                 os.chdir(current_dir)
 
-                self.boolean(TestDir)
+                self.boolean(TestDir) 
+                
                 with open(TestScaffoldPath,'w',encoding='utf-8') as f:
                     f.write(ScaffoldingCode)
 
@@ -128,11 +161,12 @@ class ChatGptTester_inital:
                 traceback.print_exc()
             finally:
                 # reset repo status
-                os.chdir(excute_path)
-                os.system('git restore .')
-                os.system('git clean -fd')
-                print("Project reset to last committed state")
-                os.chdir(current_dir)
+                if os.path.exists(excute_path):
+                    os.chdir(excute_path)
+                    os.system('git restore .')
+                    os.system('git clean -fd')
+                    # print("Project reset to last committed state")
+                    os.chdir(current_dir)
 
 
     def Contain_intention(self, PL_Focal_Method, focal_method_name, Test_Import_info, TestFilePath, TestCodeShell, project_name,contextMethod, Junit_version):
@@ -271,12 +305,39 @@ class ChatGptTester_inital:
         return compile_result, test_result, Gen_TestfilePath
 
 
-
-
+# ALTERAÇÃO 2: Classe Unit reescrita para suportar DeepSeek + Quantização
 class Unit:
     def __init__(self, model_path) -> None:
+        if "deepseek" in model_path:
+            print(f"Loading Model: {model_path} with 4-bit Quantization...")
 
-        if "CodeLlama-34b-Instruct" in model_path:
+            # Configuração para economizar VRAM (4-bit)
+            bnb_config = BitsAndBytesConfig(
+                load_in_4bit=True,
+                bnb_4bit_quant_type="nf4",
+                bnb_4bit_compute_dtype=torch.float16,
+                bnb_4bit_use_double_quant=True,       # <--- NOVO: Economiza ~400MB extras
+                llm_int8_enable_fp32_cpu_offload=True
+            )
+            # Formato de prompt do DeepSeek Instruct
+            self.problem_prompt = "### Instruction:\n{instruction}\n### Response:\n"
+            
+            self.tokenizer = AutoTokenizer.from_pretrained(
+                model_path, 
+                use_fast=False, 
+                trust_remote_code=True
+            )
+            
+            self.model = AutoModelForCausalLM.from_pretrained(
+                model_path,
+                quantization_config=bnb_config, # Carrega em 4 bits
+                device_map="auto",              # Distribui automaticamente (GPU/CPU)
+                trust_remote_code=True,
+                offload_folder="offload",
+                max_memory={0: "7200MB", "cpu": "64GB"} # <--- NOVO: Trava a GPU em 7.2GB
+            )
+
+        elif "CodeLlama-34b-Instruct" in model_path:
             B_INST, E_INST = "[INST]", "[/INST]"
             B_SYS, E_SYS = "<<SYS>>\n", "\n<</SYS>>\n\n"
 

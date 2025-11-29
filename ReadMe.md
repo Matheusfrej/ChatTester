@@ -12,6 +12,14 @@ To run this experiment successfully, ensure that the following environment requi
 - JDK version = jdk1.8.0_131
 
 ## Code Execution
+
+Create a Python virtual environment (e.g.: venv).
+
+Install the project dependencies inside the virtual environment:
+
+```
+pip install -r requirements.txt
+```
 To reproduce the effectiveness of ChatTester on the project, follow these steps:
 
 1. Navigate to the `./ExperimentCode` directory.
