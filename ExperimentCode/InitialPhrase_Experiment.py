@@ -148,10 +148,16 @@ class ChatGptTester_inital:
                     f.write(ScaffoldingCode)
 
                 if self.Intention_TAG == "Contain_intention":  # intention
+                    if "gemini-2.5-flash" in model_path:
+                        # delay for Gemini API rate limits
+                        time.sleep(4)
                     compile_result, test_result, Gen_Path = self.Contain_intention(PL_Focal_Method, focal_method_name, Test_Import_info,
                                                                               TestFilePath, TestCodeShell, project_name, contextMethod,
                                                                               4)
                 else:
+                    if "gemini-2.5-flash" in model_path:
+                        # delay for Gemini API rate limits
+                        time.sleep(4)
                     compile_result, test_result, Gen_Path = self.No_intention(PL_Focal_Method, focal_method_name, Test_Import_info,
                                                                               TestFilePath, TestCodeShell, project_name, contextMethod,
                                                                               4)
@@ -175,7 +181,10 @@ class ChatGptTester_inital:
 
 
     def Contain_intention(self, PL_Focal_Method, focal_method_name, Test_Import_info, TestFilePath, TestCodeShell, project_name,contextMethod, Junit_version):
-
+        if "gemini-2.5-flash" in model_path:
+            # delay for Gemini API rate limits
+            time.sleep(4)
+    
         # obtain the method intention
         Method_intention = self.unit_instance.intention_unit(PL_Focal_Method, focal_method_name)
 
@@ -185,6 +194,10 @@ class ChatGptTester_inital:
         print("##################")
         print(Composit_prompt)
         print("##################")
+
+        if "gemini-2.5-flash" in model_path:
+            # delay for Gemini API rate limits
+            time.sleep(4)
 
         # obtain the generated test_method and import_statement
         Gen_test_method, import_statement = self.unit_instance.method_pred_unit(Composit_prompt)
@@ -299,6 +312,10 @@ class ChatGptTester_inital:
         print("##################")
         print(Composit_prompt)
         print("##################")
+
+        if "gemini-2.5-flash" in model_path:
+            # delay for Gemini API rate limits
+            time.sleep(4)
 
         # obtain the generated test_method and import_statement
         Gen_test_method, import_statement = self.unit_instance.method_pred_unit(Composit_prompt)
