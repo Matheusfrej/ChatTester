@@ -9,6 +9,7 @@ import os
 import re
 import json
 import time
+from google import genai
 from tqdm import tqdm
 import traceback
 from transformers import GenerationConfig, LlamaForCausalLM, LlamaTokenizer
@@ -27,7 +28,9 @@ chatTesterDir = os.path.dirname(current_dir)
 testedRepo_PATH = os.path.join(chatTesterDir, "Repos")  # 存放 repo的 path
 
 # ALTERAÇÃO 1: Usando o DeepSeek Coder 6.7B (Instruct) que cabe na sua GPU
-model_path = "deepseek-ai/deepseek-coder-6.7b-instruct"
+# model_path = "deepseek-ai/deepseek-coder-6.7b-instruct"
+model_path = "gemini-2.5-flash"
+gemini_api_key = "SET_API_KEY"
 
 class ChatGptTester_inital:
     def __init__(self, Intention_TAG):
@@ -44,6 +47,8 @@ class ChatGptTester_inital:
             sub_save_dir = os.path.basename(Json_file_Path).replace(".json","")
             openai.api_base = "https://openkey.cloud/v1"
             openai.api_key = "SET_API_KEY"
+        elif "gemini" in model_path:
+            sub_save_dir = "Gemini"
         else:
             sub_save_dir = "OtherModel"
 
@@ -380,6 +385,16 @@ class Unit:
                     ],
                     temperature=0)
                 generated_content = response_test.choices[0].message['content']
+            elif "gemini-2.5-flash" in model_path:
+                gemini_client = genai.Client(api_key=gemini_api_key)
+                response_test = gemini_client.models.generate_content(
+                    model=model_path,
+                    contents=ask_test_method_prompt,
+                    config=genai.types.GenerateContentConfig(
+                        system_instruction=["I want you to play the role of a professional who repairs buggy lines of the test method. Unnecessary import statement can be removed."]
+                    )
+                )
+                generated_content = response_test.text
             else:
                 role = "I want you to play the role of a professional who repairs buggy lines of the test method."
                 instruction = role + '\n\n' + ask_test_method_prompt
@@ -397,7 +412,16 @@ class Unit:
                     ],
                     temperature=0)
                 generated_content = response_test.choices[0].message['content']
-
+            elif "gemini-2.5-flash" in model_path:
+                gemini_client = genai.Client(api_key=gemini_api_key)
+                response_test = gemini_client.models.generate_content(
+                    model=model_path,
+                    contents=ask_test_method_prompt,
+                    config=genai.types.GenerateContentConfig(
+                        system_instruction=["I want you to play the role of a professional who writes Java test method."]
+                    )
+                )
+                generated_content = response_test.text
             else:
                 role = "I want you to play the role of a professional who writes Java test method for the Focal method. The following is the Class, Focal method and Import information."
                 instruction = role + '\n\n' + ask_test_method_prompt
@@ -422,6 +446,18 @@ class Unit:
                 temperature=0
             )
             intentions = response_intention.choices[0].message['content']
+        elif "gemini-2.5-flash" in model_path:
+                Intention_NL = f'''Please describe the overall intention of the {focal_method_name} method in as much detail as possible in one sentence.'''
+                ask_intention_prompt = PL_Focal_Method + '\n\n' + Intention_NL
+                gemini_client = genai.Client(api_key=gemini_api_key)
+                response_test = gemini_client.models.generate_content(
+                    model=model_path,
+                    contents=ask_intention_prompt,
+                    config=genai.types.GenerateContentConfig(
+                        system_instruction=["I want you to play the role of a professional who infers method intention."]
+                    )
+                )
+                intentions = response_test.text
         else:
             role = "I want you to play the role of a professional who infers method intention."
             Intention_NL = f'Please tell me the intention of the {focal_method_name} method.'
