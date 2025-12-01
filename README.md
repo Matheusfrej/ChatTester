@@ -10,6 +10,18 @@ ChatTester is a framework designed for generating test methods automatically bas
 To run this experiment successfully, ensure that the following environment requirements are met:
 - Python version >= 3.7
 - JDK version = jdk1.8.0_131
+ - Maven version >= 3.6.3 (installed and available on `PATH` as `mvn`)
+
+## Environment variables and .env
+
+This project reads configuration from environment variables. You can either export variables in your shell or place them in a repository-level `.env` file.
+
+Create a `.env` file at the project root (same directory as `README.md`).
+
+See the existing `.env.example` in the repository root for an example. Copy it to `.env` and fill in your values.
+
+Notes:
+- Keep all secrets from environment variables out of version control.
 
 ## Code Execution
 
