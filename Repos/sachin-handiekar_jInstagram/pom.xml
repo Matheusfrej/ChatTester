@@ -111,7 +111,7 @@
             <dependency>
   <groupId>org.evosuite</groupId>
   <artifactId>evosuite-standalone-runtime</artifactId>
-  <version>1.2.0</version>
+  <version>1.0.6</version>
   <scope>test</scope>
   </dependency>
 
@@ -148,8 +148,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>${maven-compiler-plugin.version}</version>
                 <configuration>
-                    <source>${maven-compiler-plugin.java.source.version}</source>
-                    <target>${maven-compiler-plugin.java.target.version}</target>
+                    <source>8</source>
+                    <target>8</target>
                 </configuration>
             </plugin>
 
