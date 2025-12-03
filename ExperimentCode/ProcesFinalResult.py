@@ -1,20 +1,9 @@
 
 # -*- coding: utf-8 -*-
-import torch
 import shutil
-import subprocess
-import openai
-import pandas as pd
 import os
-import re
 import json
-import time
-import tiktoken
-from tqdm import tqdm
-import traceback
 import glob
-from transformers import GenerationConfig, LlamaForCausalLM, LlamaTokenizer
-from transformers import AutoTokenizer, AutoModelForCausalLM, LlamaForCausalLM
 from Deal import Compile_Test_INFO
 from Deal import FeedbackPrompt
 

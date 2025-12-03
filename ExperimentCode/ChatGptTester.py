@@ -3,35 +3,39 @@ import torch
 import shutil
 import subprocess
 import openai
-import pandas as pd
 import os
 import re
 import json
-import time
-from tqdm import tqdm
+from google import genai
 import traceback
 import glob
-from transformers import GenerationConfig, LlamaForCausalLM, LlamaTokenizer
-# ADICIONADO: BitsAndBytesConfig para gerenciar memória em 8GB
 from transformers import AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig
 
 # Importações locais (mantenha seus arquivos originais Deal.py e ProcesFinalResult.py na mesma pasta)
 from Deal import Compile_Test_INFO
 from Deal import FeedbackPrompt
 from ProcesFinalResult import ProceFinalResult
+from dotenv import load_dotenv
 
-# --- CONFIGURAÇÃO 1: JAVA PATH CORRIGIDO PARA LINUX ---
-java_home = "/usr/lib/jvm/jdk1.8.0_131"
+# Load environment variables from a repository-level .env file
+repo_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+dotenv_path = os.path.join(repo_root, '.env')
+load_dotenv(dotenv_path)
+
+# TODO modify this path or set `JAVA_HOME` in your .env
+java_home = os.getenv('JAVA_HOME', "/usr/lib/jvm/jdk1.8.0_131")
 os.environ["JAVA_HOME"] = java_home
 env = os.environ.copy()
 env['JAVA_TOOL_OPTIONS'] = '-Duser.language=en -Duser.country=US'
+
 current_dir = os.path.dirname(os.path.abspath(__file__))
 chatTesterDir = os.path.dirname(current_dir)
 
 testedRepo_PATH = os.path.join(chatTesterDir, "Repos")
 
-# --- CONFIGURAÇÃO 2: MODELO DEEPSEEK ---
-model_path = "deepseek-ai/deepseek-coder-6.7b-instruct"
+# model_path = "deepseek-ai/deepseek-coder-6.7b-instruct"
+model_path = "gemini-2.5-flash"
+gemini_api_key = os.getenv('GEMINI_API_KEY')
 
 class ChatGptTester:
     def __init__(self, repo_name):
@@ -51,8 +55,9 @@ class ChatGptTester:
         elif "gpt-3.5" in model_path:
             self.sub_save_dir = os.path.basename(Json_file_Path).replace(".json","")
             openai.api_base = "https://openkey.cloud/v1"
-            # TODO SET API_KEY
-            openai.api_key = "openAPI_key"
+            openai.api_key = os.getenv('OPENAI_API_KEY')
+        elif "gemini" in model_path:
+            self.sub_save_dir = "Gemini"
         else:
             self.sub_save_dir = "OtherModel"
             
@@ -87,9 +92,9 @@ class ChatGptTester:
         if not os.path.exists(file_path):
             print('Creat floder....')
             os.makedirs(file_path)
-        else:
-            shutil.rmtree(file_path)
-            os.makedirs(file_path)
+        # else:
+        #     shutil.rmtree(file_path)
+        #     os.makedirs(file_path)
             
     # --- HELPER: FUNÇÃO PARA CORRIGIR CAMINHOS ---
     def fix_path(self, raw_path_str):
@@ -618,6 +623,8 @@ class Unit:
                 offload_folder="offload_iterate", # Pasta diferente para evitar conflito
                 max_memory={0: "7200MB", "cpu": "64GB"}
             )
+        elif "gemini" in model_path:
+            self.gemini_client = genai.Client(api_key=gemini_api_key)
         else:
             # Fallback para outros modelos (CodeLlama, etc) se mudar a variavel model_path
             self.tokenizer = AutoTokenizer.from_pretrained(model_path, use_fast=False)
@@ -649,6 +656,15 @@ class Unit:
                     ],
                     temperature=0)
                 generated_content = response_test.choices[0].message['content']
+            elif "gemini" in model_path:
+                response_test = self.gemini_client.models.generate_content(
+                    model=model_path,
+                    contents=ask_test_method_prompt,
+                    config=genai.types.GenerateContentConfig(
+                        system_instruction=["I want you to play the role of a professional who repairs buggy lines of the test method. Unnecessary import statement can be removed."]
+                    )
+                )
+                generated_content = response_test.text
             else:
                 role = "I want you to play the role of a professional who repairs buggy lines of the test method."
                 instruction = role + '\n\n' + ask_test_method_prompt
@@ -667,6 +683,15 @@ class Unit:
                     temperature=0)
                 generated_content = response_test.choices[0].message['content']
 
+            elif "gemini" in model_path:
+                response_test = self.gemini_client.models.generate_content(
+                    model=model_path,
+                    contents=ask_test_method_prompt,
+                    config=genai.types.GenerateContentConfig(
+                        system_instruction=["I want you to play the role of a professional who writes Java test method."]
+                    )
+                )
+                generated_content = response_test.text
             else:
                 role = "I want you to play the role of a professional who writes Java test method for the Focal method. The following is the Class, Focal method and Import information."
                 instruction = role + '\n\n' + ask_test_method_prompt
@@ -747,6 +772,17 @@ class Unit:
                 temperature=0
             )
             intentions = response_intention.choices[0].message['content']
+        elif "gemini-2.5-flash" in model_path:
+            Intention_NL = f'''Please describe the overall intention of the {focal_method_name} method in as much detail as possible in one sentence.'''
+            ask_intention_prompt = PL_Focal_Method + '\n\n' + Intention_NL
+            response_test = self.gemini_client.models.generate_content(
+                model=model_path,
+                contents=ask_intention_prompt,
+                config=genai.types.GenerateContentConfig(
+                    system_instruction=["I want you to play the role of a professional who infers method intention."]
+                )
+            )
+            intentions = response_test.text
         else:
             role = "I want you to play the role of a professional who infers method intention."
             Intention_NL = f'Please tell me the intention of the {focal_method_name} method.'
@@ -782,11 +818,12 @@ class Unit:
     
 if __name__ == "__main__":
 
-    projects_name = ['tabulapdf_tabula-java.json','Zappos_zappos-json.json','sachin-handiekar_jInstagram.json']
+    # projects_name = ['tabulapdf_tabula-java.json','Zappos_zappos-json.json','sachin-handiekar_jInstagram.json']
+    projects_name = ['sachin-handiekar_jInstagram.json']
     for project_name in projects_name:
         print("project_name: "+project_name)
         Json_file_Path = os.path.join(chatTesterDir, "RepoData", project_name)
         ChatGptTester(project_name.replace(".json",""))
 
         # Final Result postprocessing
-        ProceFinalResult(project_name.replace(".json", ""))
+        # ProceFinalResult(project_name.replace(".json", ""))

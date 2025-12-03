@@ -263,7 +263,7 @@ class ChatGptTester_inital:
                     write_cont, compile_result, test_result = self.Compile_Test_sub_unit(mvn_compile, mvn_test, TestFilePath)
         os.chdir(current_dir)
 
-        if compile_result == 0 and "[ERROR] COMPILATION ERROR :" not in write_cont:
+        if compile_result == 0 and "COMPILATION ERROR :" not in write_cont:
             print("\n" + "="*30)
             print("CRITICAL MAVEN FAILURE OUTPUT:")
             print("="*30)
@@ -572,7 +572,7 @@ if __name__ == "__main__":
     if Intention_TAG:Intention = 'Contain_intention'
     else:Intention = "No_intention"
 
-    projects_name = ['sachin-handiekar_jInstagram.json','tabulapdf_tabula-java.json','Zappos_zappos-json.json']
+    projects_name = ['sachin-handiekar_jInstagram.json']#,'tabulapdf_tabula-java.json','Zappos_zappos-json.json']
 
     for project_name in projects_name:
         Json_file_Path = os.path.join(chatTesterDir, "RepoData", project_name)
