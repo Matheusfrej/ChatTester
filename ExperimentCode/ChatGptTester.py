@@ -165,15 +165,15 @@ class ChatGptTester:
                     project_name = os.path.basename(Json_file_Path).replace(".json","")
 
                     try:
-                        excute_path = os.path.join(self.testedRepo_PATH, project_name)
-                        if not os.path.exists(excute_path):
-                            print(f"Repo path not found: {excute_path}")
-                            continue
+                        # excute_path = os.path.join(self.testedRepo_PATH, project_name)
+                        # if not os.path.exists(excute_path):
+                        #     print(f"Repo path not found: {excute_path}")
+                        #     continue
 
-                        os.chdir(excute_path)
-                        os.system('git add .')
-                        os.system('git commit -m "Initial commit for safety" > /dev/null 2>&1') # Silenciar output
-                        os.chdir(current_dir)
+                        # os.chdir(excute_path)
+                        # os.system('git add .')
+                        # os.system('git commit -m "Initial commit for safety" > /dev/null 2>&1') # Silenciar output
+                        # os.chdir(current_dir)
 
                         # Passa o nome do metodo para buscar info
                         self.DriveTest_Info(FocalMethodInfo)
@@ -215,15 +215,15 @@ class ChatGptTester:
 
                     except Exception as e:
                         traceback.print_exc()
-                    finally:
-                        # reset repo status
-                        excute_path = os.path.join(self.testedRepo_PATH, project_name)
-                        if os.path.exists(excute_path):
-                            os.chdir(excute_path)
-                            os.system('git restore .')
-                            os.system('git clean -fd')
-                            # print("Reset Success!")
-                            os.chdir(current_dir)
+                    # finally:
+                    #     # reset repo status
+                    #     excute_path = os.path.join(self.testedRepo_PATH, project_name)
+                    #     if os.path.exists(excute_path):
+                    #         os.chdir(excute_path)
+                    #         os.system('git restore .')
+                    #         os.system('git clean -fd')
+                    #         # print("Reset Success!")
+                    #         os.chdir(current_dir)
                 except Exception as line_e:
                     print(f"Error processing line in pred_1: {line_e}")
                     traceback.print_exc()
