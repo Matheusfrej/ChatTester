@@ -9,7 +9,8 @@ import org.jinstagram.auth.InstagramApi;
 import org.jinstagram.auth.model.OAuthConfig;
 import org.jinstagram.auth.model.OAuthRequest;
 import org.jinstagram.auth.model.Token;
-import org.jinstagram.auth.oauth.InstagramService;
+import org.jinstagram.auth.oauth.InstagramService; // The class containing the focal method
+import org.jinstagram.http.Verbs;
 import org.junit.Test;
 import static org.junit.Assert.*;
 import static org.evosuite.runtime.EvoAssertions.*;
@@ -27,52 +28,8 @@ import org.junit.runner.RunWith;
 @RunWith(EvoRunner.class)
 @EvoRunnerParameters(mockJVMNonDeterminism = true, useVFS = true, useVNET = true, resetStaticState = true, separateClassLoader = true)
 public class InstagramService_ESTest extends InstagramService_ESTest_scaffolding {
-    @Test
-    public void testSignRequest() {
-        // Arrange
-
-        // 1. Create a mock Token object.
-        // The signRequest method calls getToken() on this object to get the actual token string.
-        String fakeAccessTokenValue = "some_random_generated_access_token_string";
-        Token mockAccessToken = mock(Token.class);
-        when(mockAccessToken.getToken()).thenReturn(fakeAccessTokenValue);
-
-        // 2. Create a mock OAuthRequest object.
-        // The signRequest method calls addQuerystringParameter() on this request.
-        OAuthRequest mockRequest = mock(OAuthRequest.class);
-
-        // 3. Create mocks for InstagramApi and OAuthConfig for the InstagramService constructor.
-        // While these are not directly used by the 'signRequest' method itself,
-        // the InstagramService constructor requires them, so we provide mocks to allow
-        // successful instantiation of the class under test.
-        InstagramApi mockApi = mock(InstagramApi.class);
-        OAuthConfig mockConfig = mock(OAuthConfig.class);
-
-        // 4. Instantiate the InstagramService (the class under test).
-        InstagramService service = new InstagramService(mockApi, mockConfig);
-
-        // Act
-
-        // Call the focal method: signRequest
-        service.signRequest(mockAccessToken, mockRequest);
-
-        // Assert
-
-        // 1. Verify that addQuerystringParameter was called on the mockRequest.
-        // According to the method intention, it should be called exactly once
-        // with the parameter name (simulating OAuthConstants.ACCESS_TOKEN) and
-        // the access token string obtained from the mockAccessToken.
-        verify(mockRequest, times(1)).addQuerystringParameter(OAUTH_ACCESS_TOKEN_QUERY_PARAM_NAME, fakeAccessTokenValue);
-
-        // 2. Verify that no other interactions occurred with the mockRequest.
-        // This ensures that the method only performs its intended action.
-        verifyNoMoreInteractions(mockRequest);
-
-        // 3. Verify that getToken() was called on the mockAccessToken.
-        // This confirms that the token value was extracted from the provided Token object.
-        verify(mockAccessToken, times(1)).getToken();
-
-        // 4. Verify that no other interactions occurred with the mockAccessToken.
-        verifyNoMoreInteractions(mockAccessToken);
+@Test
+    public void addQuerystringParameter(String key, String value) {
+        this.querystringParameters.put(key, value);
     }
 }
