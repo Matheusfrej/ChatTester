@@ -17,8 +17,10 @@ model_path = "gpt-3.5-turbo"
 
 
 class ProceFinalResult:
-    def __init__(self, repo_name):
+    def __init__(self, repo_name, Json_file_Path):
         self.repo_name = repo_name
+        self.Json_file_Path = Json_file_Path
+
         # Path in contain_intention. The result in the folder is from the InitialPhrase_Experiment.py
         if "CodeLlama-34b-Instruct" in model_path:
             self.sub_save_dir = 'CodeLlama'  # CodeLlama; WizardCoder
@@ -26,6 +28,8 @@ class ProceFinalResult:
             self.sub_save_dir = "CodeFuse"
         elif "gpt-3.5" in model_path:
             self.sub_save_dir = os.path.basename(Json_file_Path).replace(".json", "")
+        elif "gemini" in model_path:
+            self.sub_save_dir = "Gemini"
 
         first_dir = "Iterate"
         self.C_GeneratedTest_Path = os.path.join(current_dir, first_dir, self.sub_save_dir, 'GeneratedTest')
@@ -79,7 +83,7 @@ class ProceFinalResult:
                     continue
 
                 self.DriveTest_Info(FocalMethodInfo)
-                project_name = os.path.basename(Json_file_Path).replace(".json", "")
+                project_name = os.path.basename(self.Json_file_Path).replace(".json", "")
                 GenJava = os.path.basename(generated_path)
 
                 compile_logInfo_path = [file for file in glob.glob(self.C_LogINFO_Path + '/*') if os.path.basename(file) == GenJava][0]
@@ -110,7 +114,7 @@ class ProceFinalResult:
             json.dump(outputList, f, indent=2)
 
     def DriveTest_Info(self, FocalMethodInfo):
-        with open(Json_file_Path, 'r', encoding='utf-8') as f:
+        with open(self.Json_file_Path, 'r', encoding='utf-8') as f:
             data_pair = json.load(f)
         ori_test_Path = [data["Test_method"]["TestInfo"] for data in data_pair if len(data['Under_test_method']) and data["Under_test_method"]["Method_statement"] == FocalMethodInfo.split("#")[-1].replace(".java","") and FocalMethodInfo.split("#")[0] in data['Test_method']['TestInfo']][0]
 

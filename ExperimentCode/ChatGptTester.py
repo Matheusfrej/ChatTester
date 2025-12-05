@@ -11,7 +11,6 @@ import traceback
 import glob
 from transformers import AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig
 
-# Importações locais (mantenha seus arquivos originais Deal.py e ProcesFinalResult.py na mesma pasta)
 from Deal import Compile_Test_INFO
 from Deal import FeedbackPrompt
 from ProcesFinalResult import ProceFinalResult
@@ -45,7 +44,6 @@ class ChatGptTester:
         self.testedRepo_PATH = os.path.join(chatTesterDir, "Repos") # repo path
         self.repo_name  = repo_name
         
-        # --- LÓGICA DE DIRETÓRIOS ATUALIZADA ---
         if "CodeLlama" in model_path:
             self.sub_save_dir = 'CodeLlama'
         elif "CodeFuse" in model_path:
@@ -92,9 +90,9 @@ class ChatGptTester:
         if not os.path.exists(file_path):
             print('Creat floder....')
             os.makedirs(file_path)
-        # else:
-        #     shutil.rmtree(file_path)
-        #     os.makedirs(file_path)
+        else:
+            shutil.rmtree(file_path)
+            os.makedirs(file_path)
             
     # --- HELPER: FUNÇÃO PARA CORRIGIR CAMINHOS ---
     def fix_path(self, raw_path_str):
@@ -162,7 +160,7 @@ class ChatGptTester:
                         continue
 
 
-                    project_name = os.path.basename(Json_file_Path).replace(".json","")
+                    # project_name = os.path.basename(Json_file_Path).replace(".json","")
 
                     try:
                         # excute_path = os.path.join(self.testedRepo_PATH, project_name)
@@ -446,11 +444,11 @@ class ChatGptTester:
         excute_path = os.path.join(testedRepo_PATH, project_name)
         os.chdir(excute_path)
 
-        mvn_compile = [ 'mvn', 'test-compile', '-Dcheckstyle.skip=true']
-        mvn_test = ['mvn', 'test', '-Dcheckstyle.skip=true']
+        mvn_compile = [ 'mvn', '-B', 'test-compile', '-Dstyle.color=never', '-Dcheckstyle.skip=true']
+        mvn_test = ['mvn', '-B', 'test', '-Dstyle.color=never', '-Dcheckstyle.skip=true']
         if JUNIT_VERSION == 5:
-            mvn_compile = ['mvn', 'test-compile', '-Dtest.engine=junit-jupiter', '-Dcheckstyle.skip=true']
-            mvn_test = ['mvn', 'test', '-Dtest.engine=junit-jupiter', '-Dcheckstyle.skip=true']
+            mvn_compile = ['mvn', '-B', 'test-compile', '-Dtest.engine=junit-jupiter', '-Dstyle.color=never', '-Dcheckstyle.skip=true']
+            mvn_test = ['mvn', '-B', 'test', '-Dtest.engine=junit-jupiter', '-Dstyle.color=never', '-Dcheckstyle.skip=true']
         write_cont, compile_result, test_result = self.Compile_Test_sub_unit(mvn_compile, mvn_test, TestFilePath)
         if compile_result != 1 and "[ERROR] COMPILATION ERROR :" not in write_cont and "Could not resolve " in write_cont:
                 mvn_install = [ 'mvn', 'clean', 'install']
@@ -476,7 +474,6 @@ class ChatGptTester:
             # 处理编译的错误信息：Out_dict = {"ERROR_MESSAGE": str, "Class_Name": str, "ERROR_LINE": str}
             compile_instance = Compile_Test_INFO.CompileInfo(compile_logInfo_path, self.sub_save_dir, gen_test_PATH)
             proc_compile_list_INFO = compile_instance.Call_errorDeal()
-
             if re_generate_Tag: Method_intention = self.unit_instance.intention_unit(self.PL_Focal_Method, self.focal_method_name)
             else:Method_intention = ""
             class_instance = FeedbackPrompt.CompilePrompt(proc_compile_list_INFO[0], gen_test_PATH,
@@ -826,4 +823,4 @@ if __name__ == "__main__":
         ChatGptTester(project_name.replace(".json",""))
 
         # Final Result postprocessing
-        # ProceFinalResult(project_name.replace(".json", ""))
+        ProceFinalResult(project_name.replace(".json", ""), Json_file_Path)

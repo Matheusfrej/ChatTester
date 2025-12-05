@@ -9,8 +9,7 @@ import org.jinstagram.auth.InstagramApi;
 import org.jinstagram.auth.model.OAuthConfig;
 import org.jinstagram.auth.model.OAuthRequest;
 import org.jinstagram.auth.model.Token;
-import org.jinstagram.auth.oauth.InstagramService; // The class containing the focal method
-import org.jinstagram.http.Verbs;
+import org.jinstagram.auth.oauth.InstagramService;
 import org.junit.Test;
 import static org.junit.Assert.*;
 import static org.evosuite.runtime.EvoAssertions.*;
@@ -28,8 +27,37 @@ import org.junit.runner.RunWith;
 @RunWith(EvoRunner.class)
 @EvoRunnerParameters(mockJVMNonDeterminism = true, useVFS = true, useVNET = true, resetStaticState = true, separateClassLoader = true)
 public class InstagramService_ESTest extends InstagramService_ESTest_scaffolding {
-@Test
-    public void addQuerystringParameter(String key, String value) {
-        this.querystringParameters.put(key, value);
+    @Test
+    public void testSignRequest_shouldAddAccessTokenAsQueryStringParameter() {
+        // GIVEN:
+        // 1. Mock dependencies required for InstagramService constructor,
+        //    even though they are not directly used by the signRequest method itself.
+        InstagramApi mockApi = mock(InstagramApi.class);
+        OAuthConfig mockConfig = mock(OAuthConfig.class);
+
+        // 2. Instantiate the InstagramService (the class under test).
+        InstagramService service = new InstagramService(mockApi, mockConfig);
+
+        // 3. Prepare a mock Token with a specific test value.
+        Token mockAccessToken = mock(Token.class);
+        String expectedTokenValue = "sample_access_token_12345";
+        // Configure the mock Token to return our test value when getToken() is called.
+        when(mockAccessToken.getToken()).thenReturn(expectedTokenValue);
+
+        // 4. Prepare a mock OAuthRequest. This is where we will verify interactions.
+        OAuthRequest mockRequest = mock(OAuthRequest.class);
+
+        // WHEN:
+        // Call the focal method, signRequest, with the prepared mocks.
+        service.signRequest(mockAccessToken, mockRequest);
+
+        // THEN:
+        // Verify that the addQuerystringParameter method was called on the mockRequest
+        // exactly once, with the correct parameter name (from our assumed constant)
+        // and the expected access token value.
+        verify(mockRequest, times(1)).addQuerystringParameter(OAUTH_ACCESS_TOKEN_PARAMETER_NAME, expectedTokenValue);
+
+        // Additionally, verify that no other methods were called on the mockRequest.
+        verifyNoMoreInteractions(mockRequest);
     }
 }
