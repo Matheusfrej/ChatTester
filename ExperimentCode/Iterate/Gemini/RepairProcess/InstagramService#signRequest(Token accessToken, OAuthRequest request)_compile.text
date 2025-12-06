@@ -1,0 +1,63 @@
+original test path: /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/auth/oauth/InstagramService.java
+[GENERATED PATH] InstagramService#signRequest(Token accessToken, OAuthRequest request).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/auth/oauth/InstagramService.java:[29,8] class InstagramService_ESTest is public, should be declared in a file named InstagramService_ESTest.java
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/auth/oauth/InstagramService.java:[12,33] cannot access org.jinstagram.auth.oauth.InstagramService
+  bad source file: /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/auth/oauth/InstagramService.java
+    file does not contain class org.jinstagram.auth.oauth.InstagramService
+    Please remove or make sure it appears in the correct subdirectory of the sourcepath.
+[INFO] 2 errors 
+####################
+
+original test path: /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/auth/oauth/InstagramService_ESTest.java
+[GENERATED PATH] InstagramService#signRequest(Token accessToken, OAuthRequest request).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/auth/oauth/InstagramService.java:[29,8] class InstagramService_ESTest is public, should be declared in a file named InstagramService_ESTest.java
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/auth/oauth/InstagramService_ESTest.java:[16,33] cannot access org.jinstagram.auth.oauth.InstagramService
+  bad source file: /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/auth/oauth/InstagramService.java
+    file does not contain class org.jinstagram.auth.oauth.InstagramService
+    Please remove or make sure it appears in the correct subdirectory of the sourcepath.
+[INFO] 2 errors 
+####################
+
+original test path: /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/auth/oauth/InstagramService_ESTest.java
+[GENERATED PATH] InstagramService#signRequest(Token accessToken, OAuthRequest request).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/auth/oauth/InstagramService.java:[29,8] class InstagramService_ESTest is public, should be declared in a file named InstagramService_ESTest.java
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/auth/oauth/InstagramService_ESTest.java:[17,33] cannot access org.jinstagram.auth.oauth.InstagramService
+  bad source file: /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/auth/oauth/InstagramService.java
+    file does not contain class org.jinstagram.auth.oauth.InstagramService
+    Please remove or make sure it appears in the correct subdirectory of the sourcepath.
+[INFO] 2 errors 
+####################
+
+original test path: /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/auth/oauth/InstagramService_ESTest.java
+[GENERATED PATH] InstagramService#signRequest(Token accessToken, OAuthRequest request).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/auth/oauth/InstagramService.java:[29,8] class InstagramService_ESTest is public, should be declared in a file named InstagramService_ESTest.java
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/auth/oauth/InstagramService_ESTest.java:[18,33] cannot access org.jinstagram.auth.oauth.InstagramService
+  bad source file: /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/auth/oauth/InstagramService.java
+    file does not contain class org.jinstagram.auth.oauth.InstagramService
+    Please remove or make sure it appears in the correct subdirectory of the sourcepath.
+[INFO] 2 errors 
+####################
+
+original test path: /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/auth/oauth/InstagramService_ESTest.java
+[GENERATED PATH] InstagramService#signRequest(Token accessToken, OAuthRequest request).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/auth/oauth/InstagramService.java:[29,8] class InstagramService_ESTest is public, should be declared in a file named InstagramService_ESTest.java
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/auth/oauth/InstagramService_ESTest.java:[10,40] package com.github.scribejava.core.model does not exist
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/auth/oauth/InstagramService_ESTest.java:[11,40] package com.github.scribejava.core.model does not exist
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/auth/oauth/InstagramService_ESTest.java:[12,40] package com.github.scribejava.core.model does not exist
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/auth/oauth/InstagramService_ESTest.java:[22,33] cannot access org.jinstagram.auth.oauth.InstagramService
+  bad source file: /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/auth/oauth/InstagramService.java
+    file does not contain class org.jinstagram.auth.oauth.InstagramService
+    Please remove or make sure it appears in the correct subdirectory of the sourcepath.
+[INFO] 5 errors 
+####################
+

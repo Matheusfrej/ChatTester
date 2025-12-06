@@ -3,35 +3,38 @@ import torch
 import shutil
 import subprocess
 import openai
-import pandas as pd
 import os
 import re
 import json
-import time
-from tqdm import tqdm
+from google import genai
 import traceback
 import glob
-from transformers import GenerationConfig, LlamaForCausalLM, LlamaTokenizer
-# ADICIONADO: BitsAndBytesConfig para gerenciar memória em 8GB
 from transformers import AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig
 
-# Importações locais (mantenha seus arquivos originais Deal.py e ProcesFinalResult.py na mesma pasta)
 from Deal import Compile_Test_INFO
 from Deal import FeedbackPrompt
 from ProcesFinalResult import ProceFinalResult
+from dotenv import load_dotenv
 
-# --- CONFIGURAÇÃO 1: JAVA PATH CORRIGIDO PARA LINUX ---
-java_home = "/usr/lib/jvm/jdk1.8.0_131"
+# Load environment variables from a repository-level .env file
+repo_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+dotenv_path = os.path.join(repo_root, '.env')
+load_dotenv(dotenv_path)
+
+# TODO modify this path or set `JAVA_HOME` in your .env
+java_home = os.getenv('JAVA_HOME', "/usr/lib/jvm/jdk1.8.0_131")
 os.environ["JAVA_HOME"] = java_home
 env = os.environ.copy()
 env['JAVA_TOOL_OPTIONS'] = '-Duser.language=en -Duser.country=US'
+
 current_dir = os.path.dirname(os.path.abspath(__file__))
 chatTesterDir = os.path.dirname(current_dir)
 
 testedRepo_PATH = os.path.join(chatTesterDir, "Repos")
 
-# --- CONFIGURAÇÃO 2: MODELO DEEPSEEK ---
-model_path = "deepseek-ai/deepseek-coder-6.7b-instruct"
+# model_path = "deepseek-ai/deepseek-coder-6.7b-instruct"
+model_path = "gemini-2.5-flash"
+gemini_api_key = os.getenv('GEMINI_API_KEY')
 
 class ChatGptTester:
     def __init__(self, repo_name):
@@ -41,7 +44,6 @@ class ChatGptTester:
         self.testedRepo_PATH = os.path.join(chatTesterDir, "Repos") # repo path
         self.repo_name  = repo_name
         
-        # --- LÓGICA DE DIRETÓRIOS ATUALIZADA ---
         if "CodeLlama" in model_path:
             self.sub_save_dir = 'CodeLlama'
         elif "CodeFuse" in model_path:
@@ -51,8 +53,9 @@ class ChatGptTester:
         elif "gpt-3.5" in model_path:
             self.sub_save_dir = os.path.basename(Json_file_Path).replace(".json","")
             openai.api_base = "https://openkey.cloud/v1"
-            # TODO SET API_KEY
-            openai.api_key = "openAPI_key"
+            openai.api_key = os.getenv('OPENAI_API_KEY')
+        elif "gemini" in model_path:
+            self.sub_save_dir = "Gemini"
         else:
             self.sub_save_dir = "OtherModel"
             
@@ -157,18 +160,18 @@ class ChatGptTester:
                         continue
 
 
-                    project_name = os.path.basename(Json_file_Path).replace(".json","")
+                    # project_name = os.path.basename(Json_file_Path).replace(".json","")
 
                     try:
-                        excute_path = os.path.join(self.testedRepo_PATH, project_name)
-                        if not os.path.exists(excute_path):
-                            print(f"Repo path not found: {excute_path}")
-                            continue
+                        # excute_path = os.path.join(self.testedRepo_PATH, project_name)
+                        # if not os.path.exists(excute_path):
+                        #     print(f"Repo path not found: {excute_path}")
+                        #     continue
 
-                        os.chdir(excute_path)
-                        os.system('git add .')
-                        os.system('git commit -m "Initial commit for safety" > /dev/null 2>&1') # Silenciar output
-                        os.chdir(current_dir)
+                        # os.chdir(excute_path)
+                        # os.system('git add .')
+                        # os.system('git commit -m "Initial commit for safety" > /dev/null 2>&1') # Silenciar output
+                        # os.chdir(current_dir)
 
                         # Passa o nome do metodo para buscar info
                         self.DriveTest_Info(FocalMethodInfo)
@@ -210,15 +213,15 @@ class ChatGptTester:
 
                     except Exception as e:
                         traceback.print_exc()
-                    finally:
-                        # reset repo status
-                        excute_path = os.path.join(self.testedRepo_PATH, project_name)
-                        if os.path.exists(excute_path):
-                            os.chdir(excute_path)
-                            os.system('git restore .')
-                            os.system('git clean -fd')
-                            # print("Reset Success!")
-                            os.chdir(current_dir)
+                    # finally:
+                    #     # reset repo status
+                    #     excute_path = os.path.join(self.testedRepo_PATH, project_name)
+                    #     if os.path.exists(excute_path):
+                    #         os.chdir(excute_path)
+                    #         os.system('git restore .')
+                    #         os.system('git clean -fd')
+                    #         # print("Reset Success!")
+                    #         os.chdir(current_dir)
                 except Exception as line_e:
                     print(f"Error processing line in pred_1: {line_e}")
                     traceback.print_exc()
@@ -441,11 +444,11 @@ class ChatGptTester:
         excute_path = os.path.join(testedRepo_PATH, project_name)
         os.chdir(excute_path)
 
-        mvn_compile = [ 'mvn', 'test-compile', '-Dcheckstyle.skip=true']
-        mvn_test = ['mvn', 'test', '-Dcheckstyle.skip=true']
+        mvn_compile = [ 'mvn', '-B', 'test-compile', '-Dstyle.color=never', '-Dcheckstyle.skip=true']
+        mvn_test = ['mvn', '-B', 'test', '-Dstyle.color=never', '-Dcheckstyle.skip=true']
         if JUNIT_VERSION == 5:
-            mvn_compile = ['mvn', 'test-compile', '-Dtest.engine=junit-jupiter', '-Dcheckstyle.skip=true']
-            mvn_test = ['mvn', 'test', '-Dtest.engine=junit-jupiter', '-Dcheckstyle.skip=true']
+            mvn_compile = ['mvn', '-B', 'test-compile', '-Dtest.engine=junit-jupiter', '-Dstyle.color=never', '-Dcheckstyle.skip=true']
+            mvn_test = ['mvn', '-B', 'test', '-Dtest.engine=junit-jupiter', '-Dstyle.color=never', '-Dcheckstyle.skip=true']
         write_cont, compile_result, test_result = self.Compile_Test_sub_unit(mvn_compile, mvn_test, TestFilePath)
         if compile_result != 1 and "[ERROR] COMPILATION ERROR :" not in write_cont and "Could not resolve " in write_cont:
                 mvn_install = [ 'mvn', 'clean', 'install']
@@ -471,7 +474,6 @@ class ChatGptTester:
             # 处理编译的错误信息：Out_dict = {"ERROR_MESSAGE": str, "Class_Name": str, "ERROR_LINE": str}
             compile_instance = Compile_Test_INFO.CompileInfo(compile_logInfo_path, self.sub_save_dir, gen_test_PATH)
             proc_compile_list_INFO = compile_instance.Call_errorDeal()
-
             if re_generate_Tag: Method_intention = self.unit_instance.intention_unit(self.PL_Focal_Method, self.focal_method_name)
             else:Method_intention = ""
             class_instance = FeedbackPrompt.CompilePrompt(proc_compile_list_INFO[0], gen_test_PATH,
@@ -618,6 +620,8 @@ class Unit:
                 offload_folder="offload_iterate", # Pasta diferente para evitar conflito
                 max_memory={0: "7200MB", "cpu": "64GB"}
             )
+        elif "gemini" in model_path:
+            self.gemini_client = genai.Client(api_key=gemini_api_key)
         else:
             # Fallback para outros modelos (CodeLlama, etc) se mudar a variavel model_path
             self.tokenizer = AutoTokenizer.from_pretrained(model_path, use_fast=False)
@@ -649,6 +653,15 @@ class Unit:
                     ],
                     temperature=0)
                 generated_content = response_test.choices[0].message['content']
+            elif "gemini" in model_path:
+                response_test = self.gemini_client.models.generate_content(
+                    model=model_path,
+                    contents=ask_test_method_prompt,
+                    config=genai.types.GenerateContentConfig(
+                        system_instruction=["I want you to play the role of a professional who repairs buggy lines of the test method. Unnecessary import statement can be removed."]
+                    )
+                )
+                generated_content = response_test.text
             else:
                 role = "I want you to play the role of a professional who repairs buggy lines of the test method."
                 instruction = role + '\n\n' + ask_test_method_prompt
@@ -667,6 +680,15 @@ class Unit:
                     temperature=0)
                 generated_content = response_test.choices[0].message['content']
 
+            elif "gemini" in model_path:
+                response_test = self.gemini_client.models.generate_content(
+                    model=model_path,
+                    contents=ask_test_method_prompt,
+                    config=genai.types.GenerateContentConfig(
+                        system_instruction=["I want you to play the role of a professional who writes Java test method."]
+                    )
+                )
+                generated_content = response_test.text
             else:
                 role = "I want you to play the role of a professional who writes Java test method for the Focal method. The following is the Class, Focal method and Import information."
                 instruction = role + '\n\n' + ask_test_method_prompt
@@ -747,6 +769,17 @@ class Unit:
                 temperature=0
             )
             intentions = response_intention.choices[0].message['content']
+        elif "gemini-2.5-flash" in model_path:
+            Intention_NL = f'''Please describe the overall intention of the {focal_method_name} method in as much detail as possible in one sentence.'''
+            ask_intention_prompt = PL_Focal_Method + '\n\n' + Intention_NL
+            response_test = self.gemini_client.models.generate_content(
+                model=model_path,
+                contents=ask_intention_prompt,
+                config=genai.types.GenerateContentConfig(
+                    system_instruction=["I want you to play the role of a professional who infers method intention."]
+                )
+            )
+            intentions = response_test.text
         else:
             role = "I want you to play the role of a professional who infers method intention."
             Intention_NL = f'Please tell me the intention of the {focal_method_name} method.'
@@ -782,11 +815,12 @@ class Unit:
     
 if __name__ == "__main__":
 
-    projects_name = ['tabulapdf_tabula-java.json','Zappos_zappos-json.json','sachin-handiekar_jInstagram.json']
+    # projects_name = ['tabulapdf_tabula-java.json','Zappos_zappos-json.json','sachin-handiekar_jInstagram.json']
+    projects_name = ['sachin-handiekar_jInstagram.json']
     for project_name in projects_name:
         print("project_name: "+project_name)
         Json_file_Path = os.path.join(chatTesterDir, "RepoData", project_name)
         ChatGptTester(project_name.replace(".json",""))
 
         # Final Result postprocessing
-        ProceFinalResult(project_name.replace(".json", ""))
+        ProceFinalResult(project_name.replace(".json", ""), Json_file_Path)

@@ -84,6 +84,9 @@ class CompileInfo:
 
     def CompileInfo_Deal(self, errorInfoBlock):
         ERROR_list = []
+        print(f"[DEBUG CompileInfo_Deal] errorInfoBlock has {len(errorInfoBlock)} lines")
+        for idx, line in enumerate(errorInfoBlock):
+            print(f"  Line {idx}: {line[:100]}")
 
         # "Error_INFO":报错的信息行, "Error_Line":从报错信息行中抽取出来的行号, "ERROR_Type":从报错信息行中抽取出来的报错信息,"Location":报错处于哪个位置,"TEST_PATH":测试用例的原本路径, Gene_PATH:生成测试用例的路径
         errorInfo_dict = {}
@@ -91,31 +94,45 @@ class CompileInfo:
         TEST_PATH = ""
         Gene_PATH = ""
         singleErrorInfo = []
-        PATH = "Prompt2Testing"
+        PATH = "ChatTester"
         added_line = []
         for line_i in range(len(errorInfoBlock)):
             if line_i in added_line: continue
             if PATH in errorInfoBlock[line_i] and "[GENERATED PATH]" not in errorInfoBlock[line_i] and 'original test path:' not in errorInfoBlock[line_i]:   # 包含路径和报错信息的那行
-                # 依次向下遍历拿到信息
-                while line_i < len(errorInfoBlock)-1:
-                    singleErrorInfo.append(errorInfoBlock[line_i].replace("D:",""))
+                print(f"[DEBUG] Found PATH line at {line_i}: {errorInfoBlock[line_i][:100]}")
+                # 依次向下遍历拿到信息，但只收集直到下一个 [ERROR] 或 [INFO] 或路径行
+                singleErrorInfo = []
+                while line_i < len(errorInfoBlock):
+                    current_line = errorInfoBlock[line_i].replace("D:","")
+                    singleErrorInfo.append(current_line)
                     added_line.append(line_i)
                     line_i = line_i + 1
-                    if line_i>=len(errorInfoBlock)-1 or PATH in errorInfoBlock[line_i]:
-                        errorInfo_dict = self.changeSingleErrorInfoToDict(singleErrorInfo)
-                        if os.path.basename(TEST_PATH) in errorInfo_dict["Error_INFO"]:
-                            errorInfo_dict["Gene_PATH"] = Gene_PATH
-                            errorInfo_dict["TEST_PATH"] = TEST_PATH
-                            ERROR_list.append(errorInfo_dict)
-                            singleErrorInfo = [] # 置空，为下一次遍历做准备
+                    # Stop if next line is [INFO], [ERROR] with path, or end of block
+                    if line_i >= len(errorInfoBlock):
                         break
+                    next_line = errorInfoBlock[line_i]
+                    if next_line.startswith('[INFO]') or (PATH in next_line and next_line.startswith('[ERROR]')):
+                        break
+                
+                # Only create error entry if we have content with [line,column] pattern
+                if singleErrorInfo:
+                    errorInfo_dict = self.changeSingleErrorInfoToDict(singleErrorInfo)
+                    # Check if this is a valid error (has Error_INFO which contains filename)
+                    if "Error_INFO" in errorInfo_dict and os.path.basename(TEST_PATH) in errorInfo_dict["Error_INFO"]:
+                        errorInfo_dict["Gene_PATH"] = Gene_PATH
+                        errorInfo_dict["TEST_PATH"] = TEST_PATH
+                        ERROR_list.append(errorInfo_dict)
+                        print(f"[DEBUG] Added error to list: Error_Type={errorInfo_dict.get('Error_Type', 'MISSING')}")
             elif errorInfoBlock[line_i].startswith('[GENERATED PATH]'):
                 Gene_PATH = errorInfoBlock[line_i].split("PATH]")[1].strip()
+                print(f"[DEBUG] Gene_PATH set to: {Gene_PATH}")
 
             elif errorInfoBlock[line_i].startswith('original test path:'):
                 TEST_PATH = errorInfoBlock[line_i].split("path:")[1].strip()
+                print(f"[DEBUG] TEST_PATH set to: {TEST_PATH}")
 
             else:continue
+        print(f"[DEBUG CompileInfo_Deal] Returning ERROR_list with {len(ERROR_list)} items")
         return ERROR_list
 
 
@@ -242,7 +259,7 @@ class CompileInfo:
     def changeSingleErrorInfoToDict(self, singleErrorInfo):
         # "Error_INFO":str, "Error_Line":str, "Error_Type":str, "Location":str, "Error_symbol":str
         singleErrorInfoDict = {}
-        PATH = "Prompt2Testing"
+        PATH = "ChatTester"
         for errorInfoLine in singleErrorInfo:
             errorInfoLine = errorInfoLine.replace("D:",'')
             if PATH in errorInfoLine:
@@ -295,6 +312,9 @@ class CompileInfo:
                 if errorTypeInfo.split(" ")[0] == "error:":
                     errorTypeInfo = errorTypeInfo.replace("error:", "", 1).strip()
                 singleErrorInfoDict["Error_Type"] = errorTypeInfo
+                print(f"[DEBUG] Error_Type found: {errorTypeInfo}")
+            else:
+                print(f"[DEBUG] No [line,column] pattern found in: {errorInfoLine}")
         return singleErrorInfoDict
 
 class TestINFO:

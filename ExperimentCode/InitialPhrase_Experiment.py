@@ -246,24 +246,24 @@ class ChatGptTester_inital:
         ]
 
         if JUNIT_VERSION == 5:
-            mvn_compile = ['mvn', 'test-compile', '-Dtest.engine=junit-jupiter', '-Dcheckstyle.skip=true'] + ssl_flags
-            mvn_test = ['mvn', 'test', '-Dtest.engine=junit-jupiter', '-Dcheckstyle.skip=true'] + ssl_flags
+            mvn_compile = ['mvn', '-B', 'test-compile', '-Dtest.engine=junit-jupiter', '-Dstyle.color=never', '-Dcheckstyle.skip=true'] + ssl_flags
+            mvn_test = ['mvn', '-B', 'test', '-Dtest.engine=junit-jupiter', '-Dstyle.color=never', '-Dcheckstyle.skip=true'] + ssl_flags
         else:
-            mvn_compile = ['mvn', 'test-compile', '-Dcheckstyle.skip=true'] + ssl_flags
-            mvn_test = ['mvn', 'test', '-Dcheckstyle.skip=true'] + ssl_flags
+            mvn_compile = ['mvn', '-B', 'test-compile', '-Dstyle.color=never', '-Dcheckstyle.skip=true'] + ssl_flags
+            mvn_test = ['mvn', '-B', 'test', '-Dstyle.color=never', '-Dcheckstyle.skip=true'] + ssl_flags
 
         write_cont, compile_result, test_result = self.Compile_Test_sub_unit(mvn_compile, mvn_test, TestFilePath)
 
         # 未能正确的执行mvn 指令。此时首先需要执行 mvn clean
         if compile_result != 1 and "[ERROR] COMPILATION ERROR :" not in write_cont and "Could not resolve dependenci" in write_cont:
-                mvn_install = [ 'mvn', 'clean', 'install']
+                mvn_install = [ 'mvn', '-B', 'clean', 'install']
                 mvn_result = subprocess.run(mvn_install, stdout=subprocess.PIPE, stderr=subprocess.PIPE, env=env,
                                              universal_newlines=True)
                 if "BUILD SUCCESS" in mvn_result.stdout or "BUILD SUCCESS" in mvn_result.stderr:
                     write_cont, compile_result, test_result = self.Compile_Test_sub_unit(mvn_compile, mvn_test, TestFilePath)
         os.chdir(current_dir)
 
-        if compile_result == 0 and "[ERROR] COMPILATION ERROR :" not in write_cont:
+        if compile_result == 0 and "COMPILATION ERROR :" not in write_cont:
             print("\n" + "="*30)
             print("CRITICAL MAVEN FAILURE OUTPUT:")
             print("="*30)
@@ -572,7 +572,7 @@ if __name__ == "__main__":
     if Intention_TAG:Intention = 'Contain_intention'
     else:Intention = "No_intention"
 
-    projects_name = ['sachin-handiekar_jInstagram.json','tabulapdf_tabula-java.json','Zappos_zappos-json.json']
+    projects_name = ['sachin-handiekar_jInstagram.json']#,'tabulapdf_tabula-java.json','Zappos_zappos-json.json']
 
     for project_name in projects_name:
         Json_file_Path = os.path.join(chatTesterDir, "RepoData", project_name)
