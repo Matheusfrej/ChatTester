@@ -30,9 +30,17 @@ chatTesterDir = os.path.dirname(current_dir)
 
 testedRepo_PATH = os.path.join(chatTesterDir, "Repos")  # 存放 repo的 path
 
-# model_path = "deepseek-ai/deepseek-coder-6.7b-instruct"
-model_path = "gemini-2.5-flash"
+model_path = os.getenv('MODEL_PATH', "gpt-3.5-turbo")
 gemini_api_key = os.getenv('GEMINI_API_KEY')
+
+
+def delay_if_needed_to_prevent_rate_limit(model):
+    delay_seconds = 4
+    model_list = ["gemini-2.5-flash"]
+
+    if model in model_list:
+        print(f"Delaying for {delay_seconds} seconds to prevent rate limiting...")
+        time.sleep(delay_seconds)
 
 class ChatGptTester_inital:
     def __init__(self, Intention_TAG):
@@ -49,7 +57,7 @@ class ChatGptTester_inital:
             openai.api_base = "https://openkey.cloud/v1"
             openai.api_key = os.getenv('OPENAI_API_KEY')
         elif "gemini" in model_path:
-            sub_save_dir = "Gemini"
+            sub_save_dir = f"{os.path.basename(Json_file_Path).replace(".json","")}__gemini__{model_path.replace("/","--")}"
         else:
             sub_save_dir = "OtherModel"
 
@@ -71,8 +79,9 @@ class ChatGptTester_inital:
 
     def boolean(self, file_path):
         if not os.path.exists(file_path):
-            print('Creat floder....')
+            print(f'Creating folder [{file_path}]... ', end='')
             os.makedirs(file_path)
+            print("- OK")
         else:
             shutil.rmtree(file_path)
             os.makedirs(file_path)
@@ -149,16 +158,12 @@ class ChatGptTester_inital:
                     f.write(ScaffoldingCode)
 
                 if self.Intention_TAG == "Contain_intention":  # intention
-                    if "gemini-2.5-flash" in model_path:
-                        # delay for Gemini API rate limits
-                        time.sleep(4)
+                    delay_if_needed_to_prevent_rate_limit(model_path)
                     compile_result, test_result, Gen_Path = self.Contain_intention(PL_Focal_Method, focal_method_name, Test_Import_info,
                                                                               TestFilePath, TestCodeShell, project_name, contextMethod,
                                                                               4)
                 else:
-                    if "gemini-2.5-flash" in model_path:
-                        # delay for Gemini API rate limits
-                        time.sleep(4)
+                    delay_if_needed_to_prevent_rate_limit(model_path)
                     compile_result, test_result, Gen_Path = self.No_intention(PL_Focal_Method, focal_method_name, Test_Import_info,
                                                                               TestFilePath, TestCodeShell, project_name, contextMethod,
                                                                               4)
@@ -182,9 +187,7 @@ class ChatGptTester_inital:
 
 
     def Contain_intention(self, PL_Focal_Method, focal_method_name, Test_Import_info, TestFilePath, TestCodeShell, project_name,contextMethod, Junit_version):
-        if "gemini-2.5-flash" in model_path:
-            # delay for Gemini API rate limits
-            time.sleep(4)
+        delay_if_needed_to_prevent_rate_limit(model_path)
     
         # obtain the method intention
         Method_intention = self.unit_instance.intention_unit(PL_Focal_Method, focal_method_name)
@@ -196,9 +199,7 @@ class ChatGptTester_inital:
         print(Composit_prompt)
         print("##################")
 
-        if "gemini-2.5-flash" in model_path:
-            # delay for Gemini API rate limits
-            time.sleep(4)
+        delay_if_needed_to_prevent_rate_limit(model_path)
 
         # obtain the generated test_method and import_statement
         Gen_test_method, import_statement = self.unit_instance.method_pred_unit(Composit_prompt)
@@ -328,9 +329,7 @@ class ChatGptTester_inital:
         print(Composit_prompt)
         print("##################")
 
-        if "gemini-2.5-flash" in model_path:
-            # delay for Gemini API rate limits
-            time.sleep(4)
+        delay_if_needed_to_prevent_rate_limit(model_path)
 
         # obtain the generated test_method and import_statement
         Gen_test_method, import_statement = self.unit_instance.method_pred_unit(Composit_prompt)
@@ -419,7 +418,7 @@ class Unit:
                     ],
                     temperature=0)
                 generated_content = response_test.choices[0].message['content']
-            elif "gemini-2.5-flash" in model_path:
+            elif "gemini" in model_path:
                 response_test = self.gemini_client.models.generate_content(
                     model=model_path,
                     contents=ask_test_method_prompt,
@@ -445,7 +444,7 @@ class Unit:
                     ],
                     temperature=0)
                 generated_content = response_test.choices[0].message['content']
-            elif "gemini-2.5-flash" in model_path:
+            elif "gemini" in model_path:
                 response_test = self.gemini_client.models.generate_content(
                     model=model_path,
                     contents=ask_test_method_prompt,
@@ -478,7 +477,7 @@ class Unit:
                 temperature=0
             )
             intentions = response_intention.choices[0].message['content']
-        elif "gemini-2.5-flash" in model_path:
+        elif "gemini" in model_path:
                 Intention_NL = f'''Please describe the overall intention of the {focal_method_name} method in as much detail as possible in one sentence.'''
                 ask_intention_prompt = PL_Focal_Method + '\n\n' + Intention_NL
                 response_test = self.gemini_client.models.generate_content(

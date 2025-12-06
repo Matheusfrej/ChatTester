@@ -6,6 +6,12 @@ import json
 import glob
 from Deal import Compile_Test_INFO
 from Deal import FeedbackPrompt
+from dotenv import load_dotenv
+
+# Load environment variables from a repository-level .env file
+repo_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+dotenv_path = os.path.join(repo_root, '.env')
+load_dotenv(dotenv_path)
 
 
 # current_dir = os.path.dirname(__file__) #./PipLine
@@ -13,7 +19,8 @@ current_dir = os.path.dirname(os.path.abspath(__file__))
 chatTesterDir = os.path.dirname(current_dir)
 
 testedRepo_PATH = os.path.join(chatTesterDir, "Repos")
-model_path = "gpt-3.5-turbo"
+#model_path = "gpt-3.5-turbo"
+model_path = os.getenv('MODEL_PATH', "gpt-3.5-turbo")
 
 
 class ProceFinalResult:
@@ -29,7 +36,7 @@ class ProceFinalResult:
         elif "gpt-3.5" in model_path:
             self.sub_save_dir = os.path.basename(Json_file_Path).replace(".json", "")
         elif "gemini" in model_path:
-            self.sub_save_dir = "Gemini"
+            self.sub_save_dir = f"{os.path.basename(Json_file_Path).replace(".json","")}__gemini__{model_path.replace("/","--")}"
 
         first_dir = "Iterate"
         self.C_GeneratedTest_Path = os.path.join(current_dir, first_dir, self.sub_save_dir, 'GeneratedTest')
@@ -59,8 +66,13 @@ class ProceFinalResult:
         self.count = 0
 
         with open(self.pred_1, 'r', encoding='utf-8') as f:
+            print("opened file at:", self.pred_1)
             for line in f:
+                #print("at line:", line)
+
                 con = json.loads(line.strip())
+
+                #print("Read JSON line: ", con)
 
                 ori_test_Path = con['original_path']
                 generated_path_old = con['generated_path']
@@ -72,8 +84,11 @@ class ProceFinalResult:
                 with open(generated_path, 'r', encoding='utf-8') as f:
                     FixGencont = f.read()
 
-                if Compile_result == 0: continue
+                if Compile_result == 0:
+                    print("Compile failed, skip this case...")
+                    continue
                 elif Test_result == 1:
+                    print("Test passed, adding to the output list...")
                     finalCont = {"original_path": ori_test_Path,
                                  "generated_path": generated_path,
                                  "IterateTimes": 0,

@@ -21,6 +21,8 @@ repo_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 dotenv_path = os.path.join(repo_root, '.env')
 load_dotenv(dotenv_path)
 
+verbose_mode = os.getenv('VERBOSE_MODE', 'False').lower() == 'true'
+
 # TODO modify this path or set `JAVA_HOME` in your .env
 java_home = os.getenv('JAVA_HOME', "/usr/lib/jvm/jdk1.8.0_131")
 os.environ["JAVA_HOME"] = java_home
@@ -32,8 +34,7 @@ chatTesterDir = os.path.dirname(current_dir)
 
 testedRepo_PATH = os.path.join(chatTesterDir, "Repos")
 
-# model_path = "deepseek-ai/deepseek-coder-6.7b-instruct"
-model_path = "gemini-2.5-flash"
+model_path = os.getenv('MODEL_PATH', "gpt-3.5-turbo")
 gemini_api_key = os.getenv('GEMINI_API_KEY')
 
 class ChatGptTester:
@@ -55,7 +56,7 @@ class ChatGptTester:
             openai.api_base = "https://openkey.cloud/v1"
             openai.api_key = os.getenv('OPENAI_API_KEY')
         elif "gemini" in model_path:
-            self.sub_save_dir = "Gemini"
+            self.sub_save_dir = f"{os.path.basename(Json_file_Path).replace(".json","")}__gemini__{model_path.replace("/","--")}"
         else:
             self.sub_save_dir = "OtherModel"
             
@@ -292,15 +293,15 @@ class ChatGptTester:
         iter = 0  # compile 和 Test的修复次数
         IterCompile, IterTest = 1, 0
         while True:
-
-            print(f'----------------{ori_test_Path}----------------')
-            print(Composit_prompt)
-            Out_Txtdir = os.path.join(self.RepairProcess,
-                                      os.path.basename(ori_test_Path.split("###")[0]) + "_" +
-                                      fixedClassName.split("#")[1] + "_prompt.txt")
-            with open(Out_Txtdir, 'a', encoding='utf-8') as f:
-                f.write(f"{TotalIter}-->{IterCompile | IterTest}-->{iter}-->{repairTag}\n" + Composit_prompt + "\n\n########\n\n")
-            print(f'-----------------------------------------------')
+            if verbose_mode:
+                print(f'----------------{ori_test_Path}----------------')
+                print(Composit_prompt)
+                Out_Txtdir = os.path.join(self.RepairProcess,
+                                        os.path.basename(ori_test_Path.split("###")[0]) + "_" +
+                                        fixedClassName.split("#")[1] + "_prompt.txt")
+                with open(Out_Txtdir, 'a', encoding='utf-8') as f:
+                    f.write(f"{TotalIter}-->{IterCompile | IterTest}-->{iter}-->{repairTag}\n" + Composit_prompt + "\n\n########\n\n")
+                print(f'-----------------------------------------------')
 
             TotalIter = TotalIter + 1
             pattern = re.compile(r'//\s*original\s+test\s+path:\s*[\S\s]*?\n')
@@ -440,27 +441,38 @@ class ChatGptTester:
 
     # 执行test 和 compile
     def adhoc_excute(self, Dtest_para, Gen_TestfilePath, TestFilePath, testedRepo_PATH, project_name, JUNIT_VERSION):
+        print(f"Executing mvn compile and test for {TestFilePath} with Dtest_para: {Dtest_para}")
 
         excute_path = os.path.join(testedRepo_PATH, project_name)
         os.chdir(excute_path)
+        print(f"Changed directory to {excute_path}...")
 
         mvn_compile = [ 'mvn', '-B', 'test-compile', '-Dstyle.color=never', '-Dcheckstyle.skip=true']
         mvn_test = ['mvn', '-B', 'test', '-Dstyle.color=never', '-Dcheckstyle.skip=true']
         if JUNIT_VERSION == 5:
             mvn_compile = ['mvn', '-B', 'test-compile', '-Dtest.engine=junit-jupiter', '-Dstyle.color=never', '-Dcheckstyle.skip=true']
             mvn_test = ['mvn', '-B', 'test', '-Dtest.engine=junit-jupiter', '-Dstyle.color=never', '-Dcheckstyle.skip=true']
+            print("Trying to execute test with JUnit 5 settings.")
+
         write_cont, compile_result, test_result = self.Compile_Test_sub_unit(mvn_compile, mvn_test, TestFilePath)
+
         if compile_result != 1 and "[ERROR] COMPILATION ERROR :" not in write_cont and "Could not resolve " in write_cont:
-                mvn_install = [ 'mvn', 'clean', 'install']
-                mvn_result = subprocess.run(mvn_install, stdout=subprocess.PIPE, stderr=subprocess.PIPE, env=env,
-                                             universal_newlines=True)
-                if "BUILD SUCCESS" in mvn_result.stdout or "BUILD SUCCESS" in mvn_result.stderr:
-                    write_cont, compile_result, test_result = self.Compile_Test_sub_unit(mvn_compile, mvn_test, TestFilePath)
+            print("Initial mvn compile failed due to dependency issues. Attempting 'mvn clean install' to resolve dependencies...")
+            mvn_install = [ 'mvn', 'clean', 'install']
+            mvn_result = subprocess.run(mvn_install, stdout=subprocess.PIPE, stderr=subprocess.PIPE, env=env,
+                                            universal_newlines=True)
+            if "BUILD SUCCESS" in mvn_result.stdout or "BUILD SUCCESS" in mvn_result.stderr:
+                print("Dependencies resolved successfully. Re-attempting compile and test...")
+                write_cont, compile_result, test_result = self.Compile_Test_sub_unit(mvn_compile, mvn_test, TestFilePath)
+
         os.chdir(current_dir)
+        print(f"Restored directory to {current_dir}.")
 
         if compile_result == 0 and "[ERROR] COMPILATION ERROR :" not in write_cont: raise Exception("Mvn execute failed")
+
         compile_logInfo_path = os.path.join(self.LogINFO_PATH, os.path.basename(Gen_TestfilePath))
         with open(compile_logInfo_path, 'w', encoding='utf-8') as f:
+            print("Writing compile log info to:", compile_logInfo_path)
             f.write(write_cont)
         Surefire_reports_dst_file = self.Surefire_reports_TEST_info(write_cont, os.path.basename(Gen_TestfilePath), Dtest_para)
 
@@ -553,19 +565,22 @@ class ChatGptTester:
         return compile_result, test_result, compile_logInfo_path, Surefire_reports_dst_file
 
     def Compile_Test_sub_unit(self, mvn_compile, mvn_test, test_path):
+        print(f"Running COMPILE command: {' '.join(mvn_compile)}")
         compile_success, test_success = 0, 0
         compile_result = subprocess.run(mvn_compile, stdout=subprocess.PIPE, stderr=subprocess.PIPE, env=env,
                                         universal_newlines=True)
         write_cont = "original test path: " + test_path + "\n########## Compile INFO ##########\n" + compile_result.stdout + compile_result.stderr
 
         if "BUILD SUCCESS" in compile_result.stdout or "BUILD SUCCESS" in compile_result.stderr:
+            print("  -> Maven compile succeeded.")
             compile_success = 1
-
+            print(f"  Running TEST command: {' '.join(mvn_test)}")
             test_result = subprocess.run(mvn_test, stdout=subprocess.PIPE, stderr=subprocess.PIPE, universal_newlines=True, env=env)
             write_cont = "original test path: " + test_path + "\n########## Compile INFO ##########\n" + compile_result.stdout + compile_result.stderr + \
                          "\n########## Test INFO ##########\n" + test_result.stdout + test_result.stderr
 
             if "BUILD SUCCESS" in test_result.stdout or "BUILD SUCCESS" in test_result.stderr:
+                print("    -> Maven test succeeded.")
                 test_success = 1
 
         return write_cont, compile_success, test_success
@@ -769,7 +784,7 @@ class Unit:
                 temperature=0
             )
             intentions = response_intention.choices[0].message['content']
-        elif "gemini-2.5-flash" in model_path:
+        elif "gemini" in model_path:
             Intention_NL = f'''Please describe the overall intention of the {focal_method_name} method in as much detail as possible in one sentence.'''
             ask_intention_prompt = PL_Focal_Method + '\n\n' + Intention_NL
             response_test = self.gemini_client.models.generate_content(
