@@ -837,8 +837,8 @@ class Unit:
 
 if __name__ == "__main__":
 
-    # projects_name = ['tabulapdf_tabula-java.json','Zappos_zappos-json.json','sachin-handiekar_jInstagram.json']
-    projects_name = ['sachin-handiekar_jInstagram.json']
+    projects_name = ['Zappos_zappos-json.json','sachin-handiekar_jInstagram.json']
+    # projects_name = ['sachin-handiekar_jInstagram.json']
     for project_name in projects_name:
         print("project_name: "+project_name)
         Json_file_Path = os.path.join(chatTesterDir, "RepoData", project_name)

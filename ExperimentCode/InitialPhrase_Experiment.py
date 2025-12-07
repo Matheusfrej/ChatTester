@@ -575,7 +575,7 @@ if __name__ == "__main__":
     if Intention_TAG:Intention = 'Contain_intention'
     else:Intention = "No_intention"
 
-    projects_name = ['sachin-handiekar_jInstagram.json']#,'tabulapdf_tabula-java.json','Zappos_zappos-json.json']
+    projects_name = ['tabulapdf_tabula-java.json','Zappos_zappos-json.json']
 
     for project_name in projects_name:
         Json_file_Path = os.path.join(chatTesterDir, "RepoData", project_name)
