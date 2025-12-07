@@ -122,7 +122,7 @@ class ChatGptTester_inital:
 
             # --- CORREÇÃO DO CAMINHO (FIX PATH) ---
             # 1. Pega o caminho original que está no JSON (pode ser /Users/..., C:/..., etc)
-            raw_path_from_json = Under_test_method['project_path'].split("###")[0]
+            raw_path_from_json = Test_method['TestInfo'].split("###")[0]
 
             # 2. Encontra a parte relativa (a partir de 'src') para ignorar o prefixo do outro PC
             if "src" in raw_path_from_json:
@@ -139,10 +139,8 @@ class ChatGptTester_inital:
 
             # 3. Monta o caminho REAL na sua máquina Linux
             # /home/mathe/.../Repos/NomeDoProjeto/src/main/java/...
-            local_real_path = os.path.join(testedRepo_PATH, project_name, relative_path)
+            TestFilePath = os.path.join(testedRepo_PATH, project_name, relative_path)
 
-            # 4. Ajusta para a pasta de teste e define o TestDir correto
-            TestFilePath = local_real_path.replace("/main/", "/test/")
             TestDir = os.path.dirname(TestFilePath)
             # --------------------------------------
 
