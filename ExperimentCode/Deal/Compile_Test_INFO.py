@@ -1,18 +1,21 @@
 # -*- coding: utf-8 -*-
-import sys
-import json
 import re
 import  os
 import xml.etree.ElementTree as ET
 import subprocess
 import os
-from tqdm import tqdm
+from dotenv import load_dotenv
+
 current_dir = os.path.dirname(__file__) #./Deal
 Experiment_PATH = os.path.dirname(current_dir)
 
 ChatTester_PATH = os.path.abspath(os.path.join(current_dir, os.pardir, os.pardir))
+# Load environment variables from a repository-level .env file
+repo_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+dotenv_path = os.path.join(repo_root, '.env')
+load_dotenv(dotenv_path)
 
-
+verbose_mode = os.getenv('VERBOSE_MODE', 'False').lower() == 'true'
 
 # used to deal compile and test information
 class CompileInfo:
@@ -84,9 +87,10 @@ class CompileInfo:
 
     def CompileInfo_Deal(self, errorInfoBlock):
         ERROR_list = []
-        print(f"[DEBUG CompileInfo_Deal] errorInfoBlock has {len(errorInfoBlock)} lines")
-        for idx, line in enumerate(errorInfoBlock):
-            print(f"  Line {idx}: {line[:100]}")
+        if verbose_mode:
+            print(f"[DEBUG CompileInfo_Deal] errorInfoBlock has {len(errorInfoBlock)} lines")
+            for idx, line in enumerate(errorInfoBlock):
+                print(f"  Line {idx}: {line[:100]}")
 
         # "Error_INFO":报错的信息行, "Error_Line":从报错信息行中抽取出来的行号, "ERROR_Type":从报错信息行中抽取出来的报错信息,"Location":报错处于哪个位置,"TEST_PATH":测试用例的原本路径, Gene_PATH:生成测试用例的路径
         errorInfo_dict = {}
@@ -99,7 +103,8 @@ class CompileInfo:
         for line_i in range(len(errorInfoBlock)):
             if line_i in added_line: continue
             if PATH in errorInfoBlock[line_i] and "[GENERATED PATH]" not in errorInfoBlock[line_i] and 'original test path:' not in errorInfoBlock[line_i]:   # 包含路径和报错信息的那行
-                print(f"[DEBUG] Found PATH line at {line_i}: {errorInfoBlock[line_i][:100]}")
+                if verbose_mode:
+                    print(f"[DEBUG] Found PATH line at {line_i}: {errorInfoBlock[line_i][:100]}")
                 # 依次向下遍历拿到信息，但只收集直到下一个 [ERROR] 或 [INFO] 或路径行
                 singleErrorInfo = []
                 while line_i < len(errorInfoBlock):
@@ -122,17 +127,21 @@ class CompileInfo:
                         errorInfo_dict["Gene_PATH"] = Gene_PATH
                         errorInfo_dict["TEST_PATH"] = TEST_PATH
                         ERROR_list.append(errorInfo_dict)
-                        print(f"[DEBUG] Added error to list: Error_Type={errorInfo_dict.get('Error_Type', 'MISSING')}")
+                        if verbose_mode:
+                            print(f"[DEBUG] Added error to list: Error_Type={errorInfo_dict.get('Error_Type', 'MISSING')}")
             elif errorInfoBlock[line_i].startswith('[GENERATED PATH]'):
                 Gene_PATH = errorInfoBlock[line_i].split("PATH]")[1].strip()
-                print(f"[DEBUG] Gene_PATH set to: {Gene_PATH}")
+                if verbose_mode:
+                    print(f"[DEBUG] Gene_PATH set to: {Gene_PATH}")
 
             elif errorInfoBlock[line_i].startswith('original test path:'):
                 TEST_PATH = errorInfoBlock[line_i].split("path:")[1].strip()
-                print(f"[DEBUG] TEST_PATH set to: {TEST_PATH}")
+                if verbose_mode:
+                    print(f"[DEBUG] TEST_PATH set to: {TEST_PATH}")
 
             else:continue
-        print(f"[DEBUG CompileInfo_Deal] Returning ERROR_list with {len(ERROR_list)} items")
+        if verbose_mode:
+            print(f"[DEBUG CompileInfo_Deal] Returning ERROR_list with {len(ERROR_list)} items")
         return ERROR_list
 
 
@@ -266,10 +275,6 @@ class CompileInfo:
                 errorInfoLine = errorInfoLine.replace(self.ERROR_LINE_START_TOKEN, "", 1).strip()
                 singleErrorInfoDict['Error_INFO'] = errorInfoLine
             if ":" in errorInfoLine:
-                # checked that if the line contains more than one colon, the first part must start with 'x.java'
-                # except one BUILD FAILURE
-                # if len(errorInfoLine.split(":")) > 2:
-                #     print(errorInfoLine)
                 leftToken = errorInfoLine.split(":")[0]
                 rightInfo = errorInfoLine.split(":")[1].strip()
                 if "symbol" in leftToken:
@@ -312,9 +317,11 @@ class CompileInfo:
                 if errorTypeInfo.split(" ")[0] == "error:":
                     errorTypeInfo = errorTypeInfo.replace("error:", "", 1).strip()
                 singleErrorInfoDict["Error_Type"] = errorTypeInfo
-                print(f"[DEBUG] Error_Type found: {errorTypeInfo}")
+                if verbose_mode:
+                    print(f"[DEBUG] Error_Type found: {errorTypeInfo}")
             else:
-                print(f"[DEBUG] No [line,column] pattern found in: {errorInfoLine}")
+                if verbose_mode:
+                    print(f"[DEBUG] No [line,column] pattern found in: {errorInfoLine}")
         return singleErrorInfoDict
 
 class TestINFO:
