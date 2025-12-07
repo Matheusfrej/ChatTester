@@ -531,55 +531,6 @@ class ChatGptTester:
             f.write(changed_code)
 
 
-    def Compile_Test_unit(self, pro_name, sub_project_name, test_file_name, test_path, Dtest_para, JUNIT_VERSION):
-        excute_path = os.path.join(self.testedRepo_PATH, pro_name)
-        os.chdir(excute_path)
-        if sub_project_name != "":
-            mvn_compile = ['mvn', '-pl', sub_project_name, f'-Dtest={Dtest_para}', 'test-compile',
-                           '-Dcheckstyle.skip=true']
-            mvn_test = ['mvn', '-pl', sub_project_name, f'-Dtest={Dtest_para}', 'test',
-                        '-Dcheckstyle.skip=true']
-            if JUNIT_VERSION == 5:
-                mvn_compile = ['mvn', '-pl', sub_project_name, f'-Dtest={Dtest_para}', 'test-compile',
-                               '-Dtest.engine=junit-jupiter', '-Dcheckstyle.skip=true']
-                mvn_test = ['mvn', '-pl', sub_project_name, f'-Dtest={Dtest_para}', 'test',
-                            '-Dtest.engine=junit-jupiter', '-Dcheckstyle.skip=true']
-
-        else:
-            mvn_compile = ['mvn', f'-Dtest={Dtest_para}', 'test-compile', '-Dcheckstyle.skip=true']
-            mvn_test = ['mvn', f'-Dtest={Dtest_para}', 'test', '-Dcheckstyle.skip=true']
-            if JUNIT_VERSION == 5:
-                mvn_compile = ['mvn', f'-Dtest={Dtest_para}', 'test-compile',
-                               '-Dtest.engine=junit-jupiter', '-Dcheckstyle.skip=true']
-                mvn_test = ['mvn', f'-Dtest={Dtest_para}', 'test', '-Dtest.engine=junit-jupiter',
-                            '-Dcheckstyle.skip=true']
-
-        write_cont, compile_result, test_result = self.Compile_Test_sub_unit(mvn_compile, mvn_test, test_path)
-
-        # 未能正确的执行mvn 指令。此时首先需要执行 mvn clean
-        if compile_result != 1 and "[ERROR] COMPILATION ERROR :" not in write_cont and "Could not resolve dependenci" in write_cont:
-            mvn_install = [ 'mvn', 'clean', 'install']
-            mvn_result = subprocess.run(mvn_install, stdout=subprocess.PIPE, stderr=subprocess.PIPE,universal_newlines=True)
-            if "BUILD SUCCESS" in mvn_result.stdout or "BUILD SUCCESS" in mvn_result.stderr:
-                write_cont, compile_result, test_result = self.Compile_Test_sub_unit(mvn_compile, mvn_test, test_path)
-            else:
-                # 进入到子目录当中
-                target_PATH = os.path.join(excute_path, sub_project_name)
-                os.chdir(target_PATH)
-                write_cont, compile_success, test_result = self.Compile_Test_sub_unit(mvn_compile, mvn_test, test_path)
-        os.chdir(current_dir)
-
-        if compile_result == 0 and "[ERROR] COMPILATION ERROR :" not in write_cont: raise Exception(
-            "Mvn execute failed")
-        compile_logInfo_path = os.path.join(self.LogINFO_PATH, os.path.basename(test_file_name))
-        with open(compile_logInfo_path, 'w', encoding='utf-8') as f:
-            f.write(write_cont)
-
-        # 处理执行mvn test 保存到 ./target/Surefire_reports/* 当中的信息
-        Surefire_reports_dst_file = self.Surefire_reports_TEST_info(write_cont, test_file_name, Dtest_para)
-
-        return compile_result, test_result, compile_logInfo_path, Surefire_reports_dst_file
-
     def Compile_Test_sub_unit(self, mvn_compile, mvn_test, test_path):
         print(f"Running COMPILE command: {' '.join(mvn_compile)}")
         compile_success, test_success = 0, 0
