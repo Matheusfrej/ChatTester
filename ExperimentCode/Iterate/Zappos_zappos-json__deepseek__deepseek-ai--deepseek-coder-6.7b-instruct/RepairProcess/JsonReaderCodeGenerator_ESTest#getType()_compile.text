@@ -1,0 +1,83 @@
+original test path: /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java
+[GENERATED PATH] JsonReaderCodeGenerator_ESTest#getType().java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[30,9] cannot find symbol
+  symbol:   class TypeInfo
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[30,33] cannot find symbol
+  symbol:   class TypeInfo
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[INFO] 2 errors 
+####################
+
+original test path: /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java
+[GENERATED PATH] JsonReaderCodeGenerator_ESTest#getType().java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[33,9] cannot find symbol
+  symbol:   class TypeInfo
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[33,33] cannot find symbol
+  symbol:   class TypeInfo
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[INFO] 2 errors 
+####################
+
+original test path: /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java
+[GENERATED PATH] JsonReaderCodeGenerator_ESTest#getType().java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[35,9] cannot find symbol
+  symbol:   class TypeInfo
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[35,33] cannot find symbol
+  symbol:   class TypeInfo
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[INFO] 2 errors 
+####################
+
+original test path: /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java
+[GENERATED PATH] JsonReaderCodeGenerator_ESTest#getType().java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[36,9] cannot find symbol
+  symbol:   class TypeInfo
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[36,33] cannot find symbol
+  symbol:   class TypeInfo
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[40,24] cannot find symbol
+  symbol:   class TypeInfo
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[44,24] cannot find symbol
+  symbol:   class TypeInfo
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[48,24] cannot find symbol
+  symbol:   class TypeInfo
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[INFO] 5 errors 
+####################
+
+original test path: /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java
+[GENERATED PATH] JsonReaderCodeGenerator_ESTest#getType().java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[38,9] cannot find symbol
+  symbol:   class TypeInfo
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[38,33] cannot find symbol
+  symbol:   class TypeInfo
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[42,24] cannot find symbol
+  symbol:   class TypeInfo
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[46,24] cannot find symbol
+  symbol:   class TypeInfo
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[50,24] cannot find symbol
+  symbol:   class TypeInfo
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[INFO] 5 errors 
+####################
+
