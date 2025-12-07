@@ -489,9 +489,14 @@ class ChatGptTester:
         if compile_result == 0:
             # 处理编译的错误信息：Out_dict = {"ERROR_MESSAGE": str, "Class_Name": str, "ERROR_LINE": str}
             compile_instance = Compile_Test_INFO.CompileInfo(compile_logInfo_path, self.sub_save_dir, gen_test_PATH)
+            # Busca os erros de compilação do maven
             proc_compile_list_INFO = compile_instance.Call_errorDeal()
             if re_generate_Tag: Method_intention = self.unit_instance.intention_unit(self.PL_Focal_Method, self.focal_method_name)
             else:Method_intention = ""
+            """ Pega o primeiro erro de compilação e passa para um algoritmo
+                que pega a classe associada com o erro e busca a interface 
+                dessa classe para passar como contexto para o prompt na tentativa
+                de ajudar a corrigir esse erro """
             class_instance = FeedbackPrompt.CompilePrompt(proc_compile_list_INFO[0], gen_test_PATH,
                                                           ori_test_Path.split("###")[0].replace("/test/",'/main/').replace("_ESTest.java",".java"),re_generate_Tag, Method_intention, self.PL_Focal_Method, self.repo_name, findClassInfo)
             Composit_prompt, findClassInfo = class_instance.Compile_deal()
