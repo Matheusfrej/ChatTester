@@ -57,9 +57,9 @@ class ChatGptTester_inital:
             sub_save_dir = "CodeFuse"
         elif "deepseek" in model_path:
             sub_save_dir = "DeepSeek"
+            sub_save_dir = f"{os.path.basename(Json_file_Path).replace(".json","")}__deepseek__{model_path.replace("/","--")}"
         elif "gpt" in model_path:
             sub_save_dir = f"{os.path.basename(Json_file_Path).replace(".json","")}__openai__{model_path.replace("/","--")}"
-
             # TODO: The 'openai.api_base' option isn't read in the client API. You will need to pass it when you instantiate the client, e.g. 'OpenAI(base_url="https://openkey.cloud/v1")'
             # openai.api_base = "https://openkey.cloud/v1"
         elif "gemini" in model_path:
