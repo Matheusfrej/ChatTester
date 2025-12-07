@@ -24,6 +24,12 @@ model_path = os.getenv('MODEL_PATH', "gpt-3.5-turbo")
 
 
 class ProceFinalResult:
+    """
+    Post-processes and finalizes test results from the iterative repair pipeline.
+    
+    This class reads results from the iterative phase and filters them based on compilation and test result.
+    """
+    
     def __init__(self, repo_name, Json_file_Path):
         self.repo_name = repo_name
         self.Json_file_Path = Json_file_Path
@@ -64,9 +70,22 @@ class ProceFinalResult:
             os.makedirs(file_path)
 
     def LoadFile(self):
+        """
+        Main processing function that reads iterative results and filters/repairs them.
+        
+        Process Flow:
+        1. Reads final_result.json from the iterative phase (one JSON object per line)
+        2. For each test case:
+           - If compilation failed → Skip (no point in fixing non-compiling code)
+           - If test passed → Add to output list as-is
+           - If compilation succeeded but test failed → Generates prompt to repair test, but does nothing with it
+        
+        Output:
+        - Writes all successful cases to Final_result JSON file
+        - Each entry contains: original_path, generated_path, IterateTimes, Compile_result, Test_result
+        """
         outputList = []
         self.count = 0
-
         with open(self.pred_1, 'r', encoding='utf-8') as f:
             print("opened file at:", self.pred_1)
             for line in f:
@@ -131,6 +150,13 @@ class ProceFinalResult:
             json.dump(outputList, f, indent=2)
 
     def DriveTest_Info(self, FocalMethodInfo):
+        """
+        Retrieve and process metadata about the focal method and test from the data pairs file.
+        
+        This method extracts comprehensive information about the test method and the method 
+        being tested from the JSON data pairs file. It's called during result processing to 
+        gather context needed for repair operations.
+        """
         with open(self.Json_file_Path, 'r', encoding='utf-8') as f:
             data_pair = json.load(f)
         ori_test_Path = [data["Test_method"]["TestInfo"] for data in data_pair if len(data['Under_test_method']) and data["Under_test_method"]["Method_statement"] == FocalMethodInfo.split("#")[-1].replace(".java","") and FocalMethodInfo.split("#")[0] in data['Test_method']['TestInfo']][0]
@@ -159,7 +185,12 @@ class ProceFinalResult:
 
     def Collect_Info(self, compile_logInfo_path, Surefire_reports_dst_file, gen_test_PATH,
                      ori_test_Path, re_generate_Tag, findClassInfo):
-
+        """
+        Generate repair prompts and collect error information for failed tests.
+        
+        This method processes test failures by analyzing test error logs and generating
+        appropriate repair/fix prompts using the FeedbackPrompt module.
+        """
         test_instance = Compile_Test_INFO.TestINFO(Surefire_reports_dst_file, compile_logInfo_path)
         proc_test_list_INFO = test_instance.TetsINFO_deal()
         Method_intention = ""
