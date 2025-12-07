@@ -3,6 +3,8 @@ import torch
 import shutil
 import subprocess
 import openai
+from openai import OpenAI
+
 import os
 import re
 import json
@@ -34,6 +36,8 @@ chatTesterDir = os.path.dirname(current_dir)
 
 testedRepo_PATH = os.path.join(chatTesterDir, "Repos")
 
+model_temperature=float(os.getenv('MODEL_TEMPERATURE', 0.0))
+
 model_path = os.getenv('MODEL_PATH', "gpt-3.5-turbo")
 gemini_api_key = os.getenv('GEMINI_API_KEY')
 
@@ -44,22 +48,22 @@ class ChatGptTester:
         self.Result_PATH = os.path.join(chatTesterDir, "RepoData") # Data pair path
         self.testedRepo_PATH = os.path.join(chatTesterDir, "Repos") # repo path
         self.repo_name  = repo_name
-        
+
         if "CodeLlama" in model_path:
             self.sub_save_dir = 'CodeLlama'
         elif "CodeFuse" in model_path:
             self.sub_save_dir = "CodeFuse"
         elif "deepseek" in model_path:
             self.sub_save_dir = "DeepSeek" # Pasta dedicada para o DeepSeek
-        elif "gpt-3.5" in model_path:
-            self.sub_save_dir = os.path.basename(Json_file_Path).replace(".json","")
-            openai.api_base = "https://openkey.cloud/v1"
-            openai.api_key = os.getenv('OPENAI_API_KEY')
+        elif "gpt" in model_path:
+            self.sub_save_dir = f"{os.path.basename(Json_file_Path).replace(".json","")}__openai__{model_path.replace("/","--")}"
+            # TODO: The 'openai.api_base' option isn't read in the client API. You will need to pass it when you instantiate the client, e.g. 'OpenAI(base_url="https://openkey.cloud/v1")'
+            # openai.api_base = "https://openkey.cloud/v1"
         elif "gemini" in model_path:
             self.sub_save_dir = f"{os.path.basename(Json_file_Path).replace(".json","")}__gemini__{model_path.replace("/","--")}"
         else:
             self.sub_save_dir = "OtherModel"
-            
+
         self.C_GeneratedTest_Path = os.path.join(current_dir,'Contain_intention',self.sub_save_dir, 'GeneratedTest')
         self.C_LogINFO_Path = os.path.join(current_dir,'Contain_intention',self.sub_save_dir, 'LogINFO')
         self.C_Surefire_reports_Path = os.path.join(current_dir, 'Contain_intention', self.sub_save_dir,'Surefire_reports')
@@ -73,7 +77,7 @@ class ChatGptTester:
         self.GeneratedTest_PATH = os.path.join(current_dir, dir_Name, self.sub_save_dir, 'GeneratedTest')
         self.RepairProcess = os.path.join(current_dir, dir_Name, self.sub_save_dir, 'RepairProcess')
         self.Final_result = os.path.join(current_dir, dir_Name, self.sub_save_dir, 'final_result.json')
-    
+
         self.repairCompile_result = os.path.join(current_dir, dir_Name, self.sub_save_dir, 'RepairCompile.json')
         self.repairTest_result = os.path.join(current_dir, dir_Name, self.sub_save_dir,'RepairTest.json')
 
@@ -94,7 +98,7 @@ class ChatGptTester:
         else:
             shutil.rmtree(file_path)
             os.makedirs(file_path)
-            
+
     # --- HELPER: FUNÇÃO PARA CORRIGIR CAMINHOS ---
     def fix_path(self, raw_path_str):
         """Converte caminhos do Mac/Outros PCs para o caminho local do Linux"""
@@ -102,7 +106,7 @@ class ChatGptTester:
             clean_path = raw_path_str.split("###")[0]
         else:
             clean_path = raw_path_str
-            
+
         # Procura por 'src' para ancorar o caminho relativo
         if "src" in clean_path:
             relative_part = clean_path[clean_path.find("src"):]
@@ -140,7 +144,7 @@ class ChatGptTester:
 
                     generated_path_old = con['generated_path']
                     FocalMethodInfo = os.path.basename(generated_path_old)
-                    
+
                     # Copia apenas se o arquivo existir
                     if os.path.exists(generated_path_old):
                         shutil.copy2(generated_path_old, self.GeneratedTest_PATH)
@@ -231,19 +235,19 @@ class ChatGptTester:
     def DriveTest_Info(self, FocalMethodInfo):
         with open(Json_file_Path, 'r', encoding='utf-8') as f:
             data_pair = json.load(f)
-        
+
         # Lógica original para encontrar o par correto no JSON
         # O FocalMethodInfo vem do nome do arquivo gerado (ex: Class#Method.java)
         target_method_name = FocalMethodInfo.split("#")[-1].replace(".java","")
         target_class_file = FocalMethodInfo.split("#")[0] # Isso pode não ser exato dependendo do seu formato, mas mantendo a logica original:
-        
+
         # Encontrar a entrada correspondente
         found_data = None
         for data in data_pair:
             if not len(data['Under_test_method']): continue
             ut_stmt = data["Under_test_method"]["Method_statement"]
             test_info = data['Test_method']['TestInfo']
-            
+
             # Tenta dar match no metodo
             if ut_stmt == target_method_name:
                 # Verifica se o arquivo 'pai' está contido no TestInfo (lógica original)
@@ -251,7 +255,7 @@ class ChatGptTester:
                 if target_class_file in test_info or target_class_file.replace(".java","") in test_info:
                     found_data = data
                     break
-        
+
         if not found_data:
             raise Exception(f"Could not find data pair for {FocalMethodInfo}")
 
@@ -262,15 +266,15 @@ class ChatGptTester:
 
         TestScaffoldPath = ori_test_Path.split("###")[0].replace(".java", "_scaffolding.java")
         ScaffoldingCode = found_data['Test_method']['scaffoldingCode']
-        
+
         # Criar diretório se não existir
         scaffold_dir = os.path.dirname(TestScaffoldPath)
         if not os.path.exists(scaffold_dir):
             os.makedirs(scaffold_dir)
-            
+
         with open(TestScaffoldPath, 'w', encoding='utf-8') as f:
             f.write(ScaffoldingCode)
-            
+
         self.testCodeShell = found_data['Test_method']['TestCodeShell']
         self.Under_test_method_INFO = found_data["Under_test_method"]
         self.Junit_version = self.Under_test_method_INFO['Junit_version']
@@ -513,7 +517,7 @@ class ChatGptTester:
         changed_code = pattern.sub(ori_class_name, gen_test_cont)
         with open(ori_PATH, 'w', encoding='utf-8') as f:
             f.write(changed_code)
-        
+
 
     def Compile_Test_unit(self, pro_name, sub_project_name, test_file_name, test_path, Dtest_para, JUNIT_VERSION):
         excute_path = os.path.join(self.testedRepo_PATH, pro_name)
@@ -617,15 +621,15 @@ class Unit:
                 bnb_4bit_use_double_quant=True,
                 llm_int8_enable_fp32_cpu_offload=True 
             )
-            
+
             self.problem_prompt = "### Instruction:\n{instruction}\n### Response:\n"
-            
+
             self.tokenizer = AutoTokenizer.from_pretrained(
                 model_path, 
                 use_fast=False, 
                 trust_remote_code=True
             )
-            
+
             # Carrega o modelo com Limite de Memória (7.2GB na GPU, resto na RAM)
             self.model = AutoModelForCausalLM.from_pretrained(
                 model_path,
@@ -637,6 +641,8 @@ class Unit:
             )
         elif "gemini" in model_path:
             self.gemini_client = genai.Client(api_key=gemini_api_key)
+        elif "gpt" in model_path:
+            self.openai_client = OpenAI(api_key=os.getenv('OPENAI_API_KEY'))
         else:
             # Fallback para outros modelos (CodeLlama, etc) se mudar a variavel model_path
             self.tokenizer = AutoTokenizer.from_pretrained(model_path, use_fast=False)
@@ -644,7 +650,7 @@ class Unit:
                                                               torch_dtype=torch.float16).cuda()
 
 
-        
+
     def generate(self, prompt):
         input_ids = self.tokenizer([prompt]).input_ids
         output_ids = self.model.generate(
@@ -658,16 +664,15 @@ class Unit:
 
     def method_pred_unit(self, ask_test_method_prompt, repair_TAG=False):
         if repair_TAG:
-            if "gpt-3.5" in model_path:
-                response_test = openai.ChatCompletion.create(
-                    model=model_path,
-                    messages=[
-                        {"role": "system",
-                         "content": "I want you to play the role of a professional who repairs buggy lines of the test method. Unnecessary import statement can be removed."},
-                        {"role": "user", "content": ask_test_method_prompt},
-                    ],
-                    temperature=0)
-                generated_content = response_test.choices[0].message['content']
+            if "gpt" in model_path:
+                response_test = self.openai_client.chat.completions.create(model=model_path,
+                messages=[
+                    {"role": "system",
+                     "content": "I want you to play the role of a professional who repairs buggy lines of the test method. Unnecessary import statement can be removed."},
+                    {"role": "user", "content": ask_test_method_prompt},
+                ],
+                temperature=model_temperature)
+                generated_content = response_test.choices[0].message.content
             elif "gemini" in model_path:
                 response_test = self.gemini_client.models.generate_content(
                     model=model_path,
@@ -684,16 +689,15 @@ class Unit:
                 generated_content = self.generate(prompt)
 
         else:
-            if "gpt-3.5" in model_path:
-                response_test = openai.ChatCompletion.create(
-                    model=model_path,
-                    messages=[
-                        {"role": "system",
-                         "content": "I want you to play the role of a professional who writes Java test method."},
-                        {"role": "user", "content": ask_test_method_prompt},
-                    ],
-                    temperature=0)
-                generated_content = response_test.choices[0].message['content']
+            if "gpt" in model_path:
+                response_test = self.openai_client.chat.completions.create(model=model_path,
+                messages=[
+                    {"role": "system",
+                     "content": "I want you to play the role of a professional who writes Java test method."},
+                    {"role": "user", "content": ask_test_method_prompt},
+                ],
+                temperature=model_temperature)
+                generated_content = response_test.choices[0].message.content
 
             elif "gemini" in model_path:
                 response_test = self.gemini_client.models.generate_content(
@@ -770,20 +774,18 @@ class Unit:
 
     # input:ori_test_Path, output method intention
     def intention_unit(self, PL_Focal_Method, focal_method_name):
-        if "gpt-3.5" in model_path:
+        if "gpt" in model_path:
             Intention_NL = f'''Please describe the overall intention of the {focal_method_name} method in as much detail as possible in one sentence.'''
             # Intention_NL = f''Please infer the overall intention of the {focal_method_name} method with one sentence.
             ask_intention_prompt = PL_Focal_Method + '\n\n' + Intention_NL
-            response_intention = openai.ChatCompletion.create(
-                model=model_path,
-                messages=[
-                    {"role": "system",
-                     "content": "I want you to play the role of a professional who infers method intention."},
-                    {"role": "user", "content": ask_intention_prompt},
-                ],
-                temperature=0
-            )
-            intentions = response_intention.choices[0].message['content']
+            response_intention = self.openai_client.chat.completions.create(model=model_path,
+            messages=[
+                {"role": "system",
+                 "content": "I want you to play the role of a professional who infers method intention."},
+                {"role": "user", "content": ask_intention_prompt},
+            ],
+            temperature=model_temperature)
+            intentions = response_intention.choices[0].message.content
         elif "gemini" in model_path:
             Intention_NL = f'''Please describe the overall intention of the {focal_method_name} method in as much detail as possible in one sentence.'''
             ask_intention_prompt = PL_Focal_Method + '\n\n' + Intention_NL
@@ -827,7 +829,7 @@ class Unit:
         # Using the sub function with a replacement function
         cleaned_code = re.sub(pattern, replace_func, java_code, flags=re.DOTALL | re.MULTILINE)
         return cleaned_code
-    
+
 if __name__ == "__main__":
 
     # projects_name = ['tabulapdf_tabula-java.json','Zappos_zappos-json.json','sachin-handiekar_jInstagram.json']

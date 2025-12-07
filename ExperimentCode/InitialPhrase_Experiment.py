@@ -4,6 +4,7 @@ import torch
 import shutil
 import subprocess
 import openai
+from openai import OpenAI
 import os
 import re
 import json
@@ -19,6 +20,8 @@ repo_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 dotenv_path = os.path.join(repo_root, '.env')
 load_dotenv(dotenv_path)
 
+verbose_mode = os.getenv('VERBOSE_MODE', 'False').lower() == 'true'
+
 # TODO modify this path or set `JAVA_HOME` in your .env
 java_home = os.getenv('JAVA_HOME', "/usr/lib/jvm/jdk1.8.0_131")
 os.environ["JAVA_HOME"] = java_home
@@ -29,6 +32,8 @@ current_dir = os.path.dirname(os.path.abspath(__file__))
 chatTesterDir = os.path.dirname(current_dir)
 
 testedRepo_PATH = os.path.join(chatTesterDir, "Repos")  # 存放 repo的 path
+
+model_temperature=float(os.getenv('MODEL_TEMPERATURE', 0.0))
 
 model_path = os.getenv('MODEL_PATH', "gpt-3.5-turbo")
 gemini_api_key = os.getenv('GEMINI_API_KEY')
@@ -52,10 +57,11 @@ class ChatGptTester_inital:
             sub_save_dir = "CodeFuse"
         elif "deepseek" in model_path:
             sub_save_dir = "DeepSeek"
-        elif "gpt-3.5" in model_path:
-            sub_save_dir = os.path.basename(Json_file_Path).replace(".json","")
-            openai.api_base = "https://openkey.cloud/v1"
-            openai.api_key = os.getenv('OPENAI_API_KEY')
+        elif "gpt" in model_path:
+            sub_save_dir = f"{os.path.basename(Json_file_Path).replace(".json","")}__openai__{model_path.replace("/","--")}"
+
+            # TODO: The 'openai.api_base' option isn't read in the client API. You will need to pass it when you instantiate the client, e.g. 'OpenAI(base_url="https://openkey.cloud/v1")'
+            # openai.api_base = "https://openkey.cloud/v1"
         elif "gemini" in model_path:
             sub_save_dir = f"{os.path.basename(Json_file_Path).replace(".json","")}__gemini__{model_path.replace("/","--")}"
         else:
@@ -96,15 +102,15 @@ class ChatGptTester_inital:
             Under_test_method = cont['Under_test_method']
             Test_method = cont['Test_method']
             if len(Under_test_method) == 0: continue
-            
+
             Focal_class = Under_test_method['Class_declaration']
             Filed = self.unit_instance.commentDelete(Under_test_method['Filed']) + "\n"
             constructors = self.unit_instance.commentDelete(Under_test_method['constructors']) + "\n"
             Focal_Method_Info = self.unit_instance.commentDelete(Under_test_method["Method_body"])
-            
+
             PL_Focal_Method = Focal_class + '\n' + Filed + constructors + '\n\n' + '# Focal method\n' + Focal_Method_Info + "\n}"
             PL_Focal_Method = '\n'.join(filter(lambda x: x.strip(), PL_Focal_Method.split('\n')))
-            
+
             Test_Import_info = Test_method['Test_import']
             focal_method_name = Under_test_method['Method_statement']
             Class_name = Under_test_method['Class_name']
@@ -117,7 +123,7 @@ class ChatGptTester_inital:
             # --- CORREÇÃO DO CAMINHO (FIX PATH) ---
             # 1. Pega o caminho original que está no JSON (pode ser /Users/..., C:/..., etc)
             raw_path_from_json = Under_test_method['project_path'].split("###")[0]
-            
+
             # 2. Encontra a parte relativa (a partir de 'src') para ignorar o prefixo do outro PC
             if "src" in raw_path_from_json:
                 # Pega tudo do 'src' para frente (ex: src/main/java/com/...)
@@ -153,7 +159,7 @@ class ChatGptTester_inital:
                 # os.chdir(current_dir)
 
                 self.boolean(TestDir) 
-                
+
                 with open(TestScaffoldPath,'w',encoding='utf-8') as f:
                     f.write(ScaffoldingCode)
 
@@ -188,16 +194,17 @@ class ChatGptTester_inital:
 
     def Contain_intention(self, PL_Focal_Method, focal_method_name, Test_Import_info, TestFilePath, TestCodeShell, project_name,contextMethod, Junit_version):
         delay_if_needed_to_prevent_rate_limit(model_path)
-    
+
         # obtain the method intention
         Method_intention = self.unit_instance.intention_unit(PL_Focal_Method, focal_method_name)
 
         Composit_prompt = "# Import information\n" + Test_Import_info + "\n\n# Focal Method Context\n"+self.MethodContext+"\n\n# Method intention \n" + Method_intention + "\n\n" + PL_Focal_Method + \
                           f'\n\n# Instruction\nPlease generate a test method for the \"{focal_method_name}\" according to the given `Import information`, `Focal Method Context` and `Method intention (it is crucial)`. Ensure that the generated test method is compilable, and cannot use the private and undefined method in `Method Context`.\nThe generated code should be enclosed within ``` ```.'
 
-        print("##################")
-        print(Composit_prompt)
-        print("##################")
+        if verbose_mode:
+            print("##################")
+            print(Composit_prompt)
+            print("##################")
 
         delay_if_needed_to_prevent_rate_limit(model_path)
 
@@ -325,9 +332,10 @@ class ChatGptTester_inital:
         Composit_prompt = "# Import information\n" + Test_Import_info + "\n\n# Focal Method Context\n"+self.MethodContext+ "\n" + PL_Focal_Method + \
                           f'\n\n# Instruction\nPlease generate a test method for the \"{focal_method_name}\" according to the given `Import information` and `Focal Method Context`. Ensure that the generated test method is compilable, and cannot use the private and undefined method in `Method Context`.\nThe generated code should be enclosed within ``` ```.'
 
-        print("##################")
-        print(Composit_prompt)
-        print("##################")
+        if verbose_mode:
+            print("##################")
+            print(Composit_prompt)
+            print("##################")
 
         delay_if_needed_to_prevent_rate_limit(model_path)
 
@@ -356,13 +364,13 @@ class Unit:
             )
             # Formato de prompt do DeepSeek Instruct
             self.problem_prompt = "### Instruction:\n{instruction}\n### Response:\n"
-            
+
             self.tokenizer = AutoTokenizer.from_pretrained(
                 model_path, 
                 use_fast=False, 
                 trust_remote_code=True
             )
-            
+
             self.model = AutoModelForCausalLM.from_pretrained(
                 model_path,
                 quantization_config=bnb_config, # Carrega em 4 bits
@@ -393,6 +401,8 @@ class Unit:
             self.tokenizer = AutoTokenizer.from_pretrained(model_path, use_fast=False)
             self.model = AutoModelForCausalLM.from_pretrained(model_path, low_cpu_mem_usage=True,
                                                               torch_dtype=torch.float16).cuda()
+        elif "gpt" in model_path:
+            self.openai_client = OpenAI(api_key=os.getenv('OPENAI_API_KEY'))
         elif "gemini" in model_path:
             self.gemini_client = genai.Client(api_key=gemini_api_key)
 
@@ -408,16 +418,15 @@ class Unit:
 
     def method_pred_unit(self, ask_test_method_prompt, repair_TAG=False):
         if repair_TAG:
-            if "gpt-3.5" in model_path:
-                response_test = openai.ChatCompletion.create(
-                    model=model_path,
-                    messages=[
-                        {"role": "system",
-                         "content": "I want you to play the role of a professional who repairs buggy lines of the test method. Unnecessary import statement can be removed."},
-                        {"role": "user", "content": ask_test_method_prompt},
-                    ],
-                    temperature=0)
-                generated_content = response_test.choices[0].message['content']
+            if "gpt" in model_path:
+                response_test = self.openai_client.chat.completions.create(model=model_path,
+                messages=[
+                    {"role": "system",
+                     "content": "I want you to play the role of a professional who repairs buggy lines of the test method. Unnecessary import statement can be removed."},
+                    {"role": "user", "content": ask_test_method_prompt},
+                ],
+                temperature=model_temperature)
+                generated_content = response_test.choices[0].message.content
             elif "gemini" in model_path:
                 response_test = self.gemini_client.models.generate_content(
                     model=model_path,
@@ -434,16 +443,15 @@ class Unit:
                 generated_content = self.generate(prompt)
 
         else:
-            if "gpt-3.5" in model_path:
-                response_test = openai.ChatCompletion.create(
-                    model=model_path,
-                    messages=[
-                        {"role": "system",
-                         "content": "I want you to play the role of a professional who writes Java test method."},
-                        {"role": "user", "content": ask_test_method_prompt},
-                    ],
-                    temperature=0)
-                generated_content = response_test.choices[0].message['content']
+            if "gpt" in model_path:
+                response_test = self.openai_client.chat.completions.create(model=model_path,
+                messages=[
+                    {"role": "system",
+                     "content": "I want you to play the role of a professional who writes Java test method."},
+                    {"role": "user", "content": ask_test_method_prompt},
+                ],
+                temperature=model_temperature)
+                generated_content = response_test.choices[0].message.content
             elif "gemini" in model_path:
                 response_test = self.gemini_client.models.generate_content(
                     model=model_path,
@@ -463,20 +471,18 @@ class Unit:
         return test_method, import_statement
 
     def intention_unit(self, PL_Focal_Method, focal_method_name):
-        if "gpt-3.5" in model_path:
+        if "gpt" in model_path:
             Intention_NL = f'''Please describe the overall intention of the {focal_method_name} method in as much detail as possible in one sentence.'''
             # Intention_NL = f''Please infer the overall intention of the {focal_method_name} method with one sentence.
             ask_intention_prompt = PL_Focal_Method + '\n\n' + Intention_NL
-            response_intention = openai.ChatCompletion.create(
-                model=model_path,
-                messages=[
-                    {"role": "system",
-                     "content": "I want you to play the role of a professional who infers method intention."},
-                    {"role": "user", "content": ask_intention_prompt},
-                ],
-                temperature=0
-            )
-            intentions = response_intention.choices[0].message['content']
+            response_intention = self.openai_client.chat.completions.create(model=model_path,
+            messages=[
+                {"role": "system",
+                 "content": "I want you to play the role of a professional who infers method intention."},
+                {"role": "user", "content": ask_intention_prompt},
+            ],
+            temperature=model_temperature)
+            intentions = response_intention.choices[0].message.content
         elif "gemini" in model_path:
                 Intention_NL = f'''Please describe the overall intention of the {focal_method_name} method in as much detail as possible in one sentence.'''
                 ask_intention_prompt = PL_Focal_Method + '\n\n' + Intention_NL

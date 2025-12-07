@@ -33,8 +33,8 @@ class ProceFinalResult:
             self.sub_save_dir = 'CodeLlama'  # CodeLlama; WizardCoder
         elif "CodeFuse-CodeLlama" in model_path:
             self.sub_save_dir = "CodeFuse"
-        elif "gpt-3.5" in model_path:
-            self.sub_save_dir = os.path.basename(Json_file_Path).replace(".json", "")
+        elif "gpt" in model_path:
+            self.sub_save_dir = f"{os.path.basename(Json_file_Path).replace(".json","")}__openai__{model_path.replace("/","--")}"
         elif "gemini" in model_path:
             self.sub_save_dir = f"{os.path.basename(Json_file_Path).replace(".json","")}__gemini__{model_path.replace("/","--")}"
 
