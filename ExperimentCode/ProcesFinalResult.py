@@ -57,6 +57,16 @@ class ProceFinalResult:
         self.GeneratedTest_PATH = os.path.join(current_dir, dir_Name, self.sub_save_dir, 'GeneratedTest')
         self.Final_result = os.path.join(current_dir, dir_Name, self.sub_save_dir, 'final_result.json')
 
+        # Check if result file already exists
+        if os.path.exists(self.Final_result):
+            print(f"\n{'='*60}")
+            print("WARNING: final_result.json already exists!")
+            print(f"Path: {self.Final_result}")
+            print("="*60)
+            print("\nTo proceed, please remove the existing file or move it to another location.")
+            print("Aborting to prevent data loss.\n")
+            raise FileExistsError(f"final_result.json already exists at {self.Final_result}")
+
         self.boolean(self.GeneratedTest_PATH)
 
         self.LoadFile()

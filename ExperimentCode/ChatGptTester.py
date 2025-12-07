@@ -81,6 +81,25 @@ class ChatGptTester:
         self.repairCompile_result = os.path.join(current_dir, dir_Name, self.sub_save_dir, 'RepairCompile.json')
         self.repairTest_result = os.path.join(current_dir, dir_Name, self.sub_save_dir,'RepairTest.json')
 
+        # Check if result files already exist
+        existing_files = []
+        if os.path.exists(self.Final_result):
+            existing_files.append(self.Final_result)
+        if os.path.exists(self.repairCompile_result):
+            existing_files.append(self.repairCompile_result)
+        if os.path.exists(self.repairTest_result):
+            existing_files.append(self.repairTest_result)
+        
+        if existing_files:
+            print(f"\n{'='*60}")
+            print("WARNING: Output files already exist!")
+            for file in existing_files:
+                print(f"  - {file}")
+            print("="*60)
+            print("\nTo proceed, please remove the existing files or move them to another location.")
+            print("Aborting to prevent data loss.\n")
+            raise FileExistsError(f"Output files already exist. Found {len(existing_files)} existing file(s).")
+
         self.boolean(self.original_java_PATH)
         self.boolean(self.LogINFO_PATH)
         self.boolean(self.Surefire_reports_dest_path)
@@ -795,8 +814,8 @@ class Unit:
 
 if __name__ == "__main__":
 
-    projects_name = ['Zappos_zappos-json.json','sachin-handiekar_jInstagram.json']
-    # projects_name = ['sachin-handiekar_jInstagram.json']
+    projects_name = ['sachin-handiekar_jInstagram.json', 'tabulapdf_tabula-java.json','Zappos_zappos-json.json']
+
     for project_name in projects_name:
         print("project_name: "+project_name)
         Json_file_Path = os.path.join(chatTesterDir, "RepoData", project_name)

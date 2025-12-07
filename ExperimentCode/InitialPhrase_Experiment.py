@@ -74,6 +74,16 @@ class ChatGptTester_inital:
         self.GeneratedTest_PATH = os.path.join(current_dir, self.Intention_TAG, sub_save_dir, 'GeneratedTest')
         self.MetricOut_Path = os.path.join(current_dir, self.Intention_TAG, sub_save_dir, 'result_1.json')
 
+        # Check if result_1.json already exists
+        if os.path.exists(self.MetricOut_Path):
+            print(f"\n{'='*60}")
+            print("WARNING: result_1.json already exists!")
+            print(f"Path: {self.MetricOut_Path}")
+            print("="*60)
+            print("\nTo proceed, please remove the existing file or move it to another location.")
+            print("Aborting to prevent data loss.\n")
+            raise FileExistsError(f"result_1.json already exists at {self.MetricOut_Path}")
+
         self.boolean(self.GeneratedTest_PATH)
         self.boolean(self.Surefire_reports_dest_path)
         self.boolean(self.LogINFO_PATH)
@@ -575,7 +585,7 @@ if __name__ == "__main__":
     if Intention_TAG:Intention = 'Contain_intention'
     else:Intention = "No_intention"
 
-    projects_name = ['tabulapdf_tabula-java.json','Zappos_zappos-json.json']
+    projects_name = ['sachin-handiekar_jInstagram.json', 'tabulapdf_tabula-java.json','Zappos_zappos-json.json']
 
     for project_name in projects_name:
         Json_file_Path = os.path.join(chatTesterDir, "RepoData", project_name)
