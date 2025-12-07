@@ -451,11 +451,18 @@ class ChatGptTester:
         os.chdir(excute_path)
         print(f"Changed directory to {excute_path}...")
 
+        # --- FIX: BYPASS SSL CERTIFICATE ERRORS FOR OLD JAVA ---
+        ssl_flags = [
+            '-Dmaven.wagon.http.ssl.insecure=true', 
+            '-Dmaven.wagon.http.ssl.allowall=true', 
+            '-Dmaven.wagon.http.ssl.ignore.validity.dates=true'
+        ]
+
         mvn_compile = [ 'mvn', '-B', 'test-compile', '-Dstyle.color=never', '-Dcheckstyle.skip=true']
-        mvn_test = ['mvn', '-B', 'test', '-Dstyle.color=never', '-Dcheckstyle.skip=true']
+        mvn_test = ['mvn', '-B', 'test', '-Dstyle.color=never', '-Dcheckstyle.skip=true'] + ssl_flags
         if JUNIT_VERSION == 5:
             mvn_compile = ['mvn', '-B', 'test-compile', '-Dtest.engine=junit-jupiter', '-Dstyle.color=never', '-Dcheckstyle.skip=true']
-            mvn_test = ['mvn', '-B', 'test', '-Dtest.engine=junit-jupiter', '-Dstyle.color=never', '-Dcheckstyle.skip=true']
+            mvn_test = ['mvn', '-B', 'test', '-Dtest.engine=junit-jupiter', '-Dstyle.color=never', '-Dcheckstyle.skip=true'] + ssl_flags
             print("Trying to execute test with JUnit 5 settings.")
 
         write_cont, compile_result, test_result = self.Compile_Test_sub_unit(mvn_compile, mvn_test, TestFilePath)

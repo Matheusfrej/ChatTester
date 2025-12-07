@@ -252,10 +252,10 @@ class ChatGptTester_inital:
         ]
 
         if JUNIT_VERSION == 5:
-            mvn_compile = ['mvn', '-B', 'test-compile', '-Dtest.engine=junit-jupiter', '-Dstyle.color=never', '-Dcheckstyle.skip=true'] + ssl_flags
+            mvn_compile = ['mvn', '-B', 'test-compile', '-Dtest.engine=junit-jupiter', '-Dstyle.color=never', '-Dcheckstyle.skip=true']
             mvn_test = ['mvn', '-B', 'test', '-Dtest.engine=junit-jupiter', '-Dstyle.color=never', '-Dcheckstyle.skip=true'] + ssl_flags
         else:
-            mvn_compile = ['mvn', '-B', 'test-compile', '-Dstyle.color=never', '-Dcheckstyle.skip=true'] + ssl_flags
+            mvn_compile = ['mvn', '-B', 'test-compile', '-Dstyle.color=never', '-Dcheckstyle.skip=true']
             mvn_test = ['mvn', '-B', 'test', '-Dstyle.color=never', '-Dcheckstyle.skip=true'] + ssl_flags
 
         write_cont, compile_result, test_result = self.Compile_Test_sub_unit(mvn_compile, mvn_test, TestFilePath)
