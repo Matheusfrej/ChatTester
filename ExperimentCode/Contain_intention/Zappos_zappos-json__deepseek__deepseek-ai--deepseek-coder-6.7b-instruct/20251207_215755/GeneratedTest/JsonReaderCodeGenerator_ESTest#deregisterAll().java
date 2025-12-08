@@ -4,8 +4,6 @@
  * Thu Jan 25 13:55:24 GMT 2024
  */
 package com.zappos.json;
-import java.util.*;
-import java.lang.*;
 import org.junit.Test;
 import java.util.concurrent.ConcurrentHashMap;
 import static org.junit.Assert.assertEquals;
@@ -26,22 +24,20 @@ import org.junit.runner.RunWith;
 @RunWith(EvoRunner.class)
 @EvoRunnerParameters(mockJVMNonDeterminism = true, useVFS = true, useVNET = true, resetStaticState = true, separateClassLoader = true)
 public class JsonReaderCodeGenerator_ESTest extends JsonReaderCodeGenerator_ESTest_scaffolding {
-    
-@Test
-public void testDeregisterAll() {
-    JsonReaderCodeGenerator generator = new JsonReaderCodeGenerator(null, null);
-    ConcurrentHashMap<Class<?>, JsonReaderInvoker> jsonReaderInvokers = new ConcurrentHashMap<>();
+    @Test
+    public void testDeregisterAll() {
+        // Arrange
+        JsonReaderCodeGenerator generator = new JsonReaderCodeGenerator(null, null);
+        ConcurrentHashMap<Class<?>, JsonReaderInvoker> jsonReaderInvokers = new ConcurrentHashMap<>();
+        jsonReaderInvokers.put(String.class, new JsonReaderInvoker());
+        jsonReaderInvokers.put(Integer.class, new JsonReaderInvoker());
+        jsonReaderInvokers.put(Boolean.class, new JsonReaderInvoker());
+        generator.JSON_READER_INVOKERS = jsonReaderInvokers;
 
-    try {
-        jsonReaderInvokers.put(String.class, new JsonReaderInvoker(null, null));
-        jsonReaderInvokers.put(Integer.class, new JsonReaderInvoker(null, null));
-        jsonReaderInvokers.put(Boolean.class, new JsonReaderInvoker(null, null));
-    } catch (Exception e) {
-        e.printStackTrace();
+        // Act
+        generator.deregisterAll();
+
+        // Assert
+        assertEquals(0, generator.JSON_READER_INVOKERS.size());
     }
-
-    generator.JSON_READER_INVOKERS = jsonReaderInvokers;
-    generator.deregisterAll();
-    assertEquals(0, generator.JSONJSON_READER_INVOKERS.size());
-}
 }
