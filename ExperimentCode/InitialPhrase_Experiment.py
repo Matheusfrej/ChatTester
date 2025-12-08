@@ -48,8 +48,14 @@ def delay_if_needed_to_prevent_rate_limit(model):
         time.sleep(delay_seconds)
 
 class ChatGptTester_inital:
-    def __init__(self, Intention_TAG):
+    def __init__(self, Intention_TAG, timestamp, json_path):
         self.Intention_TAG = Intention_TAG
+        # Use provided timestamp or generate current timestamp
+        if timestamp is None:
+            from datetime import datetime
+            timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+        self.timestamp = timestamp
+        self.Json_file_Path = json_path
 
         if "CodeLlama" in model_path:
             sub_save_dir = "CodeLlama"
@@ -57,22 +63,25 @@ class ChatGptTester_inital:
             sub_save_dir = "CodeFuse"
         elif "deepseek" in model_path:
             sub_save_dir = "DeepSeek"
-            sub_save_dir = f"{os.path.basename(Json_file_Path).replace(".json","")}__deepseek__{model_path.replace("/","--")}"
+            sub_save_dir = f"{os.path.basename(self.Json_file_Path).replace(".json","")}__deepseek__{model_path.replace("/","--")}"
         elif "gpt" in model_path:
-            sub_save_dir = f"{os.path.basename(Json_file_Path).replace(".json","")}__openai__{model_path.replace("/","--")}"
+            sub_save_dir = f"{os.path.basename(self.Json_file_Path).replace(".json","")}__openai__{model_path.replace("/","--")}"
             # TODO: The 'openai.api_base' option isn't read in the client API. You will need to pass it when you instantiate the client, e.g. 'OpenAI(base_url="https://openkey.cloud/v1")'
             # openai.api_base = "https://openkey.cloud/v1"
         elif "gemini" in model_path:
-            sub_save_dir = f"{os.path.basename(Json_file_Path).replace(".json","")}__gemini__{model_path.replace("/","--")}"
+            sub_save_dir = f"{os.path.basename(self.Json_file_Path).replace(".json","")}__gemini__{model_path.replace("/","--")}"
         else:
             sub_save_dir = "OtherModel"
 
 
-        self.original_java_PATH = os.path.join(current_dir, self.Intention_TAG, sub_save_dir, 'original_java')
-        self.LogINFO_PATH = os.path.join(current_dir, self.Intention_TAG, sub_save_dir, 'LogINFO')
-        self.Surefire_reports_dest_path = os.path.join(current_dir, self.Intention_TAG, sub_save_dir, 'Surefire_reports')
-        self.GeneratedTest_PATH = os.path.join(current_dir, self.Intention_TAG, sub_save_dir, 'GeneratedTest')
-        self.MetricOut_Path = os.path.join(current_dir, self.Intention_TAG, sub_save_dir, 'result_1.json')
+        # Create timestamped subdirectory
+        timestamped_dir = os.path.join(sub_save_dir, self.timestamp)
+        
+        self.original_java_PATH = os.path.join(current_dir, self.Intention_TAG, timestamped_dir, 'original_java')
+        self.LogINFO_PATH = os.path.join(current_dir, self.Intention_TAG, timestamped_dir, 'LogINFO')
+        self.Surefire_reports_dest_path = os.path.join(current_dir, self.Intention_TAG, timestamped_dir, 'Surefire_reports')
+        self.GeneratedTest_PATH = os.path.join(current_dir, self.Intention_TAG, timestamped_dir, 'GeneratedTest')
+        self.MetricOut_Path = os.path.join(current_dir, self.Intention_TAG, timestamped_dir, 'result_1.json')
 
         # Check if result_1.json already exists
         if os.path.exists(self.MetricOut_Path):
@@ -91,7 +100,7 @@ class ChatGptTester_inital:
 
         self.unit_instance = Unit(model_path)  # class instance
 
-        self.read_INFO(Json_file_Path)
+        self.read_INFO()
 
     def boolean(self, file_path):
         if not os.path.exists(file_path):
@@ -102,10 +111,10 @@ class ChatGptTester_inital:
             shutil.rmtree(file_path)
             os.makedirs(file_path)
 
-    def read_INFO(self, Json_file_Path):
-        project_name = os.path.basename(Json_file_Path).replace(".json","")
+    def read_INFO(self):
+        project_name = os.path.basename(self.Json_file_Path).replace(".json","")
 
-        with open(Json_file_Path, 'r', encoding='utf-8') as f:
+        with open(self.Json_file_Path, 'r', encoding='utf-8') as f:
             file_cont = json.load(f)
 
         for cont in tqdm(file_cont):
@@ -585,8 +594,11 @@ if __name__ == "__main__":
     if Intention_TAG:Intention = 'Contain_intention'
     else:Intention = "No_intention"
 
+    from datetime import datetime
+    timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+
     projects_name = ['sachin-handiekar_jInstagram.json', 'tabulapdf_tabula-java.json','Zappos_zappos-json.json']
 
     for project_name in projects_name:
         Json_file_Path = os.path.join(chatTesterDir, "RepoData", project_name)
-        ChatGptTester_inital(Intention)
+        ChatGptTester_inital(Intention, timestamp, Json_file_Path)

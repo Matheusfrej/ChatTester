@@ -30,7 +30,13 @@ class ProceFinalResult:
     This class reads results from the iterative phase and filters them based on compilation and test result.
     """
     
-    def __init__(self, repo_name, Json_file_Path):
+    def __init__(self, repo_name, Json_file_Path, timestamp=None):
+        # Use provided timestamp or generate current timestamp
+        if timestamp is None:
+            from datetime import datetime
+            timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+        self.timestamp = timestamp
+        
         self.repo_name = repo_name
         self.Json_file_Path = Json_file_Path
 
@@ -46,16 +52,20 @@ class ProceFinalResult:
         elif "gemini" in model_path:
             self.sub_save_dir = f"{os.path.basename(Json_file_Path).replace(".json","")}__gemini__{model_path.replace("/","--")}"
 
+        timestamped_dir = os.path.join(self.sub_save_dir, self.timestamp)
+
         first_dir = "Iterate"
-        self.C_GeneratedTest_Path = os.path.join(current_dir, first_dir, self.sub_save_dir, 'GeneratedTest')
-        self.C_Surefire_reports_Path = os.path.join(current_dir, first_dir, self.sub_save_dir,'Surefire_reports')
-        self.C_LogINFO_Path = os.path.join(current_dir, first_dir, self.sub_save_dir, 'LogINFO')
-        self.pred_1 = os.path.join(current_dir, first_dir, self.sub_save_dir, 'final_result.json')
+        self.C_GeneratedTest_Path = os.path.join(current_dir, first_dir, timestamped_dir, 'GeneratedTest')
+        self.C_Surefire_reports_Path = os.path.join(current_dir, first_dir, timestamped_dir,'Surefire_reports')
+        self.C_LogINFO_Path = os.path.join(current_dir, first_dir, timestamped_dir, 'LogINFO')
+        self.pred_1 = os.path.join(current_dir, first_dir, timestamped_dir, 'final_result.json')
 
         # Path in iterate. 基于上面的文件夹，再进一步进行推理，得到迭代之后的结果.
         dir_Name = "IterateResultDeal"
-        self.GeneratedTest_PATH = os.path.join(current_dir, dir_Name, self.sub_save_dir, 'GeneratedTest')
-        self.Final_result = os.path.join(current_dir, dir_Name, self.sub_save_dir, 'final_result.json')
+        # Create timestamped subdirectory
+        
+        self.GeneratedTest_PATH = os.path.join(current_dir, dir_Name, timestamped_dir, 'GeneratedTest')
+        self.Final_result = os.path.join(current_dir, dir_Name, timestamped_dir, 'final_result.json')
 
         # Check if result file already exists
         if os.path.exists(self.Final_result):

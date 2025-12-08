@@ -42,7 +42,13 @@ model_path = os.getenv('MODEL_PATH', "gpt-3.5-turbo")
 gemini_api_key = os.getenv('GEMINI_API_KEY')
 
 class ChatGptTester:
-    def __init__(self, repo_name):
+    def __init__(self, repo_name, timestamp, json_path):
+        # Use provided timestamp or generate current timestamp
+        if timestamp is None:
+            from datetime import datetime
+            timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+        self.timestamp = timestamp
+        self.Json_file_Path = json_path
 
         # Path in root
         self.Result_PATH = os.path.join(chatTesterDir, "RepoData") # Data pair path
@@ -54,32 +60,36 @@ class ChatGptTester:
         elif "CodeFuse" in model_path:
             self.sub_save_dir = "CodeFuse"
         elif "deepseek" in model_path:
-            self.sub_save_dir = f"{os.path.basename(Json_file_Path).replace(".json","")}__deepseek__{model_path.replace("/","--")}"
+            self.sub_save_dir = f"{os.path.basename(self.Json_file_Path).replace(".json","")}__deepseek__{model_path.replace("/","--")}"
         elif "gpt" in model_path:
-            self.sub_save_dir = f"{os.path.basename(Json_file_Path).replace(".json","")}__openai__{model_path.replace("/","--")}"
+            self.sub_save_dir = f"{os.path.basename(self.Json_file_Path).replace(".json","")}__openai__{model_path.replace("/","--")}"
             # TODO: The 'openai.api_base' option isn't read in the client API. You will need to pass it when you instantiate the client, e.g. 'OpenAI(base_url="https://openkey.cloud/v1")'
             # openai.api_base = "https://openkey.cloud/v1"
         elif "gemini" in model_path:
-            self.sub_save_dir = f"{os.path.basename(Json_file_Path).replace(".json","")}__gemini__{model_path.replace("/","--")}"
+            self.sub_save_dir = f"{os.path.basename(self.Json_file_Path).replace(".json","")}__gemini__{model_path.replace("/","--")}"
         else:
             self.sub_save_dir = "OtherModel"
 
-        self.C_GeneratedTest_Path = os.path.join(current_dir,'Contain_intention',self.sub_save_dir, 'GeneratedTest')
-        self.C_LogINFO_Path = os.path.join(current_dir,'Contain_intention',self.sub_save_dir, 'LogINFO')
-        self.C_Surefire_reports_Path = os.path.join(current_dir, 'Contain_intention', self.sub_save_dir,'Surefire_reports')
-        self.pred_1 = os.path.join(current_dir, "Contain_intention", self.sub_save_dir, 'result_1.json')
+        self.timestamped_dir = os.path.join(self.sub_save_dir, self.timestamp)
+
+        self.C_GeneratedTest_Path = os.path.join(current_dir,'Contain_intention',self.timestamped_dir, 'GeneratedTest')
+        self.C_LogINFO_Path = os.path.join(current_dir,'Contain_intention',self.timestamped_dir, 'LogINFO')
+        self.C_Surefire_reports_Path = os.path.join(current_dir, 'Contain_intention', self.timestamped_dir,'Surefire_reports')
+        self.pred_1 = os.path.join(current_dir, "Contain_intention", self.timestamped_dir, 'result_1.json')
 
         # Path in iterate. 基于上面的文件夹，再进一步进行推理，得到迭代之后的结果.
         dir_Name = "Iterate"
-        self.original_java_PATH = os.path.join(current_dir, dir_Name, self.sub_save_dir , 'original_java')
-        self.LogINFO_PATH = os.path.join(current_dir, dir_Name, self.sub_save_dir, 'LogINFO')
-        self.Surefire_reports_dest_path = os.path.join(current_dir, dir_Name, self.sub_save_dir, 'Surefire_reports')
-        self.GeneratedTest_PATH = os.path.join(current_dir, dir_Name, self.sub_save_dir, 'GeneratedTest')
-        self.RepairProcess = os.path.join(current_dir, dir_Name, self.sub_save_dir, 'RepairProcess')
-        self.Final_result = os.path.join(current_dir, dir_Name, self.sub_save_dir, 'final_result.json')
+        # Create timestamped subdirectory
+        
+        self.original_java_PATH = os.path.join(current_dir, dir_Name, self.timestamped_dir , 'original_java')
+        self.LogINFO_PATH = os.path.join(current_dir, dir_Name, self.timestamped_dir, 'LogINFO')
+        self.Surefire_reports_dest_path = os.path.join(current_dir, dir_Name, self.timestamped_dir, 'Surefire_reports')
+        self.GeneratedTest_PATH = os.path.join(current_dir, dir_Name, self.timestamped_dir, 'GeneratedTest')
+        self.RepairProcess = os.path.join(current_dir, dir_Name, self.timestamped_dir, 'RepairProcess')
+        self.Final_result = os.path.join(current_dir, dir_Name, self.timestamped_dir, 'final_result.json')
 
-        self.repairCompile_result = os.path.join(current_dir, dir_Name, self.sub_save_dir, 'RepairCompile.json')
-        self.repairTest_result = os.path.join(current_dir, dir_Name, self.sub_save_dir,'RepairTest.json')
+        self.repairCompile_result = os.path.join(current_dir, dir_Name, self.timestamped_dir, 'RepairCompile.json')
+        self.repairTest_result = os.path.join(current_dir, dir_Name, self.timestamped_dir,'RepairTest.json')
 
         # Check if result files already exist
         existing_files = []
@@ -252,7 +262,7 @@ class ChatGptTester:
 
 
     def DriveTest_Info(self, FocalMethodInfo):
-        with open(Json_file_Path, 'r', encoding='utf-8') as f:
+        with open(self.Json_file_Path, 'r', encoding='utf-8') as f:
             data_pair = json.load(f)
 
         # Lógica original para encontrar o par correto no JSON
@@ -514,7 +524,7 @@ class ChatGptTester:
         proc_compile_list_INFO, proc_test_list_INFO, Composit_prompt = "", "",""
         if compile_result == 0:
             # 处理编译的错误信息：Out_dict = {"ERROR_MESSAGE": str, "Class_Name": str, "ERROR_LINE": str}
-            compile_instance = Compile_Test_INFO.CompileInfo(compile_logInfo_path, self.sub_save_dir, gen_test_PATH)
+            compile_instance = Compile_Test_INFO.CompileInfo(compile_logInfo_path, self.timestamped_dir, gen_test_PATH)
             # Busca os erros de compilação do maven
             proc_compile_list_INFO = compile_instance.Call_errorDeal()
             if re_generate_Tag: Method_intention = self.unit_instance.intention_unit(self.PL_Focal_Method, self.focal_method_name)
@@ -814,12 +824,15 @@ class Unit:
 
 if __name__ == "__main__":
 
+    from datetime import datetime
+    # timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+
     projects_name = ['sachin-handiekar_jInstagram.json', 'tabulapdf_tabula-java.json','Zappos_zappos-json.json']
 
     for project_name in projects_name:
         print("project_name: "+project_name)
         Json_file_Path = os.path.join(chatTesterDir, "RepoData", project_name)
-        ChatGptTester(project_name.replace(".json",""))
+        ChatGptTester(project_name.replace(".json",""), "20251207_214446", Json_file_Path)
 
         # Final Result postprocessing
-        ProceFinalResult(project_name.replace(".json", ""), Json_file_Path)
+        ProceFinalResult(project_name.replace(".json", ""), Json_file_Path, "20251207_214446")
