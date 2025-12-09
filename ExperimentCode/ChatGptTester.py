@@ -860,17 +860,17 @@ class Unit:
         cleaned_code = re.sub(pattern, replace_func, java_code, flags=re.DOTALL | re.MULTILINE)
         return cleaned_code
 
-if __name__ == "__main__":
+# if __name__ == "__main__":
 
-    from datetime import datetime
-    # timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+#     from datetime import datetime
+#     # timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
 
-    projects_name = ['sachin-handiekar_jInstagram.json', 'tabulapdf_tabula-java.json','Zappos_zappos-json.json']
+#     projects_name = ['sachin-handiekar_jInstagram.json', 'tabulapdf_tabula-java.json','Zappos_zappos-json.json']
 
-    for project_name in projects_name:
-        print("project_name: "+project_name)
-        Json_file_Path = os.path.join(chatTesterDir, "RepoData", project_name)
-        ChatGptTester(project_name.replace(".json",""), "20251207_214446", Json_file_Path)
+#     for project_name in projects_name:
+#         print("project_name: "+project_name)
+#         Json_file_Path = os.path.join(chatTesterDir, "RepoData", project_name)
+#         ChatGptTester(project_name.replace(".json",""), "20251207_214446", Json_file_Path)
 
-        # Final Result postprocessing
-        ProceFinalResult(project_name.replace(".json", ""), Json_file_Path, "20251207_214446")
+#         # Final Result postprocessing
+#         ProceFinalResult(project_name.replace(".json", ""), Json_file_Path, "20251207_214446")

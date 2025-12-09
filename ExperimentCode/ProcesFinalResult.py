@@ -223,8 +223,8 @@ class ProceFinalResult:
 
 
 
-if __name__ == "__main__":
-    projects_name = ['sachin-handiekar_jInstagram.json','tabulapdf_tabula-java.json','Zappos_zappos-json.json']
-    for project_name in projects_name:
-        Json_file_Path = os.path.join(chatTesterDir, "RepoData", project_name)
-        ProceFinalResult(project_name.replace(".json", ""))
+# if __name__ == "__main__":
+#     projects_name = ['sachin-handiekar_jInstagram.json','tabulapdf_tabula-java.json','Zappos_zappos-json.json']
+#     for project_name in projects_name:
+#         Json_file_Path = os.path.join(chatTesterDir, "RepoData", project_name)
+#         ProceFinalResult(project_name.replace(".json", ""))
