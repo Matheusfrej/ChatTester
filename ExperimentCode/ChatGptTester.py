@@ -4,6 +4,7 @@ import shutil
 import subprocess
 import openai
 from openai import OpenAI
+import time
 
 import os
 import re
@@ -326,6 +327,7 @@ class ChatGptTester:
         iter = 0  # compile 和 Test的修复次数
         IterCompile, IterTest = 1, 0
         while True:
+            print(f"  → Repair Iteration: TotalIter={TotalIter}, IterCompile={IterCompile}, IterTest={IterTest}, CurrentRepairTag={repairTag}, Non_iter={iter}")
             if verbose_mode:
                 print(f'----------------{ori_test_Path}----------------')
                 print(Composit_prompt)
@@ -340,9 +342,22 @@ class ChatGptTester:
             pattern = re.compile(r'//\s*original\s+test\s+path:\s*[\S\s]*?\n')
             Composit_prompt = pattern.sub('', Composit_prompt)
 
-            Gen_test_method, import_statement = self.unit_instance.method_pred_unit(Composit_prompt, True)
-            TestFilePath = ori_test_Path.split("###")[0]
-            focal_method_name = fixedClassName.split("#")[1]
+            llm_returned_successfully = False
+            retries = 0
+            while(not llm_returned_successfully):
+                try:
+                    Gen_test_method, import_statement = self.unit_instance.method_pred_unit(Composit_prompt, True)
+                    TestFilePath = ori_test_Path.split("###")[0]
+                    focal_method_name = fixedClassName.split("#")[1]
+                    llm_returned_successfully = True
+                except Exception as e:
+                        if retries < 2:
+                            retries += 1
+                        print(f"    ✗ LLM Error: {str(e)}. Retrying in {retries*2} seconds...")
+                        time.sleep(retries*2)
+
+
+
             Dtest_para = self.file_write(generated_path, Gen_test_method, TestFilePath, self.testCodeShell,
                                                            import_statement+"\nimport java.util.*;\nimport java.lang.*;\n", focal_method_name)
 
@@ -487,10 +502,10 @@ class ChatGptTester:
             '-Dmaven.wagon.http.ssl.ignore.validity.dates=true'
         ]
 
-        mvn_compile = [ 'mvn', '-B', 'test-compile', '-Dstyle.color=never', '-Dcheckstyle.skip=true']
+        mvn_compile = [ 'mvn', '-B', 'test-compile', '-Dstyle.color=never', '-Dcheckstyle.skip=true'] + ssl_flags
         mvn_test = ['mvn', '-B', 'test', '-Dstyle.color=never', '-Dcheckstyle.skip=true'] + ssl_flags
         if JUNIT_VERSION == 5:
-            mvn_compile = ['mvn', '-B', 'test-compile', '-Dtest.engine=junit-jupiter', '-Dstyle.color=never', '-Dcheckstyle.skip=true']
+            mvn_compile = ['mvn', '-B', 'test-compile', '-Dtest.engine=junit-jupiter', '-Dstyle.color=never', '-Dcheckstyle.skip=true'] + ssl_flags
             mvn_test = ['mvn', '-B', 'test', '-Dtest.engine=junit-jupiter', '-Dstyle.color=never', '-Dcheckstyle.skip=true'] + ssl_flags
             print("Trying to execute test with JUnit 5 settings.")
 
@@ -527,8 +542,21 @@ class ChatGptTester:
             compile_instance = Compile_Test_INFO.CompileInfo(compile_logInfo_path, self.timestamped_dir, gen_test_PATH)
             # Busca os erros de compilação do maven
             proc_compile_list_INFO = compile_instance.Call_errorDeal()
-            if re_generate_Tag: Method_intention = self.unit_instance.intention_unit(self.PL_Focal_Method, self.focal_method_name)
-            else:Method_intention = ""
+            if re_generate_Tag: 
+                llm_returned_successfully = False
+                retries = 0
+                while(not llm_returned_successfully):
+                    try:
+                        Method_intention = self.unit_instance.intention_unit(self.PL_Focal_Method, self.focal_method_name)
+                        llm_returned_successfully = True
+                    except Exception as e:
+                        if retries < 2:
+                            retries += 1
+                        print(f"    ✗ LLM Error: {str(e)}. Retrying in {retries*2} seconds...")
+                        time.sleep(retries*2)
+            else:
+                Method_intention = ""
+
             """ Pega o primeiro erro de compilação e passa para um algoritmo
                 que pega a classe associada com o erro e busca a interface 
                 dessa classe para passar como contexto para o prompt na tentativa
@@ -542,7 +570,17 @@ class ChatGptTester:
             # 处理test运行的错误信息: TEST_INFO_dict = {"FILE_NAME":os.path.basename(xml_file_path), "ERROR_MESSAGE":str, "ERROR_LINE":str}
             test_instance = Compile_Test_INFO.TestINFO(Surefire_reports_dst_file, compile_logInfo_path)
             proc_test_list_INFO = test_instance.TetsINFO_deal()
-            Method_intention = self.unit_instance.intention_unit(self.PL_Focal_Method, self.focal_method_name)
+            llm_returned_successfully = False
+            retries = 0
+            while(not llm_returned_successfully):
+                try:
+                    Method_intention = self.unit_instance.intention_unit(self.PL_Focal_Method, self.focal_method_name)
+                    llm_returned_successfully = True
+                except Exception as e:
+                    if retries < 2:
+                        retries += 1
+                    print(f"    ✗ LLM Error: {str(e)}. Retrying in {retries*2} seconds...")
+                    time.sleep(retries*2)
             # Method_intention = ""
             class_instance = FeedbackPrompt.TestPrompt(proc_test_list_INFO[0], gen_test_PATH, Method_intention, self.Focal_Method_Info, self.focal_method_name)
             Composit_prompt = class_instance.Test_deal()
