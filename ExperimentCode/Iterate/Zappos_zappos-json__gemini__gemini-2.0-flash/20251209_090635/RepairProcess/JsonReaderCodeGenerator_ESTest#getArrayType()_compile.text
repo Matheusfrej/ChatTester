@@ -1,0 +1,203 @@
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java
+[GENERATED PATH] JsonReaderCodeGenerator_ESTest#getArrayType().java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[38,14] incompatible types: com.zappos.json.JsonBeanAttribute cannot be converted to java.lang.annotation.Annotation
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[46,46] no suitable method found for getAnnotation(java.lang.Class<com.zappos.json.JsonBeanAttribute>)
+    method java.lang.reflect.AnnotatedElement.<T>getAnnotation(java.lang.Class<T>) is not applicable
+      (inference variable T has incompatible bounds
+        equality constraints: com.zappos.json.JsonBeanAttribute
+        upper bounds: java.lang.annotation.Annotation)
+    method java.lang.reflect.AccessibleObject.<T>getAnnotation(java.lang.Class<T>) is not applicable
+      (inference variable T has incompatible bounds
+        equality constraints: com.zappos.json.JsonBeanAttribute
+        upper bounds: java.lang.annotation.Annotation)
+    method java.lang.reflect.Executable.<T>getAnnotation(java.lang.Class<T>) is not applicable
+      (inference variable T has incompatible bounds
+        equality constraints: com.zappos.json.JsonBeanAttribute
+        upper bounds: java.lang.annotation.Annotation)
+    method java.lang.reflect.Method.<T>getAnnotation(java.lang.Class<T>) is not applicable
+      (inference variable T has incompatible bounds
+        equality constraints: com.zappos.json.JsonBeanAttribute
+        upper bounds: java.lang.annotation.Annotation)
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[48,13] cannot find symbol
+  symbol:   class AttributeInfo
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[48,47] cannot find symbol
+  symbol:   class AttributeInfo
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[INFO] 4 errors 
+####################
+
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java
+[GENERATED PATH] JsonReaderCodeGenerator_ESTest#getArrayType().java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReader_ESTest.java:[9,26] package org.mockito does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[7,23] cannot find symbol
+  symbol:   class JsonExclude
+  location: package com.zappos.json
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[8,23] cannot find symbol
+  symbol:   class JsonInclude
+  location: package com.zappos.json
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[9,23] cannot find symbol
+  symbol:   class OutputStyle
+  location: package com.zappos.json
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[10,33] package com.zappos.json.formatter does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[11,33] package com.zappos.json.formatter does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[12,28] cannot find symbol
+  symbol:   class PrimitiveUtils
+  location: package com.zappos.json.util
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReader_ESTest.java:[34,38] cannot find symbol
+  symbol:   class Map
+  location: class com.zappos.json.JsonReader_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReader_ESTest.java:[35,22] cannot find symbol
+  symbol:   class Map
+  location: class com.zappos.json.JsonReader_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[45,14] incompatible types: com.zappos.json.JsonBeanAttribute cannot be converted to java.lang.annotation.Annotation
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[52,46] no suitable method found for getAnnotation(java.lang.Class<com.zappos.json.JsonBeanAttribute>)
+    method java.lang.reflect.AnnotatedElement.<T>getAnnotation(java.lang.Class<T>) is not applicable
+      (inference variable T has incompatible bounds
+        equality constraints: com.zappos.json.JsonBeanAttribute
+        upper bounds: java.lang.annotation.Annotation)
+    method java.lang.reflect.AccessibleObject.<T>getAnnotation(java.lang.Class<T>) is not applicable
+      (inference variable T has incompatible bounds
+        equality constraints: com.zappos.json.JsonBeanAttribute
+        upper bounds: java.lang.annotation.Annotation)
+    method java.lang.reflect.Executable.<T>getAnnotation(java.lang.Class<T>) is not applicable
+      (inference variable T has incompatible bounds
+        equality constraints: com.zappos.json.JsonBeanAttribute
+        upper bounds: java.lang.annotation.Annotation)
+    method java.lang.reflect.Method.<T>getAnnotation(java.lang.Class<T>) is not applicable
+      (inference variable T has incompatible bounds
+        equality constraints: com.zappos.json.JsonBeanAttribute
+        upper bounds: java.lang.annotation.Annotation)
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[53,13] cannot find symbol
+  symbol:   class AttributeInfo
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[53,47] cannot find symbol
+  symbol:   class AttributeInfo
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[INFO] 13 errors 
+####################
+
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java
+[GENERATED PATH] JsonReaderCodeGenerator_ESTest#getArrayType().java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReader_ESTest.java:[9,26] package org.mockito does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[8,23] cannot find symbol
+  symbol:   class JsonExclude
+  location: package com.zappos.json
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[9,23] cannot find symbol
+  symbol:   class JsonInclude
+  location: package com.zappos.json
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[10,23] cannot find symbol
+  symbol:   class OutputStyle
+  location: package com.zappos.json
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[11,33] package com.zappos.json.formatter does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[12,33] package com.zappos.json.formatter does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[13,28] cannot find symbol
+  symbol:   class PrimitiveUtils
+  location: package com.zappos.json.util
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReader_ESTest.java:[34,38] cannot find symbol
+  symbol:   class Map
+  location: class com.zappos.json.JsonReader_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReader_ESTest.java:[35,22] cannot find symbol
+  symbol:   class Map
+  location: class com.zappos.json.JsonReader_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[41,17] cannot find symbol
+  symbol: variable arrayType
+[INFO] 10 errors 
+####################
+
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java
+[GENERATED PATH] JsonReaderCodeGenerator_ESTest#getArrayType().java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReader_ESTest.java:[9,26] package org.mockito does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[9,23] cannot find symbol
+  symbol:   class JsonExclude
+  location: package com.zappos.json
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[10,23] cannot find symbol
+  symbol:   class JsonInclude
+  location: package com.zappos.json
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[11,23] cannot find symbol
+  symbol:   class OutputStyle
+  location: package com.zappos.json
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[12,33] package com.zappos.json.formatter does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[13,33] package com.zappos.json.formatter does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[14,28] cannot find symbol
+  symbol:   class PrimitiveUtils
+  location: package com.zappos.json.util
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReader_ESTest.java:[34,38] cannot find symbol
+  symbol:   class Map
+  location: class com.zappos.json.JsonReader_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReader_ESTest.java:[35,22] cannot find symbol
+  symbol:   class Map
+  location: class com.zappos.json.JsonReader_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[43,17] cannot find symbol
+  symbol: variable arrayType
+[INFO] 10 errors 
+####################
+
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java
+[GENERATED PATH] JsonReaderCodeGenerator_ESTest#getArrayType().java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReader_ESTest.java:[9,26] package org.mockito does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[10,23] cannot find symbol
+  symbol:   class JsonExclude
+  location: package com.zappos.json
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[11,23] cannot find symbol
+  symbol:   class JsonInclude
+  location: package com.zappos.json
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[12,23] cannot find symbol
+  symbol:   class OutputStyle
+  location: package com.zappos.json
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[13,33] package com.zappos.json.formatter does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[14,33] package com.zappos.json.formatter does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[15,28] cannot find symbol
+  symbol:   class PrimitiveUtils
+  location: package com.zappos.json.util
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReader_ESTest.java:[34,38] cannot find symbol
+  symbol:   class Map
+  location: class com.zappos.json.JsonReader_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReader_ESTest.java:[35,22] cannot find symbol
+  symbol:   class Map
+  location: class com.zappos.json.JsonReader_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[45,17] cannot find symbol
+  symbol: variable arrayType
+[INFO] 10 errors 
+####################
+
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java
+[GENERATED PATH] JsonReaderCodeGenerator_ESTest#getArrayType().java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReader_ESTest.java:[9,26] package org.mockito does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[11,23] cannot find symbol
+  symbol:   class JsonExclude
+  location: package com.zappos.json
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[12,23] cannot find symbol
+  symbol:   class JsonInclude
+  location: package com.zappos.json
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[13,23] cannot find symbol
+  symbol:   class OutputStyle
+  location: package com.zappos.json
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[14,33] package com.zappos.json.formatter does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[15,33] package com.zappos.json.formatter does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[16,28] cannot find symbol
+  symbol:   class PrimitiveUtils
+  location: package com.zappos.json.util
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReader_ESTest.java:[34,38] cannot find symbol
+  symbol:   class Map
+  location: class com.zappos.json.JsonReader_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReader_ESTest.java:[35,22] cannot find symbol
+  symbol:   class Map
+  location: class com.zappos.json.JsonReader_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[47,17] cannot find symbol
+  symbol: variable arrayType
+[INFO] 10 errors 
+####################
+

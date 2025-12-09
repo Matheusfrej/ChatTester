@@ -1,0 +1,513 @@
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java
+[GENERATED PATH] Table_ESTest#getCell(int i, int j).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[30,33] incompatible types: java.lang.String cannot be converted to technology.tabula.extractors.ExtractionAlgorithm
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[31,49] no suitable constructor found for TextChunk(int,int,int,int,java.lang.String,<nulltype>)
+    constructor technology.tabula.TextChunk.TextChunk(float,float,float,float) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor technology.tabula.TextChunk.TextChunk(technology.tabula.TextElement) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor technology.tabula.TextChunk.TextChunk(java.util.List<technology.tabula.TextElement>) is not applicable
+      (actual and formal argument lists differ in length)
+[INFO] 2 errors 
+####################
+
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java
+[GENERATED PATH] Table_ESTest#getCell(int i, int j).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Cell_ESTest.java:[16,25] cannot find symbol
+  symbol:   class Point2D
+  location: package technology.tabula
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Cell_ESTest.java:[21,1] a type with the same simple name is already defined by the single-type-import of javafx.geometry.Point2D
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[43,9] cannot find symbol
+  symbol:   variable textElements
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[45,26] no suitable constructor found for TextElement(float,float,float,float,<nulltype>,java.lang.String,int)
+    constructor technology.tabula.TextElement.TextElement(float,float,float,float,org.apache.pdfbox.pdmodel.font.PDFont,float,java.lang.String,float) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor technology.tabula.TextElement.TextElement(float,float,float,float,org.apache.pdfbox.pdmodel.font.PDFont,float,java.lang.String,float,float) is not applicable
+      (actual and formal argument lists differ in length)
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[45,9] cannot find symbol
+  symbol:   variable textElements
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[46,26] no suitable constructor found for TextElement(float,float,float,float,<nulltype>,java.lang.String,int)
+    constructor technology.tabula.TextElement.TextElement(float,float,float,float,org.apache.pdfbox.pdmodel.font.PDFont,float,java.lang.String,float) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor technology.tabula.TextElement.TextElement(float,float,float,float,org.apache.pdfbox.pdmodel.font.PDFont,float,java.lang.String,float,float) is not applicable
+      (actual and formal argument lists differ in length)
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[46,9] cannot find symbol
+  symbol:   variable textElements
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[47,9] cannot find symbol
+  symbol:   variable textChunk
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[47,35] cannot find symbol
+  symbol:   variable textElements
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[35,13] cannot find symbol
+  symbol: variable x
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[36,13] cannot find symbol
+  symbol: variable y
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[37,9] cannot find symbol
+  symbol:   variable region
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[37,18] cannot find symbol
+  symbol:   variable INSIDE
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[39,17] cannot find symbol
+  symbol:   variable xMin
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[40,13] cannot find symbol
+  symbol:   variable region
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[40,23] cannot find symbol
+  symbol:   variable LEFT
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[41,24] cannot find symbol
+  symbol:   variable xMax
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[42,13] cannot find symbol
+  symbol:   variable region
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[42,23] cannot find symbol
+  symbol:   variable RIGHT
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[45,17] cannot find symbol
+  symbol:   variable yMin
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[46,13] cannot find symbol
+  symbol:   variable region
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[46,23] cannot find symbol
+  symbol:   variable BOTTOM
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[47,24] cannot find symbol
+  symbol:   variable yMax
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[48,13] cannot find symbol
+  symbol:   variable region
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[48,23] cannot find symbol
+  symbol:   variable TOP
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[34,23] no suitable constructor found for Table(no arguments)
+    constructor technology.tabula.Table.Table(java.lang.String) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor technology.tabula.Table.Table(technology.tabula.extractors.ExtractionAlgorithm) is not applicable
+      (actual and formal argument lists differ in length)
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[36,49] no suitable constructor found for TextChunk(int,int,int,int,java.lang.String,<nulltype>)
+    constructor technology.tabula.TextChunk.TextChunk(float,float,float,float) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor technology.tabula.TextChunk.TextChunk(technology.tabula.TextElement) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor technology.tabula.TextChunk.TextChunk(java.util.List<technology.tabula.TextElement>) is not applicable
+      (actual and formal argument lists differ in length)
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Cell_ESTest.java:[47,24] incompatible types: boolean cannot be converted to java.lang.String
+[INFO] 28 errors 
+####################
+
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java
+[GENERATED PATH] Table_ESTest#getCell(int i, int j).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[7,32] package com.itextpdf.kernel.geom does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[8,35] package com.itextpdf.layout.element does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[9,35] package com.itextpdf.layout.element does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[10,34] package com.itextpdf.layout.layout does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[11,34] package com.itextpdf.layout.layout does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[12,34] package com.itextpdf.layout.layout does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[13,34] package com.itextpdf.layout.layout does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[14,36] package com.itextpdf.layout.property does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[15,36] package com.itextpdf.layout.renderer does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[16,36] package com.itextpdf.layout.renderer does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[17,36] package com.itextpdf.layout.renderer does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Cell_ESTest.java:[16,25] cannot find symbol
+  symbol:   class Point2D
+  location: package technology.tabula
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Cell_ESTest.java:[21,1] a type with the same simple name is already defined by the single-type-import of javafx.geometry.Point2D
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[43,9] cannot find symbol
+  symbol:   variable textElements
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[45,26] no suitable constructor found for TextElement(float,float,float,float,<nulltype>,java.lang.String,int)
+    constructor technology.tabula.TextElement.TextElement(float,float,float,float,org.apache.pdfbox.pdmodel.font.PDFont,float,java.lang.String,float) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor technology.tabula.TextElement.TextElement(float,float,float,float,org.apache.pdfbox.pdmodel.font.PDFont,float,java.lang.String,float,float) is not applicable
+      (actual and formal argument lists differ in length)
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[45,9] cannot find symbol
+  symbol:   variable textElements
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[46,26] no suitable constructor found for TextElement(float,float,float,float,<nulltype>,java.lang.String,int)
+    constructor technology.tabula.TextElement.TextElement(float,float,float,float,org.apache.pdfbox.pdmodel.font.PDFont,float,java.lang.String,float) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor technology.tabula.TextElement.TextElement(float,float,float,float,org.apache.pdfbox.pdmodel.font.PDFont,float,java.lang.String,float,float) is not applicable
+      (actual and formal argument lists differ in length)
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[46,9] cannot find symbol
+  symbol:   variable textElements
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[47,9] cannot find symbol
+  symbol:   variable textChunk
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[47,35] cannot find symbol
+  symbol:   variable textElements
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[35,13] cannot find symbol
+  symbol: variable x
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[36,13] cannot find symbol
+  symbol: variable y
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[37,9] cannot find symbol
+  symbol:   variable region
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[37,18] cannot find symbol
+  symbol:   variable INSIDE
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[39,17] cannot find symbol
+  symbol:   variable xMin
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[40,13] cannot find symbol
+  symbol:   variable region
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[40,23] cannot find symbol
+  symbol:   variable LEFT
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[41,24] cannot find symbol
+  symbol:   variable xMax
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[42,13] cannot find symbol
+  symbol:   variable region
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[42,23] cannot find symbol
+  symbol:   variable RIGHT
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[45,17] cannot find symbol
+  symbol:   variable yMin
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[46,13] cannot find symbol
+  symbol:   variable region
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[46,23] cannot find symbol
+  symbol:   variable BOTTOM
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[47,24] cannot find symbol
+  symbol:   variable yMax
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[48,13] cannot find symbol
+  symbol:   variable region
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[48,23] cannot find symbol
+  symbol:   variable TOP
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[46,23] no suitable constructor found for Table(int)
+    constructor technology.tabula.Table.Table(java.lang.String) is not applicable
+      (argument mismatch; int cannot be converted to java.lang.String)
+    constructor technology.tabula.Table.Table(technology.tabula.extractors.ExtractionAlgorithm) is not applicable
+      (argument mismatch; int cannot be converted to technology.tabula.extractors.ExtractionAlgorithm)
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[48,49] no suitable constructor found for TextChunk(int,int,int,int,java.lang.String,<nulltype>)
+    constructor technology.tabula.TextChunk.TextChunk(float,float,float,float) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor technology.tabula.TextChunk.TextChunk(technology.tabula.TextElement) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor technology.tabula.TextChunk.TextChunk(java.util.List<technology.tabula.TextElement>) is not applicable
+      (actual and formal argument lists differ in length)
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Cell_ESTest.java:[47,24] incompatible types: boolean cannot be converted to java.lang.String
+[INFO] 39 errors 
+####################
+
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java
+[GENERATED PATH] Table_ESTest#getCell(int i, int j).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[8,32] package com.itextpdf.kernel.geom does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[9,35] package com.itextpdf.layout.element does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[10,35] package com.itextpdf.layout.element does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[11,34] package com.itextpdf.layout.layout does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[12,34] package com.itextpdf.layout.layout does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[13,34] package com.itextpdf.layout.layout does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[14,34] package com.itextpdf.layout.layout does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[15,36] package com.itextpdf.layout.property does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[16,36] package com.itextpdf.layout.renderer does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[17,36] package com.itextpdf.layout.renderer does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[18,36] package com.itextpdf.layout.renderer does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Cell_ESTest.java:[16,25] cannot find symbol
+  symbol:   class Point2D
+  location: package technology.tabula
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Cell_ESTest.java:[21,1] a type with the same simple name is already defined by the single-type-import of javafx.geometry.Point2D
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[43,9] cannot find symbol
+  symbol:   variable textElements
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[45,26] no suitable constructor found for TextElement(float,float,float,float,<nulltype>,java.lang.String,int)
+    constructor technology.tabula.TextElement.TextElement(float,float,float,float,org.apache.pdfbox.pdmodel.font.PDFont,float,java.lang.String,float) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor technology.tabula.TextElement.TextElement(float,float,float,float,org.apache.pdfbox.pdmodel.font.PDFont,float,java.lang.String,float,float) is not applicable
+      (actual and formal argument lists differ in length)
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[45,9] cannot find symbol
+  symbol:   variable textElements
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[46,26] no suitable constructor found for TextElement(float,float,float,float,<nulltype>,java.lang.String,int)
+    constructor technology.tabula.TextElement.TextElement(float,float,float,float,org.apache.pdfbox.pdmodel.font.PDFont,float,java.lang.String,float) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor technology.tabula.TextElement.TextElement(float,float,float,float,org.apache.pdfbox.pdmodel.font.PDFont,float,java.lang.String,float,float) is not applicable
+      (actual and formal argument lists differ in length)
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[46,9] cannot find symbol
+  symbol:   variable textElements
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[47,9] cannot find symbol
+  symbol:   variable textChunk
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[47,35] cannot find symbol
+  symbol:   variable textElements
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[35,13] cannot find symbol
+  symbol: variable x
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[36,13] cannot find symbol
+  symbol: variable y
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[37,9] cannot find symbol
+  symbol:   variable region
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[37,18] cannot find symbol
+  symbol:   variable INSIDE
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[39,17] cannot find symbol
+  symbol:   variable xMin
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[40,13] cannot find symbol
+  symbol:   variable region
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[40,23] cannot find symbol
+  symbol:   variable LEFT
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[41,24] cannot find symbol
+  symbol:   variable xMax
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[42,13] cannot find symbol
+  symbol:   variable region
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[42,23] cannot find symbol
+  symbol:   variable RIGHT
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[45,17] cannot find symbol
+  symbol:   variable yMin
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[46,13] cannot find symbol
+  symbol:   variable region
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[46,23] cannot find symbol
+  symbol:   variable BOTTOM
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[47,24] cannot find symbol
+  symbol:   variable yMax
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[48,13] cannot find symbol
+  symbol:   variable region
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[48,23] cannot find symbol
+  symbol:   variable TOP
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[47,33] incompatible types: java.lang.String cannot be converted to technology.tabula.extractors.ExtractionAlgorithm
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[50,49] no suitable constructor found for TextChunk(java.lang.String)
+    constructor technology.tabula.TextChunk.TextChunk(technology.tabula.TextElement) is not applicable
+      (argument mismatch; java.lang.String cannot be converted to technology.tabula.TextElement)
+    constructor technology.tabula.TextChunk.TextChunk(java.util.List<technology.tabula.TextElement>) is not applicable
+      (argument mismatch; java.lang.String cannot be converted to java.util.List<technology.tabula.TextElement>)
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Cell_ESTest.java:[47,24] incompatible types: boolean cannot be converted to java.lang.String
+[INFO] 39 errors 
+####################
+
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java
+[GENERATED PATH] Table_ESTest#getCell(int i, int j).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[9,32] package com.itextpdf.kernel.geom does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[10,35] package com.itextpdf.layout.element does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[11,35] package com.itextpdf.layout.element does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[12,34] package com.itextpdf.layout.layout does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[13,34] package com.itextpdf.layout.layout does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[14,34] package com.itextpdf.layout.layout does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[15,34] package com.itextpdf.layout.layout does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[16,36] package com.itextpdf.layout.property does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[17,36] package com.itextpdf.layout.renderer does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[18,36] package com.itextpdf.layout.renderer does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[19,36] package com.itextpdf.layout.renderer does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Cell_ESTest.java:[16,25] cannot find symbol
+  symbol:   class Point2D
+  location: package technology.tabula
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Cell_ESTest.java:[21,1] a type with the same simple name is already defined by the single-type-import of javafx.geometry.Point2D
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[43,9] cannot find symbol
+  symbol:   variable textElements
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[45,26] no suitable constructor found for TextElement(float,float,float,float,<nulltype>,java.lang.String,int)
+    constructor technology.tabula.TextElement.TextElement(float,float,float,float,org.apache.pdfbox.pdmodel.font.PDFont,float,java.lang.String,float) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor technology.tabula.TextElement.TextElement(float,float,float,float,org.apache.pdfbox.pdmodel.font.PDFont,float,java.lang.String,float,float) is not applicable
+      (actual and formal argument lists differ in length)
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[45,9] cannot find symbol
+  symbol:   variable textElements
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[46,26] no suitable constructor found for TextElement(float,float,float,float,<nulltype>,java.lang.String,int)
+    constructor technology.tabula.TextElement.TextElement(float,float,float,float,org.apache.pdfbox.pdmodel.font.PDFont,float,java.lang.String,float) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor technology.tabula.TextElement.TextElement(float,float,float,float,org.apache.pdfbox.pdmodel.font.PDFont,float,java.lang.String,float,float) is not applicable
+      (actual and formal argument lists differ in length)
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[46,9] cannot find symbol
+  symbol:   variable textElements
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[47,9] cannot find symbol
+  symbol:   variable textChunk
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[47,35] cannot find symbol
+  symbol:   variable textElements
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[35,13] cannot find symbol
+  symbol: variable x
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[36,13] cannot find symbol
+  symbol: variable y
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[37,9] cannot find symbol
+  symbol:   variable region
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[37,18] cannot find symbol
+  symbol:   variable INSIDE
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[39,17] cannot find symbol
+  symbol:   variable xMin
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[40,13] cannot find symbol
+  symbol:   variable region
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[40,23] cannot find symbol
+  symbol:   variable LEFT
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[41,24] cannot find symbol
+  symbol:   variable xMax
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[42,13] cannot find symbol
+  symbol:   variable region
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[42,23] cannot find symbol
+  symbol:   variable RIGHT
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[45,17] cannot find symbol
+  symbol:   variable yMin
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[46,13] cannot find symbol
+  symbol:   variable region
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[46,23] cannot find symbol
+  symbol:   variable BOTTOM
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[47,24] cannot find symbol
+  symbol:   variable yMax
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[48,13] cannot find symbol
+  symbol:   variable region
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[48,23] cannot find symbol
+  symbol:   variable TOP
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[49,13] cannot find symbol
+  symbol:   variable cells
+  location: class technology.tabula.Table_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Cell_ESTest.java:[47,24] incompatible types: boolean cannot be converted to java.lang.String
+[INFO] 38 errors 
+####################
+
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java
+[GENERATED PATH] Table_ESTest#getCell(int i, int j).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[10,32] package com.itextpdf.kernel.geom does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[11,35] package com.itextpdf.layout.element does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[12,35] package com.itextpdf.layout.element does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[13,34] package com.itextpdf.layout.layout does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[14,34] package com.itextpdf.layout.layout does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[15,34] package com.itextpdf.layout.layout does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[16,34] package com.itextpdf.layout.layout does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[17,36] package com.itextpdf.layout.property does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[18,36] package com.itextpdf.layout.renderer does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[19,36] package com.itextpdf.layout.renderer does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[20,36] package com.itextpdf.layout.renderer does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Cell_ESTest.java:[16,25] cannot find symbol
+  symbol:   class Point2D
+  location: package technology.tabula
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Cell_ESTest.java:[21,1] a type with the same simple name is already defined by the single-type-import of javafx.geometry.Point2D
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[43,9] cannot find symbol
+  symbol:   variable textElements
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[45,26] no suitable constructor found for TextElement(float,float,float,float,<nulltype>,java.lang.String,int)
+    constructor technology.tabula.TextElement.TextElement(float,float,float,float,org.apache.pdfbox.pdmodel.font.PDFont,float,java.lang.String,float) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor technology.tabula.TextElement.TextElement(float,float,float,float,org.apache.pdfbox.pdmodel.font.PDFont,float,java.lang.String,float,float) is not applicable
+      (actual and formal argument lists differ in length)
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[45,9] cannot find symbol
+  symbol:   variable textElements
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[46,26] no suitable constructor found for TextElement(float,float,float,float,<nulltype>,java.lang.String,int)
+    constructor technology.tabula.TextElement.TextElement(float,float,float,float,org.apache.pdfbox.pdmodel.font.PDFont,float,java.lang.String,float) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor technology.tabula.TextElement.TextElement(float,float,float,float,org.apache.pdfbox.pdmodel.font.PDFont,float,java.lang.String,float,float) is not applicable
+      (actual and formal argument lists differ in length)
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[46,9] cannot find symbol
+  symbol:   variable textElements
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[47,9] cannot find symbol
+  symbol:   variable textChunk
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[47,35] cannot find symbol
+  symbol:   variable textElements
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[35,13] cannot find symbol
+  symbol: variable x
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[36,13] cannot find symbol
+  symbol: variable y
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[37,9] cannot find symbol
+  symbol:   variable region
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[37,18] cannot find symbol
+  symbol:   variable INSIDE
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[39,17] cannot find symbol
+  symbol:   variable xMin
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[40,13] cannot find symbol
+  symbol:   variable region
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[40,23] cannot find symbol
+  symbol:   variable LEFT
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[41,24] cannot find symbol
+  symbol:   variable xMax
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[42,13] cannot find symbol
+  symbol:   variable region
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[42,23] cannot find symbol
+  symbol:   variable RIGHT
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[45,17] cannot find symbol
+  symbol:   variable yMin
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[46,13] cannot find symbol
+  symbol:   variable region
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[46,23] cannot find symbol
+  symbol:   variable BOTTOM
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[47,24] cannot find symbol
+  symbol:   variable yMax
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[48,13] cannot find symbol
+  symbol:   variable region
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[48,23] cannot find symbol
+  symbol:   variable TOP
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[52,33] incompatible types: java.lang.String cannot be converted to technology.tabula.extractors.ExtractionAlgorithm
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[55,52] no suitable constructor found for TextChunk(java.lang.String)
+    constructor technology.tabula.TextChunk.TextChunk(technology.tabula.TextElement) is not applicable
+      (argument mismatch; java.lang.String cannot be converted to technology.tabula.TextElement)
+    constructor technology.tabula.TextChunk.TextChunk(java.util.List<technology.tabula.TextElement>) is not applicable
+      (argument mismatch; java.lang.String cannot be converted to java.util.List<technology.tabula.TextElement>)
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Cell_ESTest.java:[47,24] incompatible types: boolean cannot be converted to java.lang.String
+[INFO] 39 errors 
+####################
+

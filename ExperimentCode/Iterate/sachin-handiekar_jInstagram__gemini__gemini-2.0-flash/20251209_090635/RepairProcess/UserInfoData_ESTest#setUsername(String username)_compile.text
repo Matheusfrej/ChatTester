@@ -1,0 +1,15 @@
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/entity/users/basicinfo/UserInfoData_ESTest.java
+[GENERATED PATH] UserInfoData_ESTest#setUsername(String username).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/entity/locations/LocationSearchFeed_ESTest.java:[34,25] incompatible types: long cannot be converted to java.lang.String
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/entity/locations/LocationSearchFeed_ESTest.java:[38,25] incompatible types: long cannot be converted to java.lang.String
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/entity/likes/LikesFeed_ESTest.java:[41,14] cannot find symbol
+  symbol:   method setUsername(java.lang.String)
+  location: variable user1 of type org.jinstagram.entity.common.User
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/entity/likes/LikesFeed_ESTest.java:[46,14] cannot find symbol
+  symbol:   method setUsername(java.lang.String)
+  location: variable user2 of type org.jinstagram.entity.common.User
+[INFO] 4 errors 
+####################
+

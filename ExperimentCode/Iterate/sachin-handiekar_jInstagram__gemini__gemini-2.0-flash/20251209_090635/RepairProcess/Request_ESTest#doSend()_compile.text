@@ -1,0 +1,36 @@
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/http/Request_ESTest.java
+[GENERATED PATH] Request_ESTest#doSend().java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/http/Request_ESTest.java:[33,40] cannot find symbol
+  symbol:   class IOException
+  location: class org.jinstagram.http.Request_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/http/Request_ESTest.java:[37,40] reference to mock is ambiguous
+  both method <T>mock(java.lang.Class<T>) in org.evosuite.shaded.org.mockito.Mockito and method <T>mock(java.lang.Class<T>) in org.mockito.Mockito match
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/http/Request_ESTest.java:[43,9] reference to when is ambiguous
+  both method <T>when(T) in org.evosuite.shaded.org.mockito.Mockito and method <T>when(T) in org.mockito.Mockito match
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/http/Request_ESTest.java:[44,9] reference to when is ambiguous
+  both method <T>when(T) in org.evosuite.shaded.org.mockito.Mockito and method <T>when(T) in org.mockito.Mockito match
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/http/Request_ESTest.java:[51,9] reference to verify is ambiguous
+  both method <T>verify(T) in org.evosuite.shaded.org.mockito.Mockito and method <T>verify(T) in org.mockito.Mockito match
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/http/Request_ESTest.java:[56,62] reference to anyString is ambiguous
+  both method anyString() in org.evosuite.shaded.org.mockito.Mockito and method anyString() in org.mockito.Mockito match
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/http/Request_ESTest.java:[56,75] reference to anyString is ambiguous
+  both method anyString() in org.evosuite.shaded.org.mockito.Mockito and method anyString() in org.mockito.Mockito match
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/http/Request_ESTest.java:[56,28] reference to atLeastOnce is ambiguous
+  both method atLeastOnce() in org.evosuite.shaded.org.mockito.Mockito and method atLeastOnce() in org.mockito.Mockito match
+[INFO] 8 errors 
+####################
+
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/http/Request_ESTest.java
+[GENERATED PATH] Request_ESTest#doSend().java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/http/URLUtils_ESTest.java:[32,5] class, interface, or enum expected
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/http/URLUtils_ESTest.java:[34,9] class, interface, or enum expected
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/http/URLUtils_ESTest.java:[35,9] class, interface, or enum expected
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/http/URLUtils_ESTest.java:[36,9] class, interface, or enum expected
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/http/URLUtils_ESTest.java:[37,5] class, interface, or enum expected
+[INFO] 5 errors 
+####################
+

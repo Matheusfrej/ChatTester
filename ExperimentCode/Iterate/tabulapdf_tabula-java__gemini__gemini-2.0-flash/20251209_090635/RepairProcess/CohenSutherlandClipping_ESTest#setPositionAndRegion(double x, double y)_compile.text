@@ -1,0 +1,235 @@
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java
+[GENERATED PATH] CohenSutherlandClipping_ESTest#setPositionAndRegion(double x, double y).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[24,17] cannot find symbol
+  symbol: variable x
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[25,17] cannot find symbol
+  symbol: variable y
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[26,13] cannot find symbol
+  symbol:   variable region
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[26,27] cannot find symbol
+  symbol:   variable xMin
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[26,35] cannot find symbol
+  symbol:   variable LEFT
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[26,47] cannot find symbol
+  symbol:   variable xMax
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[26,55] cannot find symbol
+  symbol:   variable RIGHT
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[26,63] cannot find symbol
+  symbol:   variable INSIDE
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[27,21] cannot find symbol
+  symbol:   variable yMin
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[28,17] cannot find symbol
+  symbol:   variable region
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[28,27] cannot find symbol
+  symbol:   variable BOTTOM
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[29,26] cannot find symbol
+  symbol:   variable yMax
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[30,17] cannot find symbol
+  symbol:   variable region
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[30,27] cannot find symbol
+  symbol:   variable TOP
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[INFO] 14 errors 
+####################
+
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java
+[GENERATED PATH] CohenSutherlandClipping_ESTest#setPositionAndRegion(double x, double y).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[28,17] cannot find symbol
+  symbol: variable x
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[30,17] cannot find symbol
+  symbol: variable y
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[31,13] cannot find symbol
+  symbol:   variable region
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[31,27] cannot find symbol
+  symbol:   variable xMin
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[31,35] cannot find symbol
+  symbol:   variable LEFT
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[31,47] cannot find symbol
+  symbol:   variable xMax
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[31,55] cannot find symbol
+  symbol:   variable RIGHT
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[31,63] cannot find symbol
+  symbol:   variable INSIDE
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[32,21] cannot find symbol
+  symbol:   variable yMin
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[33,17] cannot find symbol
+  symbol:   variable region
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[33,27] cannot find symbol
+  symbol:   variable BOTTOM
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[34,26] cannot find symbol
+  symbol:   variable yMax
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[35,17] cannot find symbol
+  symbol:   variable region
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[35,27] cannot find symbol
+  symbol:   variable TOP
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[INFO] 14 errors 
+####################
+
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java
+[GENERATED PATH] CohenSutherlandClipping_ESTest#setPositionAndRegion(double x, double y).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[30,17] cannot find symbol
+  symbol: variable x
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[32,17] cannot find symbol
+  symbol: variable y
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[33,13] cannot find symbol
+  symbol:   variable region
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[33,27] cannot find symbol
+  symbol:   variable xMin
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[33,35] cannot find symbol
+  symbol:   variable LEFT
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[33,47] cannot find symbol
+  symbol:   variable xMax
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[33,55] cannot find symbol
+  symbol:   variable RIGHT
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[33,63] cannot find symbol
+  symbol:   variable INSIDE
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[34,21] cannot find symbol
+  symbol:   variable yMin
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[35,17] cannot find symbol
+  symbol:   variable region
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[35,27] cannot find symbol
+  symbol:   variable BOTTOM
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[36,26] cannot find symbol
+  symbol:   variable yMax
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[37,17] cannot find symbol
+  symbol:   variable region
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[37,27] cannot find symbol
+  symbol:   variable TOP
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[INFO] 14 errors 
+####################
+
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java
+[GENERATED PATH] CohenSutherlandClipping_ESTest#setPositionAndRegion(double x, double y).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[31,17] cannot find symbol
+  symbol: variable x
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[32,17] cannot find symbol
+  symbol: variable y
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[33,13] cannot find symbol
+  symbol:   variable region
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[33,27] cannot find symbol
+  symbol:   variable xMin
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[33,35] cannot find symbol
+  symbol:   variable LEFT
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[33,47] cannot find symbol
+  symbol:   variable xMax
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[33,55] cannot find symbol
+  symbol:   variable RIGHT
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[33,63] cannot find symbol
+  symbol:   variable INSIDE
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[34,21] cannot find symbol
+  symbol:   variable yMin
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[35,17] cannot find symbol
+  symbol:   variable region
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[35,27] cannot find symbol
+  symbol:   variable BOTTOM
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[36,26] cannot find symbol
+  symbol:   variable yMax
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[37,17] cannot find symbol
+  symbol:   variable region
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[37,27] cannot find symbol
+  symbol:   variable TOP
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[INFO] 14 errors 
+####################
+
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java
+[GENERATED PATH] CohenSutherlandClipping_ESTest#setPositionAndRegion(double x, double y).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[33,17] cannot find symbol
+  symbol: variable x
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[34,17] cannot find symbol
+  symbol: variable y
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[35,13] cannot find symbol
+  symbol:   variable region
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[35,27] cannot find symbol
+  symbol:   variable xMin
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[35,35] cannot find symbol
+  symbol:   variable LEFT
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[35,47] cannot find symbol
+  symbol:   variable xMax
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[35,55] cannot find symbol
+  symbol:   variable RIGHT
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[35,63] cannot find symbol
+  symbol:   variable INSIDE
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[36,21] cannot find symbol
+  symbol:   variable yMin
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[37,17] cannot find symbol
+  symbol:   variable region
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[37,27] cannot find symbol
+  symbol:   variable BOTTOM
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[38,26] cannot find symbol
+  symbol:   variable yMax
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[39,17] cannot find symbol
+  symbol:   variable region
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[39,27] cannot find symbol
+  symbol:   variable TOP
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[INFO] 14 errors 
+####################
+

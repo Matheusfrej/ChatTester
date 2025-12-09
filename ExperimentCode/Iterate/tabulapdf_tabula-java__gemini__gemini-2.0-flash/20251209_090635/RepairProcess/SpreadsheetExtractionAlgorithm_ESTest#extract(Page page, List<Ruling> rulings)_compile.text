@@ -1,0 +1,708 @@
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/extractors/SpreadsheetExtractionAlgorithm_ESTest.java
+[GENERATED PATH] SpreadsheetExtractionAlgorithm_ESTest#extract(Page page, List<Ruling> rulings).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/extractors/SpreadsheetExtractionAlgorithm_ESTest.java:[38,21] cannot find symbol
+  symbol:   method mock(java.lang.Class<technology.tabula.Page>)
+  location: class technology.tabula.extractors.SpreadsheetExtractionAlgorithm_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/extractors/SpreadsheetExtractionAlgorithm_ESTest.java:[42,36] cannot find symbol
+  symbol:   method mock(java.lang.Class<technology.tabula.Ruling>)
+  location: class technology.tabula.extractors.SpreadsheetExtractionAlgorithm_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/extractors/SpreadsheetExtractionAlgorithm_ESTest.java:[43,9] cannot find symbol
+  symbol:   method when(boolean)
+  location: class technology.tabula.extractors.SpreadsheetExtractionAlgorithm_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/extractors/SpreadsheetExtractionAlgorithm_ESTest.java:[44,36] cannot find symbol
+  symbol:   method mock(java.lang.Class<technology.tabula.Ruling>)
+  location: class technology.tabula.extractors.SpreadsheetExtractionAlgorithm_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/extractors/SpreadsheetExtractionAlgorithm_ESTest.java:[45,9] cannot find symbol
+  symbol:   method when(boolean)
+  location: class technology.tabula.extractors.SpreadsheetExtractionAlgorithm_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/extractors/SpreadsheetExtractionAlgorithm_ESTest.java:[46,34] cannot find symbol
+  symbol:   method mock(java.lang.Class<technology.tabula.Ruling>)
+  location: class technology.tabula.extractors.SpreadsheetExtractionAlgorithm_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/extractors/SpreadsheetExtractionAlgorithm_ESTest.java:[47,9] cannot find symbol
+  symbol:   method when(boolean)
+  location: class technology.tabula.extractors.SpreadsheetExtractionAlgorithm_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/extractors/SpreadsheetExtractionAlgorithm_ESTest.java:[48,34] cannot find symbol
+  symbol:   method mock(java.lang.Class<technology.tabula.Ruling>)
+  location: class technology.tabula.extractors.SpreadsheetExtractionAlgorithm_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/extractors/SpreadsheetExtractionAlgorithm_ESTest.java:[49,9] cannot find symbol
+  symbol:   method when(boolean)
+  location: class technology.tabula.extractors.SpreadsheetExtractionAlgorithm_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/extractors/SpreadsheetExtractionAlgorithm_ESTest.java:[58,22] cannot find symbol
+  symbol:   method mock(java.lang.Class<technology.tabula.Cell>)
+  location: class technology.tabula.extractors.SpreadsheetExtractionAlgorithm_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/extractors/SpreadsheetExtractionAlgorithm_ESTest.java:[60,9] cannot find symbol
+  symbol:   method when(boolean)
+  location: class technology.tabula.extractors.SpreadsheetExtractionAlgorithm_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/extractors/SpreadsheetExtractionAlgorithm_ESTest.java:[62,22] cannot find symbol
+  symbol:   method mock(java.lang.Class<technology.tabula.Cell>)
+  location: class technology.tabula.extractors.SpreadsheetExtractionAlgorithm_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/extractors/SpreadsheetExtractionAlgorithm_ESTest.java:[64,9] cannot find symbol
+  symbol:   method when(boolean)
+  location: class technology.tabula.extractors.SpreadsheetExtractionAlgorithm_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/extractors/SpreadsheetExtractionAlgorithm_ESTest.java:[92,36] findSpreadsheetsFromCells(java.util.List<? extends technology.tabula.Rectangle>) in <anonymous technology.tabula.extractors.SpreadsheetExtractionAlgorithm_ESTest$1> cannot override findSpreadsheetsFromCells(java.util.List<? extends technology.tabula.Rectangle>) in technology.tabula.extractors.SpreadsheetExtractionAlgorithm
+  overridden method is static
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/extractors/SpreadsheetExtractionAlgorithm_ESTest.java:[91,13] method does not override or implement a method from a supertype
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/extractors/SpreadsheetExtractionAlgorithm_ESTest.java:[97,30] findCells(java.util.List<technology.tabula.Ruling>,java.util.List<technology.tabula.Ruling>) in <anonymous technology.tabula.extractors.SpreadsheetExtractionAlgorithm_ESTest$1> cannot override findCells(java.util.List<technology.tabula.Ruling>,java.util.List<technology.tabula.Ruling>) in technology.tabula.extractors.SpreadsheetExtractionAlgorithm
+  overridden method is static
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/extractors/SpreadsheetExtractionAlgorithm_ESTest.java:[96,13] method does not override or implement a method from a supertype
+[INFO] 17 errors 
+####################
+
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/extractors/SpreadsheetExtractionAlgorithm_ESTest.java
+[GENERATED PATH] SpreadsheetExtractionAlgorithm_ESTest#extract(Page page, List<Ruling> rulings).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Line_ESTest.java:[17,26] package org.mockito does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Cell_ESTest.java:[16,25] cannot find symbol
+  symbol:   class Point2D
+  location: package technology.tabula
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Cell_ESTest.java:[21,1] a type with the same simple name is already defined by the single-type-import of javafx.geometry.Point2D
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/RectangularTextContainer_ESTest.java:[14,26] package org.mockito does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/RectangularTextContainer_ESTest.java:[14,1] static import only from classes and interfaces
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/RectangularTextContainer_ESTest.java:[15,26] package org.mockito does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/RectangularTextContainer_ESTest.java:[15,1] static import only from classes and interfaces
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[14,26] package org.mockito does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[23,25] cannot find symbol
+  symbol:   class ExtractionAlgorithm
+  location: package technology.tabula
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Line_ESTest.java:[43,25] cannot find symbol
+  symbol: variable textChunks
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Line_ESTest.java:[46,25] cannot find symbol
+  symbol: variable textChunks
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Line_ESTest.java:[48,21] cannot find symbol
+  symbol: variable textChunks
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Line_ESTest.java:[50,47] cannot find symbol
+  symbol: variable textChunks
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Line_ESTest.java:[52,25] cannot find symbol
+  symbol: variable textChunks
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Line_ESTest.java:[54,26] cannot find symbol
+  symbol: variable textChunks
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Line_ESTest.java:[58,13] cannot find symbol
+  symbol:   method merge(technology.tabula.TextChunk)
+  location: class technology.tabula.Line_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Cell_ESTest.java:[47,24] incompatible types: boolean cannot be converted to java.lang.String
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/extractors/SpreadsheetExtractionAlgorithm_ESTest.java:[41,21] cannot find symbol
+  symbol:   method mock(java.lang.Class<technology.tabula.Page>)
+  location: class technology.tabula.extractors.SpreadsheetExtractionAlgorithm_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/extractors/SpreadsheetExtractionAlgorithm_ESTest.java:[44,36] cannot find symbol
+  symbol:   method mock(java.lang.Class<technology.tabula.Ruling>)
+  location: class technology.tabula.extractors.SpreadsheetExtractionAlgorithm_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/extractors/SpreadsheetExtractionAlgorithm_ESTest.java:[45,9] cannot find symbol
+  symbol:   method when(boolean)
+  location: class technology.tabula.extractors.SpreadsheetExtractionAlgorithm_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/extractors/SpreadsheetExtractionAlgorithm_ESTest.java:[46,36] cannot find symbol
+  symbol:   method mock(java.lang.Class<technology.tabula.Ruling>)
+  location: class technology.tabula.extractors.SpreadsheetExtractionAlgorithm_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/extractors/SpreadsheetExtractionAlgorithm_ESTest.java:[47,9] cannot find symbol
+  symbol:   method when(boolean)
+  location: class technology.tabula.extractors.SpreadsheetExtractionAlgorithm_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/extractors/SpreadsheetExtractionAlgorithm_ESTest.java:[48,34] cannot find symbol
+  symbol:   method mock(java.lang.Class<technology.tabula.Ruling>)
+  location: class technology.tabula.extractors.SpreadsheetExtractionAlgorithm_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/extractors/SpreadsheetExtractionAlgorithm_ESTest.java:[49,9] cannot find symbol
+  symbol:   method when(boolean)
+  location: class technology.tabula.extractors.SpreadsheetExtractionAlgorithm_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/extractors/SpreadsheetExtractionAlgorithm_ESTest.java:[50,34] cannot find symbol
+  symbol:   method mock(java.lang.Class<technology.tabula.Ruling>)
+  location: class technology.tabula.extractors.SpreadsheetExtractionAlgorithm_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/extractors/SpreadsheetExtractionAlgorithm_ESTest.java:[51,9] cannot find symbol
+  symbol:   method when(boolean)
+  location: class technology.tabula.extractors.SpreadsheetExtractionAlgorithm_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/extractors/SpreadsheetExtractionAlgorithm_ESTest.java:[57,22] cannot find symbol
+  symbol:   method mock(java.lang.Class<technology.tabula.Cell>)
+  location: class technology.tabula.extractors.SpreadsheetExtractionAlgorithm_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/extractors/SpreadsheetExtractionAlgorithm_ESTest.java:[59,9] cannot find symbol
+  symbol:   method when(boolean)
+  location: class technology.tabula.extractors.SpreadsheetExtractionAlgorithm_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/extractors/SpreadsheetExtractionAlgorithm_ESTest.java:[60,22] cannot find symbol
+  symbol:   method mock(java.lang.Class<technology.tabula.Cell>)
+  location: class technology.tabula.extractors.SpreadsheetExtractionAlgorithm_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/extractors/SpreadsheetExtractionAlgorithm_ESTest.java:[62,9] cannot find symbol
+  symbol:   method when(boolean)
+  location: class technology.tabula.extractors.SpreadsheetExtractionAlgorithm_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/extractors/SpreadsheetExtractionAlgorithm_ESTest.java:[82,36] findSpreadsheetsFromCells(java.util.List<? extends technology.tabula.Rectangle>) in <anonymous technology.tabula.extractors.SpreadsheetExtractionAlgorithm_ESTest$1> cannot override findSpreadsheetsFromCells(java.util.List<? extends technology.tabula.Rectangle>) in technology.tabula.extractors.SpreadsheetExtractionAlgorithm
+  overridden method is static
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/extractors/SpreadsheetExtractionAlgorithm_ESTest.java:[81,13] method does not override or implement a method from a supertype
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/extractors/SpreadsheetExtractionAlgorithm_ESTest.java:[86,30] findCells(java.util.List<technology.tabula.Ruling>,java.util.List<technology.tabula.Ruling>) in <anonymous technology.tabula.extractors.SpreadsheetExtractionAlgorithm_ESTest$1> cannot override findCells(java.util.List<technology.tabula.Ruling>,java.util.List<technology.tabula.Ruling>) in technology.tabula.extractors.SpreadsheetExtractionAlgorithm
+  overridden method is static
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/extractors/SpreadsheetExtractionAlgorithm_ESTest.java:[85,13] method does not override or implement a method from a supertype
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[43,9] cannot find symbol
+  symbol:   variable textElements
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[45,26] no suitable constructor found for TextElement(float,float,float,float,<nulltype>,java.lang.String,int)
+    constructor technology.tabula.TextElement.TextElement(float,float,float,float,org.apache.pdfbox.pdmodel.font.PDFont,float,java.lang.String,float) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor technology.tabula.TextElement.TextElement(float,float,float,float,org.apache.pdfbox.pdmodel.font.PDFont,float,java.lang.String,float,float) is not applicable
+      (actual and formal argument lists differ in length)
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[45,9] cannot find symbol
+  symbol:   variable textElements
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[46,26] no suitable constructor found for TextElement(float,float,float,float,<nulltype>,java.lang.String,int)
+    constructor technology.tabula.TextElement.TextElement(float,float,float,float,org.apache.pdfbox.pdmodel.font.PDFont,float,java.lang.String,float) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor technology.tabula.TextElement.TextElement(float,float,float,float,org.apache.pdfbox.pdmodel.font.PDFont,float,java.lang.String,float,float) is not applicable
+      (actual and formal argument lists differ in length)
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[46,9] cannot find symbol
+  symbol:   variable textElements
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[47,9] cannot find symbol
+  symbol:   variable textChunk
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[47,35] cannot find symbol
+  symbol:   variable textElements
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[35,13] cannot find symbol
+  symbol: variable x
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[36,13] cannot find symbol
+  symbol: variable y
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[37,9] cannot find symbol
+  symbol:   variable region
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[37,18] cannot find symbol
+  symbol:   variable INSIDE
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[39,17] cannot find symbol
+  symbol:   variable xMin
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[40,13] cannot find symbol
+  symbol:   variable region
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[40,23] cannot find symbol
+  symbol:   variable LEFT
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[41,24] cannot find symbol
+  symbol:   variable xMax
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[42,13] cannot find symbol
+  symbol:   variable region
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[42,23] cannot find symbol
+  symbol:   variable RIGHT
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[45,17] cannot find symbol
+  symbol:   variable yMin
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[46,13] cannot find symbol
+  symbol:   variable region
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[46,23] cannot find symbol
+  symbol:   variable BOTTOM
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[47,24] cannot find symbol
+  symbol:   variable yMax
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[48,13] cannot find symbol
+  symbol:   variable region
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[48,23] cannot find symbol
+  symbol:   variable TOP
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[52,33] incompatible types: java.lang.String cannot be converted to technology.tabula.extractors.ExtractionAlgorithm
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[53,13] method does not override or implement a method from a supertype
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[57,26] constructor RectangularTextContainer in class technology.tabula.RectangularTextContainer<T> cannot be applied to given types;
+  required: float,float,float,float
+  found: java.lang.String
+  reason: actual and formal argument lists differ in length
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[58,26] constructor RectangularTextContainer in class technology.tabula.RectangularTextContainer<T> cannot be applied to given types;
+  required: float,float,float,float
+  found: java.lang.String
+  reason: actual and formal argument lists differ in length
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[52,23] cannot find symbol
+  symbol: constructor (java.lang.String)
+[INFO] 62 errors 
+####################
+
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/extractors/SpreadsheetExtractionAlgorithm_ESTest.java
+[GENERATED PATH] SpreadsheetExtractionAlgorithm_ESTest#extract(Page page, List<Ruling> rulings).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Line_ESTest.java:[17,26] package org.mockito does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Cell_ESTest.java:[16,25] cannot find symbol
+  symbol:   class Point2D
+  location: package technology.tabula
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Cell_ESTest.java:[21,1] a type with the same simple name is already defined by the single-type-import of javafx.geometry.Point2D
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/RectangularTextContainer_ESTest.java:[14,26] package org.mockito does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/RectangularTextContainer_ESTest.java:[14,1] static import only from classes and interfaces
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/RectangularTextContainer_ESTest.java:[15,26] package org.mockito does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/RectangularTextContainer_ESTest.java:[15,1] static import only from classes and interfaces
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[14,26] package org.mockito does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[23,25] cannot find symbol
+  symbol:   class ExtractionAlgorithm
+  location: package technology.tabula
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Line_ESTest.java:[43,25] cannot find symbol
+  symbol: variable textChunks
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Line_ESTest.java:[46,25] cannot find symbol
+  symbol: variable textChunks
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Line_ESTest.java:[48,21] cannot find symbol
+  symbol: variable textChunks
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Line_ESTest.java:[50,47] cannot find symbol
+  symbol: variable textChunks
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Line_ESTest.java:[52,25] cannot find symbol
+  symbol: variable textChunks
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Line_ESTest.java:[54,26] cannot find symbol
+  symbol: variable textChunks
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Line_ESTest.java:[58,13] cannot find symbol
+  symbol:   method merge(technology.tabula.TextChunk)
+  location: class technology.tabula.Line_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Cell_ESTest.java:[47,24] incompatible types: boolean cannot be converted to java.lang.String
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/extractors/SpreadsheetExtractionAlgorithm_ESTest.java:[43,21] cannot find symbol
+  symbol:   method mock(java.lang.Class<technology.tabula.Page>)
+  location: class technology.tabula.extractors.SpreadsheetExtractionAlgorithm_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/extractors/SpreadsheetExtractionAlgorithm_ESTest.java:[46,36] cannot find symbol
+  symbol:   method mock(java.lang.Class<technology.tabula.Ruling>)
+  location: class technology.tabula.extractors.SpreadsheetExtractionAlgorithm_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/extractors/SpreadsheetExtractionAlgorithm_ESTest.java:[47,9] cannot find symbol
+  symbol:   method when(boolean)
+  location: class technology.tabula.extractors.SpreadsheetExtractionAlgorithm_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/extractors/SpreadsheetExtractionAlgorithm_ESTest.java:[48,36] cannot find symbol
+  symbol:   method mock(java.lang.Class<technology.tabula.Ruling>)
+  location: class technology.tabula.extractors.SpreadsheetExtractionAlgorithm_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/extractors/SpreadsheetExtractionAlgorithm_ESTest.java:[49,9] cannot find symbol
+  symbol:   method when(boolean)
+  location: class technology.tabula.extractors.SpreadsheetExtractionAlgorithm_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/extractors/SpreadsheetExtractionAlgorithm_ESTest.java:[50,34] cannot find symbol
+  symbol:   method mock(java.lang.Class<technology.tabula.Ruling>)
+  location: class technology.tabula.extractors.SpreadsheetExtractionAlgorithm_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/extractors/SpreadsheetExtractionAlgorithm_ESTest.java:[51,9] cannot find symbol
+  symbol:   method when(boolean)
+  location: class technology.tabula.extractors.SpreadsheetExtractionAlgorithm_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/extractors/SpreadsheetExtractionAlgorithm_ESTest.java:[52,34] cannot find symbol
+  symbol:   method mock(java.lang.Class<technology.tabula.Ruling>)
+  location: class technology.tabula.extractors.SpreadsheetExtractionAlgorithm_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/extractors/SpreadsheetExtractionAlgorithm_ESTest.java:[53,9] cannot find symbol
+  symbol:   method when(boolean)
+  location: class technology.tabula.extractors.SpreadsheetExtractionAlgorithm_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/extractors/SpreadsheetExtractionAlgorithm_ESTest.java:[59,22] cannot find symbol
+  symbol:   method mock(java.lang.Class<technology.tabula.Cell>)
+  location: class technology.tabula.extractors.SpreadsheetExtractionAlgorithm_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/extractors/SpreadsheetExtractionAlgorithm_ESTest.java:[61,9] cannot find symbol
+  symbol:   method when(boolean)
+  location: class technology.tabula.extractors.SpreadsheetExtractionAlgorithm_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/extractors/SpreadsheetExtractionAlgorithm_ESTest.java:[62,22] cannot find symbol
+  symbol:   method mock(java.lang.Class<technology.tabula.Cell>)
+  location: class technology.tabula.extractors.SpreadsheetExtractionAlgorithm_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/extractors/SpreadsheetExtractionAlgorithm_ESTest.java:[64,9] cannot find symbol
+  symbol:   method when(boolean)
+  location: class technology.tabula.extractors.SpreadsheetExtractionAlgorithm_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/extractors/SpreadsheetExtractionAlgorithm_ESTest.java:[84,36] findSpreadsheetsFromCells(java.util.List<? extends technology.tabula.Rectangle>) in <anonymous technology.tabula.extractors.SpreadsheetExtractionAlgorithm_ESTest$1> cannot override findSpreadsheetsFromCells(java.util.List<? extends technology.tabula.Rectangle>) in technology.tabula.extractors.SpreadsheetExtractionAlgorithm
+  overridden method is static
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/extractors/SpreadsheetExtractionAlgorithm_ESTest.java:[83,13] method does not override or implement a method from a supertype
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/extractors/SpreadsheetExtractionAlgorithm_ESTest.java:[88,30] findCells(java.util.List<technology.tabula.Ruling>,java.util.List<technology.tabula.Ruling>) in <anonymous technology.tabula.extractors.SpreadsheetExtractionAlgorithm_ESTest$1> cannot override findCells(java.util.List<technology.tabula.Ruling>,java.util.List<technology.tabula.Ruling>) in technology.tabula.extractors.SpreadsheetExtractionAlgorithm
+  overridden method is static
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/extractors/SpreadsheetExtractionAlgorithm_ESTest.java:[87,13] method does not override or implement a method from a supertype
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[43,9] cannot find symbol
+  symbol:   variable textElements
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[45,26] no suitable constructor found for TextElement(float,float,float,float,<nulltype>,java.lang.String,int)
+    constructor technology.tabula.TextElement.TextElement(float,float,float,float,org.apache.pdfbox.pdmodel.font.PDFont,float,java.lang.String,float) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor technology.tabula.TextElement.TextElement(float,float,float,float,org.apache.pdfbox.pdmodel.font.PDFont,float,java.lang.String,float,float) is not applicable
+      (actual and formal argument lists differ in length)
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[45,9] cannot find symbol
+  symbol:   variable textElements
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[46,26] no suitable constructor found for TextElement(float,float,float,float,<nulltype>,java.lang.String,int)
+    constructor technology.tabula.TextElement.TextElement(float,float,float,float,org.apache.pdfbox.pdmodel.font.PDFont,float,java.lang.String,float) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor technology.tabula.TextElement.TextElement(float,float,float,float,org.apache.pdfbox.pdmodel.font.PDFont,float,java.lang.String,float,float) is not applicable
+      (actual and formal argument lists differ in length)
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[46,9] cannot find symbol
+  symbol:   variable textElements
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[47,9] cannot find symbol
+  symbol:   variable textChunk
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[47,35] cannot find symbol
+  symbol:   variable textElements
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[35,13] cannot find symbol
+  symbol: variable x
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[36,13] cannot find symbol
+  symbol: variable y
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[37,9] cannot find symbol
+  symbol:   variable region
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[37,18] cannot find symbol
+  symbol:   variable INSIDE
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[39,17] cannot find symbol
+  symbol:   variable xMin
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[40,13] cannot find symbol
+  symbol:   variable region
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[40,23] cannot find symbol
+  symbol:   variable LEFT
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[41,24] cannot find symbol
+  symbol:   variable xMax
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[42,13] cannot find symbol
+  symbol:   variable region
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[42,23] cannot find symbol
+  symbol:   variable RIGHT
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[45,17] cannot find symbol
+  symbol:   variable yMin
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[46,13] cannot find symbol
+  symbol:   variable region
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[46,23] cannot find symbol
+  symbol:   variable BOTTOM
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[47,24] cannot find symbol
+  symbol:   variable yMax
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[48,13] cannot find symbol
+  symbol:   variable region
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[48,23] cannot find symbol
+  symbol:   variable TOP
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[52,33] incompatible types: java.lang.String cannot be converted to technology.tabula.extractors.ExtractionAlgorithm
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[53,13] method does not override or implement a method from a supertype
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[57,26] constructor RectangularTextContainer in class technology.tabula.RectangularTextContainer<T> cannot be applied to given types;
+  required: float,float,float,float
+  found: java.lang.String
+  reason: actual and formal argument lists differ in length
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[58,26] constructor RectangularTextContainer in class technology.tabula.RectangularTextContainer<T> cannot be applied to given types;
+  required: float,float,float,float
+  found: java.lang.String
+  reason: actual and formal argument lists differ in length
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[52,23] cannot find symbol
+  symbol: constructor (java.lang.String)
+[INFO] 62 errors 
+####################
+
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/extractors/SpreadsheetExtractionAlgorithm_ESTest.java
+[GENERATED PATH] SpreadsheetExtractionAlgorithm_ESTest#extract(Page page, List<Ruling> rulings).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Line_ESTest.java:[17,26] package org.mockito does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Cell_ESTest.java:[16,25] cannot find symbol
+  symbol:   class Point2D
+  location: package technology.tabula
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Cell_ESTest.java:[21,1] a type with the same simple name is already defined by the single-type-import of javafx.geometry.Point2D
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/RectangularTextContainer_ESTest.java:[14,26] package org.mockito does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/RectangularTextContainer_ESTest.java:[14,1] static import only from classes and interfaces
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/RectangularTextContainer_ESTest.java:[15,26] package org.mockito does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/RectangularTextContainer_ESTest.java:[15,1] static import only from classes and interfaces
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[14,26] package org.mockito does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[23,25] cannot find symbol
+  symbol:   class ExtractionAlgorithm
+  location: package technology.tabula
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Line_ESTest.java:[43,25] cannot find symbol
+  symbol: variable textChunks
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Line_ESTest.java:[46,25] cannot find symbol
+  symbol: variable textChunks
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Line_ESTest.java:[48,21] cannot find symbol
+  symbol: variable textChunks
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Line_ESTest.java:[50,47] cannot find symbol
+  symbol: variable textChunks
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Line_ESTest.java:[52,25] cannot find symbol
+  symbol: variable textChunks
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Line_ESTest.java:[54,26] cannot find symbol
+  symbol: variable textChunks
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Line_ESTest.java:[58,13] cannot find symbol
+  symbol:   method merge(technology.tabula.TextChunk)
+  location: class technology.tabula.Line_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Cell_ESTest.java:[47,24] incompatible types: boolean cannot be converted to java.lang.String
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/extractors/SpreadsheetExtractionAlgorithm_ESTest.java:[45,21] cannot find symbol
+  symbol:   method mock(java.lang.Class<technology.tabula.Page>)
+  location: class technology.tabula.extractors.SpreadsheetExtractionAlgorithm_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/extractors/SpreadsheetExtractionAlgorithm_ESTest.java:[48,36] cannot find symbol
+  symbol:   method mock(java.lang.Class<technology.tabula.Ruling>)
+  location: class technology.tabula.extractors.SpreadsheetExtractionAlgorithm_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/extractors/SpreadsheetExtractionAlgorithm_ESTest.java:[49,9] cannot find symbol
+  symbol:   method when(boolean)
+  location: class technology.tabula.extractors.SpreadsheetExtractionAlgorithm_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/extractors/SpreadsheetExtractionAlgorithm_ESTest.java:[50,36] cannot find symbol
+  symbol:   method mock(java.lang.Class<technology.tabula.Ruling>)
+  location: class technology.tabula.extractors.SpreadsheetExtractionAlgorithm_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/extractors/SpreadsheetExtractionAlgorithm_ESTest.java:[51,9] cannot find symbol
+  symbol:   method when(boolean)
+  location: class technology.tabula.extractors.SpreadsheetExtractionAlgorithm_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/extractors/SpreadsheetExtractionAlgorithm_ESTest.java:[52,34] cannot find symbol
+  symbol:   method mock(java.lang.Class<technology.tabula.Ruling>)
+  location: class technology.tabula.extractors.SpreadsheetExtractionAlgorithm_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/extractors/SpreadsheetExtractionAlgorithm_ESTest.java:[53,9] cannot find symbol
+  symbol:   method when(boolean)
+  location: class technology.tabula.extractors.SpreadsheetExtractionAlgorithm_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/extractors/SpreadsheetExtractionAlgorithm_ESTest.java:[54,34] cannot find symbol
+  symbol:   method mock(java.lang.Class<technology.tabula.Ruling>)
+  location: class technology.tabula.extractors.SpreadsheetExtractionAlgorithm_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/extractors/SpreadsheetExtractionAlgorithm_ESTest.java:[55,9] cannot find symbol
+  symbol:   method when(boolean)
+  location: class technology.tabula.extractors.SpreadsheetExtractionAlgorithm_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/extractors/SpreadsheetExtractionAlgorithm_ESTest.java:[61,22] cannot find symbol
+  symbol:   method mock(java.lang.Class<technology.tabula.Cell>)
+  location: class technology.tabula.extractors.SpreadsheetExtractionAlgorithm_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/extractors/SpreadsheetExtractionAlgorithm_ESTest.java:[63,9] cannot find symbol
+  symbol:   method when(boolean)
+  location: class technology.tabula.extractors.SpreadsheetExtractionAlgorithm_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/extractors/SpreadsheetExtractionAlgorithm_ESTest.java:[64,22] cannot find symbol
+  symbol:   method mock(java.lang.Class<technology.tabula.Cell>)
+  location: class technology.tabula.extractors.SpreadsheetExtractionAlgorithm_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/extractors/SpreadsheetExtractionAlgorithm_ESTest.java:[66,9] cannot find symbol
+  symbol:   method when(boolean)
+  location: class technology.tabula.extractors.SpreadsheetExtractionAlgorithm_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/extractors/SpreadsheetExtractionAlgorithm_ESTest.java:[86,36] findSpreadsheetsFromCells(java.util.List<? extends technology.tabula.Rectangle>) in <anonymous technology.tabula.extractors.SpreadsheetExtractionAlgorithm_ESTest$1> cannot override findSpreadsheetsFromCells(java.util.List<? extends technology.tabula.Rectangle>) in technology.tabula.extractors.SpreadsheetExtractionAlgorithm
+  overridden method is static
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/extractors/SpreadsheetExtractionAlgorithm_ESTest.java:[85,13] method does not override or implement a method from a supertype
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/extractors/SpreadsheetExtractionAlgorithm_ESTest.java:[90,30] findCells(java.util.List<technology.tabula.Ruling>,java.util.List<technology.tabula.Ruling>) in <anonymous technology.tabula.extractors.SpreadsheetExtractionAlgorithm_ESTest$1> cannot override findCells(java.util.List<technology.tabula.Ruling>,java.util.List<technology.tabula.Ruling>) in technology.tabula.extractors.SpreadsheetExtractionAlgorithm
+  overridden method is static
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/extractors/SpreadsheetExtractionAlgorithm_ESTest.java:[89,13] method does not override or implement a method from a supertype
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[43,9] cannot find symbol
+  symbol:   variable textElements
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[45,26] no suitable constructor found for TextElement(float,float,float,float,<nulltype>,java.lang.String,int)
+    constructor technology.tabula.TextElement.TextElement(float,float,float,float,org.apache.pdfbox.pdmodel.font.PDFont,float,java.lang.String,float) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor technology.tabula.TextElement.TextElement(float,float,float,float,org.apache.pdfbox.pdmodel.font.PDFont,float,java.lang.String,float,float) is not applicable
+      (actual and formal argument lists differ in length)
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[45,9] cannot find symbol
+  symbol:   variable textElements
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[46,26] no suitable constructor found for TextElement(float,float,float,float,<nulltype>,java.lang.String,int)
+    constructor technology.tabula.TextElement.TextElement(float,float,float,float,org.apache.pdfbox.pdmodel.font.PDFont,float,java.lang.String,float) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor technology.tabula.TextElement.TextElement(float,float,float,float,org.apache.pdfbox.pdmodel.font.PDFont,float,java.lang.String,float,float) is not applicable
+      (actual and formal argument lists differ in length)
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[46,9] cannot find symbol
+  symbol:   variable textElements
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[47,9] cannot find symbol
+  symbol:   variable textChunk
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[47,35] cannot find symbol
+  symbol:   variable textElements
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[35,13] cannot find symbol
+  symbol: variable x
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[36,13] cannot find symbol
+  symbol: variable y
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[37,9] cannot find symbol
+  symbol:   variable region
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[37,18] cannot find symbol
+  symbol:   variable INSIDE
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[39,17] cannot find symbol
+  symbol:   variable xMin
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[40,13] cannot find symbol
+  symbol:   variable region
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[40,23] cannot find symbol
+  symbol:   variable LEFT
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[41,24] cannot find symbol
+  symbol:   variable xMax
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[42,13] cannot find symbol
+  symbol:   variable region
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[42,23] cannot find symbol
+  symbol:   variable RIGHT
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[45,17] cannot find symbol
+  symbol:   variable yMin
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[46,13] cannot find symbol
+  symbol:   variable region
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[46,23] cannot find symbol
+  symbol:   variable BOTTOM
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[47,24] cannot find symbol
+  symbol:   variable yMax
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[48,13] cannot find symbol
+  symbol:   variable region
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[48,23] cannot find symbol
+  symbol:   variable TOP
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[52,33] incompatible types: java.lang.String cannot be converted to technology.tabula.extractors.ExtractionAlgorithm
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[53,13] method does not override or implement a method from a supertype
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[57,26] constructor RectangularTextContainer in class technology.tabula.RectangularTextContainer<T> cannot be applied to given types;
+  required: float,float,float,float
+  found: java.lang.String
+  reason: actual and formal argument lists differ in length
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[58,26] constructor RectangularTextContainer in class technology.tabula.RectangularTextContainer<T> cannot be applied to given types;
+  required: float,float,float,float
+  found: java.lang.String
+  reason: actual and formal argument lists differ in length
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[52,23] cannot find symbol
+  symbol: constructor (java.lang.String)
+[INFO] 62 errors 
+####################
+
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/extractors/SpreadsheetExtractionAlgorithm_ESTest.java
+[GENERATED PATH] SpreadsheetExtractionAlgorithm_ESTest#extract(Page page, List<Ruling> rulings).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Line_ESTest.java:[17,26] package org.mockito does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Cell_ESTest.java:[16,25] cannot find symbol
+  symbol:   class Point2D
+  location: package technology.tabula
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Cell_ESTest.java:[21,1] a type with the same simple name is already defined by the single-type-import of javafx.geometry.Point2D
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/RectangularTextContainer_ESTest.java:[14,26] package org.mockito does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/RectangularTextContainer_ESTest.java:[14,1] static import only from classes and interfaces
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/RectangularTextContainer_ESTest.java:[15,26] package org.mockito does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/RectangularTextContainer_ESTest.java:[15,1] static import only from classes and interfaces
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[14,26] package org.mockito does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[23,25] cannot find symbol
+  symbol:   class ExtractionAlgorithm
+  location: package technology.tabula
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Line_ESTest.java:[43,25] cannot find symbol
+  symbol: variable textChunks
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Line_ESTest.java:[46,25] cannot find symbol
+  symbol: variable textChunks
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Line_ESTest.java:[48,21] cannot find symbol
+  symbol: variable textChunks
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Line_ESTest.java:[50,47] cannot find symbol
+  symbol: variable textChunks
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Line_ESTest.java:[52,25] cannot find symbol
+  symbol: variable textChunks
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Line_ESTest.java:[54,26] cannot find symbol
+  symbol: variable textChunks
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Line_ESTest.java:[58,13] cannot find symbol
+  symbol:   method merge(technology.tabula.TextChunk)
+  location: class technology.tabula.Line_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Cell_ESTest.java:[47,24] incompatible types: boolean cannot be converted to java.lang.String
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/extractors/SpreadsheetExtractionAlgorithm_ESTest.java:[47,21] cannot find symbol
+  symbol:   method mock(java.lang.Class<technology.tabula.Page>)
+  location: class technology.tabula.extractors.SpreadsheetExtractionAlgorithm_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/extractors/SpreadsheetExtractionAlgorithm_ESTest.java:[50,36] cannot find symbol
+  symbol:   method mock(java.lang.Class<technology.tabula.Ruling>)
+  location: class technology.tabula.extractors.SpreadsheetExtractionAlgorithm_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/extractors/SpreadsheetExtractionAlgorithm_ESTest.java:[51,9] cannot find symbol
+  symbol:   method when(boolean)
+  location: class technology.tabula.extractors.SpreadsheetExtractionAlgorithm_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/extractors/SpreadsheetExtractionAlgorithm_ESTest.java:[52,36] cannot find symbol
+  symbol:   method mock(java.lang.Class<technology.tabula.Ruling>)
+  location: class technology.tabula.extractors.SpreadsheetExtractionAlgorithm_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/extractors/SpreadsheetExtractionAlgorithm_ESTest.java:[53,9] cannot find symbol
+  symbol:   method when(boolean)
+  location: class technology.tabula.extractors.SpreadsheetExtractionAlgorithm_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/extractors/SpreadsheetExtractionAlgorithm_ESTest.java:[54,34] cannot find symbol
+  symbol:   method mock(java.lang.Class<technology.tabula.Ruling>)
+  location: class technology.tabula.extractors.SpreadsheetExtractionAlgorithm_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/extractors/SpreadsheetExtractionAlgorithm_ESTest.java:[55,9] cannot find symbol
+  symbol:   method when(boolean)
+  location: class technology.tabula.extractors.SpreadsheetExtractionAlgorithm_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/extractors/SpreadsheetExtractionAlgorithm_ESTest.java:[56,34] cannot find symbol
+  symbol:   method mock(java.lang.Class<technology.tabula.Ruling>)
+  location: class technology.tabula.extractors.SpreadsheetExtractionAlgorithm_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/extractors/SpreadsheetExtractionAlgorithm_ESTest.java:[57,9] cannot find symbol
+  symbol:   method when(boolean)
+  location: class technology.tabula.extractors.SpreadsheetExtractionAlgorithm_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/extractors/SpreadsheetExtractionAlgorithm_ESTest.java:[63,22] cannot find symbol
+  symbol:   method mock(java.lang.Class<technology.tabula.Cell>)
+  location: class technology.tabula.extractors.SpreadsheetExtractionAlgorithm_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/extractors/SpreadsheetExtractionAlgorithm_ESTest.java:[65,9] cannot find symbol
+  symbol:   method when(boolean)
+  location: class technology.tabula.extractors.SpreadsheetExtractionAlgorithm_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/extractors/SpreadsheetExtractionAlgorithm_ESTest.java:[66,22] cannot find symbol
+  symbol:   method mock(java.lang.Class<technology.tabula.Cell>)
+  location: class technology.tabula.extractors.SpreadsheetExtractionAlgorithm_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/extractors/SpreadsheetExtractionAlgorithm_ESTest.java:[68,9] cannot find symbol
+  symbol:   method when(boolean)
+  location: class technology.tabula.extractors.SpreadsheetExtractionAlgorithm_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/extractors/SpreadsheetExtractionAlgorithm_ESTest.java:[88,36] findSpreadsheetsFromCells(java.util.List<? extends technology.tabula.Rectangle>) in <anonymous technology.tabula.extractors.SpreadsheetExtractionAlgorithm_ESTest$1> cannot override findSpreadsheetsFromCells(java.util.List<? extends technology.tabula.Rectangle>) in technology.tabula.extractors.SpreadsheetExtractionAlgorithm
+  overridden method is static
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/extractors/SpreadsheetExtractionAlgorithm_ESTest.java:[87,13] method does not override or implement a method from a supertype
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/extractors/SpreadsheetExtractionAlgorithm_ESTest.java:[92,30] findCells(java.util.List<technology.tabula.Ruling>,java.util.List<technology.tabula.Ruling>) in <anonymous technology.tabula.extractors.SpreadsheetExtractionAlgorithm_ESTest$1> cannot override findCells(java.util.List<technology.tabula.Ruling>,java.util.List<technology.tabula.Ruling>) in technology.tabula.extractors.SpreadsheetExtractionAlgorithm
+  overridden method is static
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/extractors/SpreadsheetExtractionAlgorithm_ESTest.java:[91,13] method does not override or implement a method from a supertype
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[43,9] cannot find symbol
+  symbol:   variable textElements
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[45,26] no suitable constructor found for TextElement(float,float,float,float,<nulltype>,java.lang.String,int)
+    constructor technology.tabula.TextElement.TextElement(float,float,float,float,org.apache.pdfbox.pdmodel.font.PDFont,float,java.lang.String,float) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor technology.tabula.TextElement.TextElement(float,float,float,float,org.apache.pdfbox.pdmodel.font.PDFont,float,java.lang.String,float,float) is not applicable
+      (actual and formal argument lists differ in length)
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[45,9] cannot find symbol
+  symbol:   variable textElements
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[46,26] no suitable constructor found for TextElement(float,float,float,float,<nulltype>,java.lang.String,int)
+    constructor technology.tabula.TextElement.TextElement(float,float,float,float,org.apache.pdfbox.pdmodel.font.PDFont,float,java.lang.String,float) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor technology.tabula.TextElement.TextElement(float,float,float,float,org.apache.pdfbox.pdmodel.font.PDFont,float,java.lang.String,float,float) is not applicable
+      (actual and formal argument lists differ in length)
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[46,9] cannot find symbol
+  symbol:   variable textElements
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[47,9] cannot find symbol
+  symbol:   variable textChunk
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[47,35] cannot find symbol
+  symbol:   variable textElements
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[35,13] cannot find symbol
+  symbol: variable x
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[36,13] cannot find symbol
+  symbol: variable y
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[37,9] cannot find symbol
+  symbol:   variable region
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[37,18] cannot find symbol
+  symbol:   variable INSIDE
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[39,17] cannot find symbol
+  symbol:   variable xMin
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[40,13] cannot find symbol
+  symbol:   variable region
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[40,23] cannot find symbol
+  symbol:   variable LEFT
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[41,24] cannot find symbol
+  symbol:   variable xMax
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[42,13] cannot find symbol
+  symbol:   variable region
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[42,23] cannot find symbol
+  symbol:   variable RIGHT
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[45,17] cannot find symbol
+  symbol:   variable yMin
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[46,13] cannot find symbol
+  symbol:   variable region
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[46,23] cannot find symbol
+  symbol:   variable BOTTOM
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[47,24] cannot find symbol
+  symbol:   variable yMax
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[48,13] cannot find symbol
+  symbol:   variable region
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[48,23] cannot find symbol
+  symbol:   variable TOP
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[52,33] incompatible types: java.lang.String cannot be converted to technology.tabula.extractors.ExtractionAlgorithm
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[53,13] method does not override or implement a method from a supertype
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[57,26] constructor RectangularTextContainer in class technology.tabula.RectangularTextContainer<T> cannot be applied to given types;
+  required: float,float,float,float
+  found: java.lang.String
+  reason: actual and formal argument lists differ in length
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[58,26] constructor RectangularTextContainer in class technology.tabula.RectangularTextContainer<T> cannot be applied to given types;
+  required: float,float,float,float
+  found: java.lang.String
+  reason: actual and formal argument lists differ in length
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[52,23] cannot find symbol
+  symbol: constructor (java.lang.String)
+[INFO] 62 errors 
+####################
+

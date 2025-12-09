@@ -1,0 +1,14 @@
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/entity/tags/TagInfoData_ESTest.java
+[GENERATED PATH] TagInfoData_ESTest#setMediaCount(long mediaCount).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/auth/InstagramAuthService_ESTest.java:[32,64] unreported exception java.net.UnknownHostException; must be caught or declared to be thrown
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/entity/likes/LikesFeed_ESTest.java:[41,14] cannot find symbol
+  symbol:   method setUsername(java.lang.String)
+  location: variable user1 of type org.jinstagram.entity.common.User
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/entity/likes/LikesFeed_ESTest.java:[46,14] cannot find symbol
+  symbol:   method setUsername(java.lang.String)
+  location: variable user2 of type org.jinstagram.entity.common.User
+[INFO] 3 errors 
+####################
+
