@@ -1,0 +1,40 @@
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/JsonUtils_ESTest.java
+[GENERATED PATH] JsonUtils_ESTest#unescape(ZapposJson zapposJson, CharSequence value).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[37,9] cannot find symbol
+  symbol:   class TestableJsonReaderCodeGenerator
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[37,57] cannot find symbol
+  symbol:   class TestableJsonReaderCodeGenerator
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[40,32] cannot find symbol
+  symbol:   class TestBean
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/JsonUtils_ESTest.java:[34,33] constructor ZapposJson in class com.zappos.json.ZapposJson cannot be applied to given types;
+  required: boolean
+  found: no arguments
+  reason: actual and formal argument lists differ in length
+[INFO] 4 errors 
+####################
+
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/JsonUtils_ESTest.java
+[GENERATED PATH] JsonUtils_ESTest#unescape(ZapposJson zapposJson, CharSequence value).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/JsonUtils_ESTest.java:[48,44] cannot find symbol
+  symbol:   method unescape(com.zappos.json.ZapposJson,java.lang.String)
+  location: class com.zappos.json.util.JsonUtils_ESTest
+[INFO] 1 error
+####################
+
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/JsonUtils_ESTest.java
+[GENERATED PATH] JsonUtils_ESTest#unescape(ZapposJson zapposJson, CharSequence value).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/JsonUtils_ESTest.java:[42,54] cannot find symbol
+  symbol:   method unescape(com.zappos.json.ZapposJson,java.lang.String)
+  location: class com.zappos.json.ZapposJson
+[INFO] 1 error
+####################
+
