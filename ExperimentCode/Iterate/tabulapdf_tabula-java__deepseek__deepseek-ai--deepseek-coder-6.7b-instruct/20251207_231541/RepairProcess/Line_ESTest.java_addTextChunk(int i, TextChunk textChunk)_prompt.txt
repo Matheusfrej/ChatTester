@@ -1,0 +1,39 @@
+0-->1-->0-->compileRepair
+
+
+# Test Method
+    @Test
+    public void testAddTextChunk() {
+        Line line = new Line();
+
+          <Buggy Line>: no suitable constructor found for TextChunk(java.lang.String)
+        TextChunk textChunk1 = new TextChunk("Test1");
+
+        TextChunk textChunk2 = new TextChunk("Test2");
+        line.addTextChunk(0, textChunk1);
+        List<TextChunk> textChunks = line.getTextElements();
+        assert textChunks.get(0).equals(textChunk1);
+        try {
+            line.addTextChunk(-1, textChunk2);
+            assert false; 
+        } catch (IllegalArgumentException e) {
+            assert e.getMessage().equals("i can't be less than 0");
+        }
+        line.addTextChunk(2, textChunk2);
+        textChunks = line.getTextElements();
+        assert textChunks.size() == 3;
+        assert textChunks.get(2).equals(textChunk2);
+        TextChunk mergedChunk = new TextChunk(textChunk1.getText() + textChunk2.getText());
+        line.addTextChunk(1, textChunk2);
+        textChunks = line.getTextElements();
+        assert textChunks.get(1).equals(mergedChunk);
+    }
+
+
+# Instruction
+The test method has a bug error (marked <Buggy Line>). 
+ Please repair the buggy code line and return the complete and compilable test method after repair. 
+The generated code should be enclosed within ``` ```.
+
+########
+

@@ -1,0 +1,70 @@
+0-->1-->0-->compileRepair
+
+
+# Test Method
+    @Test
+    public void testSqueeze() {
+
+              <Buggy Line>: no suitable constructor found for TextElement(int,int,int,int,java.lang.String)
+        TextElement textElement1 = new TextElement(0, 0, 10, 10, "abc");
+
+        TextElement textElement2 = new TextElement(0, 0, 10, 10, "bcb");
+        TextElement textElement3 = new TextElement(0, 0, 10, 10, "cbc");
+        TextElement textElement4 = new TextElement(0, 0, 10, 10, "bcb");
+        TextElement textElement5 = new TextElement(0, 0, 10, 10, "cbc");
+        List<TextElement> textElements = new ArrayList<>();
+        textElements.add(textElement1);
+        textElements.add(textElement2);
+        textElements.add(textElement3);
+        textElements.add(textElement4);
+        textElements.add(textElement5);
+        TextChunk textChunk = new TextChunk(textElements);
+        List<TextChunk> result = textChunk.squeeze('b', 3);
+        assert result.size() == 2;
+        assert result.get(0).getText().equals("abc");
+        assert result.get(1).getText().equals("cbc");
+    }
+
+
+# Instruction
+The test method has a bug error (marked <Buggy Line>). 
+ Please repair the buggy code line and return the complete and compilable test method after repair. 
+The generated code should be enclosed within ``` ```.
+
+########
+
+1-->2-->0-->compileRepair
+
+
+# Test Method
+@Test
+public void testSqueeze() {
+
+          <Buggy Line>: no suitable constructor found for TextElement(int,int,int,int,java.lang.String)
+    TextElement textElement1 = new TextElement(0, 0, 10, 10, "abc");
+
+    TextElement textElement2 = new TextElement(0, 0, 10, 10, "bcb");
+    TextElement textElement3 = new TextElement(0, 0, 10, 10, "cbc");
+    TextElement textElement4 = new TextElement(0, 0, 10, 10, "bcb");
+    TextElement textElement5 = new TextElement(0, 0, 10, 10, "cbc");
+    List<TextElement> textElements = new ArrayList<>();
+    textElements.add(textElement1);
+    textElements.add(textElement2);
+    textElements.add(textElement3);
+    textElements.add(textElement4);
+    textElements.add(textElement5);
+    TextChunk textChunk = new TextChunk(textElements);
+    List<TextChunk> result = textChunk.squeeze('b', 3);
+    assert result.size() == 2;
+    assert result.get(0).getText().equals("abc");
+    assert result.get(1).getText().equals("cbc");
+}
+
+
+# Instruction
+The test method has a bug error (marked <Buggy Line>). 
+ Please repair the buggy code line and return the complete and compilable test method after repair. 
+The generated code should be enclosed within ``` ```.
+
+########
+

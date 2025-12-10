@@ -1,0 +1,72 @@
+0-->1-->0-->compileRepair
+
+# CohenSutherlandClipping class
+package technology.tabula;
+public  final class CohenSutherlandClipping {
+public CohenSutherlandClipping();
+public CohenSutherlandClipping(Rectangle2D clipWindow);
+public void setClip(Rectangle2D clipWindow);
+public boolean clip(Line2D.Float line);
+}
+
+
+# Test Method
+    @Test
+    public void testSetClip() {
+        Rectangle2D clipWindow = new Rectangle2D.Double(10, 20, 30, 40);
+        CohenSutherlandClipping csc = new CohenSutherlandClipping();
+        csc.setClip(clipWindow);
+
+         <Buggy Line>: xMin has private access in technology.tabula.CohenSutherlandClipping
+        assert csc.xMin == 10;
+
+        assert csc.xMax == 40;
+        assert csc.yMin == 20;
+        assert csc.yMax == 60;
+    }
+
+
+# Instruction
+The test method has a bug error (marked <Buggy Line>). 
+Please fix the buggy line based on the given "CohenSutherlandClipping" class information (it is crucial) and return the complete and compilable test method after fix. 
+Note that the contents in  "CohenSutherlandClipping" class  cannot be modified.
+The generated code should be enclosed within ``` ```.
+
+########
+
+1-->2-->0-->compileRepair
+
+# CohenSutherlandClipping class
+package technology.tabula;
+public  final class CohenSutherlandClipping {
+public CohenSutherlandClipping();
+public CohenSutherlandClipping(Rectangle2D clipWindow);
+public void setClip(Rectangle2D clipWindow);
+public boolean clip(Line2D.Float line);
+}
+
+
+# Test Method
+@Test
+public void testSetClip() {
+    Rectangle2D clipWindow = new Rectangle2D.Double(10, 20, 30, 40);
+    CohenSutherlandClipping csc = new CohenSutherlandClipping();
+    csc.setClip(clipWindow);
+
+     <Buggy Line>: xMin has private access in technology.tabula.CohenSutherlandClipping
+    assert csc.xMin == 10;
+
+    assert csc.xMax == 40;
+    assert csc == 20;
+    assert csc.yMax == 60;
+}
+
+
+# Instruction
+The test method has a bug error (marked <Buggy Line>). 
+Please fix the buggy line based on the given "CohenSutherlandClipping" class information (it is crucial) and return the complete and compilable test method after fix. 
+Note that the contents in  "CohenSutherlandClipping" class  cannot be modified.
+The generated code should be enclosed within ``` ```.
+
+########
+
