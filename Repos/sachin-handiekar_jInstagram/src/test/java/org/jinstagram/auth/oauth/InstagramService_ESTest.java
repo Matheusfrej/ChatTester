@@ -22,8 +22,6 @@ import org.jinstagram.auth.InstagramApi;
 import org.jinstagram.auth.model.OAuthConfig;
 import org.jinstagram.auth.model.Token;
 import org.jinstagram.auth.oauth.InstagramService;
-import org.jinstagram.Instagram; // Assuming this is the concrete InstagramClient implementation
-import static org.junit.Assert.*;
 import org.junit.Test;
 import static org.junit.Assert.*;
 import static org.evosuite.runtime.EvoAssertions.*;
@@ -58,18 +56,27 @@ public class InstagramService_ESTest extends InstagramService_ESTest_scaffolding
         // Act
         InstagramClient instagramClient = instagramService.getSignedHeaderInstagram(accessToken, ipAddress);
 
+    
+    
+    
+    @Test
+    public void testGetSignedHeaderInstagram() {
+        // Arrange
+        OAuthConfig config = Mockito.mock(OAuthConfig.class);
+        when(config.getApiSecret()).thenReturn("apiSecret");
+
+        Token accessToken = Mockito.mock(Token.class);
+        when(accessToken.getToken()).thenReturn("accessToken");
+
+        InstagramService instagramService = new InstagramService(null, config);
+
+        // Act
+        InstagramClient result = instagramService.getSignedHeaderInstagram(accessToken, "127.0.0.1");
+
         // Assert
-        assertNotNull(instagramClient);
-        // Since InstagramClient is returned (and its constructor presumably handles the logic),
-        // we need to rely on InstagramClient's behaviour to verify the inputs.
-        // This is based on the presumed intention, that the InstagramClient instance
-        // is constructed with the provided accessToken, apiSecret and ipAddress for signing.
-
-        // We check instance type since this method returns an instance of InstagramClient
-        assertTrue(instagramClient instanceof Instagram);
-
-        //Due to access restrictions, we can't directly assert internal states of the created Instagram object.
-        //Therefore we can only assert that an object is correctly returned.
-
+        assertNotNull(result);
+        assertEquals("accessToken", result.getAccessToken());
+        assertEquals("apiSecret", result.getApiSecret());
+        assertEquals("127.0.0.1", result.getIpAddress());
     }
 }

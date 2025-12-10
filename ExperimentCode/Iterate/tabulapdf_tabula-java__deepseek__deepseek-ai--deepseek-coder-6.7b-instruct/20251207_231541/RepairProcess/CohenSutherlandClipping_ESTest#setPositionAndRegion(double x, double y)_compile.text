@@ -1,0 +1,212 @@
+original test path: /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java
+[GENERATED PATH] CohenSutherlandClipping_ESTest#setPositionAndRegion(double x, double y).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[25,9] cannot find symbol
+  symbol:   class Point
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[25,27] cannot find symbol
+  symbol:   class Point
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[27,32] cannot find symbol
+  symbol:   variable Point
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[30,32] cannot find symbol
+  symbol:   variable Point
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[33,32] cannot find symbol
+  symbol:   variable Point
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[36,32] cannot find symbol
+  symbol:   variable Point
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[39,32] cannot find symbol
+  symbol:   variable Point
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[INFO] 7 errors 
+####################
+
+original test path: /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java
+[GENERATED PATH] CohenSutherlandClipping_ESTest#setPositionAndRegion(double x, double y).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[29,5] cannot find symbol
+  symbol:   class Point
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[29,23] cannot find symbol
+  symbol:   class Point
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[32,28] cannot find symbol
+  symbol:   variable Point
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[34,28] cannot find symbol
+  symbol:   variable Point
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[36,28] cannot find symbol
+  symbol:   variable Point
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[38,28] cannot find symbol
+  symbol:   variable Point
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[40,28] cannot find symbol
+  symbol:   variable Point
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[INFO] 7 errors 
+####################
+
+original test path: /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java
+[GENERATED PATH] CohenSutherlandClipping_ESTest#setPositionAndRegion(double x, double y).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[30,5] cannot find symbol
+  symbol:   class Point
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[30,23] cannot find symbol
+  symbol:   class Point
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[33,28] cannot find symbol
+  symbol:   variable Point
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[35,28] cannot find symbol
+  symbol:   variable Point
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[37,28] cannot find symbol
+  symbol:   variable Point
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[39,28] cannot find symbol
+  symbol:   variable Point
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[41,28] cannot find symbol
+  symbol:   variable Point
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[INFO] 7 errors 
+####################
+
+original test path: /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java
+[GENERATED PATH] CohenSutherlandClipping_ESTest#setPositionAndRegion(double x, double y).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[33,9] cannot find symbol
+  symbol:   class Point
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[33,28] cannot find symbol
+  symbol:   class Point
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[35,33] cannot find symbol
+  symbol:   variable Point
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[35,46] cannot find symbol
+  symbol:   variable Point
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[38,9] cannot find symbol
+  symbol:   class Point
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[38,28] cannot find symbol
+  symbol:   class Point
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[40,33] cannot find symbol
+  symbol:   variable Point
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[40,47] cannot find symbol
+  symbol:   variable Point
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[43,9] cannot find symbol
+  symbol:   class Point
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[43,28] cannot find symbol
+  symbol:   class Point
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[45,33] cannot find symbol
+  symbol:   variable Point
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[48,9] cannot find symbol
+  symbol:   class Point
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[48,28] cannot find symbol
+  symbol:   class Point
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[50,33] cannot find symbol
+  symbol:   variable Point
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[50,46] cannot find symbol
+  symbol:   variable Point
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[53,9] cannot find symbol
+  symbol:   class Point
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[53,28] cannot find symbol
+  symbol:   class Point
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[55,33] cannot find symbol
+  symbol:   variable Point
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[55,47] cannot find symbol
+  symbol:   variable Point
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[INFO] 19 errors 
+####################
+
+original test path: /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java
+[GENERATED PATH] CohenSutherlandClipping_ESTest#setPositionAndRegion(double x, double y).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[35,9] cannot find symbol
+  symbol:   class Point
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[35,28] cannot find symbol
+  symbol:   class Point
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[37,33] cannot find symbol
+  symbol:   variable Point
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[37,46] cannot find symbol
+  symbol:   variable Point
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[40,9] cannot find symbol
+  symbol:   class Point
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[40,28] cannot find symbol
+  symbol:   class Point
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[42,33] cannot find symbol
+  symbol:   variable Point
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[42,47] cannot find symbol
+  symbol:   variable Point
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[45,9] cannot find symbol
+  symbol:   class Point
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[45,28] cannot find symbol
+  symbol:   class Point
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[47,33] cannot find symbol
+  symbol:   variable Point
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[50,9] cannot find symbol
+  symbol:   class Point
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[50,28] cannot find symbol
+  symbol:   class Point
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[52,33] cannot find symbol
+  symbol:   variable Point
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[52,46] cannot find symbol
+  symbol:   variable Point
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[55,9] cannot find symbol
+  symbol:   class Point
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[55,28] cannot find symbol
+  symbol:   class Point
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[57,33] cannot find symbol
+  symbol:   variable Point
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[57,47] cannot find symbol
+  symbol:   variable Point
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[INFO] 19 errors 
+####################
+

@@ -1,0 +1,144 @@
+0-->1-->0-->compileRepair
+
+
+# Test Method
+    @Test
+    public void testToString() {
+        Line line = new Line();
+
+          <Buggy Line>: no suitable constructor found for TextChunk(java.lang.String)
+        TextChunk textChunk1 = new TextChunk("Hello");
+
+        TextChunk textChunk2 = new TextChunk("World");
+        line.addTextChunk(textChunk1);
+        line.addTextChunk(textChunk2);
+        String result = line.toString();
+        assert(result.contains(textChunk1.getText()));
+        assert(result.contains(textChunk2.getText()));
+    }
+
+
+# Instruction
+The test method has a bug error (marked <Buggy Line>). 
+ Please repair the buggy code line and return the complete and compilable test method after repair. 
+The generated code should be enclosed within ``` ```.
+
+########
+
+1-->2-->0-->compileRepair
+
+
+# Test Method
+    @Test
+    public void testToString() {
+        Line line = new Line();
+
+                <Buggy Line>: no suitable constructor found for TextChunk(java.lang.String)
+        TextChunk textChunk1 = new TextChunk("Hello"); 
+
+        TextChunk textChunk2 = new TextChunk("World");
+        line.addTextChunk(textChunk1);
+        line.addTextChunk(textChunk2);
+        String result = line.toString();
+        assert(result.contains(textChunk1.getText()));
+        assert(result.contains(textChunk2.getText()));
+    }
+
+
+# Instruction
+The test method has a bug error (marked <Buggy Line>). 
+ Please repair the buggy code line and return the complete and compilable test method after repair. 
+The generated code should be enclosed within ``` ```.
+
+########
+
+2-->3-->1-->compileRepair
+
+
+# Focal Method
+public class Line {
+List<TextChunk> textChunks = new ArrayList<>();
+# Focal method
+@Override
+public String toString() {
+    StringBuilder sb = new StringBuilder();
+    String s = super.toString();
+    sb.append(s, 0, s.length() - 1);
+    sb.append(",chunks=");
+    for (TextChunk te : this.textChunks) {
+        sb.append("'" + te.getText() + "', ");
+    }
+    sb.append(']');
+    return sb.toString();
+}
+}
+
+# Method Intention
+The `toString()` method in the provided code is intended to provide a human-readable representation of an object. This method is overriding the default `toString()` method provided by the `Object` class in Java. The method starts by creating a new `StringBuilder` object. Then it calls the `toString()` method of the `superclass` (presumably `Object`) and appends all characters of the resulting string to the `StringBuilder` except the last one. This is done to remove the trailing `@` character that `Object.toString()` method includes by default. Next, the method appends a comma and the string "chunks=" to the `StringBuilder`. Then, for each `TextChunk` object in the `textChunks` list, the method appends the text of the `TextChunk` enclosed in single quotes and a comma. This is done to provide a clear and readable representation of the `TextChunk` objects. Finally, the method appends a closing square bracket and returns the string representation of the `StringBuilder`. In summary, the `toString()` method is intended to provide a human-readable representation of the `Line` object, including the `TextChunk` objects in the `textChunks` list.
+
+# Instruction
+Please generate a complete and compilable test method for the `Focal Method` based on the `Method Intention` and Class Information. 
+The generated test method coverage for the focal method is as comprehensive as possible, and the generated code should be enclosed within ``` ```.
+
+########
+
+3-->4-->2-->compileRepair
+
+
+# Focal Method
+public class Line {
+List<TextChunk> textChunks = new ArrayList<>();
+# Focal method
+@Override
+public String toString() {
+    StringBuilder sb = new StringBuilder();
+    String s = super.toString();
+    sb.append(s, 0, s.length() - 1);
+    sb.append(",chunks=");
+    for (TextChunk te : this.textChunks) {
+        sb.append("'" + te.getText() + "', ");
+    }
+    sb.append(']');
+    return sb.toString();
+}
+}
+
+# Method Intention
+The `toString()` method in the provided code is intended to provide a human-readable representation of an object. This method is overriding the default `toString()` method provided by the `Object` class in Java. The method starts by creating a new `StringBuilder` object. Then it calls the `toString()` method of the `superclass` (presumably `Object`) and appends all characters of the resulting string to the `StringBuilder` except the last one. This is done to remove the trailing `@` character that `Object.toString()` method includes by default. Next, the method appends a comma and the string "chunks=" to the `StringBuilder`. Then, for each `TextChunk` object in the `textChunks` list, the method appends the text of the `TextChunk` enclosed in single quotes and a comma. This is done to provide a clear and readable representation of the `TextChunk` objects. Finally, the method appends a closing square bracket and returns the string representation of the `StringBuilder`. In summary, the `toString()` method is intended to provide a human-readable representation of the `Line` object, including the `TextChunk` objects in the `textChunks` list.
+
+# Instruction
+Please generate a complete and compilable test method for the `Focal Method` based on the `Method Intention` and Class Information. 
+The generated test method coverage for the focal method is as comprehensive as possible, and the generated code should be enclosed within ``` ```.
+
+########
+
+4-->5-->3-->compileRepair
+
+
+# Focal Method
+public class Line {
+List<TextChunk> textChunks = new ArrayList<>();
+# Focal method
+@Override
+public String toString() {
+    StringBuilder sb = new StringBuilder();
+    String s = super.toString();
+    sb.append(s, 0, s.length() - 1);
+    sb.append(",chunks=");
+    for (TextChunk te : this.textChunks) {
+        sb.append("'" + te.getText() + "', ");
+    }
+    sb.append(']');
+    return sb.toString();
+}
+}
+
+# Method Intention
+The `toString()` method in the provided code is intended to provide a human-readable representation of an object. This method is overriding the default `toString()` method provided by the `Object` class in Java. The method starts by creating a new `StringBuilder` object. Then it calls the `toString()` method of the `superclass` (presumably `Object`) and appends all characters of the resulting string to the `StringBuilder` except the last one. This is done to remove the trailing `@` character that `Object.toString()` method includes by default. Next, the method appends a comma and the string "chunks=" to the `StringBuilder`. Then, for each `TextChunk` object in the `textChunks` list, the method appends the text of the `TextChunk` enclosed in single quotes and a comma. This is done to provide a clear and readable representation of the `TextChunk` objects. Finally, the method appends a closing square bracket and returns the string representation of the `StringBuilder`. In summary, the `toString()` method is intended to provide a human-readable representation of the `Line` object, including the `TextChunk` objects in the `textChunks` list.
+
+# Instruction
+Please generate a complete and compilable test method for the `Focal Method` based on the `Method Intention` and Class Information. 
+The generated test method coverage for the focal method is as comprehensive as possible, and the generated code should be enclosed within ``` ```.
+
+########
+

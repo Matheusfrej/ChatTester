@@ -1,0 +1,151 @@
+0-->1-->0-->compileRepair
+
+# JsonReaderCodeGenerator class
+package com.zappos.json;
+public class JsonReaderCodeGenerator {
+public JsonReaderCodeGenerator(ZapposJson zapposJson, JsonBeanIntrospector beanIntrospector);
+}
+
+
+# Test Method
+    @Test
+    public void testGetReader() {
+        JsonReaderCodeGenerator generator = new JsonReaderCodeGenerator(null, null);
+        class TestClass { }
+
+         <Buggy Line>: JSON_READER_INVOKERS has private access in com.zappos.json.JsonReaderCodeGenerator
+        generator.JSON_READER_INVOKERS.put(TestClass.class, new JsonReaderInvoker(null, null));
+
+        JsonReaderInvoker invoker = generator.getReader(TestClass.class);
+        assertEquals(TestClass.class, invoker.getClazz());
+        JsonReaderInvoker invoker2 = generator.getReader(Object.class);
+        assertNull(invoker2);
+    }
+
+
+# Instruction
+The test method has a bug error (marked <Buggy Line>). 
+Please fix the buggy line based on the given "JsonReaderCodeGenerator" class information (it is crucial) and return the complete and compilable test method after fix. 
+Note that the contents in  "JsonReaderCodeGenerator" class  cannot be modified.
+The generated code should be enclosed within ``` ```.
+
+########
+
+1-->2-->0-->compileRepair
+
+# JsonReaderCodeGenerator class
+package com.zappos.json;
+public class JsonReaderCodeGenerator {
+public JsonReaderCodeGenerator(ZapposJson zapposJson, JsonBeanIntrospector beanIntrospector);
+}
+
+
+# Test Method
+@Test
+    public void addInvoker(Class<?> clazz, JsonReaderInvoker invoker) {
+        JSON_READER_INVOKERS.put(clazz, invoker);
+   @Test
+
+     <Buggy Line>: ';' expected
+    public void testGetReader() {
+
+        JsonReaderCodeGenerator generator = new JsonReaderCodeGenerator(null, null);
+        class TestClass { }
+        generator.addInvoker(TestClass.class, new JsonReaderInvoker(null, null));
+        JsonReaderInvoker invoker = generator.getReader(TestClass.class);
+        assertEquals(TestClass.class, invoker.getClazz());
+        JsonReaderInvoker invoker2 = generator generator.getReader(Object.class);
+        assertNull(invoker2);
+    }
+}
+
+
+# Instruction
+The test method has a bug error (marked <Buggy Line>). 
+ Please repair the buggy code line and return the complete and compilable test method after repair. 
+The generated code should be enclosed within ``` ```.
+
+########
+
+2-->3-->1-->compileRepair
+
+# JsonReaderCodeGenerator class
+package com.zappos.json;
+public class JsonReaderCodeGenerator {
+public JsonReaderCodeGenerator(ZapposJson zapposJson, JsonBeanIntrospector beanIntrospector);
+}
+
+# JsonBeanIntrospector class
+package com.zappos.json;
+public class JsonBeanIntrospector {
+public JsonBeanIntrospector(ZapposJson jacinda);
+public List<JsonBeanAttribute> getMutators(Class<?> clazz);
+public List<JsonBeanAttribute> getAccessors(Class<?> clazz);
+}
+
+
+# Test Method
+@Test
+public void testGetReader() {
+
+         <Buggy Line>: constructor JsonBeanIntrospector in class com.zappos.json.JsonBeanIntrospector cannot be applied to given types;
+    JsonReaderCodeGenerator generator = new JsonReaderCodeGenerator(new ZapposJson(), new JsonBeanIntrospector());
+
+    class TestClass { }
+    generator.addInvoker(TestClass.class, new JsonReaderInvoker(null, null));
+    JsonReaderInvoker invoker = generator.getReader(TestClass.class);
+    assertEquals(TestClass.class, invoker.getClazz());
+    JsonReaderInvoker invoker2 = generator.getReader(Object.class);
+    assertNull(invoker2);
+}
+
+
+# Instruction
+The test method has a bug error (marked <Buggy Line>). 
+Please fix the buggy line based on the given "JsonBeanIntrospector" class information (it is crucial) and return the complete and compilable test method after fix. 
+Note that the contents in  "JsonBeanIntrospector" class  cannot be modified.
+The generated code should be enclosed within ``` ```.
+
+########
+
+3-->4-->1-->compileRepair
+
+# JsonReaderCodeGenerator class
+package com.zappos.json;
+public class JsonReaderCodeGenerator {
+public JsonReaderCodeGenerator(ZapposJson zapposJson, JsonBeanIntrospector beanIntrospector);
+}
+
+# JsonBeanIntrospector class
+package com.zappos.json;
+public class JsonBeanIntrospector {
+public JsonBeanIntrospector(ZapposJson jacinda);
+public List<JsonBeanAttribute> getMutators(Class<?> clazz);
+public List<JsonBeanAttribute> getAccessors(Class<?> clazz);
+}
+
+
+# Test Method
+@Test
+public void testGetReader() {
+    JsonReaderCodeGenerator generator = new JsonReaderCodeGenerator(new ZapposJson(), new JsonBeanIntrospector(new ZapposJson()));
+    class TestClass { }
+
+     <Buggy Line>: cannot find symbol method "addInvoker(java.lang.Class<TestClass>,com.zappos.json.JsonReaderInvoker)" in JsonReaderCodeGenerator
+    generator.addInvoker(TestClass.class, new JsonReaderInvoker(null, null));
+
+    JsonReaderInvoker invoker = generator.getReader(TestClass.class);
+    assertEquals(TestClass.class, invoker.getClazz());
+    JsonReaderInvoker invoker2 = generator.getReader(Object.class);
+    assertNull(invoker2);
+}
+
+
+# Instruction
+The test method has a bug error (marked <Buggy Line>). 
+Please fix the buggy line based on the given "JsonReaderCodeGenerator" class information (it is crucial) and return the complete and compilable test method after fix. 
+Note that the contents in  "JsonReaderCodeGenerator" class  cannot be modified.
+The generated code should be enclosed within ``` ```.
+
+########
+

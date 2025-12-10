@@ -5,18 +5,9 @@
  */
 package org.jinstagram.auth;
 
-import static org.mockito.Mockito.*;
-import org.scribe.utils.Preconditions;
-import org.scribe.model.OAuthConstants;
-import org.scribe.oauth.Service;
-import org.mockito.MockedConstruction;
-import org.mockito.MockedStatic;
-import com.github.scribejava.core.builder.api.DefaultApi20;
-import com.github.scribejava.core.model.OAuthConfig;
-import com.github.scribejava.core.oauth.OAuth20Service;
-import org.scribe.builder.api.Api;
-import org.scribe.model.OAuthConfig;
-import org.scribe.oauth.OAuthService;
+
+
+import oauth.signpost.OAuthConstants;
 import java.util.*;
 import java.lang.*;
 import org.junit.Test;

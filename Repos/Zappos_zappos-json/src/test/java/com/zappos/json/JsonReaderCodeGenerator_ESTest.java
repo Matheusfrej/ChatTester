@@ -7,13 +7,17 @@ package com.zappos.json;
 
 
 
-
+import java.util.HashMap;
+import java.util.Map;
 import java.util.*;
 import java.lang.*;
 import com.zappos.json.JsonBeanIntrospector;
 import com.zappos.json.JsonReaderInvoker;
 import com.zappos.json.ZapposJson;
 import org.junit.Test;
+import java.util.concurrent.ConcurrentHashMap;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNull;
 import org.junit.Test;
 import static org.junit.Assert.*;
 import static org.evosuite.runtime.EvoAssertions.*;
@@ -32,24 +36,8 @@ import org.junit.runner.RunWith;
 @EvoRunnerParameters(mockJVMNonDeterminism = true, useVFS = true, useVNET = true, resetStaticState = true, separateClassLoader = true)
 public class JsonReaderCodeGenerator_ESTest extends JsonReaderCodeGenerator_ESTest_scaffolding {
     
-    
-    
-    
 
-    @Test
-    public void setUp() {
 
-        zapposJson = new ZapposJson();
 
-        beanIntrospector = new JsonBeanIntrospector(zapposJson);
-        jsonReaderCodeGenerator = new JsonReaderCodeGenerator(zapposJson, beanIntrospector);
-        jsonReaderInvokers = new ConcurrentHashMap<>();
-        try {
-            java.lang.reflect.Field field = JsonReaderCodeGenerator.class.getDeclaredField("JSON_READER_INVOKERS");
-            field.setAccessible(true);
-            field.set(jsonReaderCodeGenerator, jsonReaderInvokers);
-        } catch (NoSuchFieldException | IllegalAccessException e) {
-            throw new RuntimeException("Failed to access JSON_READER_INVOKERS field: " + e.getMessage(), e);
-        }
-    }
+
 }
