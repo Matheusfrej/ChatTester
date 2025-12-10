@@ -1,0 +1,272 @@
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java
+[GENERATED PATH] Table_ESTest#getPageNumber().java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[11,25] cannot find symbol
+  symbol:   class ExtractionAlgorithm
+  location: package technology.tabula
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[12,25] cannot find symbol
+  symbol:   class BasicExtractionAlgorithm
+  location: package technology.tabula
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[32,55] cannot find symbol
+  symbol:   class BasicExtractionAlgorithm
+  location: class technology.tabula.Table_ESTest
+[INFO] 3 errors 
+####################
+
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java
+[GENERATED PATH] Table_ESTest#getPageNumber().java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[13,25] cannot find symbol
+  symbol:   class ExtractionAlgorithm
+  location: package technology.tabula
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[14,25] cannot find symbol
+  symbol:   class BasicExtractionAlgorithm
+  location: package technology.tabula
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Cell_ESTest.java:[17,25] cannot find symbol
+  symbol:   class Point2D
+  location: package technology.tabula
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[40,13] cannot find symbol
+  symbol: variable x
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[41,13] cannot find symbol
+  symbol: variable y
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[42,9] cannot find symbol
+  symbol:   variable region
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[42,23] cannot find symbol
+  symbol:   variable xMin
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[42,31] cannot find symbol
+  symbol:   variable LEFT
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[42,43] cannot find symbol
+  symbol:   variable xMax
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[42,51] cannot find symbol
+  symbol:   variable RIGHT
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[42,59] cannot find symbol
+  symbol:   variable INSIDE
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[43,17] cannot find symbol
+  symbol:   variable yMin
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[44,13] cannot find symbol
+  symbol:   variable region
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[44,23] cannot find symbol
+  symbol:   variable BOTTOM
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[45,22] cannot find symbol
+  symbol:   variable yMax
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[46,13] cannot find symbol
+  symbol:   variable region
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[46,23] cannot find symbol
+  symbol:   variable TOP
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[35,52] cannot find symbol
+  symbol:   variable BASIC
+  location: interface technology.tabula.extractors.ExtractionAlgorithm
+[INFO] 18 errors 
+####################
+
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java
+[GENERATED PATH] Table_ESTest#getPageNumber().java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[14,25] cannot find symbol
+  symbol:   class ExtractionAlgorithm
+  location: package technology.tabula
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[15,25] cannot find symbol
+  symbol:   class BasicExtractionAlgorithm
+  location: package technology.tabula
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Cell_ESTest.java:[17,25] cannot find symbol
+  symbol:   class Point2D
+  location: package technology.tabula
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[40,13] cannot find symbol
+  symbol: variable x
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[41,13] cannot find symbol
+  symbol: variable y
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[42,9] cannot find symbol
+  symbol:   variable region
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[42,23] cannot find symbol
+  symbol:   variable xMin
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[42,31] cannot find symbol
+  symbol:   variable LEFT
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[42,43] cannot find symbol
+  symbol:   variable xMax
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[42,51] cannot find symbol
+  symbol:   variable RIGHT
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[42,59] cannot find symbol
+  symbol:   variable INSIDE
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[43,17] cannot find symbol
+  symbol:   variable yMin
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[44,13] cannot find symbol
+  symbol:   variable region
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[44,23] cannot find symbol
+  symbol:   variable BOTTOM
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[45,22] cannot find symbol
+  symbol:   variable yMax
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[46,13] cannot find symbol
+  symbol:   variable region
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[46,23] cannot find symbol
+  symbol:   variable TOP
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[37,72] <anonymous technology.tabula.Table_ESTest$1> is not abstract and does not override abstract method extract(technology.tabula.Page) in technology.tabula.extractors.ExtractionAlgorithm
+[INFO] 18 errors 
+####################
+
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java
+[GENERATED PATH] Table_ESTest#getPageNumber().java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[15,25] cannot find symbol
+  symbol:   class ExtractionAlgorithm
+  location: package technology.tabula
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[16,25] cannot find symbol
+  symbol:   class BasicExtractionAlgorithm
+  location: package technology.tabula
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Cell_ESTest.java:[17,25] cannot find symbol
+  symbol:   class Point2D
+  location: package technology.tabula
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[40,13] cannot find symbol
+  symbol: variable x
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[41,13] cannot find symbol
+  symbol: variable y
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[42,9] cannot find symbol
+  symbol:   variable region
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[42,23] cannot find symbol
+  symbol:   variable xMin
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[42,31] cannot find symbol
+  symbol:   variable LEFT
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[42,43] cannot find symbol
+  symbol:   variable xMax
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[42,51] cannot find symbol
+  symbol:   variable RIGHT
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[42,59] cannot find symbol
+  symbol:   variable INSIDE
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[43,17] cannot find symbol
+  symbol:   variable yMin
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[44,13] cannot find symbol
+  symbol:   variable region
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[44,23] cannot find symbol
+  symbol:   variable BOTTOM
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[45,22] cannot find symbol
+  symbol:   variable yMax
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[46,13] cannot find symbol
+  symbol:   variable region
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[46,23] cannot find symbol
+  symbol:   variable TOP
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[39,59] <anonymous technology.tabula.Table_ESTest$1> is not abstract and does not override abstract method extract(technology.tabula.Page) in technology.tabula.extractors.ExtractionAlgorithm
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[50,9] no suitable method found for assertEquals(int,int,java.lang.String)
+    method org.junit.Assert.assertEquals(java.lang.String,java.lang.Object[],java.lang.Object[]) is not applicable
+      (argument mismatch; int cannot be converted to java.lang.String)
+    method org.junit.Assert.assertEquals(float,float,float) is not applicable
+      (argument mismatch; java.lang.String cannot be converted to float)
+    method org.junit.Assert.assertEquals(double,double,double) is not applicable
+      (argument mismatch; java.lang.String cannot be converted to double)
+    method org.junit.Assert.assertEquals(java.lang.String,double,double) is not applicable
+      (argument mismatch; int cannot be converted to java.lang.String)
+    method org.junit.Assert.assertEquals(java.lang.String,long,long) is not applicable
+      (argument mismatch; int cannot be converted to java.lang.String)
+    method org.junit.Assert.assertEquals(java.lang.String,java.lang.Object,java.lang.Object) is not applicable
+      (argument mismatch; int cannot be converted to java.lang.String)
+[INFO] 19 errors 
+####################
+
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java
+[GENERATED PATH] Table_ESTest#getPageNumber().java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[16,25] cannot find symbol
+  symbol:   class ExtractionAlgorithm
+  location: package technology.tabula
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[17,25] cannot find symbol
+  symbol:   class BasicExtractionAlgorithm
+  location: package technology.tabula
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Cell_ESTest.java:[17,25] cannot find symbol
+  symbol:   class Point2D
+  location: package technology.tabula
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[40,13] cannot find symbol
+  symbol: variable x
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[41,13] cannot find symbol
+  symbol: variable y
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[42,9] cannot find symbol
+  symbol:   variable region
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[42,23] cannot find symbol
+  symbol:   variable xMin
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[42,31] cannot find symbol
+  symbol:   variable LEFT
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[42,43] cannot find symbol
+  symbol:   variable xMax
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[42,51] cannot find symbol
+  symbol:   variable RIGHT
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[42,59] cannot find symbol
+  symbol:   variable INSIDE
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[43,17] cannot find symbol
+  symbol:   variable yMin
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[44,13] cannot find symbol
+  symbol:   variable region
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[44,23] cannot find symbol
+  symbol:   variable BOTTOM
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[45,22] cannot find symbol
+  symbol:   variable yMax
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[46,13] cannot find symbol
+  symbol:   variable region
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[46,23] cannot find symbol
+  symbol:   variable TOP
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[42,33] incompatible types: java.lang.String cannot be converted to technology.tabula.extractors.ExtractionAlgorithm
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[48,9] no suitable method found for assertEquals(int,int,java.lang.String)
+    method org.junit.Assert.assertEquals(java.lang.String,java.lang.Object[],java.lang.Object[]) is not applicable
+      (argument mismatch; int cannot be converted to java.lang.String)
+    method org.junit.Assert.assertEquals(float,float,float) is not applicable
+      (argument mismatch; java.lang.String cannot be converted to float)
+    method org.junit.Assert.assertEquals(double,double,double) is not applicable
+      (argument mismatch; java.lang.String cannot be converted to double)
+    method org.junit.Assert.assertEquals(java.lang.String,double,double) is not applicable
+      (argument mismatch; int cannot be converted to java.lang.String)
+    method org.junit.Assert.assertEquals(java.lang.String,long,long) is not applicable
+      (argument mismatch; int cannot be converted to java.lang.String)
+    method org.junit.Assert.assertEquals(java.lang.String,java.lang.Object,java.lang.Object) is not applicable
+      (argument mismatch; int cannot be converted to java.lang.String)
+[INFO] 19 errors 
+####################
+

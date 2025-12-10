@@ -1,0 +1,142 @@
+[
+  {
+    "original_path": "/home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java",
+    "generated_path": "/home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/ExperimentCode/IterateResultDeal/Zappos_zappos-json__gemini__gemini-3-pro-preview/20251209_085113/GeneratedTest/JsonReaderCodeGenerator_ESTest#deregisterAll().java",
+    "IterateTimes": 0,
+    "Compile_result": 1,
+    "Test_result": 1
+  },
+  {
+    "original_path": "/home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java",
+    "generated_path": "/home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/ExperimentCode/IterateResultDeal/Zappos_zappos-json__gemini__gemini-3-pro-preview/20251209_085113/GeneratedTest/JsonReaderCodeGenerator_ESTest#getDetail().java",
+    "IterateTimes": 0,
+    "Compile_result": 1,
+    "Test_result": 1
+  },
+  {
+    "original_path": "/home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java",
+    "generated_path": "/home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/ExperimentCode/IterateResultDeal/Zappos_zappos-json__gemini__gemini-3-pro-preview/20251209_085113/GeneratedTest/JsonReaderCodeGenerator_ESTest#getArrayType().java",
+    "IterateTimes": 0,
+    "Compile_result": 1,
+    "Test_result": 1
+  },
+  {
+    "original_path": "/home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java",
+    "generated_path": "/home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/ExperimentCode/IterateResultDeal/Zappos_zappos-json__gemini__gemini-3-pro-preview/20251209_085113/GeneratedTest/JsonReaderCodeGenerator_ESTest#getType().java",
+    "IterateTimes": 0,
+    "Compile_result": 1,
+    "Test_result": 1
+  },
+  {
+    "original_path": "/home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java",
+    "generated_path": "/home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/ExperimentCode/IterateResultDeal/Zappos_zappos-json__gemini__gemini-3-pro-preview/20251209_085113/GeneratedTest/JsonReaderCodeGenerator_ESTest#getAttributeType().java",
+    "IterateTimes": 0,
+    "Compile_result": 1,
+    "Test_result": 1
+  },
+  {
+    "original_path": "/home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java",
+    "generated_path": "/home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/ExperimentCode/IterateResultDeal/Zappos_zappos-json__gemini__gemini-3-pro-preview/20251209_085113/GeneratedTest/JsonReaderCodeGenerator_ESTest#getPath().java",
+    "IterateTimes": 0,
+    "Compile_result": 1,
+    "Test_result": 1
+  },
+  {
+    "original_path": "/home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java",
+    "generated_path": "/home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/ExperimentCode/IterateResultDeal/Zappos_zappos-json__gemini__gemini-3-pro-preview/20251209_085113/GeneratedTest/JsonReaderCodeGenerator_ESTest#getAttributeInfos().java",
+    "IterateTimes": 0,
+    "Compile_result": 1,
+    "Test_result": 1
+  },
+  {
+    "original_path": "/home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java",
+    "generated_path": "/home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/ExperimentCode/IterateResultDeal/Zappos_zappos-json__gemini__gemini-3-pro-preview/20251209_085113/GeneratedTest/JsonReaderCodeGenerator_ESTest#getCode().java",
+    "IterateTimes": 0,
+    "Compile_result": 1,
+    "Test_result": 1
+  },
+  {
+    "original_path": "/home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java",
+    "generated_path": "/home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/ExperimentCode/IterateResultDeal/Zappos_zappos-json__gemini__gemini-3-pro-preview/20251209_085113/GeneratedTest/JsonReaderCodeGenerator_ESTest#equals(Object obj).java",
+    "IterateTimes": 0,
+    "Compile_result": 1,
+    "Test_result": 1
+  },
+  {
+    "original_path": "/home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java",
+    "generated_path": "/home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/ExperimentCode/IterateResultDeal/Zappos_zappos-json__gemini__gemini-3-pro-preview/20251209_085113/GeneratedTest/JsonReaderCodeGenerator_ESTest#setArrayType(int arrayType).java",
+    "IterateTimes": 0,
+    "Compile_result": 1,
+    "Test_result": 1
+  },
+  {
+    "original_path": "/home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java",
+    "generated_path": "/home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/ExperimentCode/IterateResultDeal/Zappos_zappos-json__gemini__gemini-3-pro-preview/20251209_085113/GeneratedTest/JsonReaderCodeGenerator_ESTest#getCollectionType().java",
+    "IterateTimes": 0,
+    "Compile_result": 1,
+    "Test_result": 1
+  },
+  {
+    "original_path": "/home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java",
+    "generated_path": "/home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/ExperimentCode/IterateResultDeal/Zappos_zappos-json__gemini__gemini-3-pro-preview/20251209_085113/GeneratedTest/JsonReaderCodeGenerator_ESTest#setCollectionType(Class<?> collectionType).java",
+    "IterateTimes": 0,
+    "Compile_result": 1,
+    "Test_result": 1
+  },
+  {
+    "original_path": "/home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java",
+    "generated_path": "/home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/ExperimentCode/IterateResultDeal/Zappos_zappos-json__gemini__gemini-3-pro-preview/20251209_085113/GeneratedTest/JsonReaderCodeGenerator_ESTest#toString().java",
+    "IterateTimes": 0,
+    "Compile_result": 1,
+    "Test_result": 1
+  },
+  {
+    "original_path": "/home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java",
+    "generated_path": "/home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/ExperimentCode/IterateResultDeal/Zappos_zappos-json__gemini__gemini-3-pro-preview/20251209_085113/GeneratedTest/JsonReaderCodeGenerator_ESTest#getReader(Class<?> clazz).java",
+    "IterateTimes": 0,
+    "Compile_result": 1,
+    "Test_result": 1
+  },
+  {
+    "original_path": "/home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/JsonUtils_ESTest.java",
+    "generated_path": "/home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/ExperimentCode/IterateResultDeal/Zappos_zappos-json__gemini__gemini-3-pro-preview/20251209_085113/GeneratedTest/JsonUtils_ESTest#escape(ZapposJson zapposJson, CharSequence value).java",
+    "IterateTimes": 0,
+    "Compile_result": 1,
+    "Test_result": 1
+  },
+  {
+    "original_path": "/home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java",
+    "generated_path": "/home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/ExperimentCode/IterateResultDeal/Zappos_zappos-json__gemini__gemini-3-pro-preview/20251209_085113/GeneratedTest/Reflections_ESTest#getSecondGenericType(Field field).java",
+    "IterateTimes": 0,
+    "Compile_result": 1,
+    "Test_result": 1
+  },
+  {
+    "original_path": "/home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java",
+    "generated_path": "/home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/ExperimentCode/IterateResultDeal/Zappos_zappos-json__gemini__gemini-3-pro-preview/20251209_085113/GeneratedTest/Reflections_ESTest#getGenericTypes(Field field).java",
+    "IterateTimes": 0,
+    "Compile_result": 1,
+    "Test_result": 1
+  },
+  {
+    "original_path": "/home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java",
+    "generated_path": "/home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/ExperimentCode/IterateResultDeal/Zappos_zappos-json__gemini__gemini-3-pro-preview/20251209_085113/GeneratedTest/Reflections_ESTest#getFirstGenericType(Field field).java",
+    "IterateTimes": 0,
+    "Compile_result": 1,
+    "Test_result": 1
+  },
+  {
+    "original_path": "/home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java",
+    "generated_path": "/home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/ExperimentCode/IterateResultDeal/Zappos_zappos-json__gemini__gemini-3-pro-preview/20251209_085113/GeneratedTest/Reflections_ESTest#getFirstGenericParameterType(Method method).java",
+    "IterateTimes": 0,
+    "Compile_result": 1,
+    "Test_result": 1
+  },
+  {
+    "original_path": "/home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java",
+    "generated_path": "/home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/ExperimentCode/IterateResultDeal/Zappos_zappos-json__gemini__gemini-3-pro-preview/20251209_085113/GeneratedTest/Reflections_ESTest#getField(Class<?> clazz, String fieldName).java",
+    "IterateTimes": 0,
+    "Compile_result": 1,
+    "Test_result": 1
+  }
+]

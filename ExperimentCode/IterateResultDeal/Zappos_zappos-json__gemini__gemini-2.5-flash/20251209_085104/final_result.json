@@ -1,0 +1,9 @@
+[
+  {
+    "original_path": "/home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java",
+    "generated_path": "/home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/ExperimentCode/IterateResultDeal/Zappos_zappos-json__gemini__gemini-2.5-flash/20251209_085104/GeneratedTest/JsonReaderCodeGenerator_ESTest#getPath().java",
+    "IterateTimes": 0,
+    "Compile_result": 1,
+    "Test_result": 1
+  }
+]

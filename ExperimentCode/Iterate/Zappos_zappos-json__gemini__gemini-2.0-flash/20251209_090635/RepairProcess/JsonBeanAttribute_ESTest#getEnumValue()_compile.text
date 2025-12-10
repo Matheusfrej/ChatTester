@@ -1,0 +1,30 @@
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonBeanAttribute_ESTest.java
+[GENERATED PATH] JsonBeanAttribute_ESTest#getEnumValue().java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonBeanAttribute_ESTest.java:[34,9] cannot find symbol
+  symbol:   class EnumValue
+  location: class com.zappos.json.JsonBeanAttribute_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonBeanAttribute_ESTest.java:[34,35] cannot find symbol
+  symbol:   class EnumValue
+  location: class com.zappos.json.JsonBeanAttribute_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonBeanAttribute_ESTest.java:[42,9] cannot find symbol
+  symbol:   class EnumValue
+  location: class com.zappos.json.JsonBeanAttribute_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonBeanAttribute_ESTest.java:[48,9] cannot find symbol
+  symbol:   class EnumValue
+  location: class com.zappos.json.JsonBeanAttribute_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonBeanAttribute_ESTest.java:[48,42] cannot find symbol
+  symbol:   class EnumValue
+  location: class com.zappos.json.JsonBeanAttribute_ESTest
+[INFO] 5 errors 
+####################
+
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonBeanAttribute_ESTest.java
+[GENERATED PATH] JsonBeanAttribute_ESTest#getEnumValue().java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[39,16] class, interface, or enum expected
+[INFO] 1 error
+####################
+

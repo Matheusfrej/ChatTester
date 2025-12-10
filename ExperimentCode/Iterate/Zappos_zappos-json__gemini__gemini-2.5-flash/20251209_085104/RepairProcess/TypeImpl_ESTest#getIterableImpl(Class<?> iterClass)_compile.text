@@ -1,0 +1,72 @@
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/TypeImpl_ESTest.java
+[GENERATED PATH] TypeImpl_ESTest#getIterableImpl(Class<?> iterClass).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[30,46] cannot find symbol
+  symbol: variable value
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[35,1] constructor JsonReaderCodeGenerator in class com.zappos.json.JsonReaderCodeGenerator cannot be applied to given types;
+  required: com.zappos.json.ZapposJson,com.zappos.json.JsonBeanIntrospector
+  found: no arguments
+  reason: actual and formal argument lists differ in length
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/TypeImpl_ESTest.java:[23,54] cannot find symbol
+  symbol:   class List
+  location: class com.zappos.json.util.TypeImpl_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/TypeImpl_ESTest.java:[25,64] cannot find symbol
+  symbol:   class List
+  location: class com.zappos.json.util.TypeImpl_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/TypeImpl_ESTest.java:[26,70] cannot find symbol
+  symbol:   class ArrayList
+  location: class com.zappos.json.util.TypeImpl_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/TypeImpl_ESTest.java:[29,60] cannot find symbol
+  symbol:   class Collection
+  location: class com.zappos.json.util.TypeImpl_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/TypeImpl_ESTest.java:[31,76] cannot find symbol
+  symbol:   class Collection
+  location: class com.zappos.json.util.TypeImpl_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/TypeImpl_ESTest.java:[32,76] cannot find symbol
+  symbol:   class ArrayList
+  location: class com.zappos.json.util.TypeImpl_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/TypeImpl_ESTest.java:[38,74] cannot find symbol
+  symbol:   class ArrayList
+  location: class com.zappos.json.util.TypeImpl_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/TypeImpl_ESTest.java:[41,59] cannot find symbol
+  symbol:   class ArrayList
+  location: class com.zappos.json.util.TypeImpl_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/TypeImpl_ESTest.java:[43,74] cannot find symbol
+  symbol:   class ArrayList
+  location: class com.zappos.json.util.TypeImpl_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/TypeImpl_ESTest.java:[44,75] cannot find symbol
+  symbol:   class ArrayList
+  location: class com.zappos.json.util.TypeImpl_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/TypeImpl_ESTest.java:[47,57] cannot find symbol
+  symbol:   class HashSet
+  location: class com.zappos.json.util.TypeImpl_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/TypeImpl_ESTest.java:[49,70] cannot find symbol
+  symbol:   class HashSet
+  location: class com.zappos.json.util.TypeImpl_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/TypeImpl_ESTest.java:[50,71] cannot find symbol
+  symbol:   class HashSet
+  location: class com.zappos.json.util.TypeImpl_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/TypeImpl_ESTest.java:[54,38] cannot find symbol
+  symbol:   class Set
+  location: class com.zappos.json.util.TypeImpl_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/TypeImpl_ESTest.java:[63,38] cannot find symbol
+  symbol:   class AbstractList
+  location: class com.zappos.json.util.TypeImpl_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/TypeImpl_ESTest.java:[72,38] cannot find symbol
+  symbol:   class AbstractSet
+  location: class com.zappos.json.util.TypeImpl_ESTest
+[INFO] 18 errors 
+####################
+
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/TypeImpl_ESTest.java
+[GENERATED PATH] TypeImpl_ESTest#getIterableImpl(Class<?> iterClass).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[41,12] class, interface, or enum expected
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[42,1] class, interface, or enum expected
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[46,12] class, interface, or enum expected
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[47,1] class, interface, or enum expected
+[INFO] 4 errors 
+####################
+
