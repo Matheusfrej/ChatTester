@@ -1,0 +1,13 @@
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/realtime/SubscriptionResponseObject_ESTest.java
+[GENERATED PATH] SubscriptionResponseObject_ESTest#setSubscriptionId(String subscriptionId).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/InstagramObject_ESTest.java:[28,43] cannot find symbol
+  symbol:   class HashMap
+  location: class org.jinstagram.InstagramObject_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/InstagramObject_ESTest.java:[32,9] cannot find symbol
+  symbol:   method when(java.util.Map<java.lang.String,java.lang.String>)
+  location: class org.jinstagram.InstagramObject_ESTest
+[INFO] 2 errors 
+####################
+

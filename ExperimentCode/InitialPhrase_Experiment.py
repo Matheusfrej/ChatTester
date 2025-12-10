@@ -4,6 +4,7 @@ import torch
 import shutil
 import subprocess
 import openai
+from openai import OpenAI
 import os
 import re
 import json
@@ -19,6 +20,8 @@ repo_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 dotenv_path = os.path.join(repo_root, '.env')
 load_dotenv(dotenv_path)
 
+verbose_mode = os.getenv('VERBOSE_MODE', 'False').lower() == 'true'
+
 # TODO modify this path or set `JAVA_HOME` in your .env
 java_home = os.getenv('JAVA_HOME', "/usr/lib/jvm/jdk1.8.0_131")
 os.environ["JAVA_HOME"] = java_home
@@ -30,13 +33,29 @@ chatTesterDir = os.path.dirname(current_dir)
 
 testedRepo_PATH = os.path.join(chatTesterDir, "Repos")  # 存放 repo的 path
 
-# model_path = "deepseek-ai/deepseek-coder-6.7b-instruct"
-model_path = "gemini-2.5-flash"
+model_temperature=float(os.getenv('MODEL_TEMPERATURE', 0.0))
+
+model_path = os.getenv('MODEL_PATH', "gpt-3.5-turbo")
 gemini_api_key = os.getenv('GEMINI_API_KEY')
 
+
+def delay_if_needed_to_prevent_rate_limit(model):
+    delay_seconds = 4
+    model_list = []
+
+    if model in model_list:
+        print(f"Delaying for {delay_seconds} seconds to prevent rate limiting...")
+        time.sleep(delay_seconds)
+
 class ChatGptTester_inital:
-    def __init__(self, Intention_TAG):
+    def __init__(self, Intention_TAG, timestamp, json_path):
         self.Intention_TAG = Intention_TAG
+        # Use provided timestamp or generate current timestamp
+        if timestamp is None:
+            from datetime import datetime
+            timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+        self.timestamp = timestamp
+        self.Json_file_Path = json_path
 
         if "CodeLlama" in model_path:
             sub_save_dir = "CodeLlama"
@@ -44,21 +63,35 @@ class ChatGptTester_inital:
             sub_save_dir = "CodeFuse"
         elif "deepseek" in model_path:
             sub_save_dir = "DeepSeek"
-        elif "gpt-3.5" in model_path:
-            sub_save_dir = os.path.basename(Json_file_Path).replace(".json","")
-            openai.api_base = "https://openkey.cloud/v1"
-            openai.api_key = os.getenv('OPENAI_API_KEY')
+            sub_save_dir = f"{os.path.basename(self.Json_file_Path).replace(".json","")}__deepseek__{model_path.replace("/","--")}"
+        elif "gpt" in model_path:
+            sub_save_dir = f"{os.path.basename(self.Json_file_Path).replace(".json","")}__openai__{model_path.replace("/","--")}"
+            # TODO: The 'openai.api_base' option isn't read in the client API. You will need to pass it when you instantiate the client, e.g. 'OpenAI(base_url="https://openkey.cloud/v1")'
+            # openai.api_base = "https://openkey.cloud/v1"
         elif "gemini" in model_path:
-            sub_save_dir = "Gemini"
+            sub_save_dir = f"{os.path.basename(self.Json_file_Path).replace(".json","")}__gemini__{model_path.replace("/","--")}"
         else:
             sub_save_dir = "OtherModel"
 
 
-        self.original_java_PATH = os.path.join(current_dir, self.Intention_TAG, sub_save_dir, 'original_java')
-        self.LogINFO_PATH = os.path.join(current_dir, self.Intention_TAG, sub_save_dir, 'LogINFO')
-        self.Surefire_reports_dest_path = os.path.join(current_dir, self.Intention_TAG, sub_save_dir, 'Surefire_reports')
-        self.GeneratedTest_PATH = os.path.join(current_dir, self.Intention_TAG, sub_save_dir, 'GeneratedTest')
-        self.MetricOut_Path = os.path.join(current_dir, self.Intention_TAG, sub_save_dir, 'result_1.json')
+        # Create timestamped subdirectory
+        timestamped_dir = os.path.join(sub_save_dir, self.timestamp)
+        
+        self.original_java_PATH = os.path.join(current_dir, self.Intention_TAG, timestamped_dir, 'original_java')
+        self.LogINFO_PATH = os.path.join(current_dir, self.Intention_TAG, timestamped_dir, 'LogINFO')
+        self.Surefire_reports_dest_path = os.path.join(current_dir, self.Intention_TAG, timestamped_dir, 'Surefire_reports')
+        self.GeneratedTest_PATH = os.path.join(current_dir, self.Intention_TAG, timestamped_dir, 'GeneratedTest')
+        self.MetricOut_Path = os.path.join(current_dir, self.Intention_TAG, timestamped_dir, 'result_1.json')
+
+        # Check if result_1.json already exists
+        if os.path.exists(self.MetricOut_Path):
+            print(f"\n{'='*60}")
+            print("WARNING: result_1.json already exists!")
+            print(f"Path: {self.MetricOut_Path}")
+            print("="*60)
+            print("\nTo proceed, please remove the existing file or move it to another location.")
+            print("Aborting to prevent data loss.\n")
+            raise FileExistsError(f"result_1.json already exists at {self.MetricOut_Path}")
 
         self.boolean(self.GeneratedTest_PATH)
         self.boolean(self.Surefire_reports_dest_path)
@@ -67,35 +100,36 @@ class ChatGptTester_inital:
 
         self.unit_instance = Unit(model_path)  # class instance
 
-        self.read_INFO(Json_file_Path)
+        self.read_INFO()
 
     def boolean(self, file_path):
         if not os.path.exists(file_path):
-            print('Creat floder....')
+            print(f'Creating folder [{file_path}]... ', end='')
             os.makedirs(file_path)
+            print("- OK")
         else:
             shutil.rmtree(file_path)
             os.makedirs(file_path)
 
-    def read_INFO(self, Json_file_Path):
-        project_name = os.path.basename(Json_file_Path).replace(".json","")
+    def read_INFO(self):
+        project_name = os.path.basename(self.Json_file_Path).replace(".json","")
 
-        with open(Json_file_Path, 'r', encoding='utf-8') as f:
+        with open(self.Json_file_Path, 'r', encoding='utf-8') as f:
             file_cont = json.load(f)
 
         for cont in tqdm(file_cont):
             Under_test_method = cont['Under_test_method']
             Test_method = cont['Test_method']
             if len(Under_test_method) == 0: continue
-            
+
             Focal_class = Under_test_method['Class_declaration']
             Filed = self.unit_instance.commentDelete(Under_test_method['Filed']) + "\n"
             constructors = self.unit_instance.commentDelete(Under_test_method['constructors']) + "\n"
             Focal_Method_Info = self.unit_instance.commentDelete(Under_test_method["Method_body"])
-            
+
             PL_Focal_Method = Focal_class + '\n' + Filed + constructors + '\n\n' + '# Focal method\n' + Focal_Method_Info + "\n}"
             PL_Focal_Method = '\n'.join(filter(lambda x: x.strip(), PL_Focal_Method.split('\n')))
-            
+
             Test_Import_info = Test_method['Test_import']
             focal_method_name = Under_test_method['Method_statement']
             Class_name = Under_test_method['Class_name']
@@ -107,8 +141,8 @@ class ChatGptTester_inital:
 
             # --- CORREÇÃO DO CAMINHO (FIX PATH) ---
             # 1. Pega o caminho original que está no JSON (pode ser /Users/..., C:/..., etc)
-            raw_path_from_json = Under_test_method['project_path'].split("###")[0]
-            
+            raw_path_from_json = Test_method['TestInfo'].split("###")[0]
+
             # 2. Encontra a parte relativa (a partir de 'src') para ignorar o prefixo do outro PC
             if "src" in raw_path_from_json:
                 # Pega tudo do 'src' para frente (ex: src/main/java/com/...)
@@ -124,10 +158,8 @@ class ChatGptTester_inital:
 
             # 3. Monta o caminho REAL na sua máquina Linux
             # /home/mathe/.../Repos/NomeDoProjeto/src/main/java/...
-            local_real_path = os.path.join(testedRepo_PATH, project_name, relative_path)
+            TestFilePath = os.path.join(testedRepo_PATH, project_name, relative_path)
 
-            # 4. Ajusta para a pasta de teste e define o TestDir correto
-            TestFilePath = local_real_path.replace("/main/", "/test/")
             TestDir = os.path.dirname(TestFilePath)
             # --------------------------------------
 
@@ -144,24 +176,32 @@ class ChatGptTester_inital:
                 # os.chdir(current_dir)
 
                 self.boolean(TestDir) 
-                
+
                 with open(TestScaffoldPath,'w',encoding='utf-8') as f:
                     f.write(ScaffoldingCode)
 
-                if self.Intention_TAG == "Contain_intention":  # intention
-                    if "gemini-2.5-flash" in model_path:
-                        # delay for Gemini API rate limits
-                        time.sleep(4)
-                    compile_result, test_result, Gen_Path = self.Contain_intention(PL_Focal_Method, focal_method_name, Test_Import_info,
-                                                                              TestFilePath, TestCodeShell, project_name, contextMethod,
-                                                                              4)
-                else:
-                    if "gemini-2.5-flash" in model_path:
-                        # delay for Gemini API rate limits
-                        time.sleep(4)
-                    compile_result, test_result, Gen_Path = self.No_intention(PL_Focal_Method, focal_method_name, Test_Import_info,
-                                                                              TestFilePath, TestCodeShell, project_name, contextMethod,
-                                                                              4)
+                
+                llm_returned_successfully = False
+                retries = 0
+                while(not llm_returned_successfully):
+                    try:
+                        if self.Intention_TAG == "Contain_intention":  # intention
+                            delay_if_needed_to_prevent_rate_limit(model_path)
+                            compile_result, test_result, Gen_Path = self.Contain_intention(PL_Focal_Method, focal_method_name, Test_Import_info,
+                                                                                    TestFilePath, TestCodeShell, project_name, contextMethod,
+                                                                                    4)
+                        else:
+                            delay_if_needed_to_prevent_rate_limit(model_path)
+                            compile_result, test_result, Gen_Path = self.No_intention(PL_Focal_Method, focal_method_name, Test_Import_info,
+                                                                                    TestFilePath, TestCodeShell, project_name, contextMethod,
+                                                                                    4)
+                        
+                        llm_returned_successfully = True
+                    except Exception as e:
+                        if retries < 2:
+                            retries += 1
+                        print(f"    ✗ LLM Error: {str(e)}. Retrying in {retries*4} seconds...")
+                        time.sleep(retries*4)
 
                 out_dict = {"original_path": Test_method['TestInfo'], "generated_path": Gen_Path,
                             "Compile": compile_result, "Test": test_result}
@@ -182,23 +222,20 @@ class ChatGptTester_inital:
 
 
     def Contain_intention(self, PL_Focal_Method, focal_method_name, Test_Import_info, TestFilePath, TestCodeShell, project_name,contextMethod, Junit_version):
-        if "gemini-2.5-flash" in model_path:
-            # delay for Gemini API rate limits
-            time.sleep(4)
-    
+        delay_if_needed_to_prevent_rate_limit(model_path)
+
         # obtain the method intention
         Method_intention = self.unit_instance.intention_unit(PL_Focal_Method, focal_method_name)
 
         Composit_prompt = "# Import information\n" + Test_Import_info + "\n\n# Focal Method Context\n"+self.MethodContext+"\n\n# Method intention \n" + Method_intention + "\n\n" + PL_Focal_Method + \
                           f'\n\n# Instruction\nPlease generate a test method for the \"{focal_method_name}\" according to the given `Import information`, `Focal Method Context` and `Method intention (it is crucial)`. Ensure that the generated test method is compilable, and cannot use the private and undefined method in `Method Context`.\nThe generated code should be enclosed within ``` ```.'
 
-        print("##################")
-        print(Composit_prompt)
-        print("##################")
+        if verbose_mode:
+            print("##################")
+            print(Composit_prompt)
+            print("##################")
 
-        if "gemini-2.5-flash" in model_path:
-            # delay for Gemini API rate limits
-            time.sleep(4)
+        delay_if_needed_to_prevent_rate_limit(model_path)
 
         # obtain the generated test_method and import_statement
         Gen_test_method, import_statement = self.unit_instance.method_pred_unit(Composit_prompt)
@@ -246,25 +283,27 @@ class ChatGptTester_inital:
         ]
 
         if JUNIT_VERSION == 5:
-            mvn_compile = ['mvn', 'test-compile', '-Dtest.engine=junit-jupiter', '-Dcheckstyle.skip=true'] + ssl_flags
-            mvn_test = ['mvn', 'test', '-Dtest.engine=junit-jupiter', '-Dcheckstyle.skip=true'] + ssl_flags
+            mvn_compile = ['mvn', '-B', 'test-compile', '-Dtest.engine=junit-jupiter', '-Dstyle.color=never', '-Dcheckstyle.skip=true'] + ssl_flags
+            mvn_test = ['mvn', '-B', 'test', '-Dtest.engine=junit-jupiter', '-Dstyle.color=never', '-Dcheckstyle.skip=true'] + ssl_flags
         else:
-            mvn_compile = ['mvn', 'test-compile', '-Dcheckstyle.skip=true'] + ssl_flags
-            mvn_test = ['mvn', 'test', '-Dcheckstyle.skip=true'] + ssl_flags
+            mvn_compile = ['mvn', '-B', 'test-compile', '-Dstyle.color=never', '-Dcheckstyle.skip=true'] + ssl_flags
+            mvn_test = ['mvn', '-B', 'test', '-Dstyle.color=never', '-Dcheckstyle.skip=true'] + ssl_flags
 
         write_cont, compile_result, test_result = self.Compile_Test_sub_unit(mvn_compile, mvn_test, TestFilePath)
 
         # 未能正确的执行mvn 指令。此时首先需要执行 mvn clean
         if compile_result != 1 and "[ERROR] COMPILATION ERROR :" not in write_cont and "Could not resolve dependenci" in write_cont:
-                mvn_install = [ 'mvn', 'clean', 'install']
+                mvn_install = [ 'mvn', '-B', 'clean', 'install']
                 mvn_result = subprocess.run(mvn_install, stdout=subprocess.PIPE, stderr=subprocess.PIPE, env=env,
                                              universal_newlines=True)
                 if "BUILD SUCCESS" in mvn_result.stdout or "BUILD SUCCESS" in mvn_result.stderr:
                     write_cont, compile_result, test_result = self.Compile_Test_sub_unit(mvn_compile, mvn_test, TestFilePath)
         os.chdir(current_dir)
 
-        if compile_result == 0 and "[ERROR] COMPILATION ERROR :" not in write_cont:
+        if compile_result == 0 and "COMPILATION ERROR :" not in write_cont:
             print("\n" + "="*30)
+            print("COMMAND RUN:", ' '.join(mvn_compile))
+            print("COMMAND RUN:", ' '.join(mvn_test))
             print("CRITICAL MAVEN FAILURE OUTPUT:")
             print("="*30)
             print(write_cont)  # <--- This prints the actual error from Maven
@@ -324,13 +363,12 @@ class ChatGptTester_inital:
         Composit_prompt = "# Import information\n" + Test_Import_info + "\n\n# Focal Method Context\n"+self.MethodContext+ "\n" + PL_Focal_Method + \
                           f'\n\n# Instruction\nPlease generate a test method for the \"{focal_method_name}\" according to the given `Import information` and `Focal Method Context`. Ensure that the generated test method is compilable, and cannot use the private and undefined method in `Method Context`.\nThe generated code should be enclosed within ``` ```.'
 
-        print("##################")
-        print(Composit_prompt)
-        print("##################")
+        if verbose_mode:
+            print("##################")
+            print(Composit_prompt)
+            print("##################")
 
-        if "gemini-2.5-flash" in model_path:
-            # delay for Gemini API rate limits
-            time.sleep(4)
+        delay_if_needed_to_prevent_rate_limit(model_path)
 
         # obtain the generated test_method and import_statement
         Gen_test_method, import_statement = self.unit_instance.method_pred_unit(Composit_prompt)
@@ -357,13 +395,13 @@ class Unit:
             )
             # Formato de prompt do DeepSeek Instruct
             self.problem_prompt = "### Instruction:\n{instruction}\n### Response:\n"
-            
+
             self.tokenizer = AutoTokenizer.from_pretrained(
                 model_path, 
                 use_fast=False, 
                 trust_remote_code=True
             )
-            
+
             self.model = AutoModelForCausalLM.from_pretrained(
                 model_path,
                 quantization_config=bnb_config, # Carrega em 4 bits
@@ -394,6 +432,8 @@ class Unit:
             self.tokenizer = AutoTokenizer.from_pretrained(model_path, use_fast=False)
             self.model = AutoModelForCausalLM.from_pretrained(model_path, low_cpu_mem_usage=True,
                                                               torch_dtype=torch.float16).cuda()
+        elif "gpt" in model_path:
+            self.openai_client = OpenAI(api_key=os.getenv('OPENAI_API_KEY'))
         elif "gemini" in model_path:
             self.gemini_client = genai.Client(api_key=gemini_api_key)
 
@@ -409,17 +449,16 @@ class Unit:
 
     def method_pred_unit(self, ask_test_method_prompt, repair_TAG=False):
         if repair_TAG:
-            if "gpt-3.5" in model_path:
-                response_test = openai.ChatCompletion.create(
-                    model=model_path,
-                    messages=[
-                        {"role": "system",
-                         "content": "I want you to play the role of a professional who repairs buggy lines of the test method. Unnecessary import statement can be removed."},
-                        {"role": "user", "content": ask_test_method_prompt},
-                    ],
-                    temperature=0)
-                generated_content = response_test.choices[0].message['content']
-            elif "gemini-2.5-flash" in model_path:
+            if "gpt" in model_path:
+                response_test = self.openai_client.chat.completions.create(model=model_path,
+                messages=[
+                    {"role": "system",
+                     "content": "I want you to play the role of a professional who repairs buggy lines of the test method. Unnecessary import statement can be removed."},
+                    {"role": "user", "content": ask_test_method_prompt},
+                ],
+                temperature=model_temperature)
+                generated_content = response_test.choices[0].message.content
+            elif "gemini" in model_path:
                 response_test = self.gemini_client.models.generate_content(
                     model=model_path,
                     contents=ask_test_method_prompt,
@@ -435,17 +474,16 @@ class Unit:
                 generated_content = self.generate(prompt)
 
         else:
-            if "gpt-3.5" in model_path:
-                response_test = openai.ChatCompletion.create(
-                    model=model_path,
-                    messages=[
-                        {"role": "system",
-                         "content": "I want you to play the role of a professional who writes Java test method."},
-                        {"role": "user", "content": ask_test_method_prompt},
-                    ],
-                    temperature=0)
-                generated_content = response_test.choices[0].message['content']
-            elif "gemini-2.5-flash" in model_path:
+            if "gpt" in model_path:
+                response_test = self.openai_client.chat.completions.create(model=model_path,
+                messages=[
+                    {"role": "system",
+                     "content": "I want you to play the role of a professional who writes Java test method."},
+                    {"role": "user", "content": ask_test_method_prompt},
+                ],
+                temperature=model_temperature)
+                generated_content = response_test.choices[0].message.content
+            elif "gemini" in model_path:
                 response_test = self.gemini_client.models.generate_content(
                     model=model_path,
                     contents=ask_test_method_prompt,
@@ -464,21 +502,19 @@ class Unit:
         return test_method, import_statement
 
     def intention_unit(self, PL_Focal_Method, focal_method_name):
-        if "gpt-3.5" in model_path:
+        if "gpt" in model_path:
             Intention_NL = f'''Please describe the overall intention of the {focal_method_name} method in as much detail as possible in one sentence.'''
             # Intention_NL = f''Please infer the overall intention of the {focal_method_name} method with one sentence.
             ask_intention_prompt = PL_Focal_Method + '\n\n' + Intention_NL
-            response_intention = openai.ChatCompletion.create(
-                model=model_path,
-                messages=[
-                    {"role": "system",
-                     "content": "I want you to play the role of a professional who infers method intention."},
-                    {"role": "user", "content": ask_intention_prompt},
-                ],
-                temperature=0
-            )
-            intentions = response_intention.choices[0].message['content']
-        elif "gemini-2.5-flash" in model_path:
+            response_intention = self.openai_client.chat.completions.create(model=model_path,
+            messages=[
+                {"role": "system",
+                 "content": "I want you to play the role of a professional who infers method intention."},
+                {"role": "user", "content": ask_intention_prompt},
+            ],
+            temperature=model_temperature)
+            intentions = response_intention.choices[0].message.content
+        elif "gemini" in model_path:
                 Intention_NL = f'''Please describe the overall intention of the {focal_method_name} method in as much detail as possible in one sentence.'''
                 ask_intention_prompt = PL_Focal_Method + '\n\n' + Intention_NL
                 response_test = self.gemini_client.models.generate_content(
@@ -567,13 +603,16 @@ class Unit:
 
         return codeWithoutComment
 
-if __name__ == "__main__":
-    Intention_TAG = True
-    if Intention_TAG:Intention = 'Contain_intention'
-    else:Intention = "No_intention"
+# if __name__ == "__main__":
+#     Intention_TAG = True
+#     if Intention_TAG:Intention = 'Contain_intention'
+#     else:Intention = "No_intention"
 
-    projects_name = ['sachin-handiekar_jInstagram.json','tabulapdf_tabula-java.json','Zappos_zappos-json.json']
+#     from datetime import datetime
+#     timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
 
-    for project_name in projects_name:
-        Json_file_Path = os.path.join(chatTesterDir, "RepoData", project_name)
-        ChatGptTester_inital(Intention)
+#     projects_name = ['sachin-handiekar_jInstagram.json', 'tabulapdf_tabula-java.json','Zappos_zappos-json.json']
+
+#     for project_name in projects_name:
+#         Json_file_Path = os.path.join(chatTesterDir, "RepoData", project_name)
+#         ChatGptTester_inital(Intention, timestamp, Json_file_Path)

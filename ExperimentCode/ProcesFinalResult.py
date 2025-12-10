@@ -1,22 +1,17 @@
 
 # -*- coding: utf-8 -*-
-import torch
 import shutil
-import subprocess
-import openai
-import pandas as pd
 import os
-import re
 import json
-import time
-import tiktoken
-from tqdm import tqdm
-import traceback
 import glob
-from transformers import GenerationConfig, LlamaForCausalLM, LlamaTokenizer
-from transformers import AutoTokenizer, AutoModelForCausalLM, LlamaForCausalLM
 from Deal import Compile_Test_INFO
 from Deal import FeedbackPrompt
+from dotenv import load_dotenv
+
+# Load environment variables from a repository-level .env file
+repo_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+dotenv_path = os.path.join(repo_root, '.env')
+load_dotenv(dotenv_path)
 
 
 # current_dir = os.path.dirname(__file__) #./PipLine
@@ -24,30 +19,63 @@ current_dir = os.path.dirname(os.path.abspath(__file__))
 chatTesterDir = os.path.dirname(current_dir)
 
 testedRepo_PATH = os.path.join(chatTesterDir, "Repos")
-model_path = "gpt-3.5-turbo"
+#model_path = "gpt-3.5-turbo"
+model_path = os.getenv('MODEL_PATH', "gpt-3.5-turbo")
 
 
 class ProceFinalResult:
-    def __init__(self, repo_name):
+    """
+    Post-processes and finalizes test results from the iterative repair pipeline.
+    
+    This class reads results from the iterative phase and filters them based on compilation and test result.
+    """
+    
+    def __init__(self, repo_name, Json_file_Path, timestamp=None):
+        # Use provided timestamp or generate current timestamp
+        if timestamp is None:
+            from datetime import datetime
+            timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+        self.timestamp = timestamp
+        
         self.repo_name = repo_name
+        self.Json_file_Path = Json_file_Path
+
         # Path in contain_intention. The result in the folder is from the InitialPhrase_Experiment.py
         if "CodeLlama-34b-Instruct" in model_path:
             self.sub_save_dir = 'CodeLlama'  # CodeLlama; WizardCoder
         elif "CodeFuse-CodeLlama" in model_path:
             self.sub_save_dir = "CodeFuse"
-        elif "gpt-3.5" in model_path:
-            self.sub_save_dir = os.path.basename(Json_file_Path).replace(".json", "")
+        elif "deepseek" in model_path:
+            self.sub_save_dir = f"{os.path.basename(Json_file_Path).replace(".json","")}__deepseek__{model_path.replace("/","--")}"
+        elif "gpt" in model_path:
+            self.sub_save_dir = f"{os.path.basename(Json_file_Path).replace(".json","")}__openai__{model_path.replace("/","--")}"
+        elif "gemini" in model_path:
+            self.sub_save_dir = f"{os.path.basename(Json_file_Path).replace(".json","")}__gemini__{model_path.replace("/","--")}"
+
+        timestamped_dir = os.path.join(self.sub_save_dir, self.timestamp)
 
         first_dir = "Iterate"
-        self.C_GeneratedTest_Path = os.path.join(current_dir, first_dir, self.sub_save_dir, 'GeneratedTest')
-        self.C_Surefire_reports_Path = os.path.join(current_dir, first_dir, self.sub_save_dir,'Surefire_reports')
-        self.C_LogINFO_Path = os.path.join(current_dir, first_dir, self.sub_save_dir, 'LogINFO')
-        self.pred_1 = os.path.join(current_dir, first_dir, self.sub_save_dir, 'final_result.json')
+        self.C_GeneratedTest_Path = os.path.join(current_dir, first_dir, timestamped_dir, 'GeneratedTest')
+        self.C_Surefire_reports_Path = os.path.join(current_dir, first_dir, timestamped_dir,'Surefire_reports')
+        self.C_LogINFO_Path = os.path.join(current_dir, first_dir, timestamped_dir, 'LogINFO')
+        self.pred_1 = os.path.join(current_dir, first_dir, timestamped_dir, 'final_result.json')
 
         # Path in iterate. 基于上面的文件夹，再进一步进行推理，得到迭代之后的结果.
         dir_Name = "IterateResultDeal"
-        self.GeneratedTest_PATH = os.path.join(current_dir, dir_Name, self.sub_save_dir, 'GeneratedTest')
-        self.Final_result = os.path.join(current_dir, dir_Name, self.sub_save_dir, 'final_result.json')
+        # Create timestamped subdirectory
+        
+        self.GeneratedTest_PATH = os.path.join(current_dir, dir_Name, timestamped_dir, 'GeneratedTest')
+        self.Final_result = os.path.join(current_dir, dir_Name, timestamped_dir, 'final_result.json')
+
+        # Check if result file already exists
+        if os.path.exists(self.Final_result):
+            print(f"\n{'='*60}")
+            print("WARNING: final_result.json already exists!")
+            print(f"Path: {self.Final_result}")
+            print("="*60)
+            print("\nTo proceed, please remove the existing file or move it to another location.")
+            print("Aborting to prevent data loss.\n")
+            raise FileExistsError(f"final_result.json already exists at {self.Final_result}")
 
         self.boolean(self.GeneratedTest_PATH)
 
@@ -62,12 +90,30 @@ class ProceFinalResult:
             os.makedirs(file_path)
 
     def LoadFile(self):
+        """
+        Main processing function that reads iterative results and filters/repairs them.
+        
+        Process Flow:
+        1. Reads final_result.json from the iterative phase (one JSON object per line)
+        2. For each test case:
+           - If compilation failed → Skip (no point in fixing non-compiling code)
+           - If test passed → Add to output list as-is
+           - If compilation succeeded but test failed → Generates prompt to repair test, but does nothing with it
+        
+        Output:
+        - Writes all successful cases to Final_result JSON file
+        - Each entry contains: original_path, generated_path, IterateTimes, Compile_result, Test_result
+        """
         outputList = []
         self.count = 0
-
         with open(self.pred_1, 'r', encoding='utf-8') as f:
+            print("opened file at:", self.pred_1)
             for line in f:
+                #print("at line:", line)
+
                 con = json.loads(line.strip())
+
+                #print("Read JSON line: ", con)
 
                 ori_test_Path = con['original_path']
                 generated_path_old = con['generated_path']
@@ -79,8 +125,11 @@ class ProceFinalResult:
                 with open(generated_path, 'r', encoding='utf-8') as f:
                     FixGencont = f.read()
 
-                if Compile_result == 0: continue
+                if Compile_result == 0:
+                    print("Compile failed, skip this case...")
+                    continue
                 elif Test_result == 1:
+                    print("Test passed, adding to the output list...")
                     finalCont = {"original_path": ori_test_Path,
                                  "generated_path": generated_path,
                                  "IterateTimes": 0,
@@ -90,7 +139,7 @@ class ProceFinalResult:
                     continue
 
                 self.DriveTest_Info(FocalMethodInfo)
-                project_name = os.path.basename(Json_file_Path).replace(".json", "")
+                project_name = os.path.basename(self.Json_file_Path).replace(".json", "")
                 GenJava = os.path.basename(generated_path)
 
                 compile_logInfo_path = [file for file in glob.glob(self.C_LogINFO_Path + '/*') if os.path.basename(file) == GenJava][0]
@@ -121,7 +170,14 @@ class ProceFinalResult:
             json.dump(outputList, f, indent=2)
 
     def DriveTest_Info(self, FocalMethodInfo):
-        with open(Json_file_Path, 'r', encoding='utf-8') as f:
+        """
+        Retrieve and process metadata about the focal method and test from the data pairs file.
+        
+        This method extracts comprehensive information about the test method and the method 
+        being tested from the JSON data pairs file. It's called during result processing to 
+        gather context needed for repair operations.
+        """
+        with open(self.Json_file_Path, 'r', encoding='utf-8') as f:
             data_pair = json.load(f)
         ori_test_Path = [data["Test_method"]["TestInfo"] for data in data_pair if len(data['Under_test_method']) and data["Under_test_method"]["Method_statement"] == FocalMethodInfo.split("#")[-1].replace(".java","") and FocalMethodInfo.split("#")[0] in data['Test_method']['TestInfo']][0]
 
@@ -149,7 +205,12 @@ class ProceFinalResult:
 
     def Collect_Info(self, compile_logInfo_path, Surefire_reports_dst_file, gen_test_PATH,
                      ori_test_Path, re_generate_Tag, findClassInfo):
-
+        """
+        Generate repair prompts and collect error information for failed tests.
+        
+        This method processes test failures by analyzing test error logs and generating
+        appropriate repair/fix prompts using the FeedbackPrompt module.
+        """
         test_instance = Compile_Test_INFO.TestINFO(Surefire_reports_dst_file, compile_logInfo_path)
         proc_test_list_INFO = test_instance.TetsINFO_deal()
         Method_intention = ""
@@ -162,8 +223,8 @@ class ProceFinalResult:
 
 
 
-if __name__ == "__main__":
-    projects_name = ['sachin-handiekar_jInstagram.json','tabulapdf_tabula-java.json','Zappos_zappos-json.json']
-    for project_name in projects_name:
-        Json_file_Path = os.path.join(chatTesterDir, "RepoData", project_name)
-        ProceFinalResult(project_name.replace(".json", ""))
+# if __name__ == "__main__":
+#     projects_name = ['sachin-handiekar_jInstagram.json','tabulapdf_tabula-java.json','Zappos_zappos-json.json']
+#     for project_name in projects_name:
+#         Json_file_Path = os.path.join(chatTesterDir, "RepoData", project_name)
+#         ProceFinalResult(project_name.replace(".json", ""))

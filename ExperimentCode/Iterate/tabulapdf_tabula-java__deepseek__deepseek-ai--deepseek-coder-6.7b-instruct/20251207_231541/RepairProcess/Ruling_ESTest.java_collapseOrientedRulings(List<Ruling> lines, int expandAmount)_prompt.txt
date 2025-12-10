@@ -1,0 +1,129 @@
+0-->1-->0-->testRepair
+# Focal method (Cannot be modified)
+public static List<Ruling> collapseOrientedRulings(List<Ruling> lines, int expandAmount) {
+    ArrayList<Ruling> rv = new ArrayList<>();
+    Collections.sort(lines, new Comparator<Ruling>() {
+
+        @Override
+        public int compare(Ruling a, Ruling b) {
+            final float diff = a.getPosition() - b.getPosition();
+            return java.lang.Float.compare(diff == 0 ? a.getStart() - b.getStart() : diff, 0f);
+        }
+    });
+    for (Ruling next_line : lines) {
+        Ruling last = rv.isEmpty() ? null : rv.get(rv.size() - 1);
+        if (last != null && Utils.feq(next_line.getPosition(), last.getPosition()) && last.nearlyIntersects(next_line, expandAmount)) {
+            final float lastStart = last.getStart();
+            final float lastEnd = last.getEnd();
+            final boolean lastFlipped = lastStart > lastEnd;
+            final boolean nextFlipped = next_line.getStart() > next_line.getEnd();
+            boolean differentDirections = nextFlipped != lastFlipped;
+            float nextS = differentDirections ? next_line.getEnd() : next_line.getStart();
+            float nextE = differentDirections ? next_line.getStart() : next_line.getEnd();
+            final float newStart = lastFlipped ? Math.max(nextS, lastStart) : Math.min(nextS, lastStart);
+            final float newEnd = lastFlipped ? Math.min(nextE, lastEnd) : Math.max(nextE, lastEnd);
+            last.setStartEnd(newStart, newEnd);
+            assert !last.oblique();
+        } else if (next_line.length() == 0) {
+            continue;
+        } else {
+            rv.add(next_line);
+        }
+    }
+    return rv;
+}
+
+# Method Intention
+The `collapseOrientedRulings` method is intended to collapse a list of `Ruling` objects, which are presumably lines or intervals, based on their position and intersection with each other. Here's a breakdown of the method: 1. The method sorts the input list of `Ruling` objects based on their position. If two `Ruling` objects have the same position, it further sorts them based on their start position. This is done to ensure that all `Ruling` objects with the same position are grouped together. 2. The method then iterates over the sorted list of `Ruling` objects. For each `Ruling` object, it checks if there is a previous `Ruling` object in the list that has the same position and intersects with the current `Ruling` object within a certain `expandAmount`. 3. If such a previous `Ruling` object is found, the method determines if the current `Ruling` object and the previous one have different directions. If they do, it means they are crossing each other. The method then calculates the new start and end points for the previous `Ruling` object based on the current `Ruling` object and the `expandAmount`. 4. If the current `Ruling` object is of length 0, it is skipped. 5. If no previous `Ruling` object is found that intersects with the current `Ruling` object, the current `Ruling` object is added to the output list. 6. Finally, the method returns the output list of `Ruling` objects, which are the collapsed versions of the input list. In summary, the `collapseOrientedRulings` method is intended to simplify a list of overlapping `Ruling` objects by merging them into a single `Ruling` object where possible.
+
+# Test Method
+    @Test
+    public void testCollapseOrientedRulings() {
+        List<Ruling> lines = new ArrayList<>();
+        lines.add(new Ruling(0f, 0f, 1f, 1f));
+        lines.add(new Ruling(0f, 1f, 1f, 2f));
+        lines.add(new Ruling(0f, 2f, 1f, 3f));
+        lines.add(new Ruling(0f, 3f, 1f, 4f));
+          [Generate an assertion statement here]
+
+
+# Instruction
+The test method throw an error " java.lang.UnsupportedOperationException None " in "  ". 
+Please analyze the code logic and method intention of the Focal method, then generate a correct assertion statement in the test method. Return the complete and compilable test method for the Focal method.
+The generated code should be enclosed within ``` ```.
+
+########
+
+1-->1-->0-->testRepair
+
+# Ruling class
+package technology.tabula;
+public class Ruling {
+public Ruling(float top, float left, float width, float height);
+public Ruling(Point2D p1, Point2D p2);
+public void normalize();
+public boolean vertical();
+public boolean horizontal();
+public boolean oblique();
+public float getPosition();
+public void setPosition(float v);
+public float getStart();
+public void setStart(float v);
+public float getEnd();
+public void setEnd(float v);
+public boolean perpendicularTo(Ruling other);
+public boolean colinear(Point2D point);
+public boolean nearlyIntersects(Ruling another);
+public boolean nearlyIntersects(Ruling another, int colinearOrParallelExpandAmount);
+public double length();
+public Ruling intersect(Rectangle2D clip);
+public Ruling expand(float amount);
+public Point2D intersectionPoint(Ruling other);
+public boolean equals(Object other);
+public float getTop();
+public void setTop(float v);
+public float getLeft();
+public void setLeft(float v);
+public float getBottom();
+public void setBottom(float v);
+public float getRight();
+public void setRight(float v);
+public float getWidth();
+public float getHeight();
+public double getAngle();
+public String toString();
+public static List<Ruling> cropRulingsToArea(List<Ruling> rulings, Rectangle2D area);
+public static Map<Point2D, Ruling[]> findIntersections(List<Ruling> horizontals, List<Ruling> verticals);
+public static List<Ruling> collapseOrientedRulings(List<Ruling> lines);
+public static List<Ruling> collapseOrientedRulings(List<Ruling> lines, int expandAmount);
+}
+
+
+# Test Method
+    @Test
+    public void testCollapseOrientedRulings() {
+        List<Ruling> lines = new ArrayList<>();
+        lines.add(new Ruling(0f, 0f, 1f, 1f));
+        lines.add(new Ruling(0f, 1f, 1f, 2f));
+        lines.add(new Ruling(0f, 2f, 1f, 3f));
+        lines.add(new Ruling(0f, 3f, 1f, 4f));
+        List<Ruling> collapsedLines = Ruling.collapseOrientedRulings(lines, 1);
+
+<Buggy Line>: cannot find symbol method "collapseOrientedRulings(java.util.List<technology.tabula.Ruling>,int)" in Ruling_ESTest
+        assertEquals(2, collapsedLines.size());
+
+        assertEquals(0f, collapsedLines.get(0).getStart(), 0.001);
+        assertEquals(4f, collapsedLines.get(0).getEnd(), 0.001);
+        assertEquals(0f, collapsedLines.get(1).getStart(), 0.001);
+        assertEquals(4f, collapsedLines.get(1).getEnd(), 0.001);
+    }
+
+
+# Instruction
+The test method has a bug error (marked <Buggy Line>). 
+Please fix the buggy line based on the given "Ruling" class information (it is crucial) and return the complete and compilable test method after fix. 
+Note that the contents in  "Ruling" class  cannot be modified.
+The generated code should be enclosed within ``` ```.
+
+########
+

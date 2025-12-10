@@ -1,0 +1,112 @@
+0-->1-->0-->compileRepair
+
+
+# Test Method
+    @Test
+    public void testGroupByLines() {
+        List<TextChunk> textChunks = new ArrayList<>();
+
+           <Buggy Line>: no suitable constructor found for TextElement(int,int,int,int)
+        textChunks.add(new TextChunk(new TextElement(0, 0, 10, 10)));
+
+        textChunks.add(new TextChunk(new TextElement(10, 0, 10, 10)));
+        textChunks.add(new TextChunk(new TextElement(20, 0, 10, 10)));
+        textChunks.add(new TextChunk(new TextElement(30, 0, 10, 10)));
+        textChunks.add(new TextChunk(new TextElement(40, 0, 10, 10)));
+        List<Line> lines = TextChunk.groupByLines(textChunks);
+        assert(lines != null);
+    }
+
+
+# Instruction
+The test method has a bug error (marked <Buggy Line>). 
+ Please repair the buggy code line and return the complete and compilable test method after repair. 
+The generated code should be enclosed within ``` ```.
+
+########
+
+1-->2-->0-->compileRepair
+
+
+# Test Method
+@Test
+public void testGroupByLines() {
+    List<TextChunk> textChunks = new ArrayList<>();
+
+       <Buggy Line>: no suitable constructor found for TextElement(int,int,int,int)
+    textChunks.add(new TextChunk(new TextElement(0, 0, 10, 10)));
+
+    textChunks.add(new TextChunk(new TextElement(10, 0, 10, 10)));
+    textChunks.add(new TextChunk(new TextElement(20, 0, 10, 10)));
+    textChunks.add(new TextChunk(new TextElement(30, 0, 10, 10)));
+    textChunks.add(new TextChunk(new TextElement(40, 0, 10, 10)));
+    List<Line> lines = TextChunk.groupByLines(textChunks);
+    assert(lines != null);
+}
+
+
+# Instruction
+The test method has a bug error (marked <Buggy Line>). 
+ Please repair the buggy code line and return the complete and compilable test method after repair. 
+The generated code should be enclosed within ``` ```.
+
+########
+
+2-->3-->1-->compileRepair
+
+
+# Focal Method
+public class TextChunk {
+public TextChunk(float top, float left, float width, float height) {
+    super(top, left, width, height);
+}public TextChunk(TextElement textElement) {
+    super(textElement.y, textElement.x, textElement.width, textElement.height);
+    this.add(textElement);
+}public TextChunk(List<TextElement> textElements) {
+    this(textElements.get(0));
+    for (int i = 1; i < textElements.size(); i++) {
+        this.add(textElements.get(i));
+    }
+}
+# Focal method
+public static List<Line> groupByLines(List<TextChunk> textChunks) {
+    List<Line> lines = new ArrayList<>();
+    if (textChunks.size() == 0) {
+        return lines;
+    }
+    float bbwidth = Rectangle.boundingBoxOf(textChunks).width;
+    Line l = new Line();
+    l.addTextChunk(textChunks.get(0));
+    textChunks.remove(0);
+    lines.add(l);
+    Line last = lines.get(lines.size() - 1);
+    for (TextChunk te : textChunks) {
+        if (last.verticalOverlapRatio(te) < 0.1) {
+            if (last.width / bbwidth > 0.9 && TextChunk.allSameChar(last.getTextElements())) {
+                lines.remove(lines.size() - 1);
+            }
+            lines.add(new Line());
+            last = lines.get(lines.size() - 1);
+        }
+        last.addTextChunk(te);
+    }
+    if (last.width / bbwidth > 0.9 && TextChunk.allSameChar(last.getTextElements())) {
+        lines.remove(lines.size() - 1);
+    }
+    List<Line> rv = new ArrayList<>(lines.size());
+    for (Line line : lines) {
+        rv.add(Line.removeRepeatedCharacters(line, ' ', 3));
+    }
+    return rv;
+}
+}
+
+# Method Intention
+The `groupByLines` method is intended to group a list of `TextChunk` objects into lines. The method works by iterating over the `textChunks` list and grouping them into lines based on certain conditions. Here's a breakdown of the method's intention: 1. It first checks if the `textChunks` list is empty. If it is, it returns an empty list. 2. It calculates the bounding box width of the `textChunks`. 3. It creates a new `Line` object and adds the first `TextChunk` from the `textChunks` list to it. 4. It then iterates over the remaining `TextChunk` objects in the `textChunks` list. For each `TextChunk`, it checks if the vertical overlap ratio of the `TextChunk` with the last `Line` is less than 0.1. If it is, it creates a new `Line` and adds the `TextChunk` to it. 5. If the width of the last `Line` divided by the bounding box width of the `textChunks` is greater than 0.9 and all the `TextElement` objects in the last `Line` have the same character, it removes the last `Line` from the list. 6. After all `TextChunk` objects have been processed, it creates a new list `rv` and adds the `Line` objects to it, with any repeated characters removed. 7. Finally, it returns the `rv` list, which contains the grouped lines. In summary, the `groupByLines` method is intended to group a list of `TextChunk` objects into lines based on certain conditions, such as vertical overlap and character repetition.
+
+# Instruction
+Please generate a complete and compilable test method for the `Focal Method` based on the `Method Intention` and Class Information. 
+The generated test method coverage for the focal method is as comprehensive as possible, and the generated code should be enclosed within ``` ```.
+
+########
+

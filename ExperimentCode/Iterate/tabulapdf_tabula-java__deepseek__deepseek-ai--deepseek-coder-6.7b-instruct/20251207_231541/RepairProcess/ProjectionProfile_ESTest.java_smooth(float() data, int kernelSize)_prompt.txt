@@ -1,0 +1,25 @@
+0-->1-->0-->compileRepair
+
+
+# Test Method
+    @Test
+    public void testSmooth() {
+        float[] data = {1, 2, 3, 4, 5};
+        int kernelSize = 2;
+        float[] expected = {1.5f, 2.5f, 3.5f, 4.5f};
+        float[] result = ProjectionProfile.smooth(data, kernelSize);
+
+        <Buggy Line>: no suitable method found for assertArrayEquals(float[],float[],double)
+        assertArrayEquals(expected, result, 0.01);
+
+    }
+
+
+# Instruction
+The test method has a bug error (marked <Buggy Line>). 
+Please fix the buggy line based on the given "Assert" class information (it is crucial) and return the complete and compilable test method after fix. 
+Note that the contents in  "Assert" class  cannot be modified.
+The generated code should be enclosed within ``` ```.
+
+########
+

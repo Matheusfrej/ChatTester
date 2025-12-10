@@ -1,0 +1,21 @@
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonBeanAttribute_ESTest.java
+[GENERATED PATH] JsonBeanAttribute_ESTest#setEnumValue(EnumValue enumValue).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonBeanAttribute_ESTest.java:[33,9] cannot find symbol
+  symbol:   class EnumValue
+  location: class com.zappos.json.JsonBeanAttribute_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonBeanAttribute_ESTest.java:[33,39] cannot find symbol
+  symbol:   class EnumValue
+  location: class com.zappos.json.JsonBeanAttribute_ESTest
+[INFO] 2 errors 
+####################
+
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonBeanAttribute_ESTest.java
+[GENERATED PATH] JsonBeanAttribute_ESTest#setEnumValue(EnumValue enumValue).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[39,16] class, interface, or enum expected
+[INFO] 1 error
+####################
+
