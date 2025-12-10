@@ -1,0 +1,61 @@
+original test path: /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java
+[GENERATED PATH] JsonReaderCodeGenerator_ESTest#deregister(Class<?> clazz).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[39,29] JSON_READER_INVOKERS has private access in com.zappos.json.JsonReaderCodeGenerator
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[45,29] JSON_READER_INVOKERS has private access in com.zappos.json.JsonReaderCodeGenerator
+[INFO] 2 errors 
+####################
+
+original test path: /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java
+[GENERATED PATH] JsonReaderCodeGenerator_ESTest#deregister(Class<?> clazz).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[36,28] cannot find symbol
+  symbol:   method getReaderInvoker(java.lang.Class<TestClass>)
+  location: variable generator of type com.zappos.json.JsonReaderCodeGenerator
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[39,25] cannot find symbol
+  symbol:   method getReaderInvoker(java.lang.Class<TestClass>)
+  location: variable generator of type com.zappos.json.JsonReaderCodeGenerator
+[INFO] 2 errors 
+####################
+
+original test path: /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java
+[GENERATED PATH] JsonReaderCodeGenerator_ESTest#deregister(Class<?> clazz).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[38,28] cannot find symbol
+  symbol:   method getReaderInvoker(java.lang.Class<TestClass>)
+  location: variable generator of type com.zappos.json.JsonReaderCodeGenerator
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[41,25] cannot find symbol
+  symbol:   method getReaderInvoker(java.lang.Class<TestClass>)
+  location: variable generator of type com.zappos.json.JsonReaderCodeGenerator
+[INFO] 2 errors 
+####################
+
+original test path: /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java
+[GENERATED PATH] JsonReaderCodeGenerator_ESTest#deregister(Class<?> clazz).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[40,28] cannot find symbol
+  symbol:   method getReaderInvoker(java.lang.Class<TestClass>)
+  location: variable generator of type com.zappos.json.JsonReaderCodeGenerator
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[43,25] cannot find symbol
+  symbol:   method getReaderInvoker(java.lang.Class<TestClass>)
+  location: variable generator of type com.zappos.json.JsonReaderCodeGenerator
+[INFO] 2 errors 
+####################
+
+original test path: /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java
+[GENERATED PATH] JsonReaderCodeGenerator_ESTest#deregister(Class<?> clazz).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[42,28] cannot find symbol
+  symbol:   method getReaderInvoker(java.lang.Class<TestClass>)
+  location: variable generator of type com.zappos.json.JsonReaderCodeGenerator
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[45,25] cannot find symbol
+  symbol:   method getReaderInvoker(java.lang.Class<TestClass>)
+  location: variable generator of type com.zappos.json.JsonReaderCodeGenerator
+[INFO] 2 errors 
+####################
+

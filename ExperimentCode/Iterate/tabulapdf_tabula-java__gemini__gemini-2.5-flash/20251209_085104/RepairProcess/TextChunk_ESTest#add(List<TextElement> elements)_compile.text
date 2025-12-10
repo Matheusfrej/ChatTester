@@ -1,0 +1,575 @@
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java
+[GENERATED PATH] TextChunk_ESTest#add(List<TextElement> elements).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[34,55] cannot find symbol
+  symbol:   class Font
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[34,69] cannot find symbol
+  symbol:   variable Font
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[34,86] cannot find symbol
+  symbol:   variable Color
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[61,43] cannot find symbol
+  symbol:   variable DELTA
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[62,44] cannot find symbol
+  symbol:   variable DELTA
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[63,45] cannot find symbol
+  symbol:   variable DELTA
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[64,46] cannot find symbol
+  symbol:   variable DELTA
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[71,55] cannot find symbol
+  symbol:   class Font
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[71,69] cannot find symbol
+  symbol:   variable Font
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[71,86] cannot find symbol
+  symbol:   variable Color
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[74,49] cannot find symbol
+  symbol:   class Font
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[74,63] cannot find symbol
+  symbol:   variable Font
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[74,80] cannot find symbol
+  symbol:   variable Color
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[99,43] cannot find symbol
+  symbol:   variable DELTA
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[100,43] cannot find symbol
+  symbol:   variable DELTA
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[101,46] cannot find symbol
+  symbol:   variable DELTA
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[102,46] cannot find symbol
+  symbol:   variable DELTA
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[111,45] incompatible types: possible lossy conversion from double to float
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[112,47] incompatible types: possible lossy conversion from double to float
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[119,103] cannot find symbol
+  symbol:   variable DELTA
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[120,106] cannot find symbol
+  symbol:   variable DELTA
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[121,103] cannot find symbol
+  symbol:   variable DELTA
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[122,106] cannot find symbol
+  symbol:   variable DELTA
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[128,51] cannot find symbol
+  symbol:   class Font
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[128,65] cannot find symbol
+  symbol:   variable Font
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[128,82] cannot find symbol
+  symbol:   variable Color
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[146,42] cannot find symbol
+  symbol:   variable DELTA
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[147,43] cannot find symbol
+  symbol:   variable DELTA
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[148,46] cannot find symbol
+  symbol:   variable DELTA
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[149,47] cannot find symbol
+  symbol:   variable DELTA
+  location: class technology.tabula.TextChunk_ESTest
+[INFO] 30 errors 
+####################
+
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java
+[GENERATED PATH] TextChunk_ESTest#add(List<TextElement> elements).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[41,13] cannot find symbol
+  symbol: variable xMin
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[42,13] cannot find symbol
+  symbol: variable yMin
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[43,13] cannot find symbol
+  symbol: variable xMax
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[44,13] cannot find symbol
+  symbol: variable yMax
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[35,55] cannot find symbol
+  symbol:   class Font
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[35,69] cannot find symbol
+  symbol:   variable Font
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[35,86] cannot find symbol
+  symbol:   variable Color
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[39,43] cannot find symbol
+  symbol:   variable DELTA
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[40,44] cannot find symbol
+  symbol:   variable DELTA
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[41,45] cannot find symbol
+  symbol:   variable DELTA
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[42,46] cannot find symbol
+  symbol:   variable DELTA
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[45,55] cannot find symbol
+  symbol:   class Font
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[45,69] cannot find symbol
+  symbol:   variable Font
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[45,86] cannot find symbol
+  symbol:   variable Color
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[47,49] cannot find symbol
+  symbol:   class Font
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[47,63] cannot find symbol
+  symbol:   variable Font
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[47,80] cannot find symbol
+  symbol:   variable Color
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[52,43] cannot find symbol
+  symbol:   variable DELTA
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[53,43] cannot find symbol
+  symbol:   variable DELTA
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[54,46] cannot find symbol
+  symbol:   variable DELTA
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[55,46] cannot find symbol
+  symbol:   variable DELTA
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[60,45] incompatible types: possible lossy conversion from double to float
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[61,47] incompatible types: possible lossy conversion from double to float
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[64,103] cannot find symbol
+  symbol:   variable DELTA
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[65,106] cannot find symbol
+  symbol:   variable DELTA
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[66,103] cannot find symbol
+  symbol:   variable DELTA
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[67,106] cannot find symbol
+  symbol:   variable DELTA
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[69,51] cannot find symbol
+  symbol:   class Font
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[69,65] cannot find symbol
+  symbol:   variable Font
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[69,82] cannot find symbol
+  symbol:   variable Color
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[74,42] cannot find symbol
+  symbol:   variable DELTA
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[75,43] cannot find symbol
+  symbol:   variable DELTA
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[76,46] cannot find symbol
+  symbol:   variable DELTA
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[77,47] cannot find symbol
+  symbol:   variable DELTA
+  location: class technology.tabula.TextChunk_ESTest
+[INFO] 34 errors 
+####################
+
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java
+[GENERATED PATH] TextChunk_ESTest#add(List<TextElement> elements).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[41,13] cannot find symbol
+  symbol: variable xMin
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[42,13] cannot find symbol
+  symbol: variable yMin
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[43,13] cannot find symbol
+  symbol: variable xMax
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[44,13] cannot find symbol
+  symbol: variable yMax
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[37,37] incompatible types: java.lang.String cannot be converted to org.apache.pdfbox.pdmodel.font.PDFont
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[41,43] cannot find symbol
+  symbol:   variable DELTA
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[42,44] cannot find symbol
+  symbol:   variable DELTA
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[43,45] cannot find symbol
+  symbol:   variable DELTA
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[44,46] cannot find symbol
+  symbol:   variable DELTA
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[47,36] incompatible types: java.lang.String cannot be converted to org.apache.pdfbox.pdmodel.font.PDFont
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[49,35] incompatible types: java.lang.String cannot be converted to org.apache.pdfbox.pdmodel.font.PDFont
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[54,43] cannot find symbol
+  symbol:   variable DELTA
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[55,43] cannot find symbol
+  symbol:   variable DELTA
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[56,46] cannot find symbol
+  symbol:   variable DELTA
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[57,46] cannot find symbol
+  symbol:   variable DELTA
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[62,45] incompatible types: possible lossy conversion from double to float
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[63,47] incompatible types: possible lossy conversion from double to float
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[66,103] cannot find symbol
+  symbol:   variable DELTA
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[67,106] cannot find symbol
+  symbol:   variable DELTA
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[68,103] cannot find symbol
+  symbol:   variable DELTA
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[69,106] cannot find symbol
+  symbol:   variable DELTA
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[71,33] incompatible types: java.lang.String cannot be converted to org.apache.pdfbox.pdmodel.font.PDFont
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[76,42] cannot find symbol
+  symbol:   variable DELTA
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[77,43] cannot find symbol
+  symbol:   variable DELTA
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[78,46] cannot find symbol
+  symbol:   variable DELTA
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[79,47] cannot find symbol
+  symbol:   variable DELTA
+  location: class technology.tabula.TextChunk_ESTest
+[INFO] 26 errors 
+####################
+
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java
+[GENERATED PATH] TextChunk_ESTest#add(List<TextElement> elements).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[41,13] cannot find symbol
+  symbol: variable xMin
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[42,13] cannot find symbol
+  symbol: variable yMin
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[43,13] cannot find symbol
+  symbol: variable xMax
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[44,13] cannot find symbol
+  symbol: variable yMax
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[38,37] incompatible types: java.lang.String cannot be converted to org.apache.pdfbox.pdmodel.font.PDFont
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[42,43] cannot find symbol
+  symbol:   variable DELTA
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[43,44] cannot find symbol
+  symbol:   variable DELTA
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[44,45] cannot find symbol
+  symbol:   variable DELTA
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[45,46] cannot find symbol
+  symbol:   variable DELTA
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[48,36] incompatible types: java.lang.String cannot be converted to org.apache.pdfbox.pdmodel.font.PDFont
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[50,35] incompatible types: java.lang.String cannot be converted to org.apache.pdfbox.pdmodel.font.PDFont
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[55,43] cannot find symbol
+  symbol:   variable DELTA
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[56,43] cannot find symbol
+  symbol:   variable DELTA
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[57,46] cannot find symbol
+  symbol:   variable DELTA
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[58,46] cannot find symbol
+  symbol:   variable DELTA
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[63,45] incompatible types: possible lossy conversion from double to float
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[64,47] incompatible types: possible lossy conversion from double to float
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[67,103] cannot find symbol
+  symbol:   variable DELTA
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[68,106] cannot find symbol
+  symbol:   variable DELTA
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[69,103] cannot find symbol
+  symbol:   variable DELTA
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[70,106] cannot find symbol
+  symbol:   variable DELTA
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[72,33] incompatible types: java.lang.String cannot be converted to org.apache.pdfbox.pdmodel.font.PDFont
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[77,42] cannot find symbol
+  symbol:   variable DELTA
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[78,43] cannot find symbol
+  symbol:   variable DELTA
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[79,46] cannot find symbol
+  symbol:   variable DELTA
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[80,47] cannot find symbol
+  symbol:   variable DELTA
+  location: class technology.tabula.TextChunk_ESTest
+[INFO] 26 errors 
+####################
+
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java
+[GENERATED PATH] TextChunk_ESTest#add(List<TextElement> elements).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[41,13] cannot find symbol
+  symbol: variable xMin
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[42,13] cannot find symbol
+  symbol: variable yMin
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[43,13] cannot find symbol
+  symbol: variable xMax
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[44,13] cannot find symbol
+  symbol: variable yMax
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[39,33] cannot find symbol
+  symbol: variable x
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[40,33] cannot find symbol
+  symbol: variable y
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[41,33] cannot find symbol
+  symbol: variable x
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[41,42] cannot find symbol
+  symbol: variable width
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[42,33] cannot find symbol
+  symbol: variable y
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[42,42] cannot find symbol
+  symbol: variable height
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[43,13] cannot find symbol
+  symbol: variable x
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[44,13] cannot find symbol
+  symbol: variable y
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[45,13] cannot find symbol
+  symbol: variable width
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[46,13] cannot find symbol
+  symbol: variable height
+[INFO] 14 errors 
+####################
+
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java
+[GENERATED PATH] TextChunk_ESTest#add(List<TextElement> elements).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[41,13] cannot find symbol
+  symbol: variable xMin
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[42,13] cannot find symbol
+  symbol: variable yMin
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[43,13] cannot find symbol
+  symbol: variable xMax
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[44,13] cannot find symbol
+  symbol: variable yMax
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[46,17] cannot find symbol
+  symbol:   variable elementsInChunk
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[46,50] cannot find symbol
+  symbol: variable width
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[46,69] cannot find symbol
+  symbol: variable height
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[46,89] cannot find symbol
+  symbol: variable top
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[46,106] cannot find symbol
+  symbol: variable left
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[48,21] cannot find symbol
+  symbol: variable top
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[49,21] cannot find symbol
+  symbol: variable left
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[50,21] cannot find symbol
+  symbol: variable width
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[51,21] cannot find symbol
+  symbol: variable height
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[52,24] cannot find symbol
+  symbol:   variable elementsInChunk
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[55,42] cannot find symbol
+  symbol: variable left
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[55,54] cannot find symbol
+  symbol: variable width
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[56,43] cannot find symbol
+  symbol: variable top
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[56,54] cannot find symbol
+  symbol: variable height
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[58,45] cannot find symbol
+  symbol: variable top
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[59,46] cannot find symbol
+  symbol: variable left
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[63,21] cannot find symbol
+  symbol: variable top
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[64,21] cannot find symbol
+  symbol: variable left
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[65,21] cannot find symbol
+  symbol: variable width
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[66,21] cannot find symbol
+  symbol: variable height
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[70,42] cannot find symbol
+  symbol: variable left
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[70,54] cannot find symbol
+  symbol: variable width
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[71,43] cannot find symbol
+  symbol: variable top
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[71,54] cannot find symbol
+  symbol: variable height
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[73,45] cannot find symbol
+  symbol: variable top
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[74,46] cannot find symbol
+  symbol: variable left
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[78,21] cannot find symbol
+  symbol: variable top
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[79,21] cannot find symbol
+  symbol: variable left
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[80,21] cannot find symbol
+  symbol: variable width
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[81,21] cannot find symbol
+  symbol: variable height
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[83,17] cannot find symbol
+  symbol: variable elementsInChunk
+[INFO] 35 errors 
+####################
+
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java
+[GENERATED PATH] TextChunk_ESTest#add(List<TextElement> elements).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[41,13] cannot find symbol
+  symbol: variable xMin
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[42,13] cannot find symbol
+  symbol: variable yMin
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[43,13] cannot find symbol
+  symbol: variable xMax
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[44,13] cannot find symbol
+  symbol: variable yMax
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[49,13] cannot find symbol
+  symbol: variable elementsInChunk
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[49,47] cannot find symbol
+  symbol: variable width
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[49,66] cannot find symbol
+  symbol: variable height
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[49,86] cannot find symbol
+  symbol: variable top
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[49,103] cannot find symbol
+  symbol: variable left
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[50,13] cannot find symbol
+  symbol: variable top
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[51,13] cannot find symbol
+  symbol: variable left
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[52,13] cannot find symbol
+  symbol: variable width
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[53,13] cannot find symbol
+  symbol: variable height
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[54,20] cannot find symbol
+  symbol: variable elementsInChunk
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[55,34] cannot find symbol
+  symbol: variable left
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[55,46] cannot find symbol
+  symbol: variable width
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[56,35] cannot find symbol
+  symbol: variable top
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[56,46] cannot find symbol
+  symbol: variable height
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[57,37] cannot find symbol
+  symbol: variable top
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[58,38] cannot find symbol
+  symbol: variable left
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[61,13] cannot find symbol
+  symbol: variable top
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[62,13] cannot find symbol
+  symbol: variable left
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[63,13] cannot find symbol
+  symbol: variable width
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[64,13] cannot find symbol
+  symbol: variable height
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[66,34] cannot find symbol
+  symbol: variable left
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[66,46] cannot find symbol
+  symbol: variable width
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[67,35] cannot find symbol
+  symbol: variable top
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[67,46] cannot find symbol
+  symbol: variable height
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[68,37] cannot find symbol
+  symbol: variable top
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[69,38] cannot find symbol
+  symbol: variable left
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[72,13] cannot find symbol
+  symbol: variable top
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[73,13] cannot find symbol
+  symbol: variable left
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[74,13] cannot find symbol
+  symbol: variable width
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[75,13] cannot find symbol
+  symbol: variable height
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[77,9] cannot find symbol
+  symbol: variable elementsInChunk
+[INFO] 35 errors 
+####################
+
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java
+[GENERATED PATH] TextChunk_ESTest#add(List<TextElement> elements).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[41,13] cannot find symbol
+  symbol: variable xMin
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[42,13] cannot find symbol
+  symbol: variable yMin
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[43,13] cannot find symbol
+  symbol: variable xMax
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[44,13] cannot find symbol
+  symbol: variable yMax
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[49,13] cannot find symbol
+  symbol:   variable elements
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[51,17] cannot find symbol
+  symbol: variable top
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[52,17] cannot find symbol
+  symbol: variable left
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[53,17] cannot find symbol
+  symbol: variable width
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[54,17] cannot find symbol
+  symbol: variable height
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[60,38] cannot find symbol
+  symbol: variable left
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[60,50] cannot find symbol
+  symbol: variable width
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[61,39] cannot find symbol
+  symbol: variable top
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[61,50] cannot find symbol
+  symbol: variable height
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[63,17] cannot find symbol
+  symbol: variable left
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[63,38] cannot find symbol
+  symbol: variable left
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[64,17] cannot find symbol
+  symbol: variable top
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[64,37] cannot find symbol
+  symbol: variable top
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[65,17] cannot find symbol
+  symbol: variable width
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[65,69] cannot find symbol
+  symbol: variable left
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[66,17] cannot find symbol
+  symbol: variable height
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[66,72] cannot find symbol
+  symbol: variable top
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[68,13] cannot find symbol
+  symbol: variable elements
+[INFO] 22 errors 
+####################
+

@@ -1,0 +1,44 @@
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/format/BigIntegerFormatter_ESTest.java
+[GENERATED PATH] BigIntegerFormatter_ESTest#format(ZapposJson zapposJson, BigInteger object).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/format/BigIntegerFormatter_ESTest.java:[29,33] constructor ZapposJson in class com.zappos.json.ZapposJson cannot be applied to given types;
+  required: boolean
+  found: no arguments
+  reason: actual and formal argument lists differ in length
+[INFO] 1 error
+####################
+
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/format/BigIntegerFormatter_ESTest.java
+[GENERATED PATH] BigIntegerFormatter_ESTest#format(ZapposJson zapposJson, BigInteger object).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/format/NoOpValueFormatter_ESTest.java:[41,12] class, interface, or enum expected
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/format/NoOpValueFormatter_ESTest.java:[44,9] class, interface, or enum expected
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/format/NoOpValueFormatter_ESTest.java:[46,9] class, interface, or enum expected
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/format/NoOpValueFormatter_ESTest.java:[47,9] class, interface, or enum expected
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/format/NoOpValueFormatter_ESTest.java:[48,5] class, interface, or enum expected
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/format/NoOpValueFormatter_ESTest.java:[52,12] class, interface, or enum expected
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/format/NoOpValueFormatter_ESTest.java:[54,9] class, interface, or enum expected
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/format/NoOpValueFormatter_ESTest.java:[55,9] class, interface, or enum expected
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/format/NoOpValueFormatter_ESTest.java:[56,5] class, interface, or enum expected
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/format/NoOpValueFormatter_ESTest.java:[62,12] class, interface, or enum expected
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/format/NoOpValueFormatter_ESTest.java:[64,9] class, interface, or enum expected
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/format/NoOpValueFormatter_ESTest.java:[65,5] class, interface, or enum expected
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/format/NoOpValueFormatter_ESTest.java:[71,12] class, interface, or enum expected
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/format/NoOpValueFormatter_ESTest.java:[73,9] class, interface, or enum expected
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/format/NoOpValueFormatter_ESTest.java:[74,9] class, interface, or enum expected
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/format/NoOpValueFormatter_ESTest.java:[76,9] class, interface, or enum expected
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/format/NoOpValueFormatter_ESTest.java:[76,57] <identifier> expected
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/format/NoOpValueFormatter_ESTest.java:[76,59] illegal start of type
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/format/NoOpValueFormatter_ESTest.java:[76,60] <identifier> expected
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/format/NoOpValueFormatter_ESTest.java:[76,61] ';' expected
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/format/NoOpValueFormatter_ESTest.java:[78,10] illegal start of type
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/format/NoOpValueFormatter_ESTest.java:[78,11] ';' expected
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/format/NoOpValueFormatter_ESTest.java:[78,65] illegal start of type
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/format/NoOpValueFormatter_ESTest.java:[78,66] <identifier> expected
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/format/NoOpValueFormatter_ESTest.java:[78,67] ';' expected
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[39,16] class, interface, or enum expected
+[INFO] 26 errors 
+####################
+

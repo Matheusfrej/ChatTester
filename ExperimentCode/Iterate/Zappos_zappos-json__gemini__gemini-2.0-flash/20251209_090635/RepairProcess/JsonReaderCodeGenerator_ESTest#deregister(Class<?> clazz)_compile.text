@@ -1,0 +1,181 @@
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java
+[GENERATED PATH] JsonReaderCodeGenerator_ESTest#deregister(Class<?> clazz).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[31,33] cannot find symbol
+  symbol:   method mock(java.lang.Class<com.zappos.json.ZapposJson>)
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[32,49] cannot find symbol
+  symbol:   method mock(java.lang.Class<com.zappos.json.JsonBeanIntrospector>)
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[41,13] cannot find symbol
+  symbol:   class ConcurrentHashMap
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[41,66] cannot find symbol
+  symbol:   class ConcurrentHashMap
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[INFO] 4 errors 
+####################
+
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java
+[GENERATED PATH] JsonReaderCodeGenerator_ESTest#deregister(Class<?> clazz).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReader_ESTest.java:[9,26] package org.mockito does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReader_ESTest.java:[34,38] cannot find symbol
+  symbol:   class Map
+  location: class com.zappos.json.JsonReader_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReader_ESTest.java:[35,22] cannot find symbol
+  symbol:   class Map
+  location: class com.zappos.json.JsonReader_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[33,33] cannot find symbol
+  symbol:   method mock(java.lang.Class<com.zappos.json.ZapposJson>)
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[35,49] cannot find symbol
+  symbol:   method mock(java.lang.Class<com.zappos.json.JsonBeanIntrospector>)
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[40,13] cannot find symbol
+  symbol:   class ConcurrentHashMap
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[40,66] cannot find symbol
+  symbol:   class ConcurrentHashMap
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[INFO] 7 errors 
+####################
+
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java
+[GENERATED PATH] JsonReaderCodeGenerator_ESTest#deregister(Class<?> clazz).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReader_ESTest.java:[9,26] package org.mockito does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReader_ESTest.java:[34,38] cannot find symbol
+  symbol:   class Map
+  location: class com.zappos.json.JsonReader_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReader_ESTest.java:[35,22] cannot find symbol
+  symbol:   class Map
+  location: class com.zappos.json.JsonReader_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[35,33] cannot find symbol
+  symbol:   method mock(java.lang.Class<com.zappos.json.ZapposJson>)
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[37,49] cannot find symbol
+  symbol:   method mock(java.lang.Class<com.zappos.json.JsonBeanIntrospector>)
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[42,13] cannot find symbol
+  symbol:   class ConcurrentHashMap
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[42,66] cannot find symbol
+  symbol:   class ConcurrentHashMap
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[INFO] 7 errors 
+####################
+
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java
+[GENERATED PATH] JsonReaderCodeGenerator_ESTest#deregister(Class<?> clazz).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReader_ESTest.java:[9,26] package org.mockito does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[8,26] package org.mockito does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[8,1] static import only from classes and interfaces
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReader_ESTest.java:[34,38] cannot find symbol
+  symbol:   class Map
+  location: class com.zappos.json.JsonReader_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReader_ESTest.java:[35,22] cannot find symbol
+  symbol:   class Map
+  location: class com.zappos.json.JsonReader_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[38,33] cannot find symbol
+  symbol:   method mock(java.lang.Class<com.zappos.json.ZapposJson>)
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[40,49] cannot find symbol
+  symbol:   method mock(java.lang.Class<com.zappos.json.JsonBeanIntrospector>)
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[45,13] cannot find symbol
+  symbol:   class ConcurrentHashMap
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[45,66] cannot find symbol
+  symbol:   class ConcurrentHashMap
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[INFO] 9 errors 
+####################
+
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java
+[GENERATED PATH] JsonReaderCodeGenerator_ESTest#deregister(Class<?> clazz).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReader_ESTest.java:[9,26] package org.mockito does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[9,26] package org.mockito does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[9,1] static import only from classes and interfaces
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReader_ESTest.java:[34,38] cannot find symbol
+  symbol:   class Map
+  location: class com.zappos.json.JsonReader_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReader_ESTest.java:[35,22] cannot find symbol
+  symbol:   class Map
+  location: class com.zappos.json.JsonReader_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[39,9] cannot find symbol
+  symbol:   variable zapposJson
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[39,22] cannot find symbol
+  symbol:   variable Mockito
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[40,9] cannot find symbol
+  symbol:   variable beanIntrospector
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[40,28] cannot find symbol
+  symbol:   variable Mockito
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[41,9] cannot find symbol
+  symbol:   variable jsonReaderCodeGenerator
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[41,63] cannot find symbol
+  symbol:   variable zapposJson
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[41,75] cannot find symbol
+  symbol:   variable beanIntrospector
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[INFO] 12 errors 
+####################
+
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java
+[GENERATED PATH] JsonReaderCodeGenerator_ESTest#deregister(Class<?> clazz).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReader_ESTest.java:[9,26] package org.mockito does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[9,19] package org.mockito does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[10,26] package org.mockito does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[10,1] static import only from classes and interfaces
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReader_ESTest.java:[34,38] cannot find symbol
+  symbol:   class Map
+  location: class com.zappos.json.JsonReader_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReader_ESTest.java:[35,22] cannot find symbol
+  symbol:   class Map
+  location: class com.zappos.json.JsonReader_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[42,33] cannot find symbol
+  symbol:   variable Mockito
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[43,49] cannot find symbol
+  symbol:   variable Mockito
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[58,24] JSON_READER_INVOKERS has private access in com.zappos.json.JsonReaderCodeGenerator
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[69,42] cannot find symbol
+  symbol:   variable Mockito
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[INFO] 10 errors 
+####################
+
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java
+[GENERATED PATH] JsonReaderCodeGenerator_ESTest#deregister(Class<?> clazz).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReader_ESTest.java:[9,26] package org.mockito does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[10,19] package org.mockito does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[11,26] package org.mockito does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[11,1] static import only from classes and interfaces
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReader_ESTest.java:[34,38] cannot find symbol
+  symbol:   class Map
+  location: class com.zappos.json.JsonReader_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReader_ESTest.java:[35,22] cannot find symbol
+  symbol:   class Map
+  location: class com.zappos.json.JsonReader_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[59,45] incompatible types: com.zappos.json.JsonReaderInvoker is not a functional interface
+[INFO] 7 errors 
+####################
+

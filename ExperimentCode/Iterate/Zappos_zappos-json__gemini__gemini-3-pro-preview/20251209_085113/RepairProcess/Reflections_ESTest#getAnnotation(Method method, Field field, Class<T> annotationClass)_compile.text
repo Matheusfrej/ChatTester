@@ -1,0 +1,66 @@
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java
+[GENERATED PATH] Reflections_ESTest#getAnnotation(Method method, Field field, Class<T> annotationClass).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[30,10] cannot find symbol
+  symbol:   class TestInfo
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[37,9] cannot find symbol
+  symbol:   class TestableJsonReaderCodeGenerator
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[37,57] cannot find symbol
+  symbol:   class TestableJsonReaderCodeGenerator
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[40,32] cannot find symbol
+  symbol:   class TestBean
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[INFO] 4 errors 
+####################
+
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java
+[GENERATED PATH] Reflections_ESTest#getAnnotation(Method method, Field field, Class<T> annotationClass).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[37,16] class, interface, or enum expected
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[38,1] class, interface, or enum expected
+[INFO] 2 errors 
+####################
+
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java
+[GENERATED PATH] Reflections_ESTest#getAnnotation(Method method, Field field, Class<T> annotationClass).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[38,16] class, interface, or enum expected
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[39,1] class, interface, or enum expected
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[42,16] class, interface, or enum expected
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[43,1] class, interface, or enum expected
+[INFO] 4 errors 
+####################
+
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java
+[GENERATED PATH] Reflections_ESTest#getAnnotation(Method method, Field field, Class<T> annotationClass).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[39,16] class, interface, or enum expected
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[40,1] class, interface, or enum expected
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[43,16] class, interface, or enum expected
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[44,1] class, interface, or enum expected
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[47,16] class, interface, or enum expected
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[48,1] class, interface, or enum expected
+[INFO] 6 errors 
+####################
+
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java
+[GENERATED PATH] Reflections_ESTest#getAnnotation(Method method, Field field, Class<T> annotationClass).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[40,16] class, interface, or enum expected
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[41,1] class, interface, or enum expected
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[44,16] class, interface, or enum expected
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[45,1] class, interface, or enum expected
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[48,16] class, interface, or enum expected
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[49,1] class, interface, or enum expected
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[52,16] class, interface, or enum expected
+[INFO] 7 errors 
+####################
+

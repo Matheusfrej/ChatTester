@@ -1,0 +1,152 @@
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java
+[GENERATED PATH] Table_ESTest#getCell(int i, int j).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[31,13] cannot find symbol
+  symbol: variable pageNumber
+[INFO] 1 error
+####################
+
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java
+[GENERATED PATH] Table_ESTest#getCell(int i, int j).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[41,13] cannot find symbol
+  symbol: variable xMin
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[42,13] cannot find symbol
+  symbol: variable yMin
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[43,13] cannot find symbol
+  symbol: variable xMax
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[44,13] cannot find symbol
+  symbol: variable yMax
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[34,13] cannot find symbol
+  symbol: variable pageNumber
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[44,17] cannot find symbol
+  symbol: variable textElements
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[45,17] cannot find symbol
+  symbol: variable textElements
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[47,13] cannot find symbol
+  symbol: variable textElements
+[INFO] 8 errors 
+####################
+
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java
+[GENERATED PATH] Table_ESTest#getCell(int i, int j).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[41,13] cannot find symbol
+  symbol: variable xMin
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[42,13] cannot find symbol
+  symbol: variable yMin
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[43,13] cannot find symbol
+  symbol: variable xMax
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[44,13] cannot find symbol
+  symbol: variable yMax
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[37,13] variable pageNumber is already defined in method setPageNumber(int)
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[44,17] cannot find symbol
+  symbol: variable textElements
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[45,17] cannot find symbol
+  symbol: variable textElements
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[47,13] cannot find symbol
+  symbol: variable textElements
+[INFO] 8 errors 
+####################
+
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java
+[GENERATED PATH] Table_ESTest#getCell(int i, int j).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[41,13] cannot find symbol
+  symbol: variable xMin
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[42,13] cannot find symbol
+  symbol: variable yMin
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[43,13] cannot find symbol
+  symbol: variable xMax
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[44,13] cannot find symbol
+  symbol: variable yMax
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[41,52] incompatible types: bad return type in lambda expression
+    java.lang.String cannot be converted to java.util.List<? extends technology.tabula.Table>
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[41,46] incompatible types: incompatible parameter types in lambda expression
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[42,9] cannot find symbol
+  symbol:   variable table
+  location: class technology.tabula.Table_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[44,17] cannot find symbol
+  symbol: variable textElements
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[45,17] cannot find symbol
+  symbol: variable textElements
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[47,13] cannot find symbol
+  symbol: variable textElements
+[INFO] 10 errors 
+####################
+
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java
+[GENERATED PATH] Table_ESTest#getCell(int i, int j).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[41,13] cannot find symbol
+  symbol: variable xMin
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[42,13] cannot find symbol
+  symbol: variable yMin
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[43,13] cannot find symbol
+  symbol: variable xMax
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[44,13] cannot find symbol
+  symbol: variable yMax
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[41,9] cannot find symbol
+  symbol:   variable cells
+  location: class technology.tabula.Table_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[44,17] cannot find symbol
+  symbol: variable textElements
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[45,17] cannot find symbol
+  symbol: variable textElements
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[47,13] cannot find symbol
+  symbol: variable textElements
+[INFO] 8 errors 
+####################
+
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java
+[GENERATED PATH] Table_ESTest#getCell(int i, int j).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[8,36] package technology.tabula.extraction does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[41,13] cannot find symbol
+  symbol: variable xMin
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[42,13] cannot find symbol
+  symbol: variable yMin
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[43,13] cannot find symbol
+  symbol: variable xMax
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[44,13] cannot find symbol
+  symbol: variable yMax
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[57,37] cannot find symbol
+  symbol:   class BasicExtractionAlgorithm
+  location: class technology.tabula.Table_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[44,17] cannot find symbol
+  symbol: variable textElements
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[45,17] cannot find symbol
+  symbol: variable textElements
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[47,13] cannot find symbol
+  symbol: variable textElements
+[INFO] 9 errors 
+####################
+
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java
+[GENERATED PATH] Table_ESTest#getCell(int i, int j).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java:[9,36] package technology.tabula.extraction does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[41,13] cannot find symbol
+  symbol: variable xMin
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[42,13] cannot find symbol
+  symbol: variable yMin
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[43,13] cannot find symbol
+  symbol: variable xMax
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[44,13] cannot find symbol
+  symbol: variable yMax
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[44,17] cannot find symbol
+  symbol: variable textElements
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[45,17] cannot find symbol
+  symbol: variable textElements
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[47,13] cannot find symbol
+  symbol: variable textElements
+[INFO] 8 errors 
+####################
+

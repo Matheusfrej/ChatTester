@@ -1,0 +1,9 @@
+[
+  {
+    "original_path": "/home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java",
+    "generated_path": "/home/hsc/Documents/Masters/TAES1/ChatTester/ExperimentCode/IterateResultDeal/Zappos_zappos-json__gemini__gemini-2.0-flash/20251208_224829/GeneratedTest/JsonReaderCodeGenerator_ESTest#registerReader(Class<?> clazz).java",
+    "IterateTimes": 0,
+    "Compile_result": 1,
+    "Test_result": 1
+  }
+]

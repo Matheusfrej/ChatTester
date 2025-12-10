@@ -1,0 +1,11 @@
+original test path: /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java
+[GENERATED PATH] Reflections_ESTest#getSecondGenericType(Field field).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[37,18] JSON_READER_INVOKERS has private access in com.zappos.json.JsonReaderCodeGenerator
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[41,46] cannot find symbol
+  symbol:   method getClazz()
+  location: variable invoker of type com.zappos.json.JsonReaderInvoker
+[INFO] 2 errors 
+####################
+

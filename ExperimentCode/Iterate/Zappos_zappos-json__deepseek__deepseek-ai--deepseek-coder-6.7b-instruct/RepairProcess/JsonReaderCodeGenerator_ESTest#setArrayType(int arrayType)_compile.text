@@ -1,0 +1,65 @@
+original test path: /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java
+[GENERATED PATH] JsonReaderCodeGenerator_ESTest#setArrayType(int arrayType).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[29,9] cannot find symbol
+  symbol:   class AttributeInfo
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[29,43] cannot find symbol
+  symbol:   class AttributeInfo
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[INFO] 2 errors 
+####################
+
+original test path: /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java
+[GENERATED PATH] JsonReaderCodeGenerator_ESTest#setArrayType(int arrayType).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[31,9] cannot find symbol
+  symbol:   class AttributeInfo
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[31,43] cannot find symbol
+  symbol:   class AttributeInfo
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[INFO] 2 errors 
+####################
+
+original test path: /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java
+[GENERATED PATH] JsonReaderCodeGenerator_ESTest#setArrayType(int arrayType).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[33,9] cannot find symbol
+  symbol:   class AttributeInfo
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[33,43] cannot find symbol
+  symbol:   class AttributeInfo
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[INFO] 2 errors 
+####################
+
+original test path: /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java
+[GENERATED PATH] JsonReaderCodeGenerator_ESTest#setArrayType(int arrayType).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[36,9] cannot find symbol
+  symbol:   class AttributeInfo
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[36,43] cannot find symbol
+  symbol:   class AttributeInfo
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[INFO] 2 errors 
+####################
+
+original test path: /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java
+[GENERATED PATH] JsonReaderCodeGenerator_ESTest#setArrayType(int arrayType).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[38,9] cannot find symbol
+  symbol:   class AttributeInfo
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[38,43] cannot find symbol
+  symbol:   class AttributeInfo
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[INFO] 2 errors 
+####################
+

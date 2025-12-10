@@ -1,0 +1,21 @@
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonWriterCodeGenerator_ESTest.java
+[GENERATED PATH] JsonWriterCodeGenerator_ESTest#registerWriter(Class<?> clazz).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonWriterCodeGenerator_ESTest.java:[7,23] cannot find symbol
+  symbol:   class OutputStyle
+  location: package com.zappos.json
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonWriterCodeGenerator_ESTest.java:[47,52] cannot find symbol
+  symbol:   method getTargetClass()
+  location: variable writerInvoker of type com.zappos.json.JsonWriterInvoker
+[INFO] 2 errors 
+####################
+
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonWriterCodeGenerator_ESTest.java
+[GENERATED PATH] JsonWriterCodeGenerator_ESTest#registerWriter(Class<?> clazz).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[39,16] class, interface, or enum expected
+[INFO] 1 error
+####################
+

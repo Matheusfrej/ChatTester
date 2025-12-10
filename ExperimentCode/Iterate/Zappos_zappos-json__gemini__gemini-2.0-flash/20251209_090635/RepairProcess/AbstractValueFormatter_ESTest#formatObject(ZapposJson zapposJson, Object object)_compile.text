@@ -1,0 +1,18 @@
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/format/AbstractValueFormatter_ESTest.java
+[GENERATED PATH] AbstractValueFormatter_ESTest#formatObject(ZapposJson zapposJson, Object object).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/format/AbstractValueFormatter_ESTest.java:[9,26] package org.mockito does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/format/AbstractValueFormatter_ESTest.java:[33,17] cannot find symbol
+  symbol: variable jsString
+[INFO] 2 errors 
+####################
+
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/format/AbstractValueFormatter_ESTest.java
+[GENERATED PATH] AbstractValueFormatter_ESTest#formatObject(ZapposJson zapposJson, Object object).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[39,16] class, interface, or enum expected
+[INFO] 1 error
+####################
+

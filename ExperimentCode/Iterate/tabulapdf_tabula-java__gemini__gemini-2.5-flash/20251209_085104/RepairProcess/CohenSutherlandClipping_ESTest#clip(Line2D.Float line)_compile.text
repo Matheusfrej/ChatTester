@@ -1,0 +1,131 @@
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java
+[GENERATED PATH] CohenSutherlandClipping_ESTest#clip(Line2D.Float line).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[26,71] cannot find symbol
+  symbol:   variable clipWindow
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[28,64] incompatible types: possible lossy conversion from double to float
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[33,88] cannot find symbol
+  symbol:   variable DELTA
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[34,88] cannot find symbol
+  symbol:   variable DELTA
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[35,88] cannot find symbol
+  symbol:   variable DELTA
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[36,88] cannot find symbol
+  symbol:   variable DELTA
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[INFO] 6 errors 
+####################
+
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java
+[GENERATED PATH] CohenSutherlandClipping_ESTest#clip(Line2D.Float line).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[37,64] incompatible types: possible lossy conversion from double to float
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[40,88] cannot find symbol
+  symbol:   variable DELTA
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[41,88] cannot find symbol
+  symbol:   variable DELTA
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[42,88] cannot find symbol
+  symbol:   variable DELTA
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[43,88] cannot find symbol
+  symbol:   variable DELTA
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[INFO] 5 errors 
+####################
+
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java
+[GENERATED PATH] CohenSutherlandClipping_ESTest#clip(Line2D.Float line).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[40,88] cannot find symbol
+  symbol:   variable DELTA
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[41,88] cannot find symbol
+  symbol:   variable DELTA
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[42,88] cannot find symbol
+  symbol:   variable DELTA
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[43,88] cannot find symbol
+  symbol:   variable DELTA
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[INFO] 4 errors 
+####################
+
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java
+[GENERATED PATH] CohenSutherlandClipping_ESTest#clip(Line2D.Float line).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[47,88] cannot find symbol
+  symbol:   variable DELTA
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[48,88] cannot find symbol
+  symbol:   variable DELTA
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[49,88] cannot find symbol
+  symbol:   variable DELTA
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[50,88] cannot find symbol
+  symbol:   variable DELTA
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[INFO] 4 errors 
+####################
+
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java
+[GENERATED PATH] CohenSutherlandClipping_ESTest#clip(Line2D.Float line).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[40,64] incompatible types: possible lossy conversion from double to float
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[45,88] cannot find symbol
+  symbol:   variable DELTA
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[47,88] cannot find symbol
+  symbol:   variable DELTA
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[48,88] cannot find symbol
+  symbol:   variable DELTA
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[49,88] cannot find symbol
+  symbol:   variable DELTA
+  location: class technology.tabula.CohenSutherlandClipping_ESTest
+[INFO] 5 errors 
+####################
+
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java
+[GENERATED PATH] CohenSutherlandClipping_ESTest#clip(Line2D.Float line).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[37,13] cannot find symbol
+  symbol: variable xMin
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[38,13] cannot find symbol
+  symbol: variable yMin
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[39,13] cannot find symbol
+  symbol: variable xMax
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[40,13] cannot find symbol
+  symbol: variable yMax
+[INFO] 4 errors 
+####################
+
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java
+[GENERATED PATH] CohenSutherlandClipping_ESTest#clip(Line2D.Float line).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[39,17] cannot find symbol
+  symbol: variable xMin
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[40,17] cannot find symbol
+  symbol: variable yMin
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[41,17] cannot find symbol
+  symbol: variable xMax
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[42,17] cannot find symbol
+  symbol: variable yMax
+[INFO] 4 errors 
+####################
+

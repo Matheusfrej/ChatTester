@@ -1,0 +1,303 @@
+[
+  {
+    "original_path": "/home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/InstagramConfig_ESTest.java",
+    "generated_path": "/home/hsc/Documents/Masters/TAES1/ChatTester/ExperimentCode/IterateResultDeal/sachin-handiekar_jInstagram__gemini__gemini-2.0-flash/20251209_090635/GeneratedTest/InstagramConfig_ESTest#isRetryOnServerError().java",
+    "IterateTimes": 0,
+    "Compile_result": 1,
+    "Test_result": 1
+  },
+  {
+    "original_path": "/home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/InstagramConfig_ESTest.java",
+    "generated_path": "/home/hsc/Documents/Masters/TAES1/ChatTester/ExperimentCode/IterateResultDeal/sachin-handiekar_jInstagram__gemini__gemini-2.0-flash/20251209_090635/GeneratedTest/InstagramConfig_ESTest#setRetryOnServerError(boolean retryOnServerError).java",
+    "IterateTimes": 0,
+    "Compile_result": 1,
+    "Test_result": 1
+  },
+  {
+    "original_path": "/home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/InstagramConfig_ESTest.java",
+    "generated_path": "/home/hsc/Documents/Masters/TAES1/ChatTester/ExperimentCode/IterateResultDeal/sachin-handiekar_jInstagram__gemini__gemini-2.0-flash/20251209_090635/GeneratedTest/InstagramConfig_ESTest#isEnforceSignedRequest().java",
+    "IterateTimes": 0,
+    "Compile_result": 1,
+    "Test_result": 1
+  },
+  {
+    "original_path": "/home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/InstagramConfig_ESTest.java",
+    "generated_path": "/home/hsc/Documents/Masters/TAES1/ChatTester/ExperimentCode/IterateResultDeal/sachin-handiekar_jInstagram__gemini__gemini-2.0-flash/20251209_090635/GeneratedTest/InstagramConfig_ESTest#setEnforceSignedRequest(boolean enforceSignedRequest).java",
+    "IterateTimes": 0,
+    "Compile_result": 1,
+    "Test_result": 1
+  },
+  {
+    "original_path": "/home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/InstagramConfig_ESTest.java",
+    "generated_path": "/home/hsc/Documents/Masters/TAES1/ChatTester/ExperimentCode/IterateResultDeal/sachin-handiekar_jInstagram__gemini__gemini-2.0-flash/20251209_090635/GeneratedTest/InstagramConfig_ESTest#isConnectionKeepAlive().java",
+    "IterateTimes": 0,
+    "Compile_result": 1,
+    "Test_result": 1
+  },
+  {
+    "original_path": "/home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/InstagramConfig_ESTest.java",
+    "generated_path": "/home/hsc/Documents/Masters/TAES1/ChatTester/ExperimentCode/IterateResultDeal/sachin-handiekar_jInstagram__gemini__gemini-2.0-flash/20251209_090635/GeneratedTest/InstagramConfig_ESTest#setConnectionKeepAlive(boolean connectionKeepAlive).java",
+    "IterateTimes": 0,
+    "Compile_result": 1,
+    "Test_result": 1
+  },
+  {
+    "original_path": "/home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/InstagramConfig_ESTest.java",
+    "generated_path": "/home/hsc/Documents/Masters/TAES1/ChatTester/ExperimentCode/IterateResultDeal/sachin-handiekar_jInstagram__gemini__gemini-2.0-flash/20251209_090635/GeneratedTest/InstagramConfig_ESTest#setVersion(String version).java",
+    "IterateTimes": 0,
+    "Compile_result": 1,
+    "Test_result": 1
+  },
+  {
+    "original_path": "/home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/InstagramConfig_ESTest.java",
+    "generated_path": "/home/hsc/Documents/Masters/TAES1/ChatTester/ExperimentCode/IterateResultDeal/sachin-handiekar_jInstagram__gemini__gemini-2.0-flash/20251209_090635/GeneratedTest/InstagramConfig_ESTest#getVersion().java",
+    "IterateTimes": 0,
+    "Compile_result": 1,
+    "Test_result": 1
+  },
+  {
+    "original_path": "/home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/InstagramConfig_ESTest.java",
+    "generated_path": "/home/hsc/Documents/Masters/TAES1/ChatTester/ExperimentCode/IterateResultDeal/sachin-handiekar_jInstagram__gemini__gemini-2.0-flash/20251209_090635/GeneratedTest/InstagramConfig_ESTest#getApiURL().java",
+    "IterateTimes": 0,
+    "Compile_result": 1,
+    "Test_result": 1
+  },
+  {
+    "original_path": "/home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/InstagramConfig_ESTest.java",
+    "generated_path": "/home/hsc/Documents/Masters/TAES1/ChatTester/ExperimentCode/IterateResultDeal/sachin-handiekar_jInstagram__gemini__gemini-2.0-flash/20251209_090635/GeneratedTest/InstagramConfig_ESTest#getReadTimeoutMills().java",
+    "IterateTimes": 0,
+    "Compile_result": 1,
+    "Test_result": 1
+  },
+  {
+    "original_path": "/home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/InstagramConfig_ESTest.java",
+    "generated_path": "/home/hsc/Documents/Masters/TAES1/ChatTester/ExperimentCode/IterateResultDeal/sachin-handiekar_jInstagram__gemini__gemini-2.0-flash/20251209_090635/GeneratedTest/InstagramConfig_ESTest#setReadTimeoutMills(int readTimeoutMills).java",
+    "IterateTimes": 0,
+    "Compile_result": 1,
+    "Test_result": 1
+  },
+  {
+    "original_path": "/home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/InstagramConfig_ESTest.java",
+    "generated_path": "/home/hsc/Documents/Masters/TAES1/ChatTester/ExperimentCode/IterateResultDeal/sachin-handiekar_jInstagram__gemini__gemini-2.0-flash/20251209_090635/GeneratedTest/InstagramConfig_ESTest#setConnectionTimeoutMills(int connectionTimeoutMills).java",
+    "IterateTimes": 0,
+    "Compile_result": 1,
+    "Test_result": 1
+  },
+  {
+    "original_path": "/home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/InstagramConfig_ESTest.java",
+    "generated_path": "/home/hsc/Documents/Masters/TAES1/ChatTester/ExperimentCode/IterateResultDeal/sachin-handiekar_jInstagram__gemini__gemini-2.0-flash/20251209_090635/GeneratedTest/InstagramConfig_ESTest#getConnectionTimeoutMills().java",
+    "IterateTimes": 0,
+    "Compile_result": 1,
+    "Test_result": 1
+  },
+  {
+    "original_path": "/home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/InstagramConfig_ESTest.java",
+    "generated_path": "/home/hsc/Documents/Masters/TAES1/ChatTester/ExperimentCode/IterateResultDeal/sachin-handiekar_jInstagram__gemini__gemini-2.0-flash/20251209_090635/GeneratedTest/InstagramConfig_ESTest#setBaseURI(String baseURI).java",
+    "IterateTimes": 0,
+    "Compile_result": 1,
+    "Test_result": 1
+  },
+  {
+    "original_path": "/home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/InstagramConfig_ESTest.java",
+    "generated_path": "/home/hsc/Documents/Masters/TAES1/ChatTester/ExperimentCode/IterateResultDeal/sachin-handiekar_jInstagram__gemini__gemini-2.0-flash/20251209_090635/GeneratedTest/InstagramConfig_ESTest#getBaseURI().java",
+    "IterateTimes": 0,
+    "Compile_result": 1,
+    "Test_result": 1
+  },
+  {
+    "original_path": "/home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/http/URLUtils_ESTest.java",
+    "generated_path": "/home/hsc/Documents/Masters/TAES1/ChatTester/ExperimentCode/IterateResultDeal/sachin-handiekar_jInstagram__gemini__gemini-2.0-flash/20251209_090635/GeneratedTest/URLUtils_ESTest#encodeURIComponent(String s).java",
+    "IterateTimes": 0,
+    "Compile_result": 1,
+    "Test_result": 1
+  },
+  {
+    "original_path": "/home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/http/URLUtils_ESTest.java",
+    "generated_path": "/home/hsc/Documents/Masters/TAES1/ChatTester/ExperimentCode/IterateResultDeal/sachin-handiekar_jInstagram__gemini__gemini-2.0-flash/20251209_090635/GeneratedTest/URLUtils_ESTest#decodeURIComponent(String s).java",
+    "IterateTimes": 0,
+    "Compile_result": 1,
+    "Test_result": 1
+  },
+  {
+    "original_path": "/home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/http/URLUtils_ESTest.java",
+    "generated_path": "/home/hsc/Documents/Masters/TAES1/ChatTester/ExperimentCode/IterateResultDeal/sachin-handiekar_jInstagram__gemini__gemini-2.0-flash/20251209_090635/GeneratedTest/URLUtils_ESTest#queryStringToMap(String queryString).java",
+    "IterateTimes": 0,
+    "Compile_result": 1,
+    "Test_result": 1
+  },
+  {
+    "original_path": "/home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/http/URLUtils_ESTest.java",
+    "generated_path": "/home/hsc/Documents/Masters/TAES1/ChatTester/ExperimentCode/IterateResultDeal/sachin-handiekar_jInstagram__gemini__gemini-2.0-flash/20251209_090635/GeneratedTest/URLUtils_ESTest#appendParametersToQueryString(String url, Map<String, String> params).java",
+    "IterateTimes": 0,
+    "Compile_result": 1,
+    "Test_result": 1
+  },
+  {
+    "original_path": "/home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/http/URLUtils_ESTest.java",
+    "generated_path": "/home/hsc/Documents/Masters/TAES1/ChatTester/ExperimentCode/IterateResultDeal/sachin-handiekar_jInstagram__gemini__gemini-2.0-flash/20251209_090635/GeneratedTest/URLUtils_ESTest#formURLDecode(String string).java",
+    "IterateTimes": 0,
+    "Compile_result": 1,
+    "Test_result": 1
+  },
+  {
+    "original_path": "/home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/http/URLUtils_ESTest.java",
+    "generated_path": "/home/hsc/Documents/Masters/TAES1/ChatTester/ExperimentCode/IterateResultDeal/sachin-handiekar_jInstagram__gemini__gemini-2.0-flash/20251209_090635/GeneratedTest/URLUtils_ESTest#percentEncode(String string).java",
+    "IterateTimes": 0,
+    "Compile_result": 1,
+    "Test_result": 1
+  },
+  {
+    "original_path": "/home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/http/Request_ESTest.java",
+    "generated_path": "/home/hsc/Documents/Masters/TAES1/ChatTester/ExperimentCode/IterateResultDeal/sachin-handiekar_jInstagram__gemini__gemini-2.0-flash/20251209_090635/GeneratedTest/Request_ESTest#addQuerystringParameter(String key, String value).java",
+    "IterateTimes": 0,
+    "Compile_result": 1,
+    "Test_result": 1
+  },
+  {
+    "original_path": "/home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/http/Request_ESTest.java",
+    "generated_path": "/home/hsc/Documents/Masters/TAES1/ChatTester/ExperimentCode/IterateResultDeal/sachin-handiekar_jInstagram__gemini__gemini-2.0-flash/20251209_090635/GeneratedTest/Request_ESTest#getConnectionKeepAlive().java",
+    "IterateTimes": 0,
+    "Compile_result": 1,
+    "Test_result": 1
+  },
+  {
+    "original_path": "/home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/http/Request_ESTest.java",
+    "generated_path": "/home/hsc/Documents/Masters/TAES1/ChatTester/ExperimentCode/IterateResultDeal/sachin-handiekar_jInstagram__gemini__gemini-2.0-flash/20251209_090635/GeneratedTest/Request_ESTest#getUrl().java",
+    "IterateTimes": 0,
+    "Compile_result": 1,
+    "Test_result": 1
+  },
+  {
+    "original_path": "/home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/http/Request_ESTest.java",
+    "generated_path": "/home/hsc/Documents/Masters/TAES1/ChatTester/ExperimentCode/IterateResultDeal/sachin-handiekar_jInstagram__gemini__gemini-2.0-flash/20251209_090635/GeneratedTest/Request_ESTest#setReadTimeout(int duration, TimeUnit unit).java",
+    "IterateTimes": 0,
+    "Compile_result": 1,
+    "Test_result": 1
+  },
+  {
+    "original_path": "/home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/http/Request_ESTest.java",
+    "generated_path": "/home/hsc/Documents/Masters/TAES1/ChatTester/ExperimentCode/IterateResultDeal/sachin-handiekar_jInstagram__gemini__gemini-2.0-flash/20251209_090635/GeneratedTest/Request_ESTest#getReadTimeoutInMillis().java",
+    "IterateTimes": 0,
+    "Compile_result": 1,
+    "Test_result": 1
+  },
+  {
+    "original_path": "/home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/http/Request_ESTest.java",
+    "generated_path": "/home/hsc/Documents/Masters/TAES1/ChatTester/ExperimentCode/IterateResultDeal/sachin-handiekar_jInstagram__gemini__gemini-2.0-flash/20251209_090635/GeneratedTest/Request_ESTest#getProxy().java",
+    "IterateTimes": 0,
+    "Compile_result": 1,
+    "Test_result": 1
+  },
+  {
+    "original_path": "/home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/http/Request_ESTest.java",
+    "generated_path": "/home/hsc/Documents/Masters/TAES1/ChatTester/ExperimentCode/IterateResultDeal/sachin-handiekar_jInstagram__gemini__gemini-2.0-flash/20251209_090635/GeneratedTest/Request_ESTest#addHeader(String key, String value).java",
+    "IterateTimes": 0,
+    "Compile_result": 1,
+    "Test_result": 1
+  },
+  {
+    "original_path": "/home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/http/Request_ESTest.java",
+    "generated_path": "/home/hsc/Documents/Masters/TAES1/ChatTester/ExperimentCode/IterateResultDeal/sachin-handiekar_jInstagram__gemini__gemini-2.0-flash/20251209_090635/GeneratedTest/Request_ESTest#getHeaders().java",
+    "IterateTimes": 0,
+    "Compile_result": 1,
+    "Test_result": 1
+  },
+  {
+    "original_path": "/home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/http/Request_ESTest.java",
+    "generated_path": "/home/hsc/Documents/Masters/TAES1/ChatTester/ExperimentCode/IterateResultDeal/sachin-handiekar_jInstagram__gemini__gemini-2.0-flash/20251209_090635/GeneratedTest/Request_ESTest#setConnectTimeout(int duration, TimeUnit unit).java",
+    "IterateTimes": 0,
+    "Compile_result": 1,
+    "Test_result": 1
+  },
+  {
+    "original_path": "/home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/http/Request_ESTest.java",
+    "generated_path": "/home/hsc/Documents/Masters/TAES1/ChatTester/ExperimentCode/IterateResultDeal/sachin-handiekar_jInstagram__gemini__gemini-2.0-flash/20251209_090635/GeneratedTest/Request_ESTest#getConnectTimeoutInMillis().java",
+    "IterateTimes": 0,
+    "Compile_result": 1,
+    "Test_result": 1
+  },
+  {
+    "original_path": "/home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/http/Request_ESTest.java",
+    "generated_path": "/home/hsc/Documents/Masters/TAES1/ChatTester/ExperimentCode/IterateResultDeal/sachin-handiekar_jInstagram__gemini__gemini-2.0-flash/20251209_090635/GeneratedTest/Request_ESTest#setCharset(String charsetName).java",
+    "IterateTimes": 0,
+    "Compile_result": 1,
+    "Test_result": 1
+  },
+  {
+    "original_path": "/home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/http/Request_ESTest.java",
+    "generated_path": "/home/hsc/Documents/Masters/TAES1/ChatTester/ExperimentCode/IterateResultDeal/sachin-handiekar_jInstagram__gemini__gemini-2.0-flash/20251209_090635/GeneratedTest/Request_ESTest#addPayload(String payload).java",
+    "IterateTimes": 0,
+    "Compile_result": 1,
+    "Test_result": 1
+  },
+  {
+    "original_path": "/home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/http/Request_ESTest.java",
+    "generated_path": "/home/hsc/Documents/Masters/TAES1/ChatTester/ExperimentCode/IterateResultDeal/sachin-handiekar_jInstagram__gemini__gemini-2.0-flash/20251209_090635/GeneratedTest/Request_ESTest#addBodyParameter(String key, String value).java",
+    "IterateTimes": 0,
+    "Compile_result": 1,
+    "Test_result": 1
+  },
+  {
+    "original_path": "/home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/http/Request_ESTest.java",
+    "generated_path": "/home/hsc/Documents/Masters/TAES1/ChatTester/ExperimentCode/IterateResultDeal/sachin-handiekar_jInstagram__gemini__gemini-2.0-flash/20251209_090635/GeneratedTest/Request_ESTest#getBodyParams().java",
+    "IterateTimes": 0,
+    "Compile_result": 1,
+    "Test_result": 1
+  },
+  {
+    "original_path": "/home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/http/Request_ESTest.java",
+    "generated_path": "/home/hsc/Documents/Masters/TAES1/ChatTester/ExperimentCode/IterateResultDeal/sachin-handiekar_jInstagram__gemini__gemini-2.0-flash/20251209_090635/GeneratedTest/Request_ESTest#getBodyContents().java",
+    "IterateTimes": 0,
+    "Compile_result": 1,
+    "Test_result": 1
+  },
+  {
+    "original_path": "/home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/http/Request_ESTest.java",
+    "generated_path": "/home/hsc/Documents/Masters/TAES1/ChatTester/ExperimentCode/IterateResultDeal/sachin-handiekar_jInstagram__gemini__gemini-2.0-flash/20251209_090635/GeneratedTest/Request_ESTest#setConnection(HttpURLConnection connection).java",
+    "IterateTimes": 0,
+    "Compile_result": 1,
+    "Test_result": 1
+  },
+  {
+    "original_path": "/home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/http/Request_ESTest.java",
+    "generated_path": "/home/hsc/Documents/Masters/TAES1/ChatTester/ExperimentCode/IterateResultDeal/sachin-handiekar_jInstagram__gemini__gemini-2.0-flash/20251209_090635/GeneratedTest/Request_ESTest#addHeaders(HttpURLConnection conn).java",
+    "IterateTimes": 0,
+    "Compile_result": 1,
+    "Test_result": 1
+  },
+  {
+    "original_path": "/home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/http/Request_ESTest.java",
+    "generated_path": "/home/hsc/Documents/Masters/TAES1/ChatTester/ExperimentCode/IterateResultDeal/sachin-handiekar_jInstagram__gemini__gemini-2.0-flash/20251209_090635/GeneratedTest/Request_ESTest#getVerb().java",
+    "IterateTimes": 0,
+    "Compile_result": 1,
+    "Test_result": 1
+  },
+  {
+    "original_path": "/home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/http/Request_ESTest.java",
+    "generated_path": "/home/hsc/Documents/Masters/TAES1/ChatTester/ExperimentCode/IterateResultDeal/sachin-handiekar_jInstagram__gemini__gemini-2.0-flash/20251209_090635/GeneratedTest/Request_ESTest#toString().java",
+    "IterateTimes": 0,
+    "Compile_result": 1,
+    "Test_result": 1
+  },
+  {
+    "original_path": "/home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/http/Request_ESTest.java",
+    "generated_path": "/home/hsc/Documents/Masters/TAES1/ChatTester/ExperimentCode/IterateResultDeal/sachin-handiekar_jInstagram__gemini__gemini-2.0-flash/20251209_090635/GeneratedTest/Request_ESTest#getQueryStringParams().java",
+    "IterateTimes": 0,
+    "Compile_result": 1,
+    "Test_result": 1
+  },
+  {
+    "original_path": "/home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/http/APILimitUtils_ESTest.java",
+    "generated_path": "/home/hsc/Documents/Masters/TAES1/ChatTester/ExperimentCode/IterateResultDeal/sachin-handiekar_jInstagram__gemini__gemini-2.0-flash/20251209_090635/GeneratedTest/APILimitUtils_ESTest#getRemainingLimitStatus(Map<String, String> headers).java",
+    "IterateTimes": 0,
+    "Compile_result": 1,
+    "Test_result": 1
+  },
+  {
+    "original_path": "/home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/http/APILimitUtils_ESTest.java",
+    "generated_path": "/home/hsc/Documents/Masters/TAES1/ChatTester/ExperimentCode/IterateResultDeal/sachin-handiekar_jInstagram__gemini__gemini-2.0-flash/20251209_090635/GeneratedTest/APILimitUtils_ESTest#getAPILimitStatus(Map<String, String> headers).java",
+    "IterateTimes": 0,
+    "Compile_result": 1,
+    "Test_result": 1
+  }
+]

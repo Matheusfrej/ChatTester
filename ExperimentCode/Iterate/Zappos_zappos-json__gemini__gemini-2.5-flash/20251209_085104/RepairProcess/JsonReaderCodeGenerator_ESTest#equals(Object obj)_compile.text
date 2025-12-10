@@ -1,0 +1,441 @@
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java
+[GENERATED PATH] JsonReaderCodeGenerator_ESTest#equals(Object obj).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[28,9] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[28,31] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[INFO] 2 errors 
+####################
+
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java
+[GENERATED PATH] JsonReaderCodeGenerator_ESTest#equals(Object obj).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[7,19] package com.example does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[32,9] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[32,31] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[INFO] 3 errors 
+####################
+
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java
+[GENERATED PATH] JsonReaderCodeGenerator_ESTest#equals(Object obj).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[8,19] package com.example does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[35,9] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[35,30] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[46,9] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[46,30] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[50,9] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[50,30] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[54,9] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[54,30] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[55,9] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[55,30] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[59,9] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[59,30] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[60,9] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[60,30] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[72,9] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[72,30] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[73,9] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[73,30] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[78,9] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[78,31] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[79,9] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[79,31] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[INFO] 23 errors 
+####################
+
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java
+[GENERATED PATH] JsonReaderCodeGenerator_ESTest#equals(Object obj).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[9,19] package com.example does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[37,9] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[37,32] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[52,9] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[52,32] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[57,9] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[57,32] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[62,9] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[62,32] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[67,9] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[67,32] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[74,9] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[74,40] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[75,9] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[75,40] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[80,9] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[80,42] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[INFO] 17 errors 
+####################
+
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java
+[GENERATED PATH] JsonReaderCodeGenerator_ESTest#equals(Object obj).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[10,19] package com.example does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[40,9] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[40,32] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[41,9] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[41,38] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[44,9] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[44,32] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[45,9] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[45,41] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[48,9] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[48,32] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[51,9] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[51,41] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[52,9] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[52,50] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[55,9] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[55,40] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[80,9] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[80,34] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[81,9] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[81,34] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[82,9] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[82,34] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[103,37] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[104,37] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[115,44] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[INFO] 26 errors 
+####################
+
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java
+[GENERATED PATH] JsonReaderCodeGenerator_ESTest#equals(Object obj).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[11,19] package com.example does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[40,9] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[40,29] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[INFO] 3 errors 
+####################
+
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java
+[GENERATED PATH] JsonReaderCodeGenerator_ESTest#equals(Object obj).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[12,19] package com.example does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[43,9] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[43,36] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[51,41] cannot find symbol
+  symbol:   class AnotherClass
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[54,9] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[54,32] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[55,9] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[55,32] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[59,9] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[59,32] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[63,9] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[63,32] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[64,9] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[64,32] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[69,9] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[69,40] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[70,9] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[70,40] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[74,9] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[74,42] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[83,9] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[83,39] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[84,9] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[84,39] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[85,9] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[85,39] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[92,9] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[92,40] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[93,9] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[93,47] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[INFO] 30 errors 
+####################
+
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java
+[GENERATED PATH] JsonReaderCodeGenerator_ESTest#equals(Object obj).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[13,19] package com.example does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[45,9] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[45,30] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[46,9] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[46,48] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[47,9] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[47,48] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[48,9] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[48,30] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[49,9] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[49,41] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[52,9] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[52,38] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[53,9] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[53,38] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[56,9] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[56,39] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[57,9] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[57,39] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[58,9] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[58,38] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[67,9] cannot find symbol
+  symbol:   class AnotherClass
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[67,36] cannot find symbol
+  symbol:   class AnotherClass
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[117,9] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[117,37] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[118,9] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[118,37] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[119,9] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[119,37] cannot find symbol
+  symbol:   class PathAndCode
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[INFO] 29 errors 
+####################
+

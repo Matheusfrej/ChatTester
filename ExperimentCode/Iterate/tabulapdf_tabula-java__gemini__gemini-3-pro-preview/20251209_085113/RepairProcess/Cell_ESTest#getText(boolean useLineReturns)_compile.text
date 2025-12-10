@@ -1,0 +1,16 @@
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Cell_ESTest.java
+[GENERATED PATH] Cell_ESTest#getText(boolean useLineReturns).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Cell_ESTest.java:[37,15] cannot find symbol
+  symbol:   method setText(java.lang.String)
+  location: variable chunk1 of type technology.tabula.TextChunk
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Cell_ESTest.java:[41,15] cannot find symbol
+  symbol:   method setText(java.lang.String)
+  location: variable chunk2 of type technology.tabula.TextChunk
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Cell_ESTest.java:[67,19] cannot find symbol
+  symbol:   method setText(java.lang.String)
+  location: variable chunkSpace of type technology.tabula.TextChunk
+[INFO] 3 errors 
+####################
+

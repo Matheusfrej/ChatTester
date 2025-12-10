@@ -1,0 +1,105 @@
+original test path: /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java
+[GENERATED PATH] JsonReaderCodeGenerator_ESTest#addAttributeInfo(Class<?> type, JsonBeanAttribute detail).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[30,9] cannot find symbol
+  symbol:   class TypeInfo
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[30,33] cannot find symbol
+  symbol:   class TypeInfo
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[36,9] cannot find symbol
+  symbol:   class AttributeInfo
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[INFO] 3 errors 
+####################
+
+original test path: /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java
+[GENERATED PATH] JsonReaderCodeGenerator_ESTest#addAttributeInfo(Class<?> type, JsonBeanAttribute detail).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[32,5] cannot find symbol
+  symbol:   class TypeInfo
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[32,29] cannot find symbol
+  symbol:   class TypeInfo
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[35,5] cannot find symbol
+  symbol:   class AttributeInfo
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/TypeImpl_ESTest.java:[26,29] TypeImpl(java.lang.Class<?>,java.lang.Class<?>) has private access in com.zappos.json.util.TypeImpl
+[INFO] 4 errors 
+####################
+
+original test path: /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java
+[GENERATED PATH] JsonReaderCodeGenerator_ESTest#addAttributeInfo(Class<?> type, JsonBeanAttribute detail).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[7,43] package com.fasterxml.jackson.databind.type does not exist
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[34,5] cannot find symbol
+  symbol:   class TypeInfo
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[34,29] cannot find symbol
+  symbol:   class TypeInfo
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[37,5] cannot find symbol
+  symbol:   class AttributeInfo
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/TypeImpl_ESTest.java:[26,29] TypeImpl(java.lang.Class<?>,java.lang.Class<?>) has private access in com.zappos.json.util.TypeImpl
+[INFO] 5 errors 
+####################
+
+original test path: /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java
+[GENERATED PATH] JsonReaderCodeGenerator_ESTest#addAttributeInfo(Class<?> type, JsonBeanAttribute detail).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[8,43] package com.fasterxml.jackson.databind.type does not exist
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[37,9] cannot find symbol
+  symbol:   class TypeInfo
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[37,33] cannot find symbol
+  symbol:   class TypeInfo
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[41,15] cannot find symbol
+  symbol:   method setName(java.lang.String)
+  location: variable detail of type com.zappos.json.JsonBeanAttribute
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[42,15] cannot find symbol
+  symbol:   method setValue(java.lang.String)
+  location: variable detail of type com.zappos.json.JsonBeanAttribute
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[45,9] cannot find symbol
+  symbol:   class AttributeInfo
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[48,14] cannot find symbol
+  symbol:   class AttributeInfo
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/TypeImpl_ESTest.java:[26,29] TypeImpl(java.lang.Class<?>,java.lang.Class<?>) has private access in com.zappos.json.util.TypeImpl
+[INFO] 8 errors 
+####################
+
+original test path: /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java
+[GENERATED PATH] JsonReaderCodeGenerator_ESTest#addAttributeInfo(Class<?> type, JsonBeanAttribute detail).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[9,43] package com.fasterxml.jackson.databind.type does not exist
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[39,9] cannot find symbol
+  symbol:   class TypeInfo
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[39,33] cannot find symbol
+  symbol:   class TypeInfo
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[43,15] cannot find symbol
+  symbol:   method setName(java.lang.String)
+  location: variable detail of type com.zappos.json.JsonBeanAttribute
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[44,15] cannot find symbol
+  symbol:   method setValue(java.lang.String)
+  location: variable detail of type com.zappos.json.JsonBeanAttribute
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[47,9] cannot find symbol
+  symbol:   class AttributeInfo
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[50,14] cannot find symbol
+  symbol:   class AttributeInfo
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/TypeImpl_ESTest.java:[26,29] TypeImpl(java.lang.Class<?>,java.lang.Class<?>) has private access in com.zappos.json.util.TypeImpl
+[INFO] 8 errors 
+####################
+

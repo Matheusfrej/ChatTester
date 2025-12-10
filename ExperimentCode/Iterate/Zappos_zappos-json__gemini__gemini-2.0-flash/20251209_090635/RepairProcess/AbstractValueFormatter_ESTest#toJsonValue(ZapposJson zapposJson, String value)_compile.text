@@ -1,0 +1,22 @@
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/format/AbstractValueFormatter_ESTest.java
+[GENERATED PATH] AbstractValueFormatter_ESTest#toJsonValue(ZapposJson zapposJson, String value).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/format/AbstractValueFormatter_ESTest.java:[9,26] package org.mockito does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/format/AbstractValueFormatter_ESTest.java:[32,55] cannot find symbol
+  symbol:   class IOException
+  location: class com.zappos.json.format.AbstractValueFormatter_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/format/AbstractValueFormatter_ESTest.java:[34,33] cannot find symbol
+  symbol:   method mock(java.lang.Class<com.zappos.json.ZapposJson>)
+  location: class com.zappos.json.format.AbstractValueFormatter_ESTest
+[INFO] 3 errors 
+####################
+
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/format/AbstractValueFormatter_ESTest.java
+[GENERATED PATH] AbstractValueFormatter_ESTest#toJsonValue(ZapposJson zapposJson, String value).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[39,16] class, interface, or enum expected
+[INFO] 1 error
+####################
+

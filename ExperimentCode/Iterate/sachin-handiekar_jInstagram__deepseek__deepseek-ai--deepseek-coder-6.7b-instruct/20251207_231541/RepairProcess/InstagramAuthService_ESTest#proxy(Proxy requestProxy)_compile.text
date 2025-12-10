@@ -1,0 +1,126 @@
+original test path: /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/auth/InstagramAuthService_ESTest.java
+[GENERATED PATH] InstagramAuthService_ESTest#proxy(Proxy requestProxy).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/auth/InstagramAuthService_ESTest.java:[11,20] cannot find symbol
+  symbol:   class runtimeMockInetSocketAddress
+  location: package org.evosuite
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/auth/InstagramAuthService_ESTest.java:[31,58] cannot find symbol
+  symbol:   class InetSocketAddress
+  location: class org.jinstagram.auth.InstagramAuthService_ESTest
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/auth/InstagramAuthService_ESTest.java:[40,57] requestProxy has private access in org.jinstagram.auth.InstagramAuthService
+[INFO] 3 errors 
+####################
+
+original test path: /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/auth/InstagramAuthService_ESTest.java
+[GENERATED PATH] InstagramAuthService_ESTest#proxy(Proxy requestProxy).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/auth/InstagramAuthService_ESTest.java:[13,20] cannot find symbol
+  symbol:   class runtimeMockInetSocketAddress
+  location: package org.evosuite
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/entity/comments/MediaCommentsFeed_ESTest.java:[12,38] cannot find symbol
+  symbol:   class Meta
+  location: package org.jinstagram.entity.comments
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/auth/InstagramAuthService_ESTest.java:[35,23] constructor Proxy in class java.net.Proxy cannot be applied to given types;
+  required: java.net.Proxy.Type,java.net.SocketAddress
+  found: no arguments
+  reason: actual and formal argument lists differ in length
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/auth/InstagramAuthService_ESTest.java:[41,36] cannot find symbol
+  symbol:   method getRequestProxy()
+  location: variable service of type org.jinstagram.auth.InstagramAuthService
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/auth/oauth/InstagramService_ESTest.java:[55,9] cannot find symbol
+  symbol:   class InstagramClient
+  location: class org.jinstagram.auth.oauth.InstagramService_ESTest
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/entity/comments/MediaCommentsFeed_ESTest.java:[31,26] incompatible types: java.lang.String cannot be converted to int
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/entity/comments/MediaCommentsFeed_ESTest.java:[40,24] cannot find symbol
+  symbol:   method setFrom(java.lang.String)
+  location: variable mockCommentData of type org.jinstagram.entity.comments.CommentData
+[INFO] 7 errors 
+####################
+
+original test path: /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/auth/InstagramAuthService_ESTest.java
+[GENERATED PATH] InstagramAuthService_ESTest#proxy(Proxy requestProxy).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/auth/InstagramAuthService_ESTest.java:[14,20] cannot find symbol
+  symbol:   class runtimeMockInetSocketAddress
+  location: package org.evosuite
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/entity/comments/MediaCommentsFeed_ESTest.java:[12,38] cannot find symbol
+  symbol:   class Meta
+  location: package org.jinstagram.entity.comments
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/auth/InstagramAuthService_ESTest.java:[37,23] constructor Proxy in class java.net.Proxy cannot be applied to given types;
+  required: java.net.Proxy.Type,java.net.SocketAddress
+  found: no arguments
+  reason: actual and formal argument lists differ in length
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/auth/InstagramAuthService_ESTest.java:[43,36] cannot find symbol
+  symbol:   method getRequestProxy()
+  location: variable service of type org.jinstagram.auth.InstagramAuthService
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/auth/oauth/InstagramService_ESTest.java:[55,9] cannot find symbol
+  symbol:   class InstagramClient
+  location: class org.jinstagram.auth.oauth.InstagramService_ESTest
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/entity/comments/MediaCommentsFeed_ESTest.java:[31,26] incompatible types: java.lang.String cannot be converted to int
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/entity/comments/MediaCommentsFeed_ESTest.java:[40,24] cannot find symbol
+  symbol:   method setFrom(java.lang.String)
+  location: variable mockCommentData of type org.jinstagram.entity.comments.CommentData
+[INFO] 7 errors 
+####################
+
+original test path: /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/auth/InstagramAuthService_ESTest.java
+[GENERATED PATH] InstagramAuthService_ESTest#proxy(Proxy requestProxy).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/auth/InstagramAuthService_ESTest.java:[8,22] package oauth.signpost does not exist
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/auth/InstagramAuthService_ESTest.java:[15,20] cannot find symbol
+  symbol:   class runtimeMockInetSocketAddress
+  location: package org.evosuite
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/entity/comments/MediaCommentsFeed_ESTest.java:[12,38] cannot find symbol
+  symbol:   class Meta
+  location: package org.jinstagram.entity.comments
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/auth/InstagramAuthService_ESTest.java:[45,24] requestProxy has private access in org.jinstagram.auth.InstagramAuthService
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/auth/InstagramAuthService_ESTest.java:[46,19] cannot find symbol
+  symbol:   method out(java.lang.String)
+  location: class java.lang.System
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/auth/InstagramAuthService_ESTest.java:[52,41] cannot find symbol
+  symbol:   variable OAuthConstants
+  location: class org.jinstagram.auth.InstagramAuthService_ESTest
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/auth/InstagramAuthService_ESTest.java:[52,24] callback has private access in org.jinstagram.auth.InstagramAuthService
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/auth/oauth/InstagramService_ESTest.java:[55,9] cannot find symbol
+  symbol:   class InstagramClient
+  location: class org.jinstagram.auth.oauth.InstagramService_ESTest
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/entity/comments/MediaCommentsFeed_ESTest.java:[31,26] incompatible types: java.lang.String cannot be converted to int
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/entity/comments/MediaCommentsFeed_ESTest.java:[40,24] cannot find symbol
+  symbol:   method setFrom(java.lang.String)
+  location: variable mockCommentData of type org.jinstagram.entity.comments.CommentData
+[INFO] 10 errors 
+####################
+
+original test path: /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/auth/InstagramAuthService_ESTest.java
+[GENERATED PATH] InstagramAuthService_ESTest#proxy(Proxy requestProxy).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/auth/InstagramAuthService_ESTest.java:[9,22] package oauth.signpost does not exist
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/auth/InstagramAuthService_ESTest.java:[16,20] cannot find symbol
+  symbol:   class runtimeMockInetSocketAddress
+  location: package org.evosuite
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/entity/comments/MediaCommentsFeed_ESTest.java:[12,38] cannot find symbol
+  symbol:   class Meta
+  location: package org.jinstagram.entity.comments
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/auth/InstagramAuthService_ESTest.java:[47,24] requestProxy has private access in org.jinstagram.auth.InstagramAuthService
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/auth/InstagramAuthService_ESTest.java:[48,19] cannot find symbol
+  symbol:   method out(java.lang.String)
+  location: class java.lang.System
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/auth/InstagramAuthService_ESTest.java:[54,41] cannot find symbol
+  symbol:   variable OAuthConstants
+  location: class org.jinstagram.auth.InstagramAuthService_ESTest
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/auth/InstagramAuthService_ESTest.java:[54,24] callback has private access in org.jinstagram.auth.InstagramAuthService
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/auth/oauth/InstagramService_ESTest.java:[55,9] cannot find symbol
+  symbol:   class InstagramClient
+  location: class org.jinstagram.auth.oauth.InstagramService_ESTest
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/entity/comments/MediaCommentsFeed_ESTest.java:[31,26] incompatible types: java.lang.String cannot be converted to int
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/entity/comments/MediaCommentsFeed_ESTest.java:[40,24] cannot find symbol
+  symbol:   method setFrom(java.lang.String)
+  location: variable mockCommentData of type org.jinstagram.entity.comments.CommentData
+[INFO] 10 errors 
+####################
+

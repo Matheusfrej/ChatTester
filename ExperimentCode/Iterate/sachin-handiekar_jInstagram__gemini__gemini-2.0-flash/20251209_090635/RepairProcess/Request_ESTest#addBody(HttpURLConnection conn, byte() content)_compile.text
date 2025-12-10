@@ -1,0 +1,28 @@
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/http/Request_ESTest.java
+[GENERATED PATH] Request_ESTest#addBody(HttpURLConnection conn, byte() content).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/http/Request_ESTest.java:[32,72] cannot find symbol
+  symbol:   class IOException
+  location: class org.jinstagram.http.Request_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/http/Request_ESTest.java:[37,9] cannot find symbol
+  symbol:   class ByteArrayOutputStream
+  location: class org.jinstagram.http.Request_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/http/Request_ESTest.java:[37,50] cannot find symbol
+  symbol:   class ByteArrayOutputStream
+  location: class org.jinstagram.http.Request_ESTest
+[INFO] 3 errors 
+####################
+
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/http/Request_ESTest.java
+[GENERATED PATH] Request_ESTest#addBody(HttpURLConnection conn, byte() content).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/http/URLUtils_ESTest.java:[32,5] class, interface, or enum expected
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/http/URLUtils_ESTest.java:[34,9] class, interface, or enum expected
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/http/URLUtils_ESTest.java:[35,9] class, interface, or enum expected
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/http/URLUtils_ESTest.java:[36,9] class, interface, or enum expected
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/http/URLUtils_ESTest.java:[37,5] class, interface, or enum expected
+[INFO] 5 errors 
+####################
+

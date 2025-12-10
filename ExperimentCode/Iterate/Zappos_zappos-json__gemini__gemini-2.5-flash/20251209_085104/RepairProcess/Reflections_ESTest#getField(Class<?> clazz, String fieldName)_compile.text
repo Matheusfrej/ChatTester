@@ -1,0 +1,739 @@
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java
+[GENERATED PATH] Reflections_ESTest#getField(Class<?> clazz, String fieldName).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[30,46] cannot find symbol
+  symbol: variable value
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[35,1] constructor JsonReaderCodeGenerator in class com.zappos.json.JsonReaderCodeGenerator cannot be applied to given types;
+  required: com.zappos.json.ZapposJson,com.zappos.json.JsonBeanIntrospector
+  found: no arguments
+  reason: actual and formal argument lists differ in length
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[27,44] cannot find symbol
+  symbol:   class ChildClass
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[30,22] cannot find symbol
+  symbol:   class ChildClass
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[33,38] cannot find symbol
+  symbol:   class ChildClass
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[36,22] cannot find symbol
+  symbol:   class ChildClass
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[39,38] cannot find symbol
+  symbol:   class ChildClass
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[42,22] cannot find symbol
+  symbol:   class ChildClass
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[45,38] cannot find symbol
+  symbol:   class ChildClass
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[48,22] cannot find symbol
+  symbol:   class ChildClass
+  location: class com.zappos.json.util.Reflections_ESTest
+[INFO] 10 errors 
+####################
+
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java
+[GENERATED PATH] Reflections_ESTest#getField(Class<?> clazz, String fieldName).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[10,19] package com.example does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[11,19] package com.example does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[12,19] package com.example does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[15,26] package org.mockito does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[16,19] package org.mockito does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[17,19] package org.mockito does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/JsonUtils_ESTest.java:[9,19] package org.mockito does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/JsonUtils_ESTest.java:[10,19] package org.mockito does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/JsonUtils_ESTest.java:[11,19] package org.mockito does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/JsonUtils_ESTest.java:[12,26] package org.mockito does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/JsonUtils_ESTest.java:[12,1] static import only from classes and interfaces
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Strings_ESTest.java:[22,1] cannot find symbol
+  symbol:   static assertThrows
+  location: class
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[50,9] cannot find symbol
+  symbol:   variable MockitoAnnotations
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[51,9] cannot find symbol
+  symbol:   variable generator
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[51,49] cannot find symbol
+  symbol:   variable mockZapposJson
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[51,65] cannot find symbol
+  symbol:   variable mockBeanIntrospector
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/JsonUtils_ESTest.java:[48,9] cannot find symbol
+  symbol:   variable MockitoAnnotations
+  location: class com.zappos.json.util.JsonUtils_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/JsonUtils_ESTest.java:[49,9] cannot find symbol
+  symbol:   variable stringWriter
+  location: class com.zappos.json.util.JsonUtils_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[31,44] cannot find symbol
+  symbol:   class ChildClass
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[35,22] cannot find symbol
+  symbol:   class ChildClass
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[37,38] cannot find symbol
+  symbol:   class ChildClass
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[40,22] cannot find symbol
+  symbol:   class ChildClass
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[42,38] cannot find symbol
+  symbol:   class ChildClass
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[45,22] cannot find symbol
+  symbol:   class ChildClass
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[47,38] cannot find symbol
+  symbol:   class ChildClass
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[50,22] cannot find symbol
+  symbol:   class ChildClass
+  location: class com.zappos.json.util.Reflections_ESTest
+[INFO] 26 errors 
+####################
+
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java
+[GENERATED PATH] Reflections_ESTest#getField(Class<?> clazz, String fieldName).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[10,19] package com.example does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[11,19] package com.example does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[12,19] package com.example does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[15,26] package org.mockito does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[16,19] package org.mockito does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[17,19] package org.mockito does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/JsonUtils_ESTest.java:[9,19] package org.mockito does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/JsonUtils_ESTest.java:[10,19] package org.mockito does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/JsonUtils_ESTest.java:[11,19] package org.mockito does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/JsonUtils_ESTest.java:[12,26] package org.mockito does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/JsonUtils_ESTest.java:[12,1] static import only from classes and interfaces
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Strings_ESTest.java:[22,1] cannot find symbol
+  symbol:   static assertThrows
+  location: class
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[50,9] cannot find symbol
+  symbol:   variable MockitoAnnotations
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[51,9] cannot find symbol
+  symbol:   variable generator
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[51,49] cannot find symbol
+  symbol:   variable mockZapposJson
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[51,65] cannot find symbol
+  symbol:   variable mockBeanIntrospector
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/JsonUtils_ESTest.java:[48,9] cannot find symbol
+  symbol:   variable MockitoAnnotations
+  location: class com.zappos.json.util.JsonUtils_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/JsonUtils_ESTest.java:[49,9] cannot find symbol
+  symbol:   variable stringWriter
+  location: class com.zappos.json.util.JsonUtils_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[32,44] cannot find symbol
+  symbol:   class ChildClass
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[36,22] cannot find symbol
+  symbol:   class ChildClass
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[37,38] cannot find symbol
+  symbol:   class ChildClass
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[40,22] cannot find symbol
+  symbol:   class ChildClass
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[41,38] cannot find symbol
+  symbol:   class ChildClass
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[44,22] cannot find symbol
+  symbol:   class ChildClass
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[45,38] cannot find symbol
+  symbol:   class ChildClass
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[48,22] cannot find symbol
+  symbol:   class ChildClass
+  location: class com.zappos.json.util.Reflections_ESTest
+[INFO] 26 errors 
+####################
+
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java
+[GENERATED PATH] Reflections_ESTest#getField(Class<?> clazz, String fieldName).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[10,19] package com.example does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[11,19] package com.example does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[12,19] package com.example does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[15,26] package org.mockito does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[16,19] package org.mockito does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[17,19] package org.mockito does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/JsonUtils_ESTest.java:[9,19] package org.mockito does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/JsonUtils_ESTest.java:[10,19] package org.mockito does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/JsonUtils_ESTest.java:[11,19] package org.mockito does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/JsonUtils_ESTest.java:[12,26] package org.mockito does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/JsonUtils_ESTest.java:[12,1] static import only from classes and interfaces
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Strings_ESTest.java:[22,1] cannot find symbol
+  symbol:   static assertThrows
+  location: class
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[50,9] cannot find symbol
+  symbol:   variable MockitoAnnotations
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[51,9] cannot find symbol
+  symbol:   variable generator
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[51,49] cannot find symbol
+  symbol:   variable mockZapposJson
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[51,65] cannot find symbol
+  symbol:   variable mockBeanIntrospector
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/JsonUtils_ESTest.java:[48,9] cannot find symbol
+  symbol:   variable MockitoAnnotations
+  location: class com.zappos.json.util.JsonUtils_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/JsonUtils_ESTest.java:[49,9] cannot find symbol
+  symbol:   variable stringWriter
+  location: class com.zappos.json.util.JsonUtils_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[36,55] cannot find symbol
+  symbol:   class ChildClass
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[37,23] incompatible types: java.lang.reflect.Field cannot be converted to java.lang.String
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[40,22] cannot find symbol
+  symbol:   class ChildClass
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[43,56] cannot find symbol
+  symbol:   class ChildClass
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[44,23] incompatible types: java.lang.reflect.Field cannot be converted to java.lang.String
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[47,22] cannot find symbol
+  symbol:   class ChildClass
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[50,58] cannot find symbol
+  symbol:   class ChildClass
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[51,23] incompatible types: java.lang.reflect.Field cannot be converted to java.lang.String
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[54,22] cannot find symbol
+  symbol:   class ChildClass
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[57,63] cannot find symbol
+  symbol:   class ChildClass
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[58,23] incompatible types: java.lang.reflect.Field cannot be converted to java.lang.String
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[61,22] cannot find symbol
+  symbol:   class ChildClass
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[66,56] cannot find symbol
+  symbol:   class ChildClass
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[67,23] incompatible types: java.lang.reflect.Field cannot be converted to java.lang.String
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[70,22] cannot find symbol
+  symbol:   class ChildClass
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[74,57] cannot find symbol
+  symbol:   class ChildClass
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[75,23] incompatible types: java.lang.reflect.Field cannot be converted to java.lang.String
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[78,22] cannot find symbol
+  symbol:   class ParentClass
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[81,62] cannot find symbol
+  symbol:   class ChildClass
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[82,23] incompatible types: java.lang.reflect.Field cannot be converted to java.lang.String
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[85,22] cannot find symbol
+  symbol:   class GrandparentClass
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[91,63] cannot find symbol
+  symbol:   class ChildClass
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[92,23] incompatible types: java.lang.reflect.Field cannot be converted to java.lang.String
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[94,22] cannot find symbol
+  symbol:   class ParentClass
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[100,55] cannot find symbol
+  symbol:   class ChildClass
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[101,20] incompatible types: java.lang.reflect.Field cannot be converted to java.lang.String
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[104,62] cannot find symbol
+  symbol:   class ClassWithoutFields
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[105,20] incompatible types: java.lang.reflect.Field cannot be converted to java.lang.String
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[111,20] incompatible types: java.lang.reflect.Field cannot be converted to java.lang.String
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[114,20] incompatible types: java.lang.reflect.Field cannot be converted to java.lang.String
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[121,55] cannot find symbol
+  symbol:   class ClassWithoutFields
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[122,20] incompatible types: java.lang.reflect.Field cannot be converted to java.lang.String
+[INFO] 50 errors 
+####################
+
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java
+[GENERATED PATH] Reflections_ESTest#getField(Class<?> clazz, String fieldName).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[10,19] package com.example does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[11,19] package com.example does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[12,19] package com.example does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[15,26] package org.mockito does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[16,19] package org.mockito does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[17,19] package org.mockito does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/JsonUtils_ESTest.java:[9,19] package org.mockito does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/JsonUtils_ESTest.java:[10,19] package org.mockito does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/JsonUtils_ESTest.java:[11,19] package org.mockito does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/JsonUtils_ESTest.java:[12,26] package org.mockito does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/JsonUtils_ESTest.java:[12,1] static import only from classes and interfaces
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Strings_ESTest.java:[22,1] cannot find symbol
+  symbol:   static assertThrows
+  location: class
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[50,9] cannot find symbol
+  symbol:   variable MockitoAnnotations
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[51,9] cannot find symbol
+  symbol:   variable generator
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[51,49] cannot find symbol
+  symbol:   variable mockZapposJson
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[51,65] cannot find symbol
+  symbol:   variable mockBeanIntrospector
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/JsonUtils_ESTest.java:[48,9] cannot find symbol
+  symbol:   variable MockitoAnnotations
+  location: class com.zappos.json.util.JsonUtils_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/JsonUtils_ESTest.java:[49,9] cannot find symbol
+  symbol:   variable stringWriter
+  location: class com.zappos.json.util.JsonUtils_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[36,55] cannot find symbol
+  symbol:   class ChildClass
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[37,23] incompatible types: java.lang.reflect.Field cannot be converted to java.lang.String
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[39,22] cannot find symbol
+  symbol:   class ChildClass
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[40,20] cannot find symbol
+  symbol:   variable Modifier
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[41,63] cannot find symbol
+  symbol:   class ChildClass
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[43,56] cannot find symbol
+  symbol:   class ChildClass
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[44,23] incompatible types: java.lang.reflect.Field cannot be converted to java.lang.String
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[46,22] cannot find symbol
+  symbol:   class ChildClass
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[47,20] cannot find symbol
+  symbol:   variable Modifier
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[49,54] cannot find symbol
+  symbol:   class ChildClass
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[53,53] cannot find symbol
+  symbol:   class ChildClass
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[54,23] incompatible types: java.lang.reflect.Field cannot be converted to java.lang.String
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[56,22] cannot find symbol
+  symbol:   class MidClass
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[57,20] cannot find symbol
+  symbol:   variable Modifier
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[58,59] cannot find symbol
+  symbol:   class ChildClass
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[60,54] cannot find symbol
+  symbol:   class ChildClass
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[61,23] incompatible types: java.lang.reflect.Field cannot be converted to java.lang.String
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[63,22] cannot find symbol
+  symbol:   class MidClass
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[64,20] cannot find symbol
+  symbol:   variable Modifier
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[66,51] cannot find symbol
+  symbol:   class ChildClass
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[70,57] cannot find symbol
+  symbol:   class GrandchildClass
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[71,23] incompatible types: java.lang.reflect.Field cannot be converted to java.lang.String
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[73,22] cannot find symbol
+  symbol:   class BaseClass
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[74,20] cannot find symbol
+  symbol:   variable Modifier
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[76,55] cannot find symbol
+  symbol:   class GrandchildClass
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[78,55] cannot find symbol
+  symbol:   class GrandchildClass
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[79,23] incompatible types: java.lang.reflect.Field cannot be converted to java.lang.String
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[81,22] cannot find symbol
+  symbol:   class BaseClass
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[82,21] cannot find symbol
+  symbol:   variable Modifier
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[83,21] cannot find symbol
+  symbol:   variable Modifier
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[84,21] cannot find symbol
+  symbol:   variable Modifier
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[86,63] cannot find symbol
+  symbol:   class GrandchildClass
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[90,54] cannot find symbol
+  symbol:   class ChildClass
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[91,23] incompatible types: java.lang.reflect.Field cannot be converted to java.lang.String
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[93,22] cannot find symbol
+  symbol:   class BaseClass
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[94,20] cannot find symbol
+  symbol:   variable Modifier
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[99,52] cannot find symbol
+  symbol:   class ChildClass
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[100,20] incompatible types: java.lang.reflect.Field cannot be converted to java.lang.String
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[102,54] cannot find symbol
+  symbol:   class EmptyClass
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[103,20] incompatible types: java.lang.reflect.Field cannot be converted to java.lang.String
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[109,20] incompatible types: java.lang.reflect.Field cannot be converted to java.lang.String
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[112,9] cannot find symbol
+  symbol:   method assertThrows(java.lang.Class<java.lang.NullPointerException>,()->Reflec[...]null),java.lang.String)
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[112,77] cannot find symbol
+  symbol:   class ChildClass
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[117,53] cannot find symbol
+  symbol:   class ChildClass
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[118,20] incompatible types: java.lang.reflect.Field cannot be converted to java.lang.String
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[123,56] cannot find symbol
+  symbol:   class ShadowChild
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[124,23] incompatible types: java.lang.reflect.Field cannot be converted to java.lang.String
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[125,22] cannot find symbol
+  symbol:   class ShadowChild
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[126,64] cannot find symbol
+  symbol:   class ShadowChild
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[129,55] cannot find symbol
+  symbol:   class ShadowBase
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[130,23] incompatible types: java.lang.reflect.Field cannot be converted to java.lang.String
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[131,22] cannot find symbol
+  symbol:   class ShadowBase
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[132,62] cannot find symbol
+  symbol:   class ShadowBase
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[135,57] cannot find symbol
+  symbol:   class ShadowChild
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[136,23] incompatible types: java.lang.reflect.Field cannot be converted to java.lang.String
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[137,22] cannot find symbol
+  symbol:   class ShadowChild
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[138,20] cannot find symbol
+  symbol:   variable Modifier
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[140,73] cannot find symbol
+  symbol:   class ShadowChild
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[144,56] cannot find symbol
+  symbol:   class MyInterface
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[145,23] incompatible types: java.lang.reflect.Field cannot be converted to java.lang.String
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[147,22] cannot find symbol
+  symbol:   class MyInterface
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[148,20] cannot find symbol
+  symbol:   variable Modifier
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[149,20] cannot find symbol
+  symbol:   variable Modifier
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[150,20] cannot find symbol
+  symbol:   variable Modifier
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[155,40] incompatible types: java.lang.reflect.Field cannot be converted to java.lang.String
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[156,40] incompatible types: java.lang.reflect.Field cannot be converted to java.lang.String
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[159,40] incompatible types: java.lang.reflect.Field cannot be converted to java.lang.String
+[INFO] 85 errors 
+####################
+
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java
+[GENERATED PATH] Reflections_ESTest#getField(Class<?> clazz, String fieldName).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[10,19] package com.example does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[11,19] package com.example does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[12,19] package com.example does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[15,26] package org.mockito does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[16,19] package org.mockito does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[17,19] package org.mockito does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/JsonUtils_ESTest.java:[9,19] package org.mockito does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/JsonUtils_ESTest.java:[10,19] package org.mockito does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/JsonUtils_ESTest.java:[11,19] package org.mockito does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/JsonUtils_ESTest.java:[12,26] package org.mockito does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/JsonUtils_ESTest.java:[12,1] static import only from classes and interfaces
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Strings_ESTest.java:[22,1] cannot find symbol
+  symbol:   static assertThrows
+  location: class
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[50,9] cannot find symbol
+  symbol:   variable MockitoAnnotations
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[51,9] cannot find symbol
+  symbol:   variable generator
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[51,49] cannot find symbol
+  symbol:   variable mockZapposJson
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[51,65] cannot find symbol
+  symbol:   variable mockBeanIntrospector
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/JsonUtils_ESTest.java:[48,9] cannot find symbol
+  symbol:   variable MockitoAnnotations
+  location: class com.zappos.json.util.JsonUtils_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/JsonUtils_ESTest.java:[49,9] cannot find symbol
+  symbol:   variable stringWriter
+  location: class com.zappos.json.util.JsonUtils_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[39,45] cannot find symbol
+  symbol:   class TestChild
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[40,23] incompatible types: java.lang.reflect.Field cannot be converted to java.lang.String
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[42,22] cannot find symbol
+  symbol:   class TestChild
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[45,45] cannot find symbol
+  symbol:   class TestChild
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[46,23] incompatible types: java.lang.reflect.Field cannot be converted to java.lang.String
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[48,22] cannot find symbol
+  symbol:   class TestChild
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[51,45] cannot find symbol
+  symbol:   class TestChild
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[52,23] incompatible types: java.lang.reflect.Field cannot be converted to java.lang.String
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[54,22] cannot find symbol
+  symbol:   class TestChild
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[59,45] cannot find symbol
+  symbol:   class TestChild
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[60,23] incompatible types: java.lang.reflect.Field cannot be converted to java.lang.String
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[62,22] cannot find symbol
+  symbol:   class TestParent
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[65,45] cannot find symbol
+  symbol:   class TestChild
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[66,23] incompatible types: java.lang.reflect.Field cannot be converted to java.lang.String
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[68,22] cannot find symbol
+  symbol:   class TestParent
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[71,45] cannot find symbol
+  symbol:   class TestChild
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[72,23] incompatible types: java.lang.reflect.Field cannot be converted to java.lang.String
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[74,22] cannot find symbol
+  symbol:   class TestParent
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[79,45] cannot find symbol
+  symbol:   class TestChild
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[80,23] incompatible types: java.lang.reflect.Field cannot be converted to java.lang.String
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[82,22] cannot find symbol
+  symbol:   class TestGrandparent
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[85,45] cannot find symbol
+  symbol:   class TestChild
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[86,23] incompatible types: java.lang.reflect.Field cannot be converted to java.lang.String
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[88,22] cannot find symbol
+  symbol:   class TestGrandparent
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[91,45] cannot find symbol
+  symbol:   class TestChild
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[92,23] incompatible types: java.lang.reflect.Field cannot be converted to java.lang.String
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[94,22] cannot find symbol
+  symbol:   class TestGrandparent
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[97,46] cannot find symbol
+  symbol:   class TestChild
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[98,23] incompatible types: java.lang.reflect.Field cannot be converted to java.lang.String
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[100,22] cannot find symbol
+  symbol:   class TestGrandparent
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[104,46] cannot find symbol
+  symbol:   class TestChild
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[105,20] incompatible types: java.lang.reflect.Field cannot be converted to java.lang.String
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[108,46] cannot find symbol
+  symbol:   class TestClassNoFields
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[109,20] incompatible types: java.lang.reflect.Field cannot be converted to java.lang.String
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[115,9] cannot find symbol
+  symbol:   method assertThrows(java.lang.Class<java.lang.NullPointerException>,()->Reflec[...]null),java.lang.String)
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[115,77] cannot find symbol
+  symbol:   class TestChild
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[120,46] cannot find symbol
+  symbol:   class TestChild
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[121,20] incompatible types: java.lang.reflect.Field cannot be converted to java.lang.String
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[127,20] incompatible types: java.lang.reflect.Field cannot be converted to java.lang.String
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[131,50] cannot find symbol
+  symbol:   class TestGrandparent
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[132,23] incompatible types: java.lang.reflect.Field cannot be converted to java.lang.String
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[134,22] cannot find symbol
+  symbol:   class TestGrandparent
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[137,53] cannot find symbol
+  symbol:   class TestGrandparent
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[138,20] incompatible types: java.lang.reflect.Field cannot be converted to java.lang.String
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[147,60] cannot find symbol
+  symbol:   class ShadowParent
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[148,23] incompatible types: java.lang.reflect.Field cannot be converted to java.lang.String
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[150,22] cannot find symbol
+  symbol:   class ShadowParent
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[154,60] cannot find symbol
+  symbol:   class ShadowGrandparent
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[155,23] incompatible types: java.lang.reflect.Field cannot be converted to java.lang.String
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[157,22] cannot find symbol
+  symbol:   class ShadowGrandparent
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[162,61] cannot find symbol
+  symbol:   class ShadowChild
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[163,23] incompatible types: java.lang.reflect.Field cannot be converted to java.lang.String
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[165,22] cannot find symbol
+  symbol:   class ShadowParent
+  location: class com.zappos.json.util.Reflections_ESTest
+[INFO] 71 errors 
+####################
+
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java
+[GENERATED PATH] Reflections_ESTest#getField(Class<?> clazz, String fieldName).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[10,19] package com.example does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[11,19] package com.example does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[12,19] package com.example does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[15,26] package org.mockito does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[16,19] package org.mockito does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[17,19] package org.mockito does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/JsonUtils_ESTest.java:[9,19] package org.mockito does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/JsonUtils_ESTest.java:[10,19] package org.mockito does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/JsonUtils_ESTest.java:[11,19] package org.mockito does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/JsonUtils_ESTest.java:[12,26] package org.mockito does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/JsonUtils_ESTest.java:[12,1] static import only from classes and interfaces
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Strings_ESTest.java:[22,1] cannot find symbol
+  symbol:   static assertThrows
+  location: class
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[50,9] cannot find symbol
+  symbol:   variable MockitoAnnotations
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[51,9] cannot find symbol
+  symbol:   variable generator
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[51,49] cannot find symbol
+  symbol:   variable mockZapposJson
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[51,65] cannot find symbol
+  symbol:   variable mockBeanIntrospector
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/JsonUtils_ESTest.java:[48,9] cannot find symbol
+  symbol:   variable MockitoAnnotations
+  location: class com.zappos.json.util.JsonUtils_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/JsonUtils_ESTest.java:[49,9] cannot find symbol
+  symbol:   variable stringWriter
+  location: class com.zappos.json.util.JsonUtils_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[40,44] cannot find symbol
+  symbol:   class TestChild
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[41,23] incompatible types: java.lang.reflect.Field cannot be converted to java.lang.String
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[43,22] cannot find symbol
+  symbol:   class TestChild
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[46,38] cannot find symbol
+  symbol:   class TestChild
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[47,23] incompatible types: java.lang.reflect.Field cannot be converted to java.lang.String
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[49,22] cannot find symbol
+  symbol:   class TestChild
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[52,38] cannot find symbol
+  symbol:   class TestChild
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[53,23] incompatible types: java.lang.reflect.Field cannot be converted to java.lang.String
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[55,22] cannot find symbol
+  symbol:   class TestChild
+  location: class com.zappos.json.util.Reflections_ESTest
+[INFO] 27 errors 
+####################
+
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java
+[GENERATED PATH] Reflections_ESTest#getField(Class<?> clazz, String fieldName).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[10,19] package com.example does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[11,19] package com.example does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[12,19] package com.example does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[15,26] package org.mockito does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[16,19] package org.mockito does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[17,19] package org.mockito does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/JsonUtils_ESTest.java:[9,19] package org.mockito does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/JsonUtils_ESTest.java:[10,19] package org.mockito does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/JsonUtils_ESTest.java:[11,19] package org.mockito does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/JsonUtils_ESTest.java:[12,26] package org.mockito does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/JsonUtils_ESTest.java:[12,1] static import only from classes and interfaces
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Strings_ESTest.java:[22,1] cannot find symbol
+  symbol:   static assertThrows
+  location: class
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[50,9] cannot find symbol
+  symbol:   variable MockitoAnnotations
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[51,9] cannot find symbol
+  symbol:   variable generator
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[51,49] cannot find symbol
+  symbol:   variable mockZapposJson
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[51,65] cannot find symbol
+  symbol:   variable mockBeanIntrospector
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/JsonUtils_ESTest.java:[48,9] cannot find symbol
+  symbol:   variable MockitoAnnotations
+  location: class com.zappos.json.util.JsonUtils_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/JsonUtils_ESTest.java:[49,9] cannot find symbol
+  symbol:   variable stringWriter
+  location: class com.zappos.json.util.JsonUtils_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[41,44] cannot find symbol
+  symbol:   class Child
+  location: class com.zappos.json.util.Reflections_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[42,23] incompatible types: java.lang.reflect.Field cannot be converted to java.lang.String
+[INFO] 20 errors 
+####################
+

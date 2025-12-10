@@ -1,0 +1,184 @@
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java
+[GENERATED PATH] JsonReaderCodeGenerator_ESTest#getAttributeInfos().java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[31,9] cannot find symbol
+  symbol:   class TypeInfo
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[31,33] cannot find symbol
+  symbol:   class TypeInfo
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[34,14] cannot find symbol
+  symbol:   class AttributeInfo
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[48,9] cannot find symbol
+  symbol:   class AttributeInfo
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[48,35] cannot find symbol
+  symbol:   class AttributeInfo
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[55,14] cannot find symbol
+  symbol:   class AttributeInfo
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[60,9] cannot find symbol
+  symbol:   class TypeInfo
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[60,40] cannot find symbol
+  symbol:   class TypeInfo
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[61,14] cannot find symbol
+  symbol:   class AttributeInfo
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[68,37] cannot find symbol
+  symbol:   class AttributeInfo
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[INFO] 10 errors 
+####################
+
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java
+[GENERATED PATH] JsonReaderCodeGenerator_ESTest#getAttributeInfos().java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[32,9] cannot find symbol
+  symbol:   class TypeInfo
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[32,33] cannot find symbol
+  symbol:   class TypeInfo
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[34,14] cannot find symbol
+  symbol:   class AttributeInfo
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[38,9] cannot find symbol
+  symbol:   class AttributeInfo
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[38,35] cannot find symbol
+  symbol:   class AttributeInfo
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[42,14] cannot find symbol
+  symbol:   class AttributeInfo
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[45,9] cannot find symbol
+  symbol:   class TypeInfo
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[45,40] cannot find symbol
+  symbol:   class TypeInfo
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[46,14] cannot find symbol
+  symbol:   class AttributeInfo
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[50,37] cannot find symbol
+  symbol:   class AttributeInfo
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[INFO] 10 errors 
+####################
+
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java
+[GENERATED PATH] JsonReaderCodeGenerator_ESTest#getAttributeInfos().java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[35,9] cannot find symbol
+  symbol:   class TypeInfo
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[35,33] cannot find symbol
+  symbol:   class TypeInfo
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[37,14] cannot find symbol
+  symbol:   class AttributeInfo
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[41,9] cannot find symbol
+  symbol:   class AttributeInfo
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[41,35] cannot find symbol
+  symbol:   class AttributeInfo
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[45,14] cannot find symbol
+  symbol:   class AttributeInfo
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[48,9] cannot find symbol
+  symbol:   class TypeInfo
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[48,40] cannot find symbol
+  symbol:   class TypeInfo
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[49,14] cannot find symbol
+  symbol:   class AttributeInfo
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[53,37] cannot find symbol
+  symbol:   class AttributeInfo
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[INFO] 10 errors 
+####################
+
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java
+[GENERATED PATH] JsonReaderCodeGenerator_ESTest#getAttributeInfos().java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[35,34] cannot find symbol
+  symbol:   class AttributeInfo
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[36,13] cannot find symbol
+  symbol: variable attrInfos
+[INFO] 2 errors 
+####################
+
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java
+[GENERATED PATH] JsonReaderCodeGenerator_ESTest#getAttributeInfos().java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[38,9] cannot find symbol
+  symbol:   class TypeInfo
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[38,33] cannot find symbol
+  symbol:   class TypeInfo
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[39,14] cannot find symbol
+  symbol:   class AttributeInfo
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[42,42] incompatible types: boolean cannot be converted to java.lang.String
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[43,9] no suitable method found for assertEquals(int,int,java.lang.String)
+    method org.junit.Assert.assertEquals(java.lang.String,java.lang.Object[],java.lang.Object[]) is not applicable
+      (argument mismatch; int cannot be converted to java.lang.String)
+    method org.junit.Assert.assertEquals(float,float,float) is not applicable
+      (argument mismatch; java.lang.String cannot be converted to float)
+    method org.junit.Assert.assertEquals(double,double,double) is not applicable
+      (argument mismatch; java.lang.String cannot be converted to double)
+    method org.junit.Assert.assertEquals(java.lang.String,double,double) is not applicable
+      (argument mismatch; int cannot be converted to java.lang.String)
+    method org.junit.Assert.assertEquals(java.lang.String,long,long) is not applicable
+      (argument mismatch; int cannot be converted to java.lang.String)
+    method org.junit.Assert.assertEquals(java.lang.String,java.lang.Object,java.lang.Object) is not applicable
+      (argument mismatch; int cannot be converted to java.lang.String)
+[INFO] 5 errors 
+####################
+
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java
+[GENERATED PATH] JsonReaderCodeGenerator_ESTest#getAttributeInfos().java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[40,9] cannot find symbol
+  symbol:   variable typeInfo
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[40,24] cannot find symbol
+  symbol:   class TypeInfo
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[40,33] cannot find symbol
+  symbol:   variable testClass
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[INFO] 3 errors 
+####################
+
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java
+[GENERATED PATH] JsonReaderCodeGenerator_ESTest#getAttributeInfos().java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[9,26] package org.mockito does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[9,1] static import only from classes and interfaces
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[47,33] cannot find symbol
+  symbol:   method mock(java.lang.Class<com.zappos.json.ZapposJson>)
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_2_5/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/JsonReaderCodeGenerator_ESTest.java:[48,49] cannot find symbol
+  symbol:   method mock(java.lang.Class<com.zappos.json.JsonBeanIntrospector>)
+  location: class com.zappos.json.JsonReaderCodeGenerator_ESTest
+[INFO] 4 errors 
+####################
+

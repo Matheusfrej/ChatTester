@@ -1,0 +1,16 @@
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java
+[GENERATED PATH] TextChunk_ESTest#squeeze(Character c, int minRunLength).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[45,26] cannot find symbol
+  symbol:   method createDummyTextElement(java.lang.String)
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[50,26] cannot find symbol
+  symbol:   method createDummyTextElement(java.lang.String)
+  location: class technology.tabula.TextChunk_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[55,26] cannot find symbol
+  symbol:   method createDummyTextElement(java.lang.String)
+  location: class technology.tabula.TextChunk_ESTest
+[INFO] 3 errors 
+####################
+

@@ -1,0 +1,21 @@
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/format/JavaSqlDateFormatter_ESTest.java
+[GENERATED PATH] JavaSqlDateFormatter_ESTest#format(ZapposJson zapposJson, Date object).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/format/JavaSqlDateFormatter_ESTest.java:[9,26] package org.mockito does not exist
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/format/JavaSqlDateFormatter_ESTest.java:[29,33] cannot find symbol
+  symbol:   method mock(java.lang.Class<com.zappos.json.ZapposJson>)
+  location: class com.zappos.json.format.JavaSqlDateFormatter_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/format/JavaSqlDateFormatter_ESTest.java:[37,30] toJsonValue(com.zappos.json.ZapposJson,java.lang.String) in <anonymous com.zappos.json.format.JavaSqlDateFormatter_ESTest$1> cannot override toJsonValue(com.zappos.json.ZapposJson,java.lang.String) in com.zappos.json.format.AbstractValueFormatter
+  attempting to assign weaker access privileges; was public
+[INFO] 3 errors 
+####################
+
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/format/JavaSqlDateFormatter_ESTest.java
+[GENERATED PATH] JavaSqlDateFormatter_ESTest#format(ZapposJson zapposJson, Date object).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[39,16] class, interface, or enum expected
+[INFO] 1 error
+####################
+

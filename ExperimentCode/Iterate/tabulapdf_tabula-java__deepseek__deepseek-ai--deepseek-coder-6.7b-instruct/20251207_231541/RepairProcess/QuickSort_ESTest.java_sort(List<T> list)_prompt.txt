@@ -1,0 +1,39 @@
+0-->1-->0-->compileRepair
+
+# QuickSort class
+package technology.tabula;
+public  final class QuickSort {
+public static void sort(List<T> list);
+public static void sort(List<T> list, Comparator<? super T> comparator);
+}
+
+
+# Test Method
+    @Test
+    public void testSort() {
+        List<Integer> list = new ArrayList<>();
+        list.add(5);
+        list.add(2);
+        list.add(1);
+        list.add(4);
+        list.add(3);
+        QuickSort.sort(list);
+        assertEquals(1, (int) list.get(0));
+        assertEquals(2, (int) list.get(1));
+        assertEquals(3, (int) list.get(2));
+
+        <Buggy Line>: cannot find symbol method "listget(int)" in QuickSort_ESTest
+        assertEquals(4, (int) listget(3));
+
+        assertEquals(5, (int) list.get(4));
+    }
+
+
+# Instruction
+The test method has a bug error (marked <Buggy Line>). 
+Please fix the buggy line based on the given "QuickSort" class information (it is crucial) and return the complete and compilable test method after fix. 
+Note that the contents in  "QuickSort" class  cannot be modified.
+The generated code should be enclosed within ``` ```.
+
+########
+

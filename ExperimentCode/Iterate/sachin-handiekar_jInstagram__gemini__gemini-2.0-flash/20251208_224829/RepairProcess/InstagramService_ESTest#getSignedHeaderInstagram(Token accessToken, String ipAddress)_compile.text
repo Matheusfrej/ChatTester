@@ -1,0 +1,95 @@
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/auth/oauth/InstagramService_ESTest.java
+[GENERATED PATH] InstagramService_ESTest#getSignedHeaderInstagram(Token accessToken, String ipAddress).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/auth/InstagramAuthService_ESTest.java:[11,20] cannot find symbol
+  symbol:   class runtimeMockInetSocketAddress
+  location: package org.evosuite
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/auth/oauth/InstagramService_ESTest.java:[32,30] no suitable constructor found for OAuthConfig(java.lang.String,java.lang.String,java.lang.String)
+    constructor org.jinstagram.auth.model.OAuthConfig.OAuthConfig(java.lang.String,java.lang.String) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor org.jinstagram.auth.model.OAuthConfig.OAuthConfig(java.lang.String,java.lang.String,java.lang.String,java.lang.String) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor org.jinstagram.auth.model.OAuthConfig.OAuthConfig(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) is not applicable
+      (actual and formal argument lists differ in length)
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/auth/oauth/InstagramService_ESTest.java:[33,69] cannot find symbol
+  symbol:   method instance()
+  location: class org.jinstagram.auth.InstagramApi
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/auth/InstagramAuthService_ESTest.java:[31,58] cannot find symbol
+  symbol:   class InetSocketAddress
+  location: class org.jinstagram.auth.InstagramAuthService_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/auth/InstagramAuthService_ESTest.java:[40,57] requestProxy has private access in org.jinstagram.auth.InstagramAuthService
+[INFO] 5 errors 
+####################
+
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/auth/oauth/InstagramService_ESTest.java
+[GENERATED PATH] InstagramService_ESTest#getSignedHeaderInstagram(Token accessToken, String ipAddress).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/auth/oauth/InstagramService_ESTest.java:[37,69] cannot find symbol
+  symbol:   method instance()
+  location: class org.jinstagram.auth.InstagramApi
+[INFO] 1 error
+####################
+
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/auth/oauth/InstagramService_ESTest.java
+[GENERATED PATH] InstagramService_ESTest#getSignedHeaderInstagram(Token accessToken, String ipAddress).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/auth/oauth/InstagramService_ESTest.java:[7,27] cannot find symbol
+  symbol:   class InstagramService
+  location: package org.jinstagram.auth
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/auth/oauth/InstagramService_ESTest.java:[8,27] cannot find symbol
+  symbol:   class OAuthConfig
+  location: package org.jinstagram.auth
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/auth/oauth/InstagramService_ESTest.java:[9,27] cannot find symbol
+  symbol:   class Token
+  location: package org.jinstagram.auth
+[INFO] 3 errors 
+####################
+
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/auth/oauth/InstagramService_ESTest.java
+[GENERATED PATH] InstagramService_ESTest#getSignedHeaderInstagram(Token accessToken, String ipAddress).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/auth/oauth/InstagramService_ESTest.java:[8,27] cannot find symbol
+  symbol:   class InstagramService
+  location: package org.jinstagram.auth
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/auth/oauth/InstagramService_ESTest.java:[9,27] cannot find symbol
+  symbol:   class OAuthConfig
+  location: package org.jinstagram.auth
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/auth/oauth/InstagramService_ESTest.java:[10,27] cannot find symbol
+  symbol:   class Token
+  location: package org.jinstagram.auth
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/auth/oauth/InstagramService_ESTest.java:[43,9] cannot find symbol
+  symbol:   method when(java.lang.String)
+  location: class org.jinstagram.auth.oauth.InstagramService_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/auth/oauth/InstagramService_ESTest.java:[53,23] incompatible types: org.jinstagram.Instagram cannot be converted to java.lang.String
+[INFO] 5 errors 
+####################
+
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/auth/oauth/InstagramService_ESTest.java
+[GENERATED PATH] InstagramService_ESTest#getSignedHeaderInstagram(Token accessToken, String ipAddress).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/auth/oauth/InstagramService_ESTest.java:[9,27] cannot find symbol
+  symbol:   class InstagramService
+  location: package org.jinstagram.auth
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/auth/oauth/InstagramService_ESTest.java:[10,27] cannot find symbol
+  symbol:   class OAuthConfig
+  location: package org.jinstagram.auth
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/auth/oauth/InstagramService_ESTest.java:[11,27] cannot find symbol
+  symbol:   class Token
+  location: package org.jinstagram.auth
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/auth/oauth/InstagramService_ESTest.java:[47,9] cannot find symbol
+  symbol:   method when(java.lang.String)
+  location: class org.jinstagram.auth.oauth.InstagramService_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/auth/oauth/InstagramService_ESTest.java:[48,9] cannot find symbol
+  symbol:   method when(java.lang.String)
+  location: class org.jinstagram.auth.oauth.InstagramService_ESTest
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/sachin-handiekar_jInstagram/src/test/java/org/jinstagram/auth/oauth/InstagramService_ESTest.java:[54,9] cannot find symbol
+  symbol:   class InstagramClient
+  location: class org.jinstagram.auth.oauth.InstagramService_ESTest
+[INFO] 6 errors 
+####################
+

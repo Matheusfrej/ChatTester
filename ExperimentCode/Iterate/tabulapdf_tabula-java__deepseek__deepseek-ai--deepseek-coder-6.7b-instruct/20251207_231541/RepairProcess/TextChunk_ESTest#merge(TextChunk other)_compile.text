@@ -1,0 +1,178 @@
+original test path: /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java
+[GENERATED PATH] TextChunk_ESTest#merge(TextChunk other).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[33,36] no suitable constructor found for TextElement(int,int,int,int,java.lang.String)
+    constructor technology.tabula.TextElement.TextElement(float,float,float,float,org.apache.pdfbox.pdmodel.font.PDFont,float,java.lang.String,float) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor technology.tabula.TextElement.TextElement(float,float,float,float,org.apache.pdfbox.pdmodel.font.PDFont,float,java.lang.String,float,float) is not applicable
+      (actual and formal argument lists differ in length)
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[34,36] no suitable constructor found for TextElement(int,int,int,int,java.lang.String)
+    constructor technology.tabula.TextElement.TextElement(float,float,float,float,org.apache.pdfbox.pdmodel.font.PDFont,float,java.lang.String,float) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor technology.tabula.TextElement.TextElement(float,float,float,float,org.apache.pdfbox.pdmodel.font.PDFont,float,java.lang.String,float,float) is not applicable
+      (actual and formal argument lists differ in length)
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[47,26] no suitable constructor found for TextElement(int,int,int,int,java.lang.String)
+    constructor technology.tabula.TextElement.TextElement(float,float,float,float,org.apache.pdfbox.pdmodel.font.PDFont,float,java.lang.String,float) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor technology.tabula.TextElement.TextElement(float,float,float,float,org.apache.pdfbox.pdmodel.font.PDFont,float,java.lang.String,float,float) is not applicable
+      (actual and formal argument lists differ in length)
+[INFO] 3 errors 
+####################
+
+original test path: /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java
+[GENERATED PATH] TextChunk_ESTest#merge(TextChunk other).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[12,21] cannot find symbol
+  symbol:   class CohenSutherlandClipping
+  location: package java.awt.geom
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[35,32] no suitable constructor found for TextElement(int,int,int,int,java.lang.String)
+    constructor technology.tabula.TextElement.TextElement(float,float,float,float,org.apache.pdfbox.pdmodel.font.PDFont,float,java.lang.String,float) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor technology.tabula.TextElement.TextElement(float,float,float,float,org.apache.pdfbox.pdmodel.font.PDFont,float,java.lang.String,float,float) is not applicable
+      (actual and formal argument lists differ in length)
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[37,32] no suitable constructor found for TextElement(int,int,int,int,java.lang.String)
+    constructor technology.tabula.TextElement.TextElement(float,float,float,float,org.apache.pdfbox.pdmodel.font.PDFont,float,java.lang.String,float) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor technology.tabula.TextElement.TextElement(float,float,float,float,org.apache.pdfbox.pdmodel.font.PDFont,float,java.lang.String,float,float) is not applicable
+      (actual and formal argument lists differ in length)
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[44,22] no suitable constructor found for TextElement(int,int,int,int,java.lang.String)
+    constructor technology.tabula.TextElement.TextElement(float,float,float,float,org.apache.pdfbox.pdmodel.font.PDFont,float,java.lang.String,float) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor technology.tabula.TextElement.TextElement(float,float,float,float,org.apache.pdfbox.pdmodel.font.PDFont,float,java.lang.String,float,float) is not applicable
+      (actual and formal argument lists differ in length)
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Cell_ESTest.java:[44,25] no suitable constructor found for TextChunk(java.lang.String,int,int,int,int)
+    constructor technology.tabula.TextChunk.TextChunk(float,float,float,float) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor technology.tabula.TextChunk.TextChunk(technology.tabula.TextElement) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor technology.tabula.TextChunk.TextChunk(java.util.List<technology.tabula.TextElement>) is not applicable
+      (actual and formal argument lists differ in length)
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Cell_ESTest.java:[45,25] no suitable constructor found for TextChunk(java.lang.String,int,int,int,int)
+    constructor technology.tabula.TextChunk.TextChunk(float,float,float,float) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor technology.tabula.TextChunk.TextChunk(technology.tabula.TextElement) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor technology.tabula.TextChunk.TextChunk(java.util.List<technology.tabula.TextElement>) is not applicable
+      (actual and formal argument lists differ in length)
+[INFO] 6 errors 
+####################
+
+original test path: /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java
+[GENERATED PATH] TextChunk_ESTest#merge(TextChunk other).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[12,21] cannot find symbol
+  symbol:   class CohenSutherlandClipping
+  location: package java.awt.geom
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[37,32] no suitable constructor found for TextElement(int,int,int,int,java.lang.String)
+    constructor technology.tabula.TextElement.TextElement(float,float,float,float,org.apache.pdfbox.pdmodel.font.PDFont,float,java.lang.String,float) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor technology.tabula.TextElement.TextElement(float,float,float,float,org.apache.pdfbox.pdmodel.font.PDFont,float,java.lang.String,float,float) is not applicable
+      (actual and formal argument lists differ in length)
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[38,32] no suitable constructor found for TextElement(int,int,int,int,java.lang.String)
+    constructor technology.tabula.TextElement.TextElement(float,float,float,float,org.apache.pdfbox.pdmodel.font.PDFont,float,java.lang.String,float) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor technology.tabula.TextElement.TextElement(float,float,float,float,org.apache.pdfbox.pdmodel.font.PDFont,float,java.lang.String,float,float) is not applicable
+      (actual and formal argument lists differ in length)
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[45,22] no suitable constructor found for TextElement(int,int,int,int,java.lang.String)
+    constructor technology.tabula.TextElement.TextElement(float,float,float,float,org.apache.pdfbox.pdmodel.font.PDFont,float,java.lang.String,float) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor technology.tabula.TextElement.TextElement(float,float,float,float,org.apache.pdfbox.pdmodel.font.PDFont,float,java.lang.String,float,float) is not applicable
+      (actual and formal argument lists differ in length)
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Cell_ESTest.java:[44,25] no suitable constructor found for TextChunk(java.lang.String,int,int,int,int)
+    constructor technology.tabula.TextChunk.TextChunk(float,float,float,float) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor technology.tabula.TextChunk.TextChunk(technology.tabula.TextElement) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor technology.tabula.TextChunk.TextChunk(java.util.List<technology.tabula.TextElement>) is not applicable
+      (actual and formal argument lists differ in length)
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Cell_ESTest.java:[45,25] no suitable constructor found for TextChunk(java.lang.String,int,int,int,int)
+    constructor technology.tabula.TextChunk.TextChunk(float,float,float,float) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor technology.tabula.TextChunk.TextChunk(technology.tabula.TextElement) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor technology.tabula.TextChunk.TextChunk(java.util.List<technology.tabula.TextElement>) is not applicable
+      (actual and formal argument lists differ in length)
+[INFO] 6 errors 
+####################
+
+original test path: /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java
+[GENERATED PATH] TextChunk_ESTest#merge(TextChunk other).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[12,21] cannot find symbol
+  symbol:   class CohenSutherlandClipping
+  location: package java.awt.geom
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[41,36] no suitable constructor found for TextElement(int,int,int,int)
+    constructor technology.tabula.TextElement.TextElement(float,float,float,float,org.apache.pdfbox.pdmodel.font.PDFont,float,java.lang.String,float) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor technology.tabula.TextElement.TextElement(float,float,float,float,org.apache.pdfbox.pdmodel.font.PDFont,float,java.lang.String,float,float) is not applicable
+      (actual and formal argument lists differ in length)
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[44,17] no suitable constructor found for TextElement(int,int,int,int)
+    constructor technology.tabula.TextElement.TextElement(float,float,float,float,org.apache.pdfbox.pdmodel.font.PDFont,float,java.lang.String,float) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor technology.tabula.TextElement.TextElement(float,float,float,float,org.apache.pdfbox.pdmodel.font.PDFont,float,java.lang.String,float,float) is not applicable
+      (actual and formal argument lists differ in length)
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[45,17] no suitable constructor found for TextElement(int,int,int,int)
+    constructor technology.tabula.TextElement.TextElement(float,float,float,float,org.apache.pdfbox.pdmodel.font.PDFont,float,java.lang.String,float) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor technology.tabula.TextElement.TextElement(float,float,float,float,org.apache.pdfbox.pdmodel.font.PDFont,float,java.lang.String,float,float) is not applicable
+      (actual and formal argument lists differ in length)
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Cell_ESTest.java:[44,25] no suitable constructor found for TextChunk(java.lang.String,int,int,int,int)
+    constructor technology.tabula.TextChunk.TextChunk(float,float,float,float) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor technology.tabula.TextChunk.TextChunk(technology.tabula.TextElement) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor technology.tabula.TextChunk.TextChunk(java.util.List<technology.tabula.TextElement>) is not applicable
+      (actual and formal argument lists differ in length)
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Cell_ESTest.java:[45,25] no suitable constructor found for TextChunk(java.lang.String,int,int,int,int)
+    constructor technology.tabula.TextChunk.TextChunk(float,float,float,float) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor technology.tabula.TextChunk.TextChunk(technology.tabula.TextElement) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor technology.tabula.TextChunk.TextChunk(java.util.List<technology.tabula.TextElement>) is not applicable
+      (actual and formal argument lists differ in length)
+[INFO] 6 errors 
+####################
+
+original test path: /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java
+[GENERATED PATH] TextChunk_ESTest#merge(TextChunk other).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/CohenSutherlandClipping_ESTest.java:[12,21] cannot find symbol
+  symbol:   class CohenSutherlandClipping
+  location: package java.awt.geom
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[43,36] no suitable constructor found for TextElement(int,int,int,int)
+    constructor technology.tabula.TextElement.TextElement(float,float,float,float,org.apache.pdfbox.pdmodel.font.PDFont,float,java.lang.String,float) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor technology.tabula.TextElement.TextElement(float,float,float,float,org.apache.pdfbox.pdmodel.font.PDFont,float,java.lang.String,float,float) is not applicable
+      (actual and formal argument lists differ in length)
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[46,17] no suitable constructor found for TextElement(int,int,int,int)
+    constructor technology.tabula.TextElement.TextElement(float,float,float,float,org.apache.pdfbox.pdmodel.font.PDFont,float,java.lang.String,float) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor technology.tabula.TextElement.TextElement(float,float,float,float,org.apache.pdfbox.pdmodel.font.PDFont,float,java.lang.String,float,float) is not applicable
+      (actual and formal argument lists differ in length)
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/TextChunk_ESTest.java:[47,17] no suitable constructor found for TextElement(int,int,int,int)
+    constructor technology.tabula.TextElement.TextElement(float,float,float,float,org.apache.pdfbox.pdmodel.font.PDFont,float,java.lang.String,float) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor technology.tabula.TextElement.TextElement(float,float,float,float,org.apache.pdfbox.pdmodel.font.PDFont,float,java.lang.String,float,float) is not applicable
+      (actual and formal argument lists differ in length)
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Cell_ESTest.java:[44,25] no suitable constructor found for TextChunk(java.lang.String,int,int,int,int)
+    constructor technology.tabula.TextChunk.TextChunk(float,float,float,float) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor technology.tabula.TextChunk.TextChunk(technology.tabula.TextElement) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor technology.tabula.TextChunk.TextChunk(java.util.List<technology.tabula.TextElement>) is not applicable
+      (actual and formal argument lists differ in length)
+[ERROR] /home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Cell_ESTest.java:[45,25] no suitable constructor found for TextChunk(java.lang.String,int,int,int,int)
+    constructor technology.tabula.TextChunk.TextChunk(float,float,float,float) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor technology.tabula.TextChunk.TextChunk(technology.tabula.TextElement) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor technology.tabula.TextChunk.TextChunk(java.util.List<technology.tabula.TextElement>) is not applicable
+      (actual and formal argument lists differ in length)
+[INFO] 6 errors 
+####################
+

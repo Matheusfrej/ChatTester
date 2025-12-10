@@ -1,0 +1,51 @@
+[
+  {
+    "original_path": "/home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Cell_ESTest.java",
+    "generated_path": "/home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/ExperimentCode/IterateResultDeal/tabulapdf_tabula-java__deepseek__deepseek-ai--deepseek-coder-6.7b-instruct/20251207_231541/GeneratedTest/Cell_ESTest#isSpanning().java",
+    "IterateTimes": 0,
+    "Compile_result": 1,
+    "Test_result": 1
+  },
+  {
+    "original_path": "/home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Cell_ESTest.java",
+    "generated_path": "/home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/ExperimentCode/IterateResultDeal/tabulapdf_tabula-java__deepseek__deepseek-ai--deepseek-coder-6.7b-instruct/20251207_231541/GeneratedTest/Cell_ESTest#setSpanning(boolean spanning).java",
+    "IterateTimes": 0,
+    "Compile_result": 1,
+    "Test_result": 1
+  },
+  {
+    "original_path": "/home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Cell_ESTest.java",
+    "generated_path": "/home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/ExperimentCode/IterateResultDeal/tabulapdf_tabula-java__deepseek__deepseek-ai--deepseek-coder-6.7b-instruct/20251207_231541/GeneratedTest/Cell_ESTest#getText().java",
+    "IterateTimes": 0,
+    "Compile_result": 1,
+    "Test_result": 1
+  },
+  {
+    "original_path": "/home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Cell_ESTest.java",
+    "generated_path": "/home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/ExperimentCode/IterateResultDeal/tabulapdf_tabula-java__deepseek__deepseek-ai--deepseek-coder-6.7b-instruct/20251207_231541/GeneratedTest/Cell_ESTest#isPlaceholder().java",
+    "IterateTimes": 0,
+    "Compile_result": 1,
+    "Test_result": 1
+  },
+  {
+    "original_path": "/home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Cell_ESTest.java",
+    "generated_path": "/home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/ExperimentCode/IterateResultDeal/tabulapdf_tabula-java__deepseek__deepseek-ai--deepseek-coder-6.7b-instruct/20251207_231541/GeneratedTest/Cell_ESTest#setPlaceholder(boolean placeholder).java",
+    "IterateTimes": 0,
+    "Compile_result": 1,
+    "Test_result": 1
+  },
+  {
+    "original_path": "/home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/Table_ESTest.java",
+    "generated_path": "/home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/ExperimentCode/IterateResultDeal/tabulapdf_tabula-java__deepseek__deepseek-ai--deepseek-coder-6.7b-instruct/20251207_231541/GeneratedTest/Table_ESTest#empty().java",
+    "IterateTimes": 0,
+    "Compile_result": 1,
+    "Test_result": 1
+  },
+  {
+    "original_path": "/home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/Repos/tabulapdf_tabula-java/src/test/java/technology/tabula/QuickSort_ESTest.java",
+    "generated_path": "/home/mathe/mestrado/merge_and_code_review/projeto/ChatTester/ExperimentCode/IterateResultDeal/tabulapdf_tabula-java__deepseek__deepseek-ai--deepseek-coder-6.7b-instruct/20251207_231541/GeneratedTest/QuickSort_ESTest#sort(List<T> list, Comparator<? super T> comparator).java",
+    "IterateTimes": 0,
+    "Compile_result": 1,
+    "Test_result": 1
+  }
+]

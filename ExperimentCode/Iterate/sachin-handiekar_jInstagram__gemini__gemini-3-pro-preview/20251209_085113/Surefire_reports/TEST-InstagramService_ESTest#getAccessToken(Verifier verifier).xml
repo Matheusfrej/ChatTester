@@ -1,0 +1,748 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="org.jinstagram.auth.oauth.InstagramService_ESTest" time="0.475" tests="1" errors="1" skipped="0" failures="0">
+  <properties>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/Repos/sachin-handiekar_jInstagram/target/test-classes:/home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/Repos/sachin-handiekar_jInstagram/target/classes:/home/hsc/.m2/repository/com/google/code/gson/gson/2.7/gson-2.7.jar:/home/hsc/.m2/repository/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.jar:/home/hsc/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar:/home/hsc/.m2/repository/org/slf4j/slf4j-api/1.7.21/slf4j-api-1.7.21.jar:/home/hsc/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/hsc/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/hsc/.m2/repository/org/mockito/mockito-core/1.10.19/mockito-core-1.10.19.jar:/home/hsc/.m2/repository/org/objenesis/objenesis/2.1/objenesis-2.1.jar:/home/hsc/.m2/repository/ch/qos/logback/logback-classic/1.1.7/logback-classic-1.1.7.jar:/home/hsc/.m2/repository/ch/qos/logback/logback-core/1.1.7/logback-core-1.1.7.jar:/home/hsc/.m2/repository/org/powermock/powermock-api-mockito/1.6.6/powermock-api-mockito-1.6.6.jar:/home/hsc/.m2/repository/org/powermock/powermock-api-mockito-common/1.6.6/powermock-api-mockito-common-1.6.6.jar:/home/hsc/.m2/repository/org/powermock/powermock-api-support/1.6.6/powermock-api-support-1.6.6.jar:/home/hsc/.m2/repository/org/powermock/powermock-module-junit4/1.6.6/powermock-module-junit4-1.6.6.jar:/home/hsc/.m2/repository/org/powermock/powermock-module-junit4-common/1.6.6/powermock-module-junit4-common-1.6.6.jar:/home/hsc/.m2/repository/org/powermock/powermock-core/1.6.6/powermock-core-1.6.6.jar:/home/hsc/.m2/repository/org/javassist/javassist/3.21.0-GA/javassist-3.21.0-GA.jar:/home/hsc/.m2/repository/org/powermock/powermock-reflect/1.6.6/powermock-reflect-1.6.6.jar:/home/hsc/.m2/repository/org/evosuite/evosuite-standalone-runtime/1.0.6/evosuite-standalone-runtime-1.0.6.jar:/home/hsc/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.9.0/junit-jupiter-api-5.9.0.jar:/home/hsc/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/hsc/.m2/repository/org/junit/platform/junit-platform-commons/1.9.0/junit-platform-commons-1.9.0.jar:/home/hsc/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value="America/Recife"/>
+    <property name="maven.wagon.http.ssl.ignore.validity.dates" value="true"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Linux"/>
+    <property name="maven.wagon.http.ssl.allowall" value="true"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="/usr/java/jdk1.8.0_131/jre/lib/amd64"/>
+    <property name="sun.java.command" value="/home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/Repos/sachin-handiekar_jInstagram/target/surefire/surefirebooter-20251209162739155_3.jar /home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/Repos/sachin-handiekar_jInstagram/target/surefire 2025-12-09T16-27-38_975-jvmRun1 surefire-20251209162739155_1tmp surefire_0-20251209162739155_2tmp"/>
+    <property name="surefire.test.class.path" value="/home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/Repos/sachin-handiekar_jInstagram/target/test-classes:/home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/Repos/sachin-handiekar_jInstagram/target/classes:/home/hsc/.m2/repository/com/google/code/gson/gson/2.7/gson-2.7.jar:/home/hsc/.m2/repository/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.jar:/home/hsc/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar:/home/hsc/.m2/repository/org/slf4j/slf4j-api/1.7.21/slf4j-api-1.7.21.jar:/home/hsc/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/hsc/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/hsc/.m2/repository/org/mockito/mockito-core/1.10.19/mockito-core-1.10.19.jar:/home/hsc/.m2/repository/org/objenesis/objenesis/2.1/objenesis-2.1.jar:/home/hsc/.m2/repository/ch/qos/logback/logback-classic/1.1.7/logback-classic-1.1.7.jar:/home/hsc/.m2/repository/ch/qos/logback/logback-core/1.1.7/logback-core-1.1.7.jar:/home/hsc/.m2/repository/org/powermock/powermock-api-mockito/1.6.6/powermock-api-mockito-1.6.6.jar:/home/hsc/.m2/repository/org/powermock/powermock-api-mockito-common/1.6.6/powermock-api-mockito-common-1.6.6.jar:/home/hsc/.m2/repository/org/powermock/powermock-api-support/1.6.6/powermock-api-support-1.6.6.jar:/home/hsc/.m2/repository/org/powermock/powermock-module-junit4/1.6.6/powermock-module-junit4-1.6.6.jar:/home/hsc/.m2/repository/org/powermock/powermock-module-junit4-common/1.6.6/powermock-module-junit4-common-1.6.6.jar:/home/hsc/.m2/repository/org/powermock/powermock-core/1.6.6/powermock-core-1.6.6.jar:/home/hsc/.m2/repository/org/javassist/javassist/3.21.0-GA/javassist-3.21.0-GA.jar:/home/hsc/.m2/repository/org/powermock/powermock-reflect/1.6.6/powermock-reflect-1.6.6.jar:/home/hsc/.m2/repository/org/evosuite/evosuite-standalone-runtime/1.0.6/evosuite-standalone-runtime-1.0.6.jar:/home/hsc/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.9.0/junit-jupiter-api-5.9.0.jar:/home/hsc/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/hsc/.m2/repository/org/junit/platform/junit-platform-commons/1.9.0/junit-platform-commons-1.9.0.jar:/home/hsc/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="maven.wagon.http.ssl.insecure" value="true"/>
+    <property name="user.home" value="/home/hsc"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="/usr/java/jdk1.8.0_131/jre"/>
+    <property name="basedir" value="/home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/Repos/sachin-handiekar_jInstagram"/>
+    <property name="style.color" value="never"/>
+    <property name="file.separator" value="/"/>
+    <property name="checkstyle.skip" value="true"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/Repos/sachin-handiekar_jInstagram/target/surefire/surefirebooter-20251209162739155_3.jar"/>
+    <property name="sun.boot.class.path" value="/usr/java/jdk1.8.0_131/jre/lib/resources.jar:/usr/java/jdk1.8.0_131/jre/lib/rt.jar:/usr/java/jdk1.8.0_131/jre/lib/sunrsasign.jar:/usr/java/jdk1.8.0_131/jre/lib/jsse.jar:/usr/java/jdk1.8.0_131/jre/lib/jce.jar:/usr/java/jdk1.8.0_131/jre/lib/charsets.jar:/usr/java/jdk1.8.0_131/jre/lib/jfr.jar:/usr/java/jdk1.8.0_131/jre/classes"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_131-b11"/>
+    <property name="user.name" value="hsc"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="6.15.9-101.fc41.x86_64"/>
+    <property name="java.endorsed.dirs" value="/usr/java/jdk1.8.0_131/jre/lib/endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="/home/hsc/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="1.8.0_131"/>
+    <property name="user.dir" value="/home/hsc/Documents/Masters/TAES1/ChatTester_gemini_3/Repos/sachin-handiekar_jInstagram"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.131-b11"/>
+    <property name="java.ext.dirs" value="/usr/java/jdk1.8.0_131/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="setUp" classname="org.jinstagram.auth.oauth.InstagramService_ESTest" time="0.185">
+    <error type="java.lang.ExceptionInInitializerError"><![CDATA[java.lang.ExceptionInInitializerError
+	at org.mockito.internal.exceptions.stacktrace.ConditionalStackTraceFilter.<init>(ConditionalStackTraceFilter.java:17)
+	at org.mockito.exceptions.base.MockitoException.filterStackTrace(MockitoException.java:41)
+	at org.mockito.exceptions.base.MockitoException.<init>(MockitoException.java:30)
+	at org.mockito.exceptions.misusing.MockitoConfigurationException.<init>(MockitoConfigurationException.java:18)
+	at org.mockito.internal.configuration.plugins.PluginLoader.loadImpl(PluginLoader.java:66)
+	at org.mockito.internal.configuration.plugins.PluginLoader.loadPlugin(PluginLoader.java:24)
+	at org.mockito.internal.configuration.plugins.PluginRegistry.<init>(PluginRegistry.java:12)
+	at org.mockito.internal.configuration.plugins.Plugins.<clinit>(Plugins.java)
+	at org.mockito.internal.util.MockUtil.<clinit>(MockUtil.java)
+	at org.mockito.internal.MockitoCore.<init>(MockitoCore.java:44)
+	at org.mockito.Mockito.<clinit>(Mockito.java)
+	at org.jinstagram.auth.oauth.InstagramService_ESTest.setUp(InstagramService_ESTest.java:43)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.evosuite.runtime.vnet.NonFunctionalRequirementRule$1.evaluate(NonFunctionalRequirementRule.java:41)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at org.junit.vintage.engine.execution.RunnerExecutor.execute(RunnerExecutor.java:42)
+	at org.junit.vintage.engine.VintageTestEngine.executeAllChildren(VintageTestEngine.java:80)
+	at org.junit.vintage.engine.VintageTestEngine.execute(VintageTestEngine.java:72)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:147)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:127)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:90)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:55)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:102)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: java.lang.NullPointerException
+	at org.mockito.internal.configuration.plugins.Plugins.getStackTraceCleanerProvider(Plugins.java:17)
+	at org.mockito.internal.exceptions.stacktrace.StackTraceFilter.<clinit>(StackTraceFilter.java)
+	... 57 more
+]]></error>
+    <system-out><![CDATA[16:27:39.818 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.jinstagram.auth.oauth.InstagramService_ESTest
+16:27:39.822 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.jinstagram.auth.oauth.InstagramService_ESTest'.
+16:27:39.858 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.jinstagram.auth.oauth.InstagramService_ESTest_scaffolding
+16:27:39.858 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.jinstagram.auth.oauth.InstagramService_ESTest_scaffolding'.
+16:27:39.863 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.jinstagram.auth.oauth.InstagramService_ESTest_scaffolding
+16:27:39.863 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.jinstagram.auth.oauth.InstagramService_ESTest
+16:27:39.933 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.jinstagram.auth.model.OAuthConfig_ESTest
+16:27:39.933 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.jinstagram.auth.model.OAuthConfig_ESTest'.
+16:27:39.938 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jinstagram/auth/model/OAuthConfig_ESTest
+16:27:40.097 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/jinstagram/auth/model/OAuthConfig_ESTest
+16:27:40.097 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.jinstagram.auth.model.OAuthConfig_ESTest_scaffolding
+16:27:40.097 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.jinstagram.auth.model.OAuthConfig_ESTest_scaffolding'.
+16:27:40.098 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jinstagram/auth/model/OAuthConfig_ESTest_scaffolding
+16:27:40.101 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Found static initializer in class org/jinstagram/auth/model/OAuthConfig_ESTest_scaffolding
+16:27:40.103 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.jinstagram.auth.model.OAuthConfig_ESTest_scaffolding
+16:27:40.103 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.jinstagram.auth.model.OAuthConfig_ESTest
+16:27:40.106 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.jinstagram.auth.model.OAuthConfig_ESTest
+16:27:40.106 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.jinstagram.auth.model.OAuthConfig_ESTest'.
+16:27:40.107 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.jinstagram.auth.model.OAuthConfig_ESTest_scaffolding
+16:27:40.107 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.jinstagram.auth.model.OAuthConfig_ESTest_scaffolding'.
+16:27:40.109 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.jinstagram.auth.model.OAuthConfig_ESTest_scaffolding
+16:27:40.110 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.jinstagram.auth.model.OAuthConfig_ESTest
+16:27:40.114 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.jinstagram.auth.InstagramAuthService_ESTest
+16:27:40.114 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.jinstagram.auth.InstagramAuthService_ESTest'.
+16:27:40.115 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jinstagram/auth/InstagramAuthService_ESTest
+16:27:40.116 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/jinstagram/auth/InstagramAuthService_ESTest
+16:27:40.116 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.jinstagram.auth.InstagramAuthService_ESTest_scaffolding
+16:27:40.116 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.jinstagram.auth.InstagramAuthService_ESTest_scaffolding'.
+16:27:40.117 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jinstagram/auth/InstagramAuthService_ESTest_scaffolding
+16:27:40.119 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Found static initializer in class org/jinstagram/auth/InstagramAuthService_ESTest_scaffolding
+16:27:40.120 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.jinstagram.auth.InstagramAuthService_ESTest_scaffolding
+16:27:40.120 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.jinstagram.auth.InstagramAuthService_ESTest
+16:27:40.122 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.jinstagram.auth.InstagramAuthService_ESTest
+16:27:40.122 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.jinstagram.auth.InstagramAuthService_ESTest'.
+16:27:40.123 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.jinstagram.auth.InstagramAuthService_ESTest_scaffolding
+16:27:40.123 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.jinstagram.auth.InstagramAuthService_ESTest_scaffolding'.
+16:27:40.125 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.jinstagram.auth.InstagramAuthService_ESTest_scaffolding
+16:27:40.125 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.jinstagram.auth.InstagramAuthService_ESTest
+16:27:40.129 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.jinstagram.entity.comments.MediaCommentsFeed_ESTest
+16:27:40.129 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.jinstagram.entity.comments.MediaCommentsFeed_ESTest'.
+16:27:40.129 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jinstagram/entity/comments/MediaCommentsFeed_ESTest
+16:27:40.130 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/jinstagram/entity/comments/MediaCommentsFeed_ESTest
+16:27:40.130 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.jinstagram.entity.comments.MediaCommentsFeed_ESTest_scaffolding
+16:27:40.130 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.jinstagram.entity.comments.MediaCommentsFeed_ESTest_scaffolding'.
+16:27:40.131 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jinstagram/entity/comments/MediaCommentsFeed_ESTest_scaffolding
+16:27:40.133 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Found static initializer in class org/jinstagram/entity/comments/MediaCommentsFeed_ESTest_scaffolding
+16:27:40.133 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.jinstagram.entity.comments.MediaCommentsFeed_ESTest_scaffolding
+16:27:40.133 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.jinstagram.entity.comments.MediaCommentsFeed_ESTest
+16:27:40.135 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.jinstagram.entity.comments.MediaCommentsFeed_ESTest
+16:27:40.135 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.jinstagram.entity.comments.MediaCommentsFeed_ESTest'.
+16:27:40.136 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.jinstagram.entity.comments.MediaCommentsFeed_ESTest_scaffolding
+16:27:40.136 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.jinstagram.entity.comments.MediaCommentsFeed_ESTest_scaffolding'.
+16:27:40.138 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.jinstagram.entity.comments.MediaCommentsFeed_ESTest_scaffolding
+16:27:40.138 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.jinstagram.entity.comments.MediaCommentsFeed_ESTest
+16:27:40.143 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.jinstagram.entity.oembed.OembedInformation_ESTest
+16:27:40.144 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.jinstagram.entity.oembed.OembedInformation_ESTest'.
+16:27:40.144 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jinstagram/entity/oembed/OembedInformation_ESTest
+16:27:40.145 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/jinstagram/entity/oembed/OembedInformation_ESTest
+16:27:40.146 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.jinstagram.entity.oembed.OembedInformation_ESTest_scaffolding
+16:27:40.146 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.jinstagram.entity.oembed.OembedInformation_ESTest_scaffolding'.
+16:27:40.146 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jinstagram/entity/oembed/OembedInformation_ESTest_scaffolding
+16:27:40.148 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Found static initializer in class org/jinstagram/entity/oembed/OembedInformation_ESTest_scaffolding
+16:27:40.148 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.jinstagram.entity.oembed.OembedInformation_ESTest_scaffolding
+16:27:40.148 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.jinstagram.entity.oembed.OembedInformation_ESTest
+16:27:40.150 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.jinstagram.entity.oembed.OembedInformation_ESTest
+16:27:40.150 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.jinstagram.entity.oembed.OembedInformation_ESTest'.
+16:27:40.151 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.jinstagram.entity.oembed.OembedInformation_ESTest_scaffolding
+16:27:40.151 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.jinstagram.entity.oembed.OembedInformation_ESTest_scaffolding'.
+16:27:40.153 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.jinstagram.entity.oembed.OembedInformation_ESTest_scaffolding
+16:27:40.153 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.jinstagram.entity.oembed.OembedInformation_ESTest
+16:27:40.159 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.jinstagram.auth.oauth.InstagramService_ESTest
+16:27:40.159 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.jinstagram.auth.oauth.InstagramService_ESTest'.
+16:27:40.160 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jinstagram/auth/oauth/InstagramService_ESTest
+16:27:40.161 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/jinstagram/auth/oauth/InstagramService_ESTest
+16:27:40.161 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.jinstagram.auth.oauth.InstagramService_ESTest_scaffolding
+16:27:40.161 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.jinstagram.auth.oauth.InstagramService_ESTest_scaffolding'.
+16:27:40.162 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jinstagram/auth/oauth/InstagramService_ESTest_scaffolding
+16:27:40.163 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Found static initializer in class org/jinstagram/auth/oauth/InstagramService_ESTest_scaffolding
+16:27:40.164 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.jinstagram.auth.oauth.InstagramService_ESTest_scaffolding
+16:27:40.164 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.jinstagram.auth.oauth.InstagramService_ESTest
+16:27:40.166 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.jinstagram.auth.model.OAuthConfig_ESTest
+16:27:40.166 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.jinstagram.auth.model.OAuthConfig_ESTest'.
+16:27:40.167 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jinstagram/auth/model/OAuthConfig_ESTest
+16:27:40.168 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/jinstagram/auth/model/OAuthConfig_ESTest
+16:27:40.168 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.jinstagram.auth.model.OAuthConfig_ESTest_scaffolding
+16:27:40.168 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.jinstagram.auth.model.OAuthConfig_ESTest_scaffolding'.
+16:27:40.169 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jinstagram/auth/model/OAuthConfig_ESTest_scaffolding
+16:27:40.171 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Found static initializer in class org/jinstagram/auth/model/OAuthConfig_ESTest_scaffolding
+16:27:40.171 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.jinstagram.auth.model.OAuthConfig_ESTest_scaffolding
+16:27:40.172 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.jinstagram.auth.model.OAuthConfig_ESTest
+16:27:40.173 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.jinstagram.auth.InstagramAuthService_ESTest
+16:27:40.174 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.jinstagram.auth.InstagramAuthService_ESTest'.
+16:27:40.174 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jinstagram/auth/InstagramAuthService_ESTest
+16:27:40.175 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/jinstagram/auth/InstagramAuthService_ESTest
+16:27:40.175 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.jinstagram.auth.InstagramAuthService_ESTest_scaffolding
+16:27:40.176 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.jinstagram.auth.InstagramAuthService_ESTest_scaffolding'.
+16:27:40.176 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jinstagram/auth/InstagramAuthService_ESTest_scaffolding
+16:27:40.178 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Found static initializer in class org/jinstagram/auth/InstagramAuthService_ESTest_scaffolding
+16:27:40.179 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.jinstagram.auth.InstagramAuthService_ESTest_scaffolding
+16:27:40.179 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.jinstagram.auth.InstagramAuthService_ESTest
+16:27:40.181 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.jinstagram.entity.comments.MediaCommentsFeed_ESTest
+16:27:40.181 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.jinstagram.entity.comments.MediaCommentsFeed_ESTest'.
+16:27:40.181 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jinstagram/entity/comments/MediaCommentsFeed_ESTest
+16:27:40.192 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/jinstagram/entity/comments/MediaCommentsFeed_ESTest
+16:27:40.193 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.jinstagram.entity.comments.MediaCommentsFeed_ESTest_scaffolding
+16:27:40.193 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.jinstagram.entity.comments.MediaCommentsFeed_ESTest_scaffolding'.
+16:27:40.194 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jinstagram/entity/comments/MediaCommentsFeed_ESTest_scaffolding
+16:27:40.195 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Found static initializer in class org/jinstagram/entity/comments/MediaCommentsFeed_ESTest_scaffolding
+16:27:40.196 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.jinstagram.entity.comments.MediaCommentsFeed_ESTest_scaffolding
+16:27:40.196 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.jinstagram.entity.comments.MediaCommentsFeed_ESTest
+16:27:40.198 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.jinstagram.auth.oauth.InstagramService_ESTest
+16:27:40.199 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.jinstagram.auth.oauth.InstagramService_ESTest'.
+16:27:40.199 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.jinstagram.auth.oauth.InstagramService_ESTest_scaffolding
+16:27:40.199 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.jinstagram.auth.oauth.InstagramService_ESTest_scaffolding'.
+16:27:40.201 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.jinstagram.auth.oauth.InstagramService_ESTest_scaffolding
+16:27:40.201 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.jinstagram.auth.oauth.InstagramService_ESTest
+16:27:40.203 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.jinstagram.auth.model.OAuthConfig_ESTest
+16:27:40.203 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.jinstagram.auth.model.OAuthConfig_ESTest'.
+16:27:40.204 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.jinstagram.auth.model.OAuthConfig_ESTest_scaffolding
+16:27:40.204 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.jinstagram.auth.model.OAuthConfig_ESTest_scaffolding'.
+16:27:40.205 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.jinstagram.auth.model.OAuthConfig_ESTest_scaffolding
+16:27:40.205 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.jinstagram.auth.model.OAuthConfig_ESTest
+16:27:40.208 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.jinstagram.auth.InstagramAuthService_ESTest
+16:27:40.208 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.jinstagram.auth.InstagramAuthService_ESTest'.
+16:27:40.209 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.jinstagram.auth.InstagramAuthService_ESTest_scaffolding
+16:27:40.209 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.jinstagram.auth.InstagramAuthService_ESTest_scaffolding'.
+16:27:40.210 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.jinstagram.auth.InstagramAuthService_ESTest_scaffolding
+16:27:40.211 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.jinstagram.auth.InstagramAuthService_ESTest
+16:27:40.215 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.jinstagram.entity.comments.MediaCommentsFeed_ESTest
+16:27:40.215 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.jinstagram.entity.comments.MediaCommentsFeed_ESTest'.
+16:27:40.216 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.jinstagram.entity.comments.MediaCommentsFeed_ESTest_scaffolding
+16:27:40.216 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.jinstagram.entity.comments.MediaCommentsFeed_ESTest_scaffolding'.
+16:27:40.219 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.jinstagram.entity.comments.MediaCommentsFeed_ESTest_scaffolding
+16:27:40.219 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.jinstagram.entity.comments.MediaCommentsFeed_ESTest
+16:27:40.221 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.jinstagram.entity.oembed.OembedInformation_ESTest
+16:27:40.222 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.jinstagram.entity.oembed.OembedInformation_ESTest'.
+16:27:40.223 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.jinstagram.entity.oembed.OembedInformation_ESTest_scaffolding
+16:27:40.223 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.jinstagram.entity.oembed.OembedInformation_ESTest_scaffolding'.
+16:27:40.225 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.jinstagram.entity.oembed.OembedInformation_ESTest_scaffolding
+16:27:40.225 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.jinstagram.entity.oembed.OembedInformation_ESTest
+16:27:40.473 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: "Reference Handler"
+16:27:40.473 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: "Finalizer"
+16:27:40.473 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: "Signal Dispatcher"
+16:27:40.474 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: "Java2D Disposer"
+16:27:40.474 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: "AWT-XAWT"
+16:27:40.474 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: "main"
+16:27:40.474 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: "surefire-forkedjvm-stream-flusher"
+16:27:40.474 [main] DEBUG org.evosuite.runtime.sandbox.MSecurityManager - Adding privileged thread: "surefire-forkedjvm-command-thread"
+16:27:40.494 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.jinstagram.auth.model.OAuthRequest
+16:27:40.495 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.jinstagram.auth.model.OAuthRequest'.
+16:27:40.496 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jinstagram/auth/model/OAuthRequest
+16:27:40.502 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/jinstagram/auth/model/OAuthRequest
+16:27:40.502 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field OAUTH_PREFIX
+16:27:40.503 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.jinstagram.http.Request
+16:27:40.503 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.jinstagram.http.Request'.
+16:27:40.505 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jinstagram/http/Request
+16:27:40.510 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/jinstagram/http/Request
+16:27:40.510 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field CONTENT_LENGTH
+16:27:40.510 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Defined package (3): package org.jinstagram.http, 898268452
+16:27:40.511 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.jinstagram.http.Request
+16:27:40.511 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.jinstagram.auth.model.OAuthRequest
+16:27:40.511 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.jinstagram.auth.exceptions.OAuthException
+16:27:40.512 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.jinstagram.auth.exceptions.OAuthException'.
+16:27:40.512 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jinstagram/auth/exceptions/OAuthException
+16:27:40.513 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/jinstagram/auth/exceptions/OAuthException
+16:27:40.514 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Defined package (3): package org.jinstagram.auth.exceptions, 1157870574
+16:27:40.514 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.jinstagram.auth.exceptions.OAuthException
+16:27:40.515 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.jinstagram.auth.InstagramApi
+16:27:40.515 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.jinstagram.auth.InstagramApi'.
+16:27:40.516 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jinstagram/auth/InstagramApi
+16:27:40.517 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/jinstagram/auth/InstagramApi
+16:27:40.518 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.jinstagram.auth.InstagramApi
+16:27:40.518 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.jinstagram.auth.AccessTokenExtractor
+16:27:40.519 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.jinstagram.auth.AccessTokenExtractor'.
+16:27:40.520 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.jinstagram.auth.AccessTokenExtractor
+16:27:40.521 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.jinstagram.http.Response
+16:27:40.521 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.jinstagram.http.Response'.
+16:27:40.522 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jinstagram/http/Response
+16:27:40.524 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/jinstagram/http/Response
+16:27:40.525 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field EMPTY_RESPONSE
+16:27:40.525 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.jinstagram.http.Response
+16:27:40.526 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.jinstagram.http.Verbs
+16:27:40.526 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.jinstagram.http.Verbs'.
+16:27:40.527 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jinstagram/http/Verbs
+16:27:40.528 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Found static initializer in class org/jinstagram/http/Verbs
+16:27:40.529 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.jinstagram.http.Verbs
+16:27:40.530 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.jinstagram.auth.oauth.InstagramService
+16:27:40.531 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.jinstagram.auth.oauth.InstagramService'.
+16:27:40.532 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jinstagram/auth/oauth/InstagramService
+16:27:40.534 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/jinstagram/auth/oauth/InstagramService
+16:27:40.534 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field VERSION
+16:27:40.534 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field AUTHORIZATION_CODE
+16:27:40.535 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.jinstagram.auth.oauth.InstagramService
+16:27:40.535 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.jinstagram.InstagramClient
+16:27:40.535 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.jinstagram.InstagramClient'.
+16:27:40.538 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Defined package (3): package org.jinstagram, 657905618
+16:27:40.538 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.jinstagram.InstagramClient
+16:27:40.541 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.jinstagram.auth.model.Verifier
+16:27:40.541 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.jinstagram.auth.model.Verifier'.
+16:27:40.542 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jinstagram/auth/model/Verifier
+16:27:40.543 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/jinstagram/auth/model/Verifier
+16:27:40.544 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.jinstagram.auth.model.Verifier
+16:27:40.544 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.jinstagram.auth.model.OAuthConfig
+16:27:40.544 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.jinstagram.auth.model.OAuthConfig'.
+16:27:40.545 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jinstagram/auth/model/OAuthConfig
+16:27:40.547 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/jinstagram/auth/model/OAuthConfig
+16:27:40.547 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.jinstagram.auth.model.OAuthConfig
+16:27:40.547 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.jinstagram.auth.model.Token
+16:27:40.548 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.jinstagram.auth.model.Token'.
+16:27:40.548 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jinstagram/auth/model/Token
+16:27:40.551 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/jinstagram/auth/model/Token
+16:27:40.551 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.jinstagram.auth.model.Token
+16:27:40.552 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.jinstagram.utils.Preconditions
+16:27:40.552 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.jinstagram.utils.Preconditions'.
+16:27:40.553 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jinstagram/utils/Preconditions
+16:27:40.556 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Found static initializer in class org/jinstagram/utils/Preconditions
+16:27:40.556 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Defined package (3): package org.jinstagram.utils, 2088513429
+16:27:40.556 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.jinstagram.utils.Preconditions
+16:27:40.558 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.jinstagram.entity.users.basicinfo.UserInfo
+16:27:40.558 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.jinstagram.entity.users.basicinfo.UserInfo'.
+16:27:40.558 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jinstagram/entity/users/basicinfo/UserInfo
+16:27:40.559 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/jinstagram/entity/users/basicinfo/UserInfo
+16:27:40.559 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Defined package (3): package org.jinstagram.entity.users.basicinfo, 1911360263
+16:27:40.559 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.jinstagram.InstagramObject
+16:27:40.559 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.jinstagram.InstagramObject'.
+16:27:40.560 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jinstagram/InstagramObject
+16:27:40.560 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/jinstagram/InstagramObject
+16:27:40.561 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.jinstagram.InstagramResponse
+16:27:40.561 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.jinstagram.InstagramResponse'.
+16:27:40.562 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.jinstagram.InstagramResponse
+16:27:40.562 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.jinstagram.InstagramObject
+16:27:40.562 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.jinstagram.entity.users.basicinfo.UserInfo
+16:27:40.562 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.jinstagram.exceptions.InstagramException
+16:27:40.562 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.jinstagram.exceptions.InstagramException'.
+16:27:40.563 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jinstagram/exceptions/InstagramException
+16:27:40.564 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/jinstagram/exceptions/InstagramException
+16:27:40.564 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Defined package (3): package org.jinstagram.exceptions, 1332267424
+16:27:40.564 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.jinstagram.exceptions.InstagramException
+16:27:40.564 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.jinstagram.entity.users.feed.MediaFeed
+16:27:40.564 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.jinstagram.entity.users.feed.MediaFeed'.
+16:27:40.565 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jinstagram/entity/users/feed/MediaFeed
+16:27:40.565 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/jinstagram/entity/users/feed/MediaFeed
+16:27:40.566 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Defined package (3): package org.jinstagram.entity.users.feed, 1240399251
+16:27:40.566 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.jinstagram.entity.users.feed.MediaFeed
+16:27:40.566 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.jinstagram.entity.common.Pagination
+16:27:40.566 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.jinstagram.entity.common.Pagination'.
+16:27:40.567 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jinstagram/entity/common/Pagination
+16:27:40.568 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/jinstagram/entity/common/Pagination
+16:27:40.568 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Defined package (3): package org.jinstagram.entity.common, 1839157562
+16:27:40.568 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.jinstagram.entity.common.Pagination
+16:27:40.568 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.jinstagram.entity.users.feed.UserFeed
+16:27:40.568 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.jinstagram.entity.users.feed.UserFeed'.
+16:27:40.569 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jinstagram/entity/users/feed/UserFeed
+16:27:40.569 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/jinstagram/entity/users/feed/UserFeed
+16:27:40.570 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.jinstagram.entity.users.feed.UserFeed
+16:27:40.570 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.jinstagram.entity.tags.TagMediaFeed
+16:27:40.570 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.jinstagram.entity.tags.TagMediaFeed'.
+16:27:40.570 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jinstagram/entity/tags/TagMediaFeed
+16:27:40.571 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/jinstagram/entity/tags/TagMediaFeed
+16:27:40.571 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Defined package (3): package org.jinstagram.entity.tags, 1673913128
+16:27:40.571 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.jinstagram.entity.tags.TagMediaFeed
+16:27:40.571 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.jinstagram.entity.relationships.RelationshipFeed
+16:27:40.571 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.jinstagram.entity.relationships.RelationshipFeed'.
+16:27:40.572 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jinstagram/entity/relationships/RelationshipFeed
+16:27:40.572 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/jinstagram/entity/relationships/RelationshipFeed
+16:27:40.572 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Defined package (3): package org.jinstagram.entity.relationships, -836951284
+16:27:40.573 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.jinstagram.entity.relationships.RelationshipFeed
+16:27:40.573 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.jinstagram.model.Relationship
+16:27:40.573 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.jinstagram.model.Relationship'.
+16:27:40.573 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jinstagram/model/Relationship
+16:27:40.574 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Found static initializer in class org/jinstagram/model/Relationship
+16:27:40.574 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Defined package (3): package org.jinstagram.model, 2080971277
+16:27:40.574 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.jinstagram.model.Relationship
+16:27:40.575 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.jinstagram.entity.media.MediaInfoFeed
+16:27:40.575 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.jinstagram.entity.media.MediaInfoFeed'.
+16:27:40.575 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jinstagram/entity/media/MediaInfoFeed
+16:27:40.576 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/jinstagram/entity/media/MediaInfoFeed
+16:27:40.576 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Defined package (3): package org.jinstagram.entity.media, 345350837
+16:27:40.576 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.jinstagram.entity.media.MediaInfoFeed
+16:27:40.576 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.jinstagram.entity.comments.MediaCommentsFeed
+16:27:40.576 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.jinstagram.entity.comments.MediaCommentsFeed'.
+16:27:40.576 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jinstagram/entity/comments/MediaCommentsFeed
+16:27:40.577 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/jinstagram/entity/comments/MediaCommentsFeed
+16:27:40.577 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.jinstagram.entity.comments.MediaCommentsFeed
+16:27:40.577 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.jinstagram.entity.comments.MediaCommentResponse
+16:27:40.577 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.jinstagram.entity.comments.MediaCommentResponse'.
+16:27:40.578 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jinstagram/entity/comments/MediaCommentResponse
+16:27:40.579 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/jinstagram/entity/comments/MediaCommentResponse
+16:27:40.579 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.jinstagram.entity.comments.MediaCommentResponse
+16:27:40.579 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.jinstagram.entity.likes.LikesFeed
+16:27:40.579 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.jinstagram.entity.likes.LikesFeed'.
+16:27:40.579 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jinstagram/entity/likes/LikesFeed
+16:27:40.580 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/jinstagram/entity/likes/LikesFeed
+16:27:40.580 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Defined package (3): package org.jinstagram.entity.likes, 344553101
+16:27:40.580 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.jinstagram.entity.likes.LikesFeed
+16:27:40.580 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.jinstagram.entity.tags.TagInfoFeed
+16:27:40.581 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.jinstagram.entity.tags.TagInfoFeed'.
+16:27:40.581 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jinstagram/entity/tags/TagInfoFeed
+16:27:40.582 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/jinstagram/entity/tags/TagInfoFeed
+16:27:40.582 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.jinstagram.entity.tags.TagInfoFeed
+16:27:40.582 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.jinstagram.entity.tags.TagSearchFeed
+16:27:40.582 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.jinstagram.entity.tags.TagSearchFeed'.
+16:27:40.583 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jinstagram/entity/tags/TagSearchFeed
+16:27:40.583 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/jinstagram/entity/tags/TagSearchFeed
+16:27:40.583 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.jinstagram.entity.tags.TagSearchFeed
+16:27:40.584 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.jinstagram.entity.locations.LocationInfo
+16:27:40.584 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.jinstagram.entity.locations.LocationInfo'.
+16:27:40.584 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jinstagram/entity/locations/LocationInfo
+16:27:40.584 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/jinstagram/entity/locations/LocationInfo
+16:27:40.585 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Defined package (3): package org.jinstagram.entity.locations, -266159697
+16:27:40.585 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.jinstagram.entity.locations.LocationInfo
+16:27:40.585 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.jinstagram.entity.locations.LocationSearchFeed
+16:27:40.585 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.jinstagram.entity.locations.LocationSearchFeed'.
+16:27:40.585 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jinstagram/entity/locations/LocationSearchFeed
+16:27:40.586 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/jinstagram/entity/locations/LocationSearchFeed
+16:27:40.586 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.jinstagram.entity.locations.LocationSearchFeed
+16:27:40.612 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.mockito.Mockito
+16:27:40.612 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.mockito.Mockito'.
+16:27:40.613 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/mockito/Mockito
+16:27:40.616 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Found static initializer in class org/mockito/Mockito
+16:27:40.617 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Defined package (3): package org.mockito, -218950192
+16:27:40.618 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.mockito.Matchers
+16:27:40.618 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.mockito.Matchers'.
+16:27:40.619 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/mockito/Matchers
+16:27:40.622 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Found static initializer in class org/mockito/Matchers
+16:27:40.623 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.mockito.Matchers
+16:27:40.624 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.mockito.Mockito
+16:27:40.624 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.hamcrest.Matcher
+16:27:40.624 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.hamcrest.Matcher'.
+16:27:40.626 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.hamcrest.SelfDescribing
+16:27:40.626 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.hamcrest.SelfDescribing'.
+16:27:40.627 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.hamcrest.SelfDescribing
+16:27:40.627 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.hamcrest.Matcher
+16:27:40.628 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.mockito.internal.progress.MockingProgress
+16:27:40.628 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.mockito.internal.progress.MockingProgress'.
+16:27:40.629 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Defined package (3): package org.mockito.internal.progress, -535423584
+16:27:40.630 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.mockito.internal.progress.MockingProgress
+16:27:40.630 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.mockito.verification.VerificationMode
+16:27:40.630 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.mockito.verification.VerificationMode'.
+16:27:40.632 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Defined package (3): package org.mockito.verification, -390341255
+16:27:40.632 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.mockito.verification.VerificationMode
+16:27:40.632 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.mockito.verification.VerificationAfterDelay
+16:27:40.632 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.mockito.verification.VerificationAfterDelay'.
+16:27:40.633 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.mockito.verification.VerificationAfterDelay
+16:27:40.634 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.mockito.MockitoDebugger
+16:27:40.634 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.mockito.MockitoDebugger'.
+16:27:40.635 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.mockito.MockitoDebugger
+16:27:40.635 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.mockito.stubbing.Answer
+16:27:40.635 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.mockito.stubbing.Answer'.
+16:27:40.637 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Defined package (3): package org.mockito.stubbing, 1147178060
+16:27:40.637 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.mockito.stubbing.Answer
+16:27:40.637 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.mockito.verification.VerificationWithTimeout
+16:27:40.637 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.mockito.verification.VerificationWithTimeout'.
+16:27:40.639 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.mockito.verification.VerificationWithTimeout
+16:27:40.639 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.mockito.internal.progress.ThreadSafeMockingProgress
+16:27:40.639 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.mockito.internal.progress.ThreadSafeMockingProgress'.
+16:27:40.641 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/mockito/internal/progress/ThreadSafeMockingProgress
+16:27:40.642 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Found static initializer in class org/mockito/internal/progress/ThreadSafeMockingProgress
+16:27:40.643 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.mockito.internal.progress.ThreadSafeMockingProgress
+16:27:40.643 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.mockito.internal.MockitoCore
+16:27:40.644 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.mockito.internal.MockitoCore'.
+16:27:40.645 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/mockito/internal/MockitoCore
+16:27:40.654 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/mockito/internal/MockitoCore
+16:27:40.654 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Defined package (3): package org.mockito.internal, -156488421
+16:27:40.655 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.mockito.internal.MockitoCore
+16:27:40.655 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.mockito.internal.verification.api.VerificationDataInOrder
+16:27:40.655 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.mockito.internal.verification.api.VerificationDataInOrder'.
+16:27:40.657 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Defined package (3): package org.mockito.internal.verification.api, -1145445318
+16:27:40.657 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.mockito.internal.verification.api.VerificationDataInOrder
+16:27:40.657 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.mockito.InOrder
+16:27:40.657 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.mockito.InOrder'.
+16:27:40.659 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.mockito.InOrder
+16:27:40.659 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.mockito.exceptions.misusing.NotAMockException
+16:27:40.659 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.mockito.exceptions.misusing.NotAMockException'.
+16:27:40.660 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/mockito/exceptions/misusing/NotAMockException
+16:27:40.660 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/mockito/exceptions/misusing/NotAMockException
+16:27:40.661 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Defined package (3): package org.mockito.exceptions.misusing, -1043487719
+16:27:40.661 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.mockito.exceptions.base.MockitoException
+16:27:40.661 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.mockito.exceptions.base.MockitoException'.
+16:27:40.662 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/mockito/exceptions/base/MockitoException
+16:27:40.663 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/mockito/exceptions/base/MockitoException
+16:27:40.663 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Defined package (3): package org.mockito.exceptions.base, 2039938141
+16:27:40.663 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.mockito.exceptions.base.MockitoException
+16:27:40.663 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.mockito.exceptions.misusing.NotAMockException
+16:27:40.663 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.mockito.internal.verification.api.VerificationData
+16:27:40.663 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.mockito.internal.verification.api.VerificationData'.
+16:27:40.665 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.mockito.internal.verification.api.VerificationData
+16:27:40.665 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.mockito.internal.stubbing.InvocationContainer
+16:27:40.665 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.mockito.internal.stubbing.InvocationContainer'.
+16:27:40.666 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Defined package (3): package org.mockito.internal.stubbing, -1955235487
+16:27:40.666 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.mockito.internal.stubbing.InvocationContainer
+16:27:40.667 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.mockito.MockingDetails
+16:27:40.667 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.mockito.MockingDetails'.
+16:27:40.668 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.mockito.MockingDetails
+16:27:40.668 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.mockito.exceptions.Reporter
+16:27:40.668 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.mockito.exceptions.Reporter'.
+16:27:40.671 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/mockito/exceptions/Reporter
+16:27:40.677 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/mockito/exceptions/Reporter
+16:27:40.677 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Defined package (3): package org.mockito.exceptions, 215384290
+16:27:40.679 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.mockito.exceptions.Reporter
+16:27:40.679 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.mockito.exceptions.verification.SmartNullPointerException
+16:27:40.679 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.mockito.exceptions.verification.SmartNullPointerException'.
+16:27:40.680 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/mockito/exceptions/verification/SmartNullPointerException
+16:27:40.680 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/mockito/exceptions/verification/SmartNullPointerException
+16:27:40.680 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Defined package (3): package org.mockito.exceptions.verification, -862552153
+16:27:40.680 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.mockito.exceptions.verification.SmartNullPointerException
+16:27:40.681 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.mockito.exceptions.misusing.InvalidUseOfMatchersException
+16:27:40.681 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.mockito.exceptions.misusing.InvalidUseOfMatchersException'.
+16:27:40.681 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/mockito/exceptions/misusing/InvalidUseOfMatchersException
+16:27:40.682 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/mockito/exceptions/misusing/InvalidUseOfMatchersException
+16:27:40.682 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.mockito.exceptions.misusing.InvalidUseOfMatchersException
+16:27:40.682 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.mockito.exceptions.base.MockitoAssertionError
+16:27:40.682 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.mockito.exceptions.base.MockitoAssertionError'.
+16:27:40.683 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/mockito/exceptions/base/MockitoAssertionError
+16:27:40.683 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/mockito/exceptions/base/MockitoAssertionError
+16:27:40.683 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.mockito.exceptions.base.MockitoAssertionError
+16:27:40.684 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.mockito.exceptions.misusing.WrongTypeOfReturnValue
+16:27:40.684 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.mockito.exceptions.misusing.WrongTypeOfReturnValue'.
+16:27:40.684 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/mockito/exceptions/misusing/WrongTypeOfReturnValue
+16:27:40.685 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/mockito/exceptions/misusing/WrongTypeOfReturnValue
+16:27:40.685 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.mockito.exceptions.misusing.WrongTypeOfReturnValue
+16:27:40.685 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.mockito.exceptions.misusing.CannotStubVoidMethodWithReturnValue
+16:27:40.685 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.mockito.exceptions.misusing.CannotStubVoidMethodWithReturnValue'.
+16:27:40.686 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/mockito/exceptions/misusing/CannotStubVoidMethodWithReturnValue
+16:27:40.686 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/mockito/exceptions/misusing/CannotStubVoidMethodWithReturnValue
+16:27:40.686 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.mockito.exceptions.misusing.CannotStubVoidMethodWithReturnValue
+16:27:40.687 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.mockito.exceptions.verification.VerificationInOrderFailure
+16:27:40.687 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.mockito.exceptions.verification.VerificationInOrderFailure'.
+16:27:40.688 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/mockito/exceptions/verification/VerificationInOrderFailure
+16:27:40.688 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/mockito/exceptions/verification/VerificationInOrderFailure
+16:27:40.688 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.mockito.exceptions.verification.VerificationInOrderFailure
+16:27:40.689 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.mockito.exceptions.verification.NoInteractionsWanted
+16:27:40.689 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.mockito.exceptions.verification.NoInteractionsWanted'.
+16:27:40.689 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/mockito/exceptions/verification/NoInteractionsWanted
+16:27:40.690 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/mockito/exceptions/verification/NoInteractionsWanted
+16:27:40.690 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.mockito.exceptions.verification.NoInteractionsWanted
+16:27:40.690 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.mockito.exceptions.verification.TooLittleActualInvocations
+16:27:40.690 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.mockito.exceptions.verification.TooLittleActualInvocations'.
+16:27:40.692 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/mockito/exceptions/verification/TooLittleActualInvocations
+16:27:40.692 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/mockito/exceptions/verification/TooLittleActualInvocations
+16:27:40.692 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.mockito.exceptions.verification.TooLittleActualInvocations
+16:27:40.693 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.mockito.exceptions.verification.NeverWantedButInvoked
+16:27:40.693 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.mockito.exceptions.verification.NeverWantedButInvoked'.
+16:27:40.693 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/mockito/exceptions/verification/NeverWantedButInvoked
+16:27:40.694 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/mockito/exceptions/verification/NeverWantedButInvoked
+16:27:40.694 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.mockito.exceptions.verification.NeverWantedButInvoked
+16:27:40.694 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.mockito.exceptions.verification.TooManyActualInvocations
+16:27:40.694 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.mockito.exceptions.verification.TooManyActualInvocations'.
+16:27:40.695 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/mockito/exceptions/verification/TooManyActualInvocations
+16:27:40.695 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/mockito/exceptions/verification/TooManyActualInvocations
+16:27:40.696 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.mockito.exceptions.verification.TooManyActualInvocations
+16:27:40.697 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.mockito.exceptions.misusing.FriendlyReminderException
+16:27:40.697 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.mockito.exceptions.misusing.FriendlyReminderException'.
+16:27:40.697 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/mockito/exceptions/misusing/FriendlyReminderException
+16:27:40.698 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/mockito/exceptions/misusing/FriendlyReminderException
+16:27:40.698 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.mockito.exceptions.misusing.FriendlyReminderException
+16:27:40.698 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.mockito.exceptions.misusing.NullInsteadOfMockException
+16:27:40.698 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.mockito.exceptions.misusing.NullInsteadOfMockException'.
+16:27:40.699 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/mockito/exceptions/misusing/NullInsteadOfMockException
+16:27:40.699 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/mockito/exceptions/misusing/NullInsteadOfMockException
+16:27:40.699 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.mockito.exceptions.misusing.NullInsteadOfMockException
+16:27:40.700 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.mockito.exceptions.misusing.MissingMethodInvocationException
+16:27:40.700 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.mockito.exceptions.misusing.MissingMethodInvocationException'.
+16:27:40.700 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/mockito/exceptions/misusing/MissingMethodInvocationException
+16:27:40.701 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/mockito/exceptions/misusing/MissingMethodInvocationException
+16:27:40.701 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.mockito.exceptions.misusing.MissingMethodInvocationException
+16:27:40.701 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.mockito.exceptions.misusing.UnfinishedStubbingException
+16:27:40.701 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.mockito.exceptions.misusing.UnfinishedStubbingException'.
+16:27:40.702 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/mockito/exceptions/misusing/UnfinishedStubbingException
+16:27:40.702 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/mockito/exceptions/misusing/UnfinishedStubbingException
+16:27:40.702 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.mockito.exceptions.misusing.UnfinishedStubbingException
+16:27:40.702 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.mockito.exceptions.misusing.UnfinishedVerificationException
+16:27:40.702 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.mockito.exceptions.misusing.UnfinishedVerificationException'.
+16:27:40.703 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/mockito/exceptions/misusing/UnfinishedVerificationException
+16:27:40.703 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/mockito/exceptions/misusing/UnfinishedVerificationException
+16:27:40.703 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.mockito.exceptions.misusing.UnfinishedVerificationException
+16:27:40.703 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.mockito.exceptions.verification.WantedButNotInvoked
+16:27:40.703 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.mockito.exceptions.verification.WantedButNotInvoked'.
+16:27:40.704 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/mockito/exceptions/verification/WantedButNotInvoked
+16:27:40.704 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/mockito/exceptions/verification/WantedButNotInvoked
+16:27:40.704 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.mockito.exceptions.verification.WantedButNotInvoked
+16:27:40.704 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.mockito.exceptions.misusing.CannotVerifyStubOnlyMock
+16:27:40.705 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.mockito.exceptions.misusing.CannotVerifyStubOnlyMock'.
+16:27:40.705 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/mockito/exceptions/misusing/CannotVerifyStubOnlyMock
+16:27:40.705 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/mockito/exceptions/misusing/CannotVerifyStubOnlyMock
+16:27:40.706 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.mockito.exceptions.misusing.CannotVerifyStubOnlyMock
+16:27:40.706 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.mockito.internal.util.MockUtil
+16:27:40.706 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.mockito.internal.util.MockUtil'.
+16:27:40.707 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/mockito/internal/util/MockUtil
+16:27:40.708 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Found static initializer in class org/mockito/internal/util/MockUtil
+16:27:40.708 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Defined package (3): package org.mockito.internal.util, 1337586933
+16:27:40.708 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.mockito.internal.util.MockUtil
+16:27:40.708 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.mockito.mock.MockName
+16:27:40.709 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.mockito.mock.MockName'.
+16:27:40.709 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Defined package (3): package org.mockito.mock, 677215976
+16:27:40.709 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.mockito.mock.MockName
+16:27:40.710 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.mockito.invocation.MockHandler
+16:27:40.710 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.mockito.invocation.MockHandler'.
+16:27:40.710 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Defined package (3): package org.mockito.invocation, -1026637970
+16:27:40.710 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.mockito.invocation.MockHandler
+16:27:40.711 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.mockito.internal.configuration.plugins.Plugins
+16:27:40.711 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.mockito.internal.configuration.plugins.Plugins'.
+16:27:40.711 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/mockito/internal/configuration/plugins/Plugins
+16:27:40.712 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Found static initializer in class org/mockito/internal/configuration/plugins/Plugins
+16:27:40.712 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Defined package (3): package org.mockito.internal.configuration.plugins, -1086470635
+16:27:40.712 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.mockito.internal.configuration.plugins.Plugins
+16:27:40.712 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.mockito.internal.configuration.plugins.PluginRegistry
+16:27:40.712 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.mockito.internal.configuration.plugins.PluginRegistry'.
+16:27:40.713 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/mockito/internal/configuration/plugins/PluginRegistry
+16:27:40.714 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/mockito/internal/configuration/plugins/PluginRegistry
+16:27:40.715 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.mockito.internal.configuration.plugins.PluginRegistry
+16:27:40.715 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.mockito.plugins.PluginSwitch
+16:27:40.715 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.mockito.plugins.PluginSwitch'.
+16:27:40.716 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Defined package (3): package org.mockito.plugins, -221983358
+16:27:40.717 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.mockito.plugins.PluginSwitch
+16:27:40.717 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.mockito.internal.configuration.plugins.PluginLoader
+16:27:40.717 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.mockito.internal.configuration.plugins.PluginLoader'.
+16:27:40.718 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/mockito/internal/configuration/plugins/PluginLoader
+16:27:40.719 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/mockito/internal/configuration/plugins/PluginLoader
+16:27:40.720 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.mockito.internal.configuration.plugins.PluginLoader
+16:27:40.720 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.mockito.exceptions.misusing.MockitoConfigurationException
+16:27:40.720 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.mockito.exceptions.misusing.MockitoConfigurationException'.
+16:27:40.721 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/mockito/exceptions/misusing/MockitoConfigurationException
+16:27:40.722 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/mockito/exceptions/misusing/MockitoConfigurationException
+16:27:40.722 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.mockito.exceptions.misusing.MockitoConfigurationException
+16:27:40.722 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.mockito.internal.configuration.plugins.DefaultPluginSwitch
+16:27:40.722 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.mockito.internal.configuration.plugins.DefaultPluginSwitch'.
+16:27:40.723 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/mockito/internal/configuration/plugins/DefaultPluginSwitch
+16:27:40.723 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/mockito/internal/configuration/plugins/DefaultPluginSwitch
+16:27:40.723 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.mockito.internal.configuration.plugins.DefaultPluginSwitch
+16:27:40.724 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.mockito.internal.configuration.plugins.PluginFinder
+16:27:40.724 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.mockito.internal.configuration.plugins.PluginFinder'.
+16:27:40.725 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/mockito/internal/configuration/plugins/PluginFinder
+16:27:40.726 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/mockito/internal/configuration/plugins/PluginFinder
+16:27:40.726 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.mockito.internal.configuration.plugins.PluginFinder
+16:27:40.726 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.mockito.internal.util.collections.Iterables
+16:27:40.727 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.mockito.internal.util.collections.Iterables'.
+16:27:40.728 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/mockito/internal/util/collections/Iterables
+16:27:40.728 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/mockito/internal/util/collections/Iterables
+16:27:40.728 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Defined package (3): package org.mockito.internal.util.collections, 2017266204
+16:27:40.729 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.mockito.internal.util.collections.Iterables
+16:27:40.730 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.mockito.plugins.MockMaker
+16:27:40.730 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.mockito.plugins.MockMaker'.
+16:27:40.731 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.mockito.plugins.MockMaker
+16:27:40.732 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.mockito.internal.configuration.plugins.PluginFileReader
+16:27:40.732 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.mockito.internal.configuration.plugins.PluginFileReader'.
+16:27:40.733 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/mockito/internal/configuration/plugins/PluginFileReader
+16:27:40.733 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/mockito/internal/configuration/plugins/PluginFileReader
+16:27:40.734 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.mockito.internal.configuration.plugins.PluginFileReader
+16:27:40.734 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.mockito.internal.util.io.IOUtil
+16:27:40.734 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.mockito.internal.util.io.IOUtil'.
+16:27:40.735 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/mockito/internal/util/io/IOUtil
+16:27:40.738 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/mockito/internal/util/io/IOUtil
+16:27:40.739 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Defined package (3): package org.mockito.internal.util.io, -654203713
+16:27:40.739 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.mockito.internal.util.io.IOUtil
+16:27:40.746 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.mockito.internal.exceptions.stacktrace.ConditionalStackTraceFilter
+16:27:40.746 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.mockito.internal.exceptions.stacktrace.ConditionalStackTraceFilter'.
+16:27:40.747 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/mockito/internal/exceptions/stacktrace/ConditionalStackTraceFilter
+16:27:40.748 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/mockito/internal/exceptions/stacktrace/ConditionalStackTraceFilter
+16:27:40.748 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Defined package (3): package org.mockito.internal.exceptions.stacktrace, 1054137684
+16:27:40.748 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.mockito.internal.exceptions.stacktrace.ConditionalStackTraceFilter
+16:27:40.749 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.mockito.configuration.IMockitoConfiguration
+16:27:40.749 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.mockito.configuration.IMockitoConfiguration'.
+16:27:40.750 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Defined package (3): package org.mockito.configuration, 1488869720
+16:27:40.750 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.mockito.configuration.IMockitoConfiguration
+16:27:40.750 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.mockito.internal.configuration.GlobalConfiguration
+16:27:40.750 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.mockito.internal.configuration.GlobalConfiguration'.
+16:27:40.750 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/mockito/internal/configuration/GlobalConfiguration
+16:27:40.751 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Found static initializer in class org/mockito/internal/configuration/GlobalConfiguration
+16:27:40.751 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Defined package (3): package org.mockito.internal.configuration, -292859549
+16:27:40.752 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.mockito.internal.configuration.GlobalConfiguration
+16:27:40.752 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.mockito.configuration.DefaultMockitoConfiguration
+16:27:40.752 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.mockito.configuration.DefaultMockitoConfiguration'.
+16:27:40.753 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/mockito/configuration/DefaultMockitoConfiguration
+16:27:40.754 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/mockito/configuration/DefaultMockitoConfiguration
+16:27:40.755 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.mockito.configuration.DefaultMockitoConfiguration
+16:27:40.755 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.mockito.configuration.AnnotationEngine
+16:27:40.755 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.mockito.configuration.AnnotationEngine'.
+16:27:40.756 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.mockito.configuration.AnnotationEngine
+16:27:40.756 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.mockito.internal.configuration.ClassPathLoader
+16:27:40.756 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.mockito.internal.configuration.ClassPathLoader'.
+16:27:40.756 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/mockito/internal/configuration/ClassPathLoader
+16:27:40.757 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/mockito/internal/configuration/ClassPathLoader
+16:27:40.757 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field MOCKITO_CONFIGURATION_CLASS_NAME
+16:27:40.757 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.mockito.internal.configuration.ClassPathLoader
+16:27:40.758 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.mockito.configuration.MockitoConfiguration
+16:27:40.758 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.mockito.configuration.MockitoConfiguration'.
+16:27:40.758 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Error while loading class: java.lang.ClassNotFoundException: Class 'org/mockito/configuration/MockitoConfiguration.class' should be in target project, but could not be found!
+16:27:40.758 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.mockito.internal.exceptions.stacktrace.StackTraceFilter
+16:27:40.758 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.mockito.internal.exceptions.stacktrace.StackTraceFilter'.
+16:27:40.759 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/mockito/internal/exceptions/stacktrace/StackTraceFilter
+16:27:40.760 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Found static initializer in class org/mockito/internal/exceptions/stacktrace/StackTraceFilter
+16:27:40.760 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.mockito.internal.exceptions.stacktrace.StackTraceFilter
+16:27:40.760 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.mockito.exceptions.stacktrace.StackTraceCleaner
+16:27:40.760 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.mockito.exceptions.stacktrace.StackTraceCleaner'.
+16:27:40.761 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Defined package (3): package org.mockito.exceptions.stacktrace, -1970331575
+16:27:40.761 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.mockito.exceptions.stacktrace.StackTraceCleaner
+16:27:40.766 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.jinstagram.http.URLUtils$EncodingRule
+16:27:40.766 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.jinstagram.http.URLUtils$EncodingRule'.
+16:27:40.766 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jinstagram/http/URLUtils$EncodingRule
+16:27:40.767 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/jinstagram/http/URLUtils$EncodingRule
+16:27:40.767 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.jinstagram.http.URLUtils$EncodingRule
+16:27:40.767 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.jinstagram.http.URLUtils
+16:27:40.767 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.jinstagram.http.URLUtils'.
+16:27:40.768 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jinstagram/http/URLUtils
+16:27:40.770 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Found static initializer in class org/jinstagram/http/URLUtils
+16:27:40.771 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.jinstagram.http.URLUtils
+16:27:40.783 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.jinstagram.auth.oauth.InstagramService_ESTest
+16:27:40.783 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.jinstagram.auth.oauth.InstagramService_ESTest'.
+16:27:40.783 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jinstagram/auth/oauth/InstagramService_ESTest
+16:27:40.784 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/jinstagram/auth/oauth/InstagramService_ESTest
+16:27:40.784 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Seeing class for first time: org.jinstagram.auth.oauth.InstagramService_ESTest_scaffolding
+16:27:40.784 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Instrumenting class 'org.jinstagram.auth.oauth.InstagramService_ESTest_scaffolding'.
+16:27:40.785 [main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jinstagram/auth/oauth/InstagramService_ESTest_scaffolding
+16:27:40.786 [main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Found static initializer in class org/jinstagram/auth/oauth/InstagramService_ESTest_scaffolding
+16:27:40.786 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.jinstagram.auth.oauth.InstagramService_ESTest_scaffolding
+16:27:40.786 [main] INFO org.evosuite.runtime.instrumentation.EvoClassLoader - Keeping class: org.jinstagram.auth.oauth.InstagramService_ESTest
+]]></system-out>
+  </testcase>
+</testsuite>

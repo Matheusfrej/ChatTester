@@ -3,75 +3,113 @@ import torch
 import shutil
 import subprocess
 import openai
-import pandas as pd
+from openai import OpenAI
+import time
+
 import os
 import re
 import json
-import time
-from tqdm import tqdm
+from google import genai
 import traceback
 import glob
-from transformers import GenerationConfig, LlamaForCausalLM, LlamaTokenizer
-# ADICIONADO: BitsAndBytesConfig para gerenciar memória em 8GB
 from transformers import AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig
 
-# Importações locais (mantenha seus arquivos originais Deal.py e ProcesFinalResult.py na mesma pasta)
 from Deal import Compile_Test_INFO
 from Deal import FeedbackPrompt
 from ProcesFinalResult import ProceFinalResult
+from dotenv import load_dotenv
 
-# --- CONFIGURAÇÃO 1: JAVA PATH CORRIGIDO PARA LINUX ---
-java_home = "/usr/lib/jvm/jdk1.8.0_131"
+# Load environment variables from a repository-level .env file
+repo_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+dotenv_path = os.path.join(repo_root, '.env')
+load_dotenv(dotenv_path)
+
+verbose_mode = os.getenv('VERBOSE_MODE', 'False').lower() == 'true'
+
+# TODO modify this path or set `JAVA_HOME` in your .env
+java_home = os.getenv('JAVA_HOME', "/usr/lib/jvm/jdk1.8.0_131")
 os.environ["JAVA_HOME"] = java_home
 env = os.environ.copy()
 env['JAVA_TOOL_OPTIONS'] = '-Duser.language=en -Duser.country=US'
+
 current_dir = os.path.dirname(os.path.abspath(__file__))
 chatTesterDir = os.path.dirname(current_dir)
 
 testedRepo_PATH = os.path.join(chatTesterDir, "Repos")
 
-# --- CONFIGURAÇÃO 2: MODELO DEEPSEEK ---
-model_path = "deepseek-ai/deepseek-coder-6.7b-instruct"
+model_temperature=float(os.getenv('MODEL_TEMPERATURE', 0.0))
+
+model_path = os.getenv('MODEL_PATH', "gpt-3.5-turbo")
+gemini_api_key = os.getenv('GEMINI_API_KEY')
 
 class ChatGptTester:
-    def __init__(self, repo_name):
+    def __init__(self, repo_name, timestamp, json_path):
+        # Use provided timestamp or generate current timestamp
+        if timestamp is None:
+            from datetime import datetime
+            timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+        self.timestamp = timestamp
+        self.Json_file_Path = json_path
 
         # Path in root
         self.Result_PATH = os.path.join(chatTesterDir, "RepoData") # Data pair path
         self.testedRepo_PATH = os.path.join(chatTesterDir, "Repos") # repo path
         self.repo_name  = repo_name
-        
-        # --- LÓGICA DE DIRETÓRIOS ATUALIZADA ---
+
         if "CodeLlama" in model_path:
             self.sub_save_dir = 'CodeLlama'
         elif "CodeFuse" in model_path:
             self.sub_save_dir = "CodeFuse"
         elif "deepseek" in model_path:
-            self.sub_save_dir = "DeepSeek" # Pasta dedicada para o DeepSeek
-        elif "gpt-3.5" in model_path:
-            self.sub_save_dir = os.path.basename(Json_file_Path).replace(".json","")
-            openai.api_base = "https://openkey.cloud/v1"
-            # TODO SET API_KEY
-            openai.api_key = "openAPI_key"
+            self.sub_save_dir = f"{os.path.basename(self.Json_file_Path).replace(".json","")}__deepseek__{model_path.replace("/","--")}"
+        elif "gpt" in model_path:
+            self.sub_save_dir = f"{os.path.basename(self.Json_file_Path).replace(".json","")}__openai__{model_path.replace("/","--")}"
+            # TODO: The 'openai.api_base' option isn't read in the client API. You will need to pass it when you instantiate the client, e.g. 'OpenAI(base_url="https://openkey.cloud/v1")'
+            # openai.api_base = "https://openkey.cloud/v1"
+        elif "gemini" in model_path:
+            self.sub_save_dir = f"{os.path.basename(self.Json_file_Path).replace(".json","")}__gemini__{model_path.replace("/","--")}"
         else:
             self.sub_save_dir = "OtherModel"
-            
-        self.C_GeneratedTest_Path = os.path.join(current_dir,'Contain_intention',self.sub_save_dir, 'GeneratedTest')
-        self.C_LogINFO_Path = os.path.join(current_dir,'Contain_intention',self.sub_save_dir, 'LogINFO')
-        self.C_Surefire_reports_Path = os.path.join(current_dir, 'Contain_intention', self.sub_save_dir,'Surefire_reports')
-        self.pred_1 = os.path.join(current_dir, "Contain_intention", self.sub_save_dir, 'result_1.json')
+
+        self.timestamped_dir = os.path.join(self.sub_save_dir, self.timestamp)
+
+        self.C_GeneratedTest_Path = os.path.join(current_dir,'Contain_intention',self.timestamped_dir, 'GeneratedTest')
+        self.C_LogINFO_Path = os.path.join(current_dir,'Contain_intention',self.timestamped_dir, 'LogINFO')
+        self.C_Surefire_reports_Path = os.path.join(current_dir, 'Contain_intention', self.timestamped_dir,'Surefire_reports')
+        self.pred_1 = os.path.join(current_dir, "Contain_intention", self.timestamped_dir, 'result_1.json')
 
         # Path in iterate. 基于上面的文件夹，再进一步进行推理，得到迭代之后的结果.
         dir_Name = "Iterate"
-        self.original_java_PATH = os.path.join(current_dir, dir_Name, self.sub_save_dir , 'original_java')
-        self.LogINFO_PATH = os.path.join(current_dir, dir_Name, self.sub_save_dir, 'LogINFO')
-        self.Surefire_reports_dest_path = os.path.join(current_dir, dir_Name, self.sub_save_dir, 'Surefire_reports')
-        self.GeneratedTest_PATH = os.path.join(current_dir, dir_Name, self.sub_save_dir, 'GeneratedTest')
-        self.RepairProcess = os.path.join(current_dir, dir_Name, self.sub_save_dir, 'RepairProcess')
-        self.Final_result = os.path.join(current_dir, dir_Name, self.sub_save_dir, 'final_result.json')
-    
-        self.repairCompile_result = os.path.join(current_dir, dir_Name, self.sub_save_dir, 'RepairCompile.json')
-        self.repairTest_result = os.path.join(current_dir, dir_Name, self.sub_save_dir,'RepairTest.json')
+        # Create timestamped subdirectory
+        
+        self.original_java_PATH = os.path.join(current_dir, dir_Name, self.timestamped_dir , 'original_java')
+        self.LogINFO_PATH = os.path.join(current_dir, dir_Name, self.timestamped_dir, 'LogINFO')
+        self.Surefire_reports_dest_path = os.path.join(current_dir, dir_Name, self.timestamped_dir, 'Surefire_reports')
+        self.GeneratedTest_PATH = os.path.join(current_dir, dir_Name, self.timestamped_dir, 'GeneratedTest')
+        self.RepairProcess = os.path.join(current_dir, dir_Name, self.timestamped_dir, 'RepairProcess')
+        self.Final_result = os.path.join(current_dir, dir_Name, self.timestamped_dir, 'final_result.json')
+
+        self.repairCompile_result = os.path.join(current_dir, dir_Name, self.timestamped_dir, 'RepairCompile.json')
+        self.repairTest_result = os.path.join(current_dir, dir_Name, self.timestamped_dir,'RepairTest.json')
+
+        # Check if result files already exist
+        existing_files = []
+        if os.path.exists(self.Final_result):
+            existing_files.append(self.Final_result)
+        if os.path.exists(self.repairCompile_result):
+            existing_files.append(self.repairCompile_result)
+        if os.path.exists(self.repairTest_result):
+            existing_files.append(self.repairTest_result)
+        
+        if existing_files:
+            print(f"\n{'='*60}")
+            print("WARNING: Output files already exist!")
+            for file in existing_files:
+                print(f"  - {file}")
+            print("="*60)
+            print("\nTo proceed, please remove the existing files or move them to another location.")
+            print("Aborting to prevent data loss.\n")
+            raise FileExistsError(f"Output files already exist. Found {len(existing_files)} existing file(s).")
 
         self.boolean(self.original_java_PATH)
         self.boolean(self.LogINFO_PATH)
@@ -90,7 +128,7 @@ class ChatGptTester:
         else:
             shutil.rmtree(file_path)
             os.makedirs(file_path)
-            
+
     # --- HELPER: FUNÇÃO PARA CORRIGIR CAMINHOS ---
     def fix_path(self, raw_path_str):
         """Converte caminhos do Mac/Outros PCs para o caminho local do Linux"""
@@ -98,7 +136,7 @@ class ChatGptTester:
             clean_path = raw_path_str.split("###")[0]
         else:
             clean_path = raw_path_str
-            
+
         # Procura por 'src' para ancorar o caminho relativo
         if "src" in clean_path:
             relative_part = clean_path[clean_path.find("src"):]
@@ -136,7 +174,7 @@ class ChatGptTester:
 
                     generated_path_old = con['generated_path']
                     FocalMethodInfo = os.path.basename(generated_path_old)
-                    
+
                     # Copia apenas se o arquivo existir
                     if os.path.exists(generated_path_old):
                         shutil.copy2(generated_path_old, self.GeneratedTest_PATH)
@@ -157,18 +195,18 @@ class ChatGptTester:
                         continue
 
 
-                    project_name = os.path.basename(Json_file_Path).replace(".json","")
+                    # project_name = os.path.basename(Json_file_Path).replace(".json","")
 
                     try:
-                        excute_path = os.path.join(self.testedRepo_PATH, project_name)
-                        if not os.path.exists(excute_path):
-                            print(f"Repo path not found: {excute_path}")
-                            continue
+                        # excute_path = os.path.join(self.testedRepo_PATH, project_name)
+                        # if not os.path.exists(excute_path):
+                        #     print(f"Repo path not found: {excute_path}")
+                        #     continue
 
-                        os.chdir(excute_path)
-                        os.system('git add .')
-                        os.system('git commit -m "Initial commit for safety" > /dev/null 2>&1') # Silenciar output
-                        os.chdir(current_dir)
+                        # os.chdir(excute_path)
+                        # os.system('git add .')
+                        # os.system('git commit -m "Initial commit for safety" > /dev/null 2>&1') # Silenciar output
+                        # os.chdir(current_dir)
 
                         # Passa o nome do metodo para buscar info
                         self.DriveTest_Info(FocalMethodInfo)
@@ -210,36 +248,36 @@ class ChatGptTester:
 
                     except Exception as e:
                         traceback.print_exc()
-                    finally:
-                        # reset repo status
-                        excute_path = os.path.join(self.testedRepo_PATH, project_name)
-                        if os.path.exists(excute_path):
-                            os.chdir(excute_path)
-                            os.system('git restore .')
-                            os.system('git clean -fd')
-                            # print("Reset Success!")
-                            os.chdir(current_dir)
+                    # finally:
+                    #     # reset repo status
+                    #     excute_path = os.path.join(self.testedRepo_PATH, project_name)
+                    #     if os.path.exists(excute_path):
+                    #         os.chdir(excute_path)
+                    #         os.system('git restore .')
+                    #         os.system('git clean -fd')
+                    #         # print("Reset Success!")
+                    #         os.chdir(current_dir)
                 except Exception as line_e:
                     print(f"Error processing line in pred_1: {line_e}")
                     traceback.print_exc()
 
 
     def DriveTest_Info(self, FocalMethodInfo):
-        with open(Json_file_Path, 'r', encoding='utf-8') as f:
+        with open(self.Json_file_Path, 'r', encoding='utf-8') as f:
             data_pair = json.load(f)
-        
+
         # Lógica original para encontrar o par correto no JSON
         # O FocalMethodInfo vem do nome do arquivo gerado (ex: Class#Method.java)
         target_method_name = FocalMethodInfo.split("#")[-1].replace(".java","")
         target_class_file = FocalMethodInfo.split("#")[0] # Isso pode não ser exato dependendo do seu formato, mas mantendo a logica original:
-        
+
         # Encontrar a entrada correspondente
         found_data = None
         for data in data_pair:
             if not len(data['Under_test_method']): continue
             ut_stmt = data["Under_test_method"]["Method_statement"]
             test_info = data['Test_method']['TestInfo']
-            
+
             # Tenta dar match no metodo
             if ut_stmt == target_method_name:
                 # Verifica se o arquivo 'pai' está contido no TestInfo (lógica original)
@@ -247,7 +285,7 @@ class ChatGptTester:
                 if target_class_file in test_info or target_class_file.replace(".java","") in test_info:
                     found_data = data
                     break
-        
+
         if not found_data:
             raise Exception(f"Could not find data pair for {FocalMethodInfo}")
 
@@ -258,15 +296,15 @@ class ChatGptTester:
 
         TestScaffoldPath = ori_test_Path.split("###")[0].replace(".java", "_scaffolding.java")
         ScaffoldingCode = found_data['Test_method']['scaffoldingCode']
-        
+
         # Criar diretório se não existir
         scaffold_dir = os.path.dirname(TestScaffoldPath)
         if not os.path.exists(scaffold_dir):
             os.makedirs(scaffold_dir)
-            
+
         with open(TestScaffoldPath, 'w', encoding='utf-8') as f:
             f.write(ScaffoldingCode)
-            
+
         self.testCodeShell = found_data['Test_method']['TestCodeShell']
         self.Under_test_method_INFO = found_data["Under_test_method"]
         self.Junit_version = self.Under_test_method_INFO['Junit_version']
@@ -289,23 +327,37 @@ class ChatGptTester:
         iter = 0  # compile 和 Test的修复次数
         IterCompile, IterTest = 1, 0
         while True:
-
-            print(f'----------------{ori_test_Path}----------------')
-            print(Composit_prompt)
-            Out_Txtdir = os.path.join(self.RepairProcess,
-                                      os.path.basename(ori_test_Path.split("###")[0]) + "_" +
-                                      fixedClassName.split("#")[1] + "_prompt.txt")
-            with open(Out_Txtdir, 'a', encoding='utf-8') as f:
-                f.write(f"{TotalIter}-->{IterCompile | IterTest}-->{iter}-->{repairTag}\n" + Composit_prompt + "\n\n########\n\n")
-            print(f'-----------------------------------------------')
+            print(f"  → Repair Iteration: TotalIter={TotalIter}, IterCompile={IterCompile}, IterTest={IterTest}, CurrentRepairTag={repairTag}, Non_iter={iter}")
+            if verbose_mode:
+                print(f'----------------{ori_test_Path}----------------')
+                print(Composit_prompt)
+                Out_Txtdir = os.path.join(self.RepairProcess,
+                                        os.path.basename(ori_test_Path.split("###")[0]) + "_" +
+                                        fixedClassName.split("#")[1] + "_prompt.txt")
+                with open(Out_Txtdir, 'a', encoding='utf-8') as f:
+                    f.write(f"{TotalIter}-->{IterCompile | IterTest}-->{iter}-->{repairTag}\n" + Composit_prompt + "\n\n########\n\n")
+                print(f'-----------------------------------------------')
 
             TotalIter = TotalIter + 1
             pattern = re.compile(r'//\s*original\s+test\s+path:\s*[\S\s]*?\n')
             Composit_prompt = pattern.sub('', Composit_prompt)
 
-            Gen_test_method, import_statement = self.unit_instance.method_pred_unit(Composit_prompt, True)
-            TestFilePath = ori_test_Path.split("###")[0]
-            focal_method_name = fixedClassName.split("#")[1]
+            llm_returned_successfully = False
+            retries = 0
+            while(not llm_returned_successfully):
+                try:
+                    Gen_test_method, import_statement = self.unit_instance.method_pred_unit(Composit_prompt, True)
+                    TestFilePath = ori_test_Path.split("###")[0]
+                    focal_method_name = fixedClassName.split("#")[1]
+                    llm_returned_successfully = True
+                except Exception as e:
+                        if retries < 2:
+                            retries += 1
+                        print(f"    ✗ LLM Error: {str(e)}. Retrying in {retries*2} seconds...")
+                        time.sleep(retries*2)
+
+
+
             Dtest_para = self.file_write(generated_path, Gen_test_method, TestFilePath, self.testCodeShell,
                                                            import_statement+"\nimport java.util.*;\nimport java.lang.*;\n", focal_method_name)
 
@@ -437,27 +489,45 @@ class ChatGptTester:
 
     # 执行test 和 compile
     def adhoc_excute(self, Dtest_para, Gen_TestfilePath, TestFilePath, testedRepo_PATH, project_name, JUNIT_VERSION):
+        print(f"Executing mvn compile and test for {TestFilePath} with Dtest_para: {Dtest_para}")
 
         excute_path = os.path.join(testedRepo_PATH, project_name)
         os.chdir(excute_path)
+        print(f"Changed directory to {excute_path}...")
 
-        mvn_compile = [ 'mvn', 'test-compile', '-Dcheckstyle.skip=true']
-        mvn_test = ['mvn', 'test', '-Dcheckstyle.skip=true']
+        # --- FIX: BYPASS SSL CERTIFICATE ERRORS FOR OLD JAVA ---
+        ssl_flags = [
+            '-Dmaven.wagon.http.ssl.insecure=true', 
+            '-Dmaven.wagon.http.ssl.allowall=true', 
+            '-Dmaven.wagon.http.ssl.ignore.validity.dates=true'
+        ]
+
+        mvn_compile = [ 'mvn', '-B', 'test-compile', '-Dstyle.color=never', '-Dcheckstyle.skip=true'] + ssl_flags
+        mvn_test = ['mvn', '-B', 'test', '-Dstyle.color=never', '-Dcheckstyle.skip=true'] + ssl_flags
         if JUNIT_VERSION == 5:
-            mvn_compile = ['mvn', 'test-compile', '-Dtest.engine=junit-jupiter', '-Dcheckstyle.skip=true']
-            mvn_test = ['mvn', 'test', '-Dtest.engine=junit-jupiter', '-Dcheckstyle.skip=true']
+            mvn_compile = ['mvn', '-B', 'test-compile', '-Dtest.engine=junit-jupiter', '-Dstyle.color=never', '-Dcheckstyle.skip=true'] + ssl_flags
+            mvn_test = ['mvn', '-B', 'test', '-Dtest.engine=junit-jupiter', '-Dstyle.color=never', '-Dcheckstyle.skip=true'] + ssl_flags
+            print("Trying to execute test with JUnit 5 settings.")
+
         write_cont, compile_result, test_result = self.Compile_Test_sub_unit(mvn_compile, mvn_test, TestFilePath)
+
         if compile_result != 1 and "[ERROR] COMPILATION ERROR :" not in write_cont and "Could not resolve " in write_cont:
-                mvn_install = [ 'mvn', 'clean', 'install']
-                mvn_result = subprocess.run(mvn_install, stdout=subprocess.PIPE, stderr=subprocess.PIPE, env=env,
-                                             universal_newlines=True)
-                if "BUILD SUCCESS" in mvn_result.stdout or "BUILD SUCCESS" in mvn_result.stderr:
-                    write_cont, compile_result, test_result = self.Compile_Test_sub_unit(mvn_compile, mvn_test, TestFilePath)
+            print("Initial mvn compile failed due to dependency issues. Attempting 'mvn clean install' to resolve dependencies...")
+            mvn_install = [ 'mvn', 'clean', 'install']
+            mvn_result = subprocess.run(mvn_install, stdout=subprocess.PIPE, stderr=subprocess.PIPE, env=env,
+                                            universal_newlines=True)
+            if "BUILD SUCCESS" in mvn_result.stdout or "BUILD SUCCESS" in mvn_result.stderr:
+                print("Dependencies resolved successfully. Re-attempting compile and test...")
+                write_cont, compile_result, test_result = self.Compile_Test_sub_unit(mvn_compile, mvn_test, TestFilePath)
+
         os.chdir(current_dir)
+        print(f"Restored directory to {current_dir}.")
 
         if compile_result == 0 and "[ERROR] COMPILATION ERROR :" not in write_cont: raise Exception("Mvn execute failed")
+
         compile_logInfo_path = os.path.join(self.LogINFO_PATH, os.path.basename(Gen_TestfilePath))
         with open(compile_logInfo_path, 'w', encoding='utf-8') as f:
+            print("Writing compile log info to:", compile_logInfo_path)
             f.write(write_cont)
         Surefire_reports_dst_file = self.Surefire_reports_TEST_info(write_cont, os.path.basename(Gen_TestfilePath), Dtest_para)
 
@@ -469,11 +539,28 @@ class ChatGptTester:
         proc_compile_list_INFO, proc_test_list_INFO, Composit_prompt = "", "",""
         if compile_result == 0:
             # 处理编译的错误信息：Out_dict = {"ERROR_MESSAGE": str, "Class_Name": str, "ERROR_LINE": str}
-            compile_instance = Compile_Test_INFO.CompileInfo(compile_logInfo_path, self.sub_save_dir, gen_test_PATH)
+            compile_instance = Compile_Test_INFO.CompileInfo(compile_logInfo_path, self.timestamped_dir, gen_test_PATH)
+            # Busca os erros de compilação do maven
             proc_compile_list_INFO = compile_instance.Call_errorDeal()
+            if re_generate_Tag: 
+                llm_returned_successfully = False
+                retries = 0
+                while(not llm_returned_successfully):
+                    try:
+                        Method_intention = self.unit_instance.intention_unit(self.PL_Focal_Method, self.focal_method_name)
+                        llm_returned_successfully = True
+                    except Exception as e:
+                        if retries < 2:
+                            retries += 1
+                        print(f"    ✗ LLM Error: {str(e)}. Retrying in {retries*2} seconds...")
+                        time.sleep(retries*2)
+            else:
+                Method_intention = ""
 
-            if re_generate_Tag: Method_intention = self.unit_instance.intention_unit(self.PL_Focal_Method, self.focal_method_name)
-            else:Method_intention = ""
+            """ Pega o primeiro erro de compilação e passa para um algoritmo
+                que pega a classe associada com o erro e busca a interface 
+                dessa classe para passar como contexto para o prompt na tentativa
+                de ajudar a corrigir esse erro """
             class_instance = FeedbackPrompt.CompilePrompt(proc_compile_list_INFO[0], gen_test_PATH,
                                                           ori_test_Path.split("###")[0].replace("/test/",'/main/').replace("_ESTest.java",".java"),re_generate_Tag, Method_intention, self.PL_Focal_Method, self.repo_name, findClassInfo)
             Composit_prompt, findClassInfo = class_instance.Compile_deal()
@@ -483,7 +570,17 @@ class ChatGptTester:
             # 处理test运行的错误信息: TEST_INFO_dict = {"FILE_NAME":os.path.basename(xml_file_path), "ERROR_MESSAGE":str, "ERROR_LINE":str}
             test_instance = Compile_Test_INFO.TestINFO(Surefire_reports_dst_file, compile_logInfo_path)
             proc_test_list_INFO = test_instance.TetsINFO_deal()
-            Method_intention = self.unit_instance.intention_unit(self.PL_Focal_Method, self.focal_method_name)
+            llm_returned_successfully = False
+            retries = 0
+            while(not llm_returned_successfully):
+                try:
+                    Method_intention = self.unit_instance.intention_unit(self.PL_Focal_Method, self.focal_method_name)
+                    llm_returned_successfully = True
+                except Exception as e:
+                    if retries < 2:
+                        retries += 1
+                    print(f"    ✗ LLM Error: {str(e)}. Retrying in {retries*2} seconds...")
+                    time.sleep(retries*2)
             # Method_intention = ""
             class_instance = FeedbackPrompt.TestPrompt(proc_test_list_INFO[0], gen_test_PATH, Method_intention, self.Focal_Method_Info, self.focal_method_name)
             Composit_prompt = class_instance.Test_deal()
@@ -499,71 +596,25 @@ class ChatGptTester:
         changed_code = pattern.sub(ori_class_name, gen_test_cont)
         with open(ori_PATH, 'w', encoding='utf-8') as f:
             f.write(changed_code)
-        
 
-    def Compile_Test_unit(self, pro_name, sub_project_name, test_file_name, test_path, Dtest_para, JUNIT_VERSION):
-        excute_path = os.path.join(self.testedRepo_PATH, pro_name)
-        os.chdir(excute_path)
-        if sub_project_name != "":
-            mvn_compile = ['mvn', '-pl', sub_project_name, f'-Dtest={Dtest_para}', 'test-compile',
-                           '-Dcheckstyle.skip=true']
-            mvn_test = ['mvn', '-pl', sub_project_name, f'-Dtest={Dtest_para}', 'test',
-                        '-Dcheckstyle.skip=true']
-            if JUNIT_VERSION == 5:
-                mvn_compile = ['mvn', '-pl', sub_project_name, f'-Dtest={Dtest_para}', 'test-compile',
-                               '-Dtest.engine=junit-jupiter', '-Dcheckstyle.skip=true']
-                mvn_test = ['mvn', '-pl', sub_project_name, f'-Dtest={Dtest_para}', 'test',
-                            '-Dtest.engine=junit-jupiter', '-Dcheckstyle.skip=true']
-
-        else:
-            mvn_compile = ['mvn', f'-Dtest={Dtest_para}', 'test-compile', '-Dcheckstyle.skip=true']
-            mvn_test = ['mvn', f'-Dtest={Dtest_para}', 'test', '-Dcheckstyle.skip=true']
-            if JUNIT_VERSION == 5:
-                mvn_compile = ['mvn', f'-Dtest={Dtest_para}', 'test-compile',
-                               '-Dtest.engine=junit-jupiter', '-Dcheckstyle.skip=true']
-                mvn_test = ['mvn', f'-Dtest={Dtest_para}', 'test', '-Dtest.engine=junit-jupiter',
-                            '-Dcheckstyle.skip=true']
-
-        write_cont, compile_result, test_result = self.Compile_Test_sub_unit(mvn_compile, mvn_test, test_path)
-
-        # 未能正确的执行mvn 指令。此时首先需要执行 mvn clean
-        if compile_result != 1 and "[ERROR] COMPILATION ERROR :" not in write_cont and "Could not resolve dependenci" in write_cont:
-            mvn_install = [ 'mvn', 'clean', 'install']
-            mvn_result = subprocess.run(mvn_install, stdout=subprocess.PIPE, stderr=subprocess.PIPE,universal_newlines=True)
-            if "BUILD SUCCESS" in mvn_result.stdout or "BUILD SUCCESS" in mvn_result.stderr:
-                write_cont, compile_result, test_result = self.Compile_Test_sub_unit(mvn_compile, mvn_test, test_path)
-            else:
-                # 进入到子目录当中
-                target_PATH = os.path.join(excute_path, sub_project_name)
-                os.chdir(target_PATH)
-                write_cont, compile_success, test_result = self.Compile_Test_sub_unit(mvn_compile, mvn_test, test_path)
-        os.chdir(current_dir)
-
-        if compile_result == 0 and "[ERROR] COMPILATION ERROR :" not in write_cont: raise Exception(
-            "Mvn execute failed")
-        compile_logInfo_path = os.path.join(self.LogINFO_PATH, os.path.basename(test_file_name))
-        with open(compile_logInfo_path, 'w', encoding='utf-8') as f:
-            f.write(write_cont)
-
-        # 处理执行mvn test 保存到 ./target/Surefire_reports/* 当中的信息
-        Surefire_reports_dst_file = self.Surefire_reports_TEST_info(write_cont, test_file_name, Dtest_para)
-
-        return compile_result, test_result, compile_logInfo_path, Surefire_reports_dst_file
 
     def Compile_Test_sub_unit(self, mvn_compile, mvn_test, test_path):
+        print(f"Running COMPILE command: {' '.join(mvn_compile)}")
         compile_success, test_success = 0, 0
         compile_result = subprocess.run(mvn_compile, stdout=subprocess.PIPE, stderr=subprocess.PIPE, env=env,
                                         universal_newlines=True)
         write_cont = "original test path: " + test_path + "\n########## Compile INFO ##########\n" + compile_result.stdout + compile_result.stderr
 
         if "BUILD SUCCESS" in compile_result.stdout or "BUILD SUCCESS" in compile_result.stderr:
+            print("  -> Maven compile succeeded.")
             compile_success = 1
-
+            print(f"  Running TEST command: {' '.join(mvn_test)}")
             test_result = subprocess.run(mvn_test, stdout=subprocess.PIPE, stderr=subprocess.PIPE, universal_newlines=True, env=env)
             write_cont = "original test path: " + test_path + "\n########## Compile INFO ##########\n" + compile_result.stdout + compile_result.stderr + \
                          "\n########## Test INFO ##########\n" + test_result.stdout + test_result.stderr
 
             if "BUILD SUCCESS" in test_result.stdout or "BUILD SUCCESS" in test_result.stderr:
+                print("    -> Maven test succeeded.")
                 test_success = 1
 
         return write_cont, compile_success, test_success
@@ -600,15 +651,15 @@ class Unit:
                 bnb_4bit_use_double_quant=True,
                 llm_int8_enable_fp32_cpu_offload=True 
             )
-            
+
             self.problem_prompt = "### Instruction:\n{instruction}\n### Response:\n"
-            
+
             self.tokenizer = AutoTokenizer.from_pretrained(
                 model_path, 
                 use_fast=False, 
                 trust_remote_code=True
             )
-            
+
             # Carrega o modelo com Limite de Memória (7.2GB na GPU, resto na RAM)
             self.model = AutoModelForCausalLM.from_pretrained(
                 model_path,
@@ -618,6 +669,10 @@ class Unit:
                 offload_folder="offload_iterate", # Pasta diferente para evitar conflito
                 max_memory={0: "7200MB", "cpu": "64GB"}
             )
+        elif "gemini" in model_path:
+            self.gemini_client = genai.Client(api_key=gemini_api_key)
+        elif "gpt" in model_path:
+            self.openai_client = OpenAI(api_key=os.getenv('OPENAI_API_KEY'))
         else:
             # Fallback para outros modelos (CodeLlama, etc) se mudar a variavel model_path
             self.tokenizer = AutoTokenizer.from_pretrained(model_path, use_fast=False)
@@ -625,7 +680,7 @@ class Unit:
                                                               torch_dtype=torch.float16).cuda()
 
 
-        
+
     def generate(self, prompt):
         input_ids = self.tokenizer([prompt]).input_ids
         output_ids = self.model.generate(
@@ -639,16 +694,24 @@ class Unit:
 
     def method_pred_unit(self, ask_test_method_prompt, repair_TAG=False):
         if repair_TAG:
-            if "gpt-3.5" in model_path:
-                response_test = openai.ChatCompletion.create(
+            if "gpt" in model_path:
+                response_test = self.openai_client.chat.completions.create(model=model_path,
+                messages=[
+                    {"role": "system",
+                     "content": "I want you to play the role of a professional who repairs buggy lines of the test method. Unnecessary import statement can be removed."},
+                    {"role": "user", "content": ask_test_method_prompt},
+                ],
+                temperature=model_temperature)
+                generated_content = response_test.choices[0].message.content
+            elif "gemini" in model_path:
+                response_test = self.gemini_client.models.generate_content(
                     model=model_path,
-                    messages=[
-                        {"role": "system",
-                         "content": "I want you to play the role of a professional who repairs buggy lines of the test method. Unnecessary import statement can be removed."},
-                        {"role": "user", "content": ask_test_method_prompt},
-                    ],
-                    temperature=0)
-                generated_content = response_test.choices[0].message['content']
+                    contents=ask_test_method_prompt,
+                    config=genai.types.GenerateContentConfig(
+                        system_instruction=["I want you to play the role of a professional who repairs buggy lines of the test method. Unnecessary import statement can be removed."]
+                    )
+                )
+                generated_content = response_test.text
             else:
                 role = "I want you to play the role of a professional who repairs buggy lines of the test method."
                 instruction = role + '\n\n' + ask_test_method_prompt
@@ -656,17 +719,25 @@ class Unit:
                 generated_content = self.generate(prompt)
 
         else:
-            if "gpt-3.5" in model_path:
-                response_test = openai.ChatCompletion.create(
-                    model=model_path,
-                    messages=[
-                        {"role": "system",
-                         "content": "I want you to play the role of a professional who writes Java test method."},
-                        {"role": "user", "content": ask_test_method_prompt},
-                    ],
-                    temperature=0)
-                generated_content = response_test.choices[0].message['content']
+            if "gpt" in model_path:
+                response_test = self.openai_client.chat.completions.create(model=model_path,
+                messages=[
+                    {"role": "system",
+                     "content": "I want you to play the role of a professional who writes Java test method."},
+                    {"role": "user", "content": ask_test_method_prompt},
+                ],
+                temperature=model_temperature)
+                generated_content = response_test.choices[0].message.content
 
+            elif "gemini" in model_path:
+                response_test = self.gemini_client.models.generate_content(
+                    model=model_path,
+                    contents=ask_test_method_prompt,
+                    config=genai.types.GenerateContentConfig(
+                        system_instruction=["I want you to play the role of a professional who writes Java test method."]
+                    )
+                )
+                generated_content = response_test.text
             else:
                 role = "I want you to play the role of a professional who writes Java test method for the Focal method. The following is the Class, Focal method and Import information."
                 instruction = role + '\n\n' + ask_test_method_prompt
@@ -733,20 +804,29 @@ class Unit:
 
     # input:ori_test_Path, output method intention
     def intention_unit(self, PL_Focal_Method, focal_method_name):
-        if "gpt-3.5" in model_path:
+        if "gpt" in model_path:
             Intention_NL = f'''Please describe the overall intention of the {focal_method_name} method in as much detail as possible in one sentence.'''
             # Intention_NL = f''Please infer the overall intention of the {focal_method_name} method with one sentence.
             ask_intention_prompt = PL_Focal_Method + '\n\n' + Intention_NL
-            response_intention = openai.ChatCompletion.create(
+            response_intention = self.openai_client.chat.completions.create(model=model_path,
+            messages=[
+                {"role": "system",
+                 "content": "I want you to play the role of a professional who infers method intention."},
+                {"role": "user", "content": ask_intention_prompt},
+            ],
+            temperature=model_temperature)
+            intentions = response_intention.choices[0].message.content
+        elif "gemini" in model_path:
+            Intention_NL = f'''Please describe the overall intention of the {focal_method_name} method in as much detail as possible in one sentence.'''
+            ask_intention_prompt = PL_Focal_Method + '\n\n' + Intention_NL
+            response_test = self.gemini_client.models.generate_content(
                 model=model_path,
-                messages=[
-                    {"role": "system",
-                     "content": "I want you to play the role of a professional who infers method intention."},
-                    {"role": "user", "content": ask_intention_prompt},
-                ],
-                temperature=0
+                contents=ask_intention_prompt,
+                config=genai.types.GenerateContentConfig(
+                    system_instruction=["I want you to play the role of a professional who infers method intention."]
+                )
             )
-            intentions = response_intention.choices[0].message['content']
+            intentions = response_test.text
         else:
             role = "I want you to play the role of a professional who infers method intention."
             Intention_NL = f'Please tell me the intention of the {focal_method_name} method.'
@@ -779,14 +859,18 @@ class Unit:
         # Using the sub function with a replacement function
         cleaned_code = re.sub(pattern, replace_func, java_code, flags=re.DOTALL | re.MULTILINE)
         return cleaned_code
-    
-if __name__ == "__main__":
 
-    projects_name = ['tabulapdf_tabula-java.json','Zappos_zappos-json.json','sachin-handiekar_jInstagram.json']
-    for project_name in projects_name:
-        print("project_name: "+project_name)
-        Json_file_Path = os.path.join(chatTesterDir, "RepoData", project_name)
-        ChatGptTester(project_name.replace(".json",""))
+# if __name__ == "__main__":
 
-        # Final Result postprocessing
-        ProceFinalResult(project_name.replace(".json", ""))
+#     from datetime import datetime
+#     # timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+
+#     projects_name = ['sachin-handiekar_jInstagram.json', 'tabulapdf_tabula-java.json','Zappos_zappos-json.json']
+
+#     for project_name in projects_name:
+#         print("project_name: "+project_name)
+#         Json_file_Path = os.path.join(chatTesterDir, "RepoData", project_name)
+#         ChatGptTester(project_name.replace(".json",""), "20251207_214446", Json_file_Path)
+
+#         # Final Result postprocessing
+#         ProceFinalResult(project_name.replace(".json", ""), Json_file_Path, "20251207_214446")

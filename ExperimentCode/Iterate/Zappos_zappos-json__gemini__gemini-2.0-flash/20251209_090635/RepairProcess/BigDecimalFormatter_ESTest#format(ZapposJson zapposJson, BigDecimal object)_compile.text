@@ -1,0 +1,21 @@
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/format/BigDecimalFormatter_ESTest.java
+[GENERATED PATH] BigDecimalFormatter_ESTest#format(ZapposJson zapposJson, BigDecimal object).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/format/BigDecimalFormatter_ESTest.java:[28,30] getPattern() in <anonymous com.zappos.json.format.BigDecimalFormatter_ESTest$1> cannot override getPattern() in com.zappos.json.format.AbstractValueFormatter
+  attempting to assign weaker access privileges; was public
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/format/BigDecimalFormatter_ESTest.java:[32,13] method does not override or implement a method from a supertype
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/format/BigDecimalFormatter_ESTest.java:[37,33] cannot find symbol
+  symbol:   method mock(java.lang.Class<com.zappos.json.ZapposJson>)
+  location: class com.zappos.json.format.BigDecimalFormatter_ESTest
+[INFO] 3 errors 
+####################
+
+original test path: /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/format/BigDecimalFormatter_ESTest.java
+[GENERATED PATH] BigDecimalFormatter_ESTest#format(ZapposJson zapposJson, BigDecimal object).java
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/hsc/Documents/Masters/TAES1/ChatTester/Repos/Zappos_zappos-json/src/test/java/com/zappos/json/util/Reflections_ESTest.java:[39,16] class, interface, or enum expected
+[INFO] 1 error
+####################
+
