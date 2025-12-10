@@ -41,7 +41,7 @@ gemini_api_key = os.getenv('GEMINI_API_KEY')
 
 def delay_if_needed_to_prevent_rate_limit(model):
     delay_seconds = 4
-    model_list = ["gemini-2.5-flash"]
+    model_list = []
 
     if model in model_list:
         print(f"Delaying for {delay_seconds} seconds to prevent rate limiting...")
@@ -180,16 +180,28 @@ class ChatGptTester_inital:
                 with open(TestScaffoldPath,'w',encoding='utf-8') as f:
                     f.write(ScaffoldingCode)
 
-                if self.Intention_TAG == "Contain_intention":  # intention
-                    delay_if_needed_to_prevent_rate_limit(model_path)
-                    compile_result, test_result, Gen_Path = self.Contain_intention(PL_Focal_Method, focal_method_name, Test_Import_info,
-                                                                              TestFilePath, TestCodeShell, project_name, contextMethod,
-                                                                              4)
-                else:
-                    delay_if_needed_to_prevent_rate_limit(model_path)
-                    compile_result, test_result, Gen_Path = self.No_intention(PL_Focal_Method, focal_method_name, Test_Import_info,
-                                                                              TestFilePath, TestCodeShell, project_name, contextMethod,
-                                                                              4)
+                
+                llm_returned_successfully = False
+                retries = 0
+                while(not llm_returned_successfully):
+                    try:
+                        if self.Intention_TAG == "Contain_intention":  # intention
+                            delay_if_needed_to_prevent_rate_limit(model_path)
+                            compile_result, test_result, Gen_Path = self.Contain_intention(PL_Focal_Method, focal_method_name, Test_Import_info,
+                                                                                    TestFilePath, TestCodeShell, project_name, contextMethod,
+                                                                                    4)
+                        else:
+                            delay_if_needed_to_prevent_rate_limit(model_path)
+                            compile_result, test_result, Gen_Path = self.No_intention(PL_Focal_Method, focal_method_name, Test_Import_info,
+                                                                                    TestFilePath, TestCodeShell, project_name, contextMethod,
+                                                                                    4)
+                        
+                        llm_returned_successfully = True
+                    except Exception as e:
+                        if retries < 2:
+                            retries += 1
+                        print(f"    ✗ LLM Error: {str(e)}. Retrying in {retries*4} seconds...")
+                        time.sleep(retries*4)
 
                 out_dict = {"original_path": Test_method['TestInfo'], "generated_path": Gen_Path,
                             "Compile": compile_result, "Test": test_result}
@@ -271,10 +283,10 @@ class ChatGptTester_inital:
         ]
 
         if JUNIT_VERSION == 5:
-            mvn_compile = ['mvn', '-B', 'test-compile', '-Dtest.engine=junit-jupiter', '-Dstyle.color=never', '-Dcheckstyle.skip=true']
+            mvn_compile = ['mvn', '-B', 'test-compile', '-Dtest.engine=junit-jupiter', '-Dstyle.color=never', '-Dcheckstyle.skip=true'] + ssl_flags
             mvn_test = ['mvn', '-B', 'test', '-Dtest.engine=junit-jupiter', '-Dstyle.color=never', '-Dcheckstyle.skip=true'] + ssl_flags
         else:
-            mvn_compile = ['mvn', '-B', 'test-compile', '-Dstyle.color=never', '-Dcheckstyle.skip=true']
+            mvn_compile = ['mvn', '-B', 'test-compile', '-Dstyle.color=never', '-Dcheckstyle.skip=true'] + ssl_flags
             mvn_test = ['mvn', '-B', 'test', '-Dstyle.color=never', '-Dcheckstyle.skip=true'] + ssl_flags
 
         write_cont, compile_result, test_result = self.Compile_Test_sub_unit(mvn_compile, mvn_test, TestFilePath)
@@ -290,6 +302,8 @@ class ChatGptTester_inital:
 
         if compile_result == 0 and "COMPILATION ERROR :" not in write_cont:
             print("\n" + "="*30)
+            print("COMMAND RUN:", ' '.join(mvn_compile))
+            print("COMMAND RUN:", ' '.join(mvn_test))
             print("CRITICAL MAVEN FAILURE OUTPUT:")
             print("="*30)
             print(write_cont)  # <--- This prints the actual error from Maven
